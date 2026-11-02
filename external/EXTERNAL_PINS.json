@@ -1,0 +1,107 @@
+{
+  "fetched_utc": "2026-10-29T17:34:15Z",
+  "method": "git clone --filter=blob:none --no-checkout + sparse checkout of scorer/licence/import-time files only; no datasets, no weights; nothing executed",
+  "policy": "Sources stay local (gitignored); only this pin file is tracked. Unlicensed repos are used for local research execution only and never redistributed.",
+  "repos": [
+    {
+      "local_dir": "cypherturn",
+      "url": "https://github.com/BarryQ/CypherTurn",
+      "commit": "9d9528e16c8fe2fb388b9daa4b43dcaa6f229612",
+      "scorer_file": "graph_eval_utils/metrics/execution_accuracy.py",
+      "scorer_sha256": "34c619701b7c52416158734c236a246823d2c21409dd3d88ca2b8e57d4246cd3",
+      "function": "execution_accuracy",
+      "license": "NO LICENSE FILE at commit (licence UNVERIFIED; GitHub API rate-limited)",
+      "role": "EMNLP 2026 CypherTurn EX"
+    },
+    {
+      "local_dir": "cypherbench",
+      "url": "https://github.com/megagonlabs/cypherbench",
+      "commit": "4cc727d29acc78f8cea7c4daa4e2705ddf293b8b",
+      "scorer_file": "cypherbench/metrics/execution_accuracy.py",
+      "scorer_sha256": "f4f94d8301f208414a3dadf937d065360332c34bd90545feff80239a84cd0884",
+      "function": "execution_accuracy / _compare_execution",
+      "license": "Apache-2.0 (LICENSE file)",
+      "role": "ACL 2025 CypherBench EX"
+    },
+    {
+      "local_dir": "gqlbench",
+      "url": "https://github.com/qxssadf/GQLBench",
+      "commit": "fb9d5a9be3ccc73ea9fe44c67a9b180eccedfad2",
+      "scorer_file": "Code/eval/execute_accuracy.py",
+      "scorer_sha256": "39604c2786bc5e780eaa53942ce2d5184deb323390c676737879d22e686d7c16",
+      "function": "execution_accuracy / res_eq",
+      "license": "NO LICENSE FILE at commit (licence UNVERIFIED)",
+      "role": "ACL 2026 GQLBench EX"
+    },
+    {
+      "local_dir": "tugraph_driver",
+      "url": "https://github.com/TuGraph-family/text2graphquery-driver",
+      "commit": "ab296fab179e806cd3ad2e659e9f5dc61bd1af3e",
+      "scorer_file": "impl/evaluation/metrics.py",
+      "scorer_sha256": "e7d388caec60deff459fa887919c657270f10585a241efc9a70cd3ae6b4436c8",
+      "function": "ExecutionAccuracy._compare_results",
+      "license": "NO LICENSE FILE at commit (licence UNVERIFIED)",
+      "role": "Text2GQL-Bench driver EX"
+    },
+    {
+      "local_dir": "pipecypher",
+      "url": "https://github.com/suraj-ranganath/PIPE-Cypher",
+      "commit": "0f127208746eb1035d95803348cc5cde36d47d7e",
+      "scorer_file": "pipecypher/evaluation.py",
+      "scorer_sha256": "eac67bc8f5afa03abcd43bed71cb20a17f90f51771b61f50f83ab7d3bfddd7ec",
+      "function": "answer_set_scores(...).exact",
+      "license": "MIT (pyproject.toml)",
+      "role": "PIPE-Cypher answer-set exact"
+    },
+    {
+      "local_dir": "neo4jlabs_text2cypher",
+      "url": "https://github.com/neo4j-labs/text2cypher",
+      "commit": "a8ed4d9480bcd4aa1b1a0b2e57aadd996afeaca2",
+      "scorer_file": "evaluations/evaluating_cypher_jaccard.ipynb",
+      "scorer_sha256": "d11a6f8a962046380fb58d26653ddfc42b132894d1d32e65084ace30b79595cc",
+      "function": "df_sim_pair (cell 5)",
+      "license": "CC0-1.0 (LICENSE file)",
+      "role": "neo4j-labs Jaccard result similarity (secondary)"
+    },
+    {
+      "local_dir": "cypherlens",
+      "url": "https://github.com/YasmeanMohammadi/cypherLenz",
+      "commit": "ce6481941e78d12fcec974babf453891487ef17a",
+      "scorer_file": "services/metrics_calculator.py (+ services/result_comparator.py, services/column_similarity.py)",
+      "scorer_sha256": "37906769e4df15b6182feaf1cf6bcf68fb75702fbcb517b3415acdafa3c13e19",
+      "comparator_sha256": "87463a8b5b8c3db1e38aa8c6c0f741785491183c44f3090a927e26f82c5e8b34",
+      "function": "ResultComparator(ColumnSimilarityMatcher(threshold=0.60)).build_table -> MetricsCalculator.compute_exact_match (main.py default wiring)",
+      "license": "NO LICENSE FILE at commit (licence UNVERIFIED)",
+      "role": "PVLDB 19(12) CypherLens Exact Match; paper link github.com/YasmeanMohammadi/CypherLens is 404, live repo renamed cypherLenz (description 'VLDB 2026')"
+    },
+    {
+      "local_dir": "cyspider",
+      "url": "https://github.com/22842219/SemanticParser4Graph",
+      "commit": "6cd5eff4aa37b40a2557d312f70ec0d576d8a6b1",
+      "scorer_file": "semantic_parser/metrics/text2cypher/evaluator.py",
+      "scorer_sha256": "4fcbc5a1db21ac399739e3c05ee1979f38180e7e790b6021f59689628b01688d",
+      "function": "eval_exec_match(graph, p_str, g_str)",
+      "license": "Apache-2.0 (semantic_parser/LICENSE)",
+      "role": "CySpider (SemanticParser4Graph) execution match"
+    },
+    {
+      "local_dir": "mind_the_query",
+      "url": "https://github.com/endeavorXx/Mind-the-Query",
+      "commit": "ec4054a1b7df7e6310efa95c56bb6e7cebc4d161",
+      "scorer_file": null,
+      "scorer_sha256": null,
+      "function": null,
+      "license": "Apache-2.0 LICENSE file at commit (repository content); graph dumps derive from neo4j-graph-examples repos with NO licence file (dump licence UNVERIFIED)",
+      "role": "study S23 benchmark DATA (not a scorer): manual test split, db_schema.jsonl and 5 Neo4j dumps (sparse checkout; .env excluded and never opened)",
+      "dump_sha256": {
+        "bloom-50.dump": "926859eacf53cc79d9a0bcd7e516731bfd1310ba9d891b0ef56d8f5e6c8819e5",
+        "contact-tracing-50.dump": "d022c3a6cf4a3fa8516688dc24d10b0e668f942eab38bc82aca3d62a668e939e",
+        "entity-resolution-50.dump": "d9e8d19cb4bb44126c9fce25f6e4ccc4d93fb8d91effbdd56a0c8b52c72d669e",
+        "healthcare-analytics-50.dump": "fed00ade454d16e7c360adb95f75fe104085bafaced84b6e52847db42204a57c",
+        "wwc2019-50.dump": "67879a7bca5c27b786ce40a29481419f0e0522787265e24199d47d92fcec2dee"
+      },
+      "fetched_utc": "2026-10-31"
+    }
+  ],
+  "fetched_note": "cypherlens and cyspider added 2026-10-29 (same session, before any scorer run); mind_the_query added 2026-10-31 (study S23, benchmark data, before any execution)"
+}

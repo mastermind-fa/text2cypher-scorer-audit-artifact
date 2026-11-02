@@ -1,0 +1,28 @@
+{
+  "analysis": "prediction-level verdict sensitivity (NOT ranking / leaderboard impact)",
+  "source": "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s2_results.csv (frozen S14)",
+  "primary_informative_subset": "rows with empty_prediction == False AND a binary (0/1) verdict from all seven primary scorers",
+  "justification": [
+    "empty predictions (117/158) are dominated by an output-floor effect and mostly fail every scorer trivially;",
+    "rows with a scorer exception (CySpider TypeError on list/map values) have no complete seven-scorer verdict vector, so non-unanimity is undefined for them;",
+    "the rule uses only columns frozen in the main audit run and was written before any study S20 metric was computed."
+  ],
+  "context_sets_reported_separately": [
+    "all 158 rows (counts only)",
+    "all rows with seven binary verdicts (154)"
+  ],
+  "metrics": [
+    "N",
+    "unanimous / non-unanimous (Wilson 95%)",
+    "accepted by >= 1 scorer",
+    "rejected by >= 1 scorer",
+    "per-scorer accept count",
+    "max - min per-scorer acceptance rate on the same subset (with and without CypherLens)",
+    "strict-majority (>= 4 of 7) verdict vs each scorer",
+    "sole-accept / sole-reject counts"
+  ],
+  "source_sha256": "6c7145328ef9ea393107582329bce9c1f3ac519b12b1b5084094f5c25c922184",
+  "script_sha256": "c01b41376808b4c8b29c44fdf2f171e1ac8ea434cad6c987d4960a543f39988c",
+  "defined_utc": "20261030T143405Z",
+  "status": "DEFINED BEFORE ANY STUDY S20 S2 METRIC"
+}

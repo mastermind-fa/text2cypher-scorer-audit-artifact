@@ -1,0 +1,9 @@
+# Python 3.12.15 (arm64 macOS used for the frozen runs). Versions as recorded in the readiness environment manifest.
+neo4j==5.26.0
+pandas==2.3.3
+numpy==2.5.3
+pydantic==2.13.5
+PyYAML==6.0.3
+tqdm==4.70.1
+requests==2.34.2
+pytest==8.4.2

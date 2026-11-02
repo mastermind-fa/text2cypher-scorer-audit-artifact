@@ -1,0 +1,16 @@
+{
+  "analysis_version": "audit-analysis-v1",
+  "frozen_utc": "2026-10-29T18:33:47.205659+00:00",
+  "status": "FROZEN BEFORE ANY S1/S2/S3 SCORER RUN",
+  "tests": "21 analysis + 20 readiness passed (synthetic/smoke only)",
+  "hypothesis": "H1 (protocol) = H2 (brief): any of 21 primary pairs with Bonferroni one-sided Wilson lower bound (z=Phi^-1(1-0.05/21)) >= 0.02 on S3",
+  "files_sha256": {
+    "code/build_pairs.py": "ed99c3c0aab483f2f7c564d438028303d844b860d94c5466063541f0e8b1e92d",
+    "code/audit_analysis.py": "36871c09868d1dc0da51cc398ae1d64c70f6cca90d4c5e89eaf1c536de344f5d",
+    "code/run_experiment.py": "3976193690f303ff9108752fb57293880c74eded48e4338a1df1449e8faca655",
+    "code/run_all.py": "193dbb64bfd8bedce8865e9508eb2b822d643e7623d89f24cd6bebdb578c89bc",
+    "code/compute_stats.py": "55e98a7f7427a5d28e2fb8cb71ead50b66e161a9818a72561d40f675f39e33f7",
+    "tests/test_audit_analysis.py": "fa1b3cb4fae267086bf54ba3b2c6283aba800215934461999280a43156dea2fb"
+  },
+  "freeze_sha256": "59ab6849cac0e3ae77802241f434ca02b8976eca3b6c1b11a01aa47881a1ecd0"
+}

@@ -1,0 +1,374 @@
+{
+ "s1": {
+  "cases": 121,
+  "oracle": 106,
+  "intent": 15,
+  "dim_groups": 28,
+  "sub_dims": 43
+ },
+ "s1_agree": {
+  "cypherturn": [
+   66,
+   106,
+   0.6226
+  ],
+  "cypherbench": [
+   96,
+   106,
+   0.9057
+  ],
+  "gqlbench": [
+   94,
+   106,
+   0.8868
+  ],
+  "tugraph": [
+   86,
+   106,
+   0.8113
+  ],
+  "pipecypher": [
+   76,
+   106,
+   0.717
+  ],
+  "cypherlens": [
+   69,
+   106,
+   0.6509
+  ],
+  "cyspider": [
+   78,
+   106,
+   0.7358
+  ],
+  "neo4jlabs": [
+   94,
+   106,
+   0.8868
+  ],
+  "pc_v1_1": [
+   101,
+   106,
+   0.9528
+  ]
+ },
+ "s1_identical_query_cases": {
+  "S1-103": [
+   "D22_map_identical",
+   []
+  ],
+  "S1-104": [
+   "D22_map_key_order",
+   []
+  ],
+  "S1-105": [
+   "D22_map_different",
+   [
+    "cypherbench",
+    "cypherturn",
+    "cyspider",
+    "gqlbench",
+    "tugraph"
+   ]
+  ],
+  "S1-106": [
+   "D22_map_vs_scalar",
+   [
+    "cypherbench",
+    "cypherturn",
+    "cyspider",
+    "gqlbench",
+    "tugraph"
+   ]
+  ],
+  "S1-115": [
+   "D25_same_valueset_per_row",
+   [
+    "cypherbench",
+    "cypherturn",
+    "cyspider",
+    "gqlbench",
+    "tugraph"
+   ]
+  ],
+  "S1-116": [
+   "D26_bool_vs_int",
+   []
+  ],
+  "S1-117": [
+   "D26_bool_vs_int",
+   []
+  ],
+  "S1-118": [
+   "D27_date_string",
+   []
+  ],
+  "S1-119": [
+   "D27_date_string",
+   [
+    "cypherbench",
+    "cypherturn",
+    "cyspider",
+    "gqlbench",
+    "tugraph"
+   ]
+  ]
+ },
+ "s3_n": 563,
+ "s3_unanimous": 170,
+ "s3_nonunanimous": 393,
+ "pairs_meeting": 11,
+ "max": [
+  "cypherlens",
+  "cyspider",
+  385,
+  563,
+  0.6838,
+  0.6263
+ ],
+ "six_meeting": 5,
+ "six_max": [
+  "cypherturn",
+  "tugraph",
+  33,
+  563,
+  0.0586,
+  0.0363
+ ],
+ "six_scorer_nonunanimous": [
+  41,
+  563,
+  0.0728
+ ],
+ "s3_pass": {
+  "cypherturn": 529,
+  "cypherbench": 529,
+  "gqlbench": 524,
+  "tugraph": 542,
+  "pipecypher": 536,
+  "cypherlens": 171,
+  "cyspider": 542,
+  "neo4jlabs": 528,
+  "pc_v1_1": 563
+ },
+ "s3_errors": {
+  "neo4jlabs": [
+   "ERROR:CaseTimeout"
+  ]
+ },
+ "s3_cypherlens_only_fail": 351,
+ "s2_n": 158,
+ "s2_empty_pred": 117,
+ "s2_complete": 154,
+ "s2_unan_fail": 135,
+ "s2_unan_pass": 0,
+ "s2_nonunan": 19,
+ "s2_incomplete_units": [
+  [
+   "S2-qwen3-4b|Q5296f5113316",
+   {
+    "cyspider": "ERROR:TypeError"
+   }
+  ],
+  [
+   "S2-phi3.5-mini-instruct|Q05b2fab7f240",
+   {
+    "cyspider": "ERROR:TypeError"
+   }
+  ],
+  [
+   "S2-phi3.5-mini-instruct|Q2e2ad3e9157d",
+   {
+    "cyspider": "ERROR:TypeError"
+   }
+  ],
+  [
+   "S2-phi3.5-mini-instruct|Q686e3b522d98",
+   {
+    "cyspider": "ERROR:TypeError"
+   }
+  ]
+ ],
+ "s2_cl_pass": 16,
+ "s2_cl_solo_strict": 14,
+ "s2_cl_solo_noother_pass": 14,
+ "s2_cl_solo_empty": 6,
+ "s2_cl_solo_labels": {
+  "NOT_IN_C3_SAMPLE": 6,
+  "NOT_EQUIVALENT": 8
+ },
+ "s2_pass": {
+  "cypherturn": 0,
+  "cypherbench": 5,
+  "gqlbench": 5,
+  "tugraph": 5,
+  "pipecypher": 5,
+  "cypherlens": 16,
+  "cyspider": 5,
+  "neo4jlabs": 5,
+  "pc_v1_1": 5
+ },
+ "timeout_units": [
+  [
+   "S3-339",
+   67131,
+   67131
+  ]
+ ],
+ "amendment_before_resume": [
+  "2026-10-29T18:50:04.466624+00:00",
+  "2026-10-29T18:50:49.379730+00:00",
+  true
+ ],
+ "pairwise_match_frozen": true,
+ "pairwise": [
+  [
+   "cypherlens",
+   "cyspider",
+   385,
+   0.6838,
+   0.6263
+  ],
+  [
+   "pipecypher",
+   "cypherlens",
+   381,
+   0.6767,
+   0.619
+  ],
+  [
+   "cypherturn",
+   "cypherlens",
+   378,
+   0.6714,
+   0.6135
+  ],
+  [
+   "tugraph",
+   "cypherlens",
+   373,
+   0.6625,
+   0.6044
+  ],
+  [
+   "cypherbench",
+   "cypherlens",
+   372,
+   0.6607,
+   0.6025
+  ],
+  [
+   "gqlbench",
+   "cypherlens",
+   367,
+   0.6519,
+   0.5934
+  ],
+  [
+   "cypherturn",
+   "tugraph",
+   33,
+   0.0586,
+   0.0363
+  ],
+  [
+   "cypherturn",
+   "gqlbench",
+   27,
+   0.048,
+   0.0282
+  ],
+  [
+   "tugraph",
+   "pipecypher",
+   26,
+   0.0462,
+   0.0269
+  ],
+  [
+   "cypherturn",
+   "cypherbench",
+   22,
+   0.0391,
+   0.0217
+  ],
+  [
+   "tugraph",
+   "cyspider",
+   22,
+   0.0391,
+   0.0217
+  ],
+  [
+   "gqlbench",
+   "tugraph",
+   20,
+   0.0355,
+   0.0192
+  ],
+  [
+   "gqlbench",
+   "pipecypher",
+   20,
+   0.0355,
+   0.0192
+  ],
+  [
+   "gqlbench",
+   "cyspider",
+   18,
+   0.032,
+   0.0167
+  ],
+  [
+   "cypherbench",
+   "tugraph",
+   15,
+   0.0266,
+   0.0131
+  ],
+  [
+   "cypherbench",
+   "pipecypher",
+   15,
+   0.0266,
+   0.0131
+  ],
+  [
+   "cypherturn",
+   "cyspider",
+   13,
+   0.0231,
+   0.0108
+  ],
+  [
+   "cypherbench",
+   "cyspider",
+   13,
+   0.0231,
+   0.0108
+  ],
+  [
+   "cypherturn",
+   "pipecypher",
+   7,
+   0.0124,
+   0.0045
+  ],
+  [
+   "pipecypher",
+   "cyspider",
+   6,
+   0.0107,
+   0.0036
+  ],
+  [
+   "cypherbench",
+   "gqlbench",
+   5,
+   0.0089,
+   0.0027
+  ]
+ ]
+}

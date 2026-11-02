@@ -1,0 +1,1 @@
+study S20 post-freeze native-Cypher equivalence stress test: INPUT freeze 20261030T143740Z. Cases admitted by the execution oracle on isolated Neo4j (Neo4j/5.15.0). No scorer has seen these cases. Do not edit.

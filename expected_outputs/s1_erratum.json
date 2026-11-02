@@ -1,0 +1,59 @@
+{
+ "erratum": "S1 identical reference/prediction query text (paper \u00a74.3). For the five replay-adapter scorers (CypherTurn, CypherBench, GQLBench, Text2GQL driver, CySpider) these fixtures were refused (AdapterInputConflict -> counted incorrect) or scored prediction-against-prediction. Frozen results are kept; a sensitivity analysis excludes all nine.",
+ "affected_scorers": [
+  "cypherturn",
+  "cypherbench",
+  "gqlbench",
+  "tugraph",
+  "cyspider"
+ ],
+ "identical_query_text_fixtures": [
+  "S1-103",
+  "S1-104",
+  "S1-105",
+  "S1-106",
+  "S1-115",
+  "S1-116",
+  "S1-117",
+  "S1-118",
+  "S1-119"
+ ],
+ "fixtures": {
+  "S1-103": {
+   "dimension": "D22_map_identical",
+   "expected": "EQUIV"
+  },
+  "S1-104": {
+   "dimension": "D22_map_key_order",
+   "expected": "EQUIV"
+  },
+  "S1-105": {
+   "dimension": "D22_map_different",
+   "expected": "NONEQUIV"
+  },
+  "S1-106": {
+   "dimension": "D22_map_vs_scalar",
+   "expected": "NONEQUIV"
+  },
+  "S1-115": {
+   "dimension": "D25_same_valueset_per_row",
+   "expected": "NONEQUIV"
+  },
+  "S1-116": {
+   "dimension": "D26_bool_vs_int",
+   "expected": "NONEQUIV"
+  },
+  "S1-117": {
+   "dimension": "D26_bool_vs_int",
+   "expected": "NONEQUIV"
+  },
+  "S1-118": {
+   "dimension": "D27_date_string",
+   "expected": "EQUIV"
+  },
+  "S1-119": {
+   "dimension": "D27_date_string",
+   "expected": "NONEQUIV"
+  }
+ }
+}

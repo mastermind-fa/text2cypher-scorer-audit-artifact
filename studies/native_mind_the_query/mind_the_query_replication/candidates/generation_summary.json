@@ -1,0 +1,94 @@
+{
+ "manual_test_rows": 1829,
+ "eligible_distinct_sources": 1086,
+ "eligible_per_graph": {
+  "bloom": 52,
+  "covid": 9,
+  "er": 414,
+  "healthcare": 247,
+  "wwc": 364
+ },
+ "eligible_per_class": {
+  "R1_numeric_type": 216,
+  "R2_float_tolerance": 228,
+  "R3_row_order": 1006,
+  "R4_duplicates": 46,
+  "R5_column_order": 876,
+  "R6_reference_order": 29,
+  "R7_list_order": 12,
+  "R8_null_natural": 1084,
+  "C0_column_name_control": 556
+ },
+ "eligible_per_class_graph": {
+  "R1_numeric_type": {
+   "bloom": 3,
+   "er": 35,
+   "healthcare": 169,
+   "wwc": 9
+  },
+  "R2_float_tolerance": {
+   "bloom": 17,
+   "covid": 1,
+   "er": 91,
+   "healthcare": 97,
+   "wwc": 22
+  },
+  "R3_row_order": {
+   "bloom": 45,
+   "covid": 9,
+   "er": 379,
+   "healthcare": 226,
+   "wwc": 347
+  },
+  "R4_duplicates": {
+   "bloom": 3,
+   "covid": 1,
+   "er": 17,
+   "healthcare": 16,
+   "wwc": 9
+  },
+  "R5_column_order": {
+   "bloom": 24,
+   "covid": 8,
+   "er": 301,
+   "healthcare": 206,
+   "wwc": 337
+  },
+  "R6_reference_order": {
+   "bloom": 3,
+   "er": 22,
+   "healthcare": 2,
+   "wwc": 2
+  },
+  "R7_list_order": {
+   "er": 2,
+   "wwc": 10
+  },
+  "R8_null_natural": {
+   "bloom": 52,
+   "covid": 9,
+   "er": 412,
+   "healthcare": 247,
+   "wwc": 364
+  },
+  "C0_column_name_control": {
+   "bloom": 9,
+   "covid": 4,
+   "er": 104,
+   "healthcare": 235,
+   "wwc": 204
+  }
+ },
+ "candidates_per_class": {
+  "R7_list_order": 12,
+  "R6_reference_order": 29,
+  "R4_duplicates": 46,
+  "R1_numeric_type": 80,
+  "R2_float_tolerance": 80,
+  "C0_column_name_control": 80,
+  "R5_column_order": 80,
+  "R3_row_order": 80,
+  "R8_null_natural": 80
+ },
+ "sha256": "0323b76ac805bb734e533029ad1ce2a7f765de2802f2ba02be93bc73ead9e294"
+}

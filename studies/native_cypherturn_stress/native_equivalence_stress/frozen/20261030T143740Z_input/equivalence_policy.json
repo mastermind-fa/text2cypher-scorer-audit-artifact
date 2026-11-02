@@ -1,0 +1,29 @@
+{
+  "classes": {
+    "D1_numeric_type": "VALUE_EQUIVALENT_TYPE_DIFFERENT",
+    "D2_float_tolerance": "TOLERANCE_EQUIVALENT",
+    "D3_row_order": "ORDER_INSENSITIVE_EQUIVALENT",
+    "D4_duplicates": "SET_EQUIVALENT_MULTISET_DIFFERENT",
+    "D5_null_controlled": "NULL_EQUIVALENT",
+    "D6_column_name_control": "COLUMN_NAME_POLICY_CONTROL"
+  },
+  "quota": {
+    "D1_numeric_type": 15,
+    "D2_float_tolerance": 15,
+    "D3_row_order": 15,
+    "D4_duplicates": 15,
+    "D5_null_controlled": 10,
+    "D6_column_name_control": 5
+  },
+  "epsilon_rel": 1e-09,
+  "epsilon_rule": "0 < |cand - ref| <= epsilon_rel * max(1, |ref|)",
+  "oracle_definitions": {
+    "D1_numeric_type": "same column names and row count; every reference cell is an integer (not bool) and the aligned candidate cell is a float with float(ref) == cand; row sequence equal under numeric equality",
+    "D2_float_tolerance": "same column names, row count, cell types (float) and row alignment; every aligned pair has |cand - ref| <= 1e-09 * max(1, |ref|); at least one pair has a non-zero difference",
+    "D3_row_order": "same column names; identical rows including types as multisets (same multiplicities); row sequences differ; reference text has no ORDER BY / SKIP / LIMIT",
+    "D4_duplicates": "same column names; reference has no duplicate rows; same set of distinct rows (types included); candidate has at least one duplicate row; candidate de-duplicated in first-occurrence order equals the reference sequence",
+    "D5_null_controlled": "results identical including column names, types, row order and NULL positions; at least one NULL and at least one non-NULL value in the appended column",
+    "D6_column_name_control": "study S18 T1 rule: same column count and value multiset; column names differ"
+  },
+  "label_note": "D5 is a CONTROLLED FIXTURE (gold query + one appended column); D6 is a calibration control, not new evidence; equivalence classes are declared, not claims that either result is 'correct'"
+}

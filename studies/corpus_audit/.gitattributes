@@ -1,0 +1,2 @@
+# Store frozen artifacts byte-exactly (no EOL normalisation) so recorded SHA-256 hashes hold on checkout (S19 integrity fix).
+* -text

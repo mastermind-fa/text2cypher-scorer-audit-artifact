@@ -1,0 +1,210 @@
+{
+  "session": "S23",
+  "status": "FROZEN BEFORE ANY NEO4J EXECUTION OR SCORER RUN",
+  "frozen_utc": "20261031T175346Z",
+  "question": "Do the scorer-policy patterns observed on CypherTurn (study S20) recur on Mind the Query?",
+  "source": {
+    "benchmark": "Mind the Query (Chauhan et al., EMNLP 2025 Industry Track, pp. 1890-1905)",
+    "repository": "https://github.com/endeavorXx/Mind-the-Query",
+    "commit": "ec4054a1b7df7e6310efa95c56bb6e7cebc4d161",
+    "licence_file": "LICENSE (Apache License 2.0) at the pinned commit; covers repository content. Underlying graph data come from neo4j-graph-examples repositories, which carry no licence file (GitHub API, 2026-10-31): dump licence UNVERIFIED.",
+    "split": "Train_Test_Splits/Manual/<graph>/test (sequential 70/30 split per split_statistics.txt)",
+    "eligibility": "logical [0/1] == '1' and result [0/1] != '0' where present",
+    "graphs_to_dumps": {
+      "bloom": "bloom-50.dump",
+      "covid": "contact-tracing-50.dump",
+      "er": "entity-resolution-50.dump",
+      "healthcare": "healthcare-analytics-50.dump",
+      "wwc": "wwc2019-50.dump"
+    },
+    "dump_sha256": {
+      "bloom": "926859eacf53cc79d9a0bcd7e516731bfd1310ba9d891b0ef56d8f5e6c8819e5",
+      "covid": "d022c3a6cf4a3fa8516688dc24d10b0e668f942eab38bc82aca3d62a668e939e",
+      "er": "d9e8d19cb4bb44126c9fce25f6e4ccc4d93fb8d91effbdd56a0c8b52c72d669e",
+      "healthcare": "fed00ade454d16e7c360adb95f75fe104085bafaced84b6e52847db42204a57c",
+      "wwc": "67879a7bca5c27b786ce40a29481419f0e0522787265e24199d47d92fcec2dee"
+    },
+    "manual_test_files_sha256": {
+      "Train_Test_Splits/Manual/bloom/test/Complex_Aggregation_test.json": "4fb153b05774499c0aad61dcc18bed4a4d916395ad5c496f59c6e00ef5ea0526",
+      "Train_Test_Splits/Manual/bloom/test/Complex_Retrieval_test.json": "00f46d0a258faa2a4252d75de2bb3cd7defd82c7db91480189140ba8962b7bbd",
+      "Train_Test_Splits/Manual/covid/test/Complex_Aggregation_test.json": "06568c249a2dcb08701740b1946ffa304bc15124cfd5d977f5c57992e7a04229",
+      "Train_Test_Splits/Manual/covid/test/Complex_Retrieval_test.json": "ba94097694e3e37d23396bee83870db4117771e992dd7916c9ff1771d8182833",
+      "Train_Test_Splits/Manual/er/test/Complex_Aggregation_test.json": "68f4d5fa24f5e03d7df6ad7482fb4b462206d403d3e922ddc2a3e44bbfc94d0e",
+      "Train_Test_Splits/Manual/er/test/Complex_Retrieval_test.json": "8d34173899c2f5c0ad892fd9aea67ab2ce810b4f264cf90510558715831d1024",
+      "Train_Test_Splits/Manual/healthcare/test/Complex_Aggregation_test.json": "9c1231e298c6e3c79e349d4a098232c2964060baf52b26d91983dfc9b7483af3",
+      "Train_Test_Splits/Manual/healthcare/test/Complex_Retrieval_test.json": "84c095b1ffefe52161b951d8703c11bd1f1568fbe99f353ea4718cc7f727cf7a",
+      "Train_Test_Splits/Manual/wwc/test/Complex_Aggregation_test.json": "280854f68117feb06e70131423c0a028f238cc42f85a0a0bb10e3d460dcaa8aa",
+      "Train_Test_Splits/Manual/wwc/test/Complex_Retrieval_test.json": "1b690b967d07321402416c59fe66b196e61bb5ee92ea7e028cd7cf94f5f390db"
+    },
+    "db_schema_sha256": "4a6f2c81c2f2152427c48eecb6914b6651df719ef7b3de7550297fee7e63e54c",
+    "license_sha256": "87eac3374769236e9728c75579a962a9fe98d1e777a6145998bffe27c32bd677"
+  },
+  "neo4j": {
+    "image": "neo4j:5.15.0 (as study S18 and 20)",
+    "load": "neo4j-admin database load (one graph at a time into the throwaway container's 'neo4j' database)",
+    "fallback": "none automatic; a load failure stops the run and is reported to the owner"
+  },
+  "design": {
+    "classes": {
+      "R1_numeric_type": "VALUE_EQUIVALENT_TYPE_DIFFERENT",
+      "R2_float_tolerance": "TOLERANCE_EQUIVALENT",
+      "R3_row_order": "ORDER_INSENSITIVE_EQUIVALENT",
+      "R4_duplicates": "SET_EQUIVALENT_MULTISET_DIFFERENT",
+      "R5_column_order": "COLUMN_ORDER_POLICY",
+      "R6_reference_order": "REFERENCE_ORDERED_CANDIDATE_UNORDERED",
+      "R7_list_order": "LIST_ORDER_POLICY",
+      "R8_null_natural": "NULL_EQUIVALENT",
+      "C0_column_name_control": "COLUMN_NAME_POLICY_CONTROL"
+    },
+    "quota": {
+      "R1_numeric_type": 10,
+      "R2_float_tolerance": 10,
+      "R3_row_order": 10,
+      "R4_duplicates": 10,
+      "R5_column_order": 10,
+      "R6_reference_order": 10,
+      "R7_list_order": 10,
+      "R8_null_natural": 10,
+      "C0_column_name_control": 5
+    },
+    "reserve": 80,
+    "seed": 23,
+    "epsilon_rel": 1e-09,
+    "max_rows": 5000
+  },
+  "candidates_sha256": "0323b76ac805bb734e533029ad1ce2a7f765de2802f2ba02be93bc73ead9e294",
+  "code_sha256": {
+    "s23_parse.py": "b1126397bdd465a19dd6642c21e4862bfb55476eac76cb3cb7ef4cee5147c427",
+    "s23_rules.py": "f0e0e835515d71902cb6d3857ef86288f9e0884628516c16c92b21f2ba713029",
+    "s23_oracle.py": "7c7b0465e95393f2e73755bb8033cd7cf201f184e589c06d5576ad20ad9f45f4",
+    "s23_replication.py": "3a807fa46e4109af0e9e6abd102c44f87768e219d00ed58f6da92719bc2881b5",
+    "s23_score.py": "00faf683aa35bac55647c03c870dc8f8fc05fde382fa0b076bba5f8c974f4e5e",
+    "s23_overlap.py": "57c58b47219888d69cfedb5f0fc6352f6748b862b5191aaff57bdd51828b52f7"
+  },
+  "reference_patterns": {
+    "s20_by_class": {
+      "D1_numeric_type": {
+        "cypherturn": "REJECT",
+        "cypherbench": "ACCEPT",
+        "gqlbench": "ACCEPT",
+        "tugraph": "ACCEPT",
+        "pipecypher": "REJECT",
+        "cypherlens": "REJECT",
+        "cyspider": "ACCEPT"
+      },
+      "D2_float_tolerance": {
+        "cypherturn": "REJECT",
+        "cypherbench": "REJECT",
+        "gqlbench": "REJECT",
+        "tugraph": "ACCEPT",
+        "pipecypher": "REJECT",
+        "cypherlens": "ACCEPT",
+        "cyspider": "REJECT"
+      },
+      "D3_row_order": {
+        "cypherturn": "ACCEPT",
+        "cypherbench": "ACCEPT",
+        "gqlbench": "ACCEPT",
+        "tugraph": "REJECT",
+        "pipecypher": "ACCEPT",
+        "cypherlens": "ACCEPT",
+        "cyspider": "ACCEPT"
+      },
+      "D4_duplicates": {
+        "cypherturn": "REJECT",
+        "cypherbench": "REJECT",
+        "gqlbench": "REJECT",
+        "tugraph": "REJECT",
+        "pipecypher": "ACCEPT",
+        "cypherlens": "REJECT",
+        "cyspider": "ACCEPT"
+      },
+      "D5_null_controlled": {
+        "cypherturn": "ACCEPT",
+        "cypherbench": "ACCEPT",
+        "gqlbench": "MIXED",
+        "tugraph": "ACCEPT",
+        "pipecypher": "ACCEPT",
+        "cypherlens": "ACCEPT",
+        "cyspider": "ACCEPT"
+      },
+      "D6_column_name_control": {
+        "cypherturn": "REJECT",
+        "cypherbench": "ACCEPT",
+        "gqlbench": "ACCEPT",
+        "tugraph": "ACCEPT",
+        "pipecypher": "ACCEPT",
+        "cypherlens": "ACCEPT",
+        "cyspider": "ACCEPT"
+      }
+    },
+    "s1_prior_new_classes": {
+      "R5_column_order": {
+        "cypherturn": "ACCEPT",
+        "cypherbench": "ACCEPT",
+        "gqlbench": "ACCEPT",
+        "tugraph": "REJECT",
+        "pipecypher": "ACCEPT",
+        "cypherlens": "ACCEPT",
+        "cyspider": "REJECT"
+      },
+      "R6_reference_order": {
+        "cypherturn": "ACCEPT",
+        "cypherbench": "REJECT",
+        "gqlbench": "REJECT",
+        "tugraph": "ACCEPT",
+        "pipecypher": "ACCEPT",
+        "cypherlens": "ACCEPT",
+        "cyspider": "ACCEPT"
+      },
+      "R7_list_order": {
+        "cypherturn": "REJECT",
+        "cypherbench": "ACCEPT",
+        "gqlbench": "REJECT",
+        "tugraph": "REJECT",
+        "pipecypher": "REJECT",
+        "cypherlens": "REJECT",
+        "cyspider": "ERROR"
+      }
+    },
+    "s20_source": "studies/native_cypherturn_stress/native_equivalence_stress/frozen/20261030T143804Z_results/s20_verdicts.csv",
+    "s20_sha256": "b1a0c504849832329a0dca86552ccea785098ad0b23d124d02a381a282ae069f",
+    "s1_source": "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s1_results.csv",
+    "s1_sha256": "ad5590ce25e47ec9914b0d840c83dd4bed234686d5f4ec575c60aacde2216fc4"
+  },
+  "rubric": "study S23 pre-specified replication criterion (s23-replication-v1). Pure functions; frozen BEFORE any execution.\n\nReference patterns are read from FROZEN files only:\n  study S20 verdicts  studies/native_cypherturn_stress/native_equivalence_stress/frozen/20261030T143804Z_results/s20_verdicts.csv\n  study S1 (S1) prior studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s1_results.csv  (new classes only)\n\nPer scorer and class, a verdict list is summarised as a CATEGORY: ACCEPT (all 1), REJECT (all 0), ERROR (all\nexceptions), MIXED (anything else).\n\nRubric for a class shared with study S20 (R1<-D1, R2<-D2, R3<-D3, R4<-D4, C0<-D6):\n  NOT_TESTABLE           n_admitted < MIN_N (5)\n  EXACT_REPLICATION      all 7 primary scorers have the same category as in study S20\n  PARTIAL_REPLICATION    1 or 2 scorers differ, AND the class is still split (not all 7 scorers in one category) when\n                         study S20 was split\n  NO_REPLICATION         otherwise (>= 3 scorers differ, or a study S20 split disappears)\nR8 (natural NULLs) vs study S20 D5 (appended-column fixture) is compared at MECHANISM level, as frozen from the\nstudy S20 diagnosis: GQLBench rejects a case iff some result column holds a NULL together with numeric non-NULL values\n(pandas materialisation -> NaN); the other six accept every case. A scorer \"matches\" iff each of its verdicts equals\nthat prediction; the same thresholds (0 / 1-2 / >= 3 mismatching scorers) give EXACT / PARTIAL / NO.\nNew classes (R5, R6, R7) have no study S20 pattern: status NEW_EVIDENCE. Secondary, they are compared with the frozen\nS1 policy profile under the same thresholds: CONSISTENT_WITH_S1 / PARTIALLY_CONSISTENT_WITH_S1 / INCONSISTENT_WITH_S1.\nThe S1 prior for R6 uses the D06 fixtures whose prediction text has no ORDER BY (S1-030, S1-031, S1-033).\n\nStudy-level decision (pre-declared operationalisation of the A-E labels; E is reserved for integrity failure):\n  T   = testable classes among the S20-shared evidence classes {R1, R2, R3, R4, R8} (C0 is calibration only)\n  Rep = classes in T that are EXACT or PARTIAL; Ex = classes in T that are EXACT\n  D_INSUFFICIENT_CLEAN_CASES   if |T| < 3\n  A_STRONG                     if Rep == |T| and Ex >= 2 and at least one of R5/R6/R7 is testable\n  C_BENCHMARK_SPECIFIC         if Rep < |T| / 2\n  B_PARTIAL                    otherwise\n",
+  "class_mapping": {
+    "shared_with_s20": {
+      "R1_numeric_type": "D1_numeric_type",
+      "R2_float_tolerance": "D2_float_tolerance",
+      "R3_row_order": "D3_row_order",
+      "R4_duplicates": "D4_duplicates",
+      "C0_column_name_control": "D6_column_name_control"
+    },
+    "mechanism_level": {
+      "R8_null_natural": "D5_null_controlled"
+    },
+    "new_classes_s1_prior_case_ids": {
+      "R5_column_order": [
+        "S1-019",
+        "S1-020",
+        "S1-021",
+        "S1-022",
+        "S1-023",
+        "S1-024"
+      ],
+      "R6_reference_order": [
+        "S1-030",
+        "S1-031",
+        "S1-033"
+      ],
+      "R7_list_order": [
+        "S1-098",
+        "S1-099",
+        "S1-100"
+      ]
+    }
+  },
+  "statistics": "descriptive only: exact counts, per scorer x class accept/reject with Wilson 95% CI, per-graph counts; classes never pooled; no significance test; no population prevalence claim",
+  "overlap_report_sha256": "6a125eff3f57dade0f69c2791db8b1d0baf902825371824a704b16f9fa383f66"
+}

@@ -1,0 +1,42 @@
+{
+  "suite_id": "audit-s1-v1",
+  "n_cases": 121,
+  "expected_counts": {
+    "EQUIV": 57,
+    "NONEQUIV": 49,
+    "INTENT_DEPENDENT": 15
+  },
+  "dimensions": {
+    "D01": 6,
+    "D02": 6,
+    "D03": 6,
+    "D04": 6,
+    "D05": 5,
+    "D06": 4,
+    "D07": 4,
+    "D08": 2,
+    "D09": 7,
+    "D10": 5,
+    "D11": 5,
+    "D12": 4,
+    "D13": 7,
+    "D14": 4,
+    "D15": 4,
+    "D16": 2,
+    "D17": 6,
+    "D18": 4,
+    "D19": 4,
+    "D20": 4,
+    "D21": 7,
+    "D22": 4,
+    "D23": 3,
+    "D24": 3,
+    "D25": 3,
+    "D26": 2,
+    "D27": 2,
+    "D28": 2
+  },
+  "s1_cases_sha256": "80d0fd3fa181470fb5d59c0fbeea9cf748e1cd2bcc3ade61e4387118a17d5b47",
+  "builder_sha256": "58cc1d8811da61c8519505ccacca38867a7d2fe9d7369ad45b40c789cd223579",
+  "status": "FROZEN BEFORE ANY SCORER RUN"
+}

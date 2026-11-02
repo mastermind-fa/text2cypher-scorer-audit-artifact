@@ -1,0 +1,16 @@
+{
+ "runner": "<project-root>/studies/corpus_audit/audit_analysis/code/run_experiment_v1_1.py",
+ "runner_sha256": "6ad22b285c46a16c2a0216403d3b2ebc1a9463f471278327ca626022d2bb0e74",
+ "input_hashes_sha256": "ef4909ad11f8af5e9f8dc8159679d8e63fb85f215ad4dcf4ea47e9d3d8a76d44",
+ "runs": [
+  "{\"scorer\": \"cypherturn\", \"set\": \"s20\", \"n\": 62, \"seconds\": 0.006, \"adapter_sha256\": \"bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176\", \"runner\": \"v1.1\", \"case_timeout_s\": 120}",
+  "{\"scorer\": \"cypherbench\", \"set\": \"s20\", \"n\": 62, \"seconds\": 0.01, \"adapter_sha256\": \"bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176\", \"runner\": \"v1.1\", \"case_timeout_s\": 120}",
+  "{\"scorer\": \"gqlbench\", \"set\": \"s20\", \"n\": 62, \"seconds\": 0.03, \"adapter_sha256\": \"bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176\", \"runner\": \"v1.1\", \"case_timeout_s\": 120}",
+  "{\"scorer\": \"tugraph\", \"set\": \"s20\", \"n\": 62, \"seconds\": 0.008, \"adapter_sha256\": \"bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176\", \"runner\": \"v1.1\", \"case_timeout_s\": 120}",
+  "{\"scorer\": \"pipecypher\", \"set\": \"s20\", \"n\": 62, \"seconds\": 0.007, \"adapter_sha256\": \"bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176\", \"runner\": \"v1.1\", \"case_timeout_s\": 120}",
+  "{\"scorer\": \"cypherlens\", \"set\": \"s20\", \"n\": 62, \"seconds\": 0.012, \"adapter_sha256\": \"bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176\", \"runner\": \"v1.1\", \"case_timeout_s\": 120}",
+  "{\"scorer\": \"cyspider\", \"set\": \"s20\", \"n\": 62, \"seconds\": 0.007, \"adapter_sha256\": \"bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176\", \"runner\": \"v1.1\", \"case_timeout_s\": 120}",
+  "{\"scorer\": \"neo4jlabs\", \"set\": \"s20\", \"n\": 62, \"seconds\": 0.01, \"adapter_sha256\": \"bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176\", \"runner\": \"v1.1\", \"case_timeout_s\": 120}",
+  "{\"scorer\": \"pc_v1_1\", \"set\": \"s20\", \"n\": 62, \"seconds\": 0.019, \"adapter_sha256\": \"bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176\", \"runner\": \"v1.1\", \"case_timeout_s\": 120}"
+ ]
+}

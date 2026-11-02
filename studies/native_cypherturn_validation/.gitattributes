@@ -1,0 +1,2 @@
+# Store frozen S18 artifacts byte-exactly (no EOL normalisation) so recorded SHA-256 hashes hold on checkout.
+* -text

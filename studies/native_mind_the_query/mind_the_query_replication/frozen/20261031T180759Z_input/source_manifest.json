@@ -1,0 +1,39 @@
+{
+  "benchmark": "Mind the Query (Chauhan et al., EMNLP 2025 Industry Track, pp. 1890-1905)",
+  "repository": "https://github.com/endeavorXx/Mind-the-Query",
+  "commit": "ec4054a1b7df7e6310efa95c56bb6e7cebc4d161",
+  "licence_file": "LICENSE (Apache License 2.0) at the pinned commit; covers repository content. Underlying graph data come from neo4j-graph-examples repositories, which carry no licence file (GitHub API, 2026-10-31): dump licence UNVERIFIED.",
+  "split": "Train_Test_Splits/Manual/<graph>/test (sequential 70/30 split per split_statistics.txt)",
+  "eligibility": "logical [0/1] == '1' and result [0/1] != '0' where present",
+  "graphs_to_dumps": {
+    "bloom": "bloom-50.dump",
+    "covid": "contact-tracing-50.dump",
+    "er": "entity-resolution-50.dump",
+    "healthcare": "healthcare-analytics-50.dump",
+    "wwc": "wwc2019-50.dump"
+  },
+  "dump_sha256": {
+    "bloom": "926859eacf53cc79d9a0bcd7e516731bfd1310ba9d891b0ef56d8f5e6c8819e5",
+    "covid": "d022c3a6cf4a3fa8516688dc24d10b0e668f942eab38bc82aca3d62a668e939e",
+    "er": "d9e8d19cb4bb44126c9fce25f6e4ccc4d93fb8d91effbdd56a0c8b52c72d669e",
+    "healthcare": "fed00ade454d16e7c360adb95f75fe104085bafaced84b6e52847db42204a57c",
+    "wwc": "67879a7bca5c27b786ce40a29481419f0e0522787265e24199d47d92fcec2dee"
+  },
+  "manual_test_files_sha256": {
+    "Train_Test_Splits/Manual/bloom/test/Complex_Aggregation_test.json": "4fb153b05774499c0aad61dcc18bed4a4d916395ad5c496f59c6e00ef5ea0526",
+    "Train_Test_Splits/Manual/bloom/test/Complex_Retrieval_test.json": "00f46d0a258faa2a4252d75de2bb3cd7defd82c7db91480189140ba8962b7bbd",
+    "Train_Test_Splits/Manual/covid/test/Complex_Aggregation_test.json": "06568c249a2dcb08701740b1946ffa304bc15124cfd5d977f5c57992e7a04229",
+    "Train_Test_Splits/Manual/covid/test/Complex_Retrieval_test.json": "ba94097694e3e37d23396bee83870db4117771e992dd7916c9ff1771d8182833",
+    "Train_Test_Splits/Manual/er/test/Complex_Aggregation_test.json": "68f4d5fa24f5e03d7df6ad7482fb4b462206d403d3e922ddc2a3e44bbfc94d0e",
+    "Train_Test_Splits/Manual/er/test/Complex_Retrieval_test.json": "8d34173899c2f5c0ad892fd9aea67ab2ce810b4f264cf90510558715831d1024",
+    "Train_Test_Splits/Manual/healthcare/test/Complex_Aggregation_test.json": "9c1231e298c6e3c79e349d4a098232c2964060baf52b26d91983dfc9b7483af3",
+    "Train_Test_Splits/Manual/healthcare/test/Complex_Retrieval_test.json": "84c095b1ffefe52161b951d8703c11bd1f1568fbe99f353ea4718cc7f727cf7a",
+    "Train_Test_Splits/Manual/wwc/test/Complex_Aggregation_test.json": "280854f68117feb06e70131423c0a028f238cc42f85a0a0bb10e3d460dcaa8aa",
+    "Train_Test_Splits/Manual/wwc/test/Complex_Retrieval_test.json": "1b690b967d07321402416c59fe66b196e61bb5ee92ea7e028cd7cf94f5f390db"
+  },
+  "db_schema_sha256": "4a6f2c81c2f2152427c48eecb6914b6651df719ef7b3de7550297fee7e63e54c",
+  "license_sha256": "87eac3374769236e9728c75579a962a9fe98d1e777a6145998bffe27c32bd677",
+  "candidates_file_sha256": "0323b76ac805bb734e533029ad1ce2a7f765de2802f2ba02be93bc73ead9e294",
+  "preregistration_dir": "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T175346Z_preregistration",
+  "preregistration_hashes_sha256": "ad3040df5903bb12980f6ace2e11b19d7a519b38012aa70c9d66315c0e9a8c6c"
+}

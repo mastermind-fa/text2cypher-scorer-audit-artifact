@@ -1,0 +1,176 @@
+{
+  "bloom": {
+    "graph": "bloom",
+    "neo4j_server": "Neo4j/5.15.0",
+    "neo4j_python_driver": "5.26.0",
+    "dump_file": "bloom-50.dump",
+    "dump_sha256": "926859eacf53cc79d9a0bcd7e516731bfd1310ba9d891b0ef56d8f5e6c8819e5",
+    "fingerprint": {
+      "nodes": 30960,
+      "relationships": 29731,
+      "sha256": "7a2cbdff50958a87b90b78320dbfcbcaf44e49e3c03be142d1b5eaf17ca582a6",
+      "label_counts": {
+        "AccountHolder": 4060,
+        "Address": 5040,
+        "BankAccount": 5060,
+        "BankCard": 340,
+        "CreditCard": 3050,
+        "DeliveryAddress": 240,
+        "FinancialInstitute": 75,
+        "Flagged": 1,
+        "IP": 240,
+        "Login": 200,
+        "MoneyTransfer": 1000,
+        "PhoneNumber": 5030,
+        "Purchase": 500,
+        "SSN": 4030,
+        "Shop": 3,
+        "State": 50,
+        "UnsecuredLoan": 2040,
+        "_Bloom_Perspective_": 2
+      },
+      "rel_type_counts": {
+        "DELIVERED_AT": 500,
+        "FOR_SHOP": 200,
+        "FROM": 5060,
+        "FROM_IP": 500,
+        "HAS_ADDRESS": 4060,
+        "HAS_BANKACCOUNT": 4060,
+        "HAS_CREDITCARD": 2050,
+        "HAS_PHONENUMBER": 4061,
+        "HAS_SSN": 4060,
+        "HAS_UNSECUREDLOAN": 1040,
+        "LOCATED_IN": 240,
+        "SEND": 2000,
+        "WITH": 1000,
+        "WITH_CARD": 500,
+        "WITH_LOGIN": 400
+      }
+    },
+    "fingerprint_after_queries_sha256": "7a2cbdff50958a87b90b78320dbfcbcaf44e49e3c03be142d1b5eaf17ca582a6",
+    "unchanged": true
+  },
+  "covid": {
+    "graph": "covid",
+    "neo4j_server": "Neo4j/5.15.0",
+    "neo4j_python_driver": "5.26.0",
+    "dump_file": "contact-tracing-50.dump",
+    "dump_sha256": "d022c3a6cf4a3fa8516688dc24d10b0e668f942eab38bc82aca3d62a668e939e",
+    "fingerprint": {
+      "nodes": 5615,
+      "relationships": 15130,
+      "sha256": "c121c08b2192963473aa89632ad9326a954a91979475a24f40143b179d91c9c8",
+      "label_counts": {
+        "Continent": 1,
+        "Country": 1,
+        "Person": 501,
+        "Place": 101,
+        "Region": 1,
+        "Visit": 5009,
+        "_Bloom_Perspective_": 1
+      },
+      "rel_type_counts": {
+        "LOCATED_AT": 5009,
+        "PART_OF": 103,
+        "PERFORMS_VISIT": 5009,
+        "VISITS": 5009
+      }
+    },
+    "fingerprint_after_queries_sha256": "c121c08b2192963473aa89632ad9326a954a91979475a24f40143b179d91c9c8",
+    "unchanged": true
+  },
+  "er": {
+    "graph": "er",
+    "neo4j_server": "Neo4j/5.15.0",
+    "neo4j_python_driver": "5.26.0",
+    "dump_file": "entity-resolution-50.dump",
+    "dump_sha256": "d9e8d19cb4bb44126c9fce25f6e4ccc4d93fb8d91effbdd56a0c8b52c72d669e",
+    "fingerprint": {
+      "nodes": 1237,
+      "relationships": 1819,
+      "sha256": "22eacf8decc03692a102d59badb7efa7a79c16758f67d300363d88854f4045c8",
+      "label_counts": {
+        "Genre": 10,
+        "IpAddress": 407,
+        "Movie": 320,
+        "User": 500
+      },
+      "rel_type_counts": {
+        "HAS": 320,
+        "USES": 500,
+        "WATCHED": 999
+      }
+    },
+    "fingerprint_after_queries_sha256": "22eacf8decc03692a102d59badb7efa7a79c16758f67d300363d88854f4045c8",
+    "unchanged": true
+  },
+  "healthcare": {
+    "graph": "healthcare",
+    "neo4j_server": "Neo4j/5.15.0",
+    "neo4j_python_driver": "5.26.0",
+    "dump_file": "healthcare-analytics-50.dump",
+    "dump_sha256": "fed00ade454d16e7c360adb95f75fe104085bafaced84b6e52847db42204a57c",
+    "fingerprint": {
+      "nodes": 11381,
+      "relationships": 61453,
+      "sha256": "8ab99580a332c8028ed3618bb9d29f0b0822adf75d7ebf75eb258438adc37837",
+      "label_counts": {
+        "AgeGroup": 5,
+        "Case": 4307,
+        "Drug": 2500,
+        "Manufacturer": 136,
+        "Outcome": 6,
+        "Reaction": 2701,
+        "ReportSource": 5,
+        "Therapy": 1721
+      },
+      "rel_type_counts": {
+        "FALLS_UNDER": 4307,
+        "HAS_REACTION": 21069,
+        "IS_CONCOMITANT": 8393,
+        "IS_INTERACTING": 1,
+        "IS_PRIMARY_SUSPECT": 3830,
+        "IS_SECONDARY_SUSPECT": 3616,
+        "PRESCRIBED": 5441,
+        "RECEIVED": 1721,
+        "REGISTERED": 4307,
+        "REPORTED_BY": 4307,
+        "RESULTED_IN": 4461
+      }
+    },
+    "fingerprint_after_queries_sha256": "8ab99580a332c8028ed3618bb9d29f0b0822adf75d7ebf75eb258438adc37837",
+    "unchanged": true
+  },
+  "wwc": {
+    "graph": "wwc",
+    "neo4j_server": "Neo4j/5.15.0",
+    "neo4j_python_driver": "5.26.0",
+    "dump_file": "wwc2019-50.dump",
+    "dump_sha256": "67879a7bca5c27b786ce40a29481419f0e0522787265e24199d47d92fcec2dee",
+    "fingerprint": {
+      "nodes": 2486,
+      "relationships": 14799,
+      "sha256": "cb2ec9277d3979cea1af9f707f83d057e570a468045e4d8c896dd9f0eafb3d3f",
+      "label_counts": {
+        "Match": 284,
+        "Person": 2022,
+        "Squad": 136,
+        "Team": 36,
+        "Tournament": 8
+      },
+      "rel_type_counts": {
+        "COACH_FOR": 140,
+        "FOR": 136,
+        "IN_SQUAD": 2880,
+        "IN_TOURNAMENT": 284,
+        "NAMED": 136,
+        "PARTICIPATED_IN": 136,
+        "PLAYED_IN": 8252,
+        "REPRESENTS": 1928,
+        "SCORED_GOAL": 907
+      }
+    },
+    "fingerprint_after_queries_sha256": "cb2ec9277d3979cea1af9f707f83d057e570a468045e4d8c896dd9f0eafb3d3f",
+    "unchanged": true
+  }
+}

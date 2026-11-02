@@ -1,0 +1,250 @@
+{
+ "population": {
+  "questions": 138,
+  "units": 276,
+  "scored": {
+   "qwen3-4b": 82,
+   "phi3.5-mini-instruct": 76
+  }
+ },
+ "primary": {
+  "cypherturn": {
+   "scorer": "cypherturn",
+   "qwen3-4b_correct": 0,
+   "qwen3-4b_ex": 0.0,
+   "qwen3-4b_errors": 0,
+   "phi3.5-mini-instruct_correct": 0,
+   "phi3.5-mini-instruct_ex": 0.0,
+   "phi3.5-mini-instruct_errors": 0,
+   "gap_qwen_minus_phi_pp": 0.0,
+   "higher": "tie",
+   "both": 0,
+   "only_qwen": 0,
+   "only_phi": 0,
+   "neither": 138
+  },
+  "cypherbench": {
+   "scorer": "cypherbench",
+   "qwen3-4b_correct": 2,
+   "qwen3-4b_ex": 0.0145,
+   "qwen3-4b_errors": 0,
+   "phi3.5-mini-instruct_correct": 3,
+   "phi3.5-mini-instruct_ex": 0.0217,
+   "phi3.5-mini-instruct_errors": 0,
+   "gap_qwen_minus_phi_pp": -0.72,
+   "higher": "phi3.5-mini-instruct",
+   "both": 0,
+   "only_qwen": 2,
+   "only_phi": 3,
+   "neither": 133
+  },
+  "gqlbench": {
+   "scorer": "gqlbench",
+   "qwen3-4b_correct": 2,
+   "qwen3-4b_ex": 0.0145,
+   "qwen3-4b_errors": 0,
+   "phi3.5-mini-instruct_correct": 3,
+   "phi3.5-mini-instruct_ex": 0.0217,
+   "phi3.5-mini-instruct_errors": 0,
+   "gap_qwen_minus_phi_pp": -0.72,
+   "higher": "phi3.5-mini-instruct",
+   "both": 0,
+   "only_qwen": 2,
+   "only_phi": 3,
+   "neither": 133
+  },
+  "tugraph": {
+   "scorer": "tugraph",
+   "qwen3-4b_correct": 2,
+   "qwen3-4b_ex": 0.0145,
+   "qwen3-4b_errors": 0,
+   "phi3.5-mini-instruct_correct": 3,
+   "phi3.5-mini-instruct_ex": 0.0217,
+   "phi3.5-mini-instruct_errors": 0,
+   "gap_qwen_minus_phi_pp": -0.72,
+   "higher": "phi3.5-mini-instruct",
+   "both": 0,
+   "only_qwen": 2,
+   "only_phi": 3,
+   "neither": 133
+  },
+  "pipecypher": {
+   "scorer": "pipecypher",
+   "qwen3-4b_correct": 2,
+   "qwen3-4b_ex": 0.0145,
+   "qwen3-4b_errors": 0,
+   "phi3.5-mini-instruct_correct": 3,
+   "phi3.5-mini-instruct_ex": 0.0217,
+   "phi3.5-mini-instruct_errors": 0,
+   "gap_qwen_minus_phi_pp": -0.72,
+   "higher": "phi3.5-mini-instruct",
+   "both": 0,
+   "only_qwen": 2,
+   "only_phi": 3,
+   "neither": 133
+  },
+  "cypherlens": {
+   "scorer": "cypherlens",
+   "qwen3-4b_correct": 14,
+   "qwen3-4b_ex": 0.1014,
+   "qwen3-4b_errors": 0,
+   "phi3.5-mini-instruct_correct": 2,
+   "phi3.5-mini-instruct_ex": 0.0145,
+   "phi3.5-mini-instruct_errors": 0,
+   "gap_qwen_minus_phi_pp": 8.7,
+   "higher": "qwen3-4b",
+   "both": 1,
+   "only_qwen": 13,
+   "only_phi": 1,
+   "neither": 123
+  },
+  "cyspider": {
+   "scorer": "cyspider",
+   "qwen3-4b_correct": 2,
+   "qwen3-4b_ex": 0.0145,
+   "qwen3-4b_errors": 1,
+   "phi3.5-mini-instruct_correct": 3,
+   "phi3.5-mini-instruct_ex": 0.0217,
+   "phi3.5-mini-instruct_errors": 3,
+   "gap_qwen_minus_phi_pp": -0.72,
+   "higher": "phi3.5-mini-instruct",
+   "both": 0,
+   "only_qwen": 2,
+   "only_phi": 3,
+   "neither": 133
+  },
+  "neo4jlabs": {
+   "scorer": "neo4jlabs",
+   "qwen3-4b_correct": 2,
+   "qwen3-4b_ex": 0.0145,
+   "qwen3-4b_errors": 0,
+   "phi3.5-mini-instruct_correct": 3,
+   "phi3.5-mini-instruct_ex": 0.0217,
+   "phi3.5-mini-instruct_errors": 0,
+   "gap_qwen_minus_phi_pp": -0.72,
+   "higher": "phi3.5-mini-instruct",
+   "both": 0,
+   "only_qwen": 2,
+   "only_phi": 3,
+   "neither": 133
+  },
+  "pc_v1_1": {
+   "scorer": "pc_v1_1",
+   "qwen3-4b_correct": 2,
+   "qwen3-4b_ex": 0.0145,
+   "qwen3-4b_errors": 0,
+   "phi3.5-mini-instruct_correct": 3,
+   "phi3.5-mini-instruct_ex": 0.0217,
+   "phi3.5-mini-instruct_errors": 0,
+   "gap_qwen_minus_phi_pp": -0.72,
+   "higher": "phi3.5-mini-instruct",
+   "both": 0,
+   "only_qwen": 2,
+   "only_phi": 3,
+   "neither": 133
+  }
+ },
+ "s1_errors_excluded": {
+  "cypherturn": {
+   "qwen3-4b": 0.0,
+   "phi3.5-mini-instruct": 0.0
+  },
+  "cypherbench": {
+   "qwen3-4b": 0.0145,
+   "phi3.5-mini-instruct": 0.0217
+  },
+  "gqlbench": {
+   "qwen3-4b": 0.0145,
+   "phi3.5-mini-instruct": 0.0217
+  },
+  "tugraph": {
+   "qwen3-4b": 0.0145,
+   "phi3.5-mini-instruct": 0.0217
+  },
+  "pipecypher": {
+   "qwen3-4b": 0.0145,
+   "phi3.5-mini-instruct": 0.0217
+  },
+  "cypherlens": {
+   "qwen3-4b": 0.1014,
+   "phi3.5-mini-instruct": 0.0145
+  },
+  "cyspider": {
+   "qwen3-4b": 0.0146,
+   "phi3.5-mini-instruct": 0.0222
+  },
+  "neo4jlabs": {
+   "qwen3-4b": 0.0145,
+   "phi3.5-mini-instruct": 0.0217
+  },
+  "pc_v1_1": {
+   "qwen3-4b": 0.0145,
+   "phi3.5-mini-instruct": 0.0217
+  }
+ },
+ "range_across_primary": {
+  "qwen3-4b": {
+   "min": 0,
+   "max": 14,
+   "range_pp": 10.14,
+   "min_scorer": [
+    "cypherturn"
+   ],
+   "max_scorer": [
+    "cypherlens"
+   ]
+  },
+  "phi3.5-mini-instruct": {
+   "min": 0,
+   "max": 3,
+   "range_pp": 2.17,
+   "min_scorer": [
+    "cypherturn"
+   ],
+   "max_scorer": [
+    "cypherbench",
+    "gqlbench",
+    "tugraph",
+    "pipecypher",
+    "cyspider"
+   ]
+  }
+ },
+ "ranking": {
+  "all_primary": {
+   "per_scorer": {
+    "cypherturn": "tie",
+    "cypherbench": "phi3.5-mini-instruct",
+    "gqlbench": "phi3.5-mini-instruct",
+    "tugraph": "phi3.5-mini-instruct",
+    "pipecypher": "phi3.5-mini-instruct",
+    "cypherlens": "qwen3-4b",
+    "cyspider": "phi3.5-mini-instruct"
+   },
+   "ranking_changes": true
+  },
+  "without_cypherlens": {
+   "per_scorer": {
+    "cypherturn": "tie",
+    "cypherbench": "phi3.5-mini-instruct",
+    "gqlbench": "phi3.5-mini-instruct",
+    "tugraph": "phi3.5-mini-instruct",
+    "pipecypher": "phi3.5-mini-instruct",
+    "cyspider": "phi3.5-mini-instruct"
+   },
+   "ranking_changes": true
+  },
+  "sensitivity_errors_excluded": {
+   "per_scorer": {
+    "cypherturn": "tie",
+    "cypherbench": "phi3.5-mini-instruct",
+    "gqlbench": "phi3.5-mini-instruct",
+    "tugraph": "phi3.5-mini-instruct",
+    "pipecypher": "phi3.5-mini-instruct",
+    "cypherlens": "qwen3-4b",
+    "cyspider": "phi3.5-mini-instruct"
+   },
+   "ranking_changes": true
+  }
+ }
+}

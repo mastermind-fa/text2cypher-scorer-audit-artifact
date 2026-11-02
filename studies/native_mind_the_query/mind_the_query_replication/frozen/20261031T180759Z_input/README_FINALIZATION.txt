@@ -1,0 +1,1 @@
+study S23 cross-benchmark replication on Mind the Query: INPUT freeze 20261031T180759Z. Cases admitted by the execution oracle on an isolated throwaway Neo4j (Neo4j/5.15.0). No scorer has seen these cases. Replication criterion frozen earlier in studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T175346Z_preregistration. Do not edit.
