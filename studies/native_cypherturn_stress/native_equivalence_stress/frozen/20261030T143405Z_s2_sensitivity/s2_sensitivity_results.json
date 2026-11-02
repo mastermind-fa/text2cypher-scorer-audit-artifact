@@ -1,0 +1,314 @@
+{
+ "counts": {
+  "all": 158,
+  "empty_predictions": 117,
+  "nonempty_predictions": 41,
+  "complete_seven_verdicts": 154,
+  "with_scorer_error": 4,
+  "scorer_errors": {
+   "cypherturn": 0,
+   "cypherbench": 0,
+   "gqlbench": 0,
+   "tugraph": 0,
+   "pipecypher": 0,
+   "cypherlens": 0,
+   "cyspider": 4
+  },
+  "nonempty_with_scorer_error": 4
+ },
+ "primary_informative_subset": {
+  "N": 37,
+  "unanimous": 24,
+  "non_unanimous": 13,
+  "non_unanimous_fraction": 0.35135135135135137,
+  "non_unanimous_wilson95": [
+   0.2182560713392713,
+   0.5124097687744916
+  ],
+  "unanimous_accept": 0,
+  "unanimous_reject": 24,
+  "accepted_by_at_least_one": 13,
+  "rejected_by_at_least_one": 37,
+  "per_scorer_accept": {
+   "cypherturn": 0,
+   "cypherbench": 5,
+   "gqlbench": 5,
+   "tugraph": 5,
+   "pipecypher": 5,
+   "cypherlens": 10,
+   "cyspider": 5
+  },
+  "per_scorer_accept_rate": {
+   "cypherturn": 0.0,
+   "cypherbench": 0.13513513513513514,
+   "gqlbench": 0.13513513513513514,
+   "tugraph": 0.13513513513513514,
+   "pipecypher": 0.13513513513513514,
+   "cypherlens": 0.2702702702702703,
+   "cyspider": 0.13513513513513514
+  },
+  "max_scorer_induced_acceptance_difference": 0.2702702702702703,
+  "max_scorer_induced_acceptance_difference_excl_cypherlens": 0.13513513513513514,
+  "majority_accept": 5,
+  "disagreements_with_majority": {
+   "cypherturn": 5,
+   "cypherbench": 0,
+   "gqlbench": 0,
+   "tugraph": 0,
+   "pipecypher": 0,
+   "cypherlens": 11,
+   "cyspider": 0
+  },
+  "sole_accept": {
+   "cypherturn": 0,
+   "cypherbench": 0,
+   "gqlbench": 0,
+   "tugraph": 0,
+   "pipecypher": 0,
+   "cypherlens": 8,
+   "cyspider": 0
+  },
+  "sole_reject": {
+   "cypherturn": 2,
+   "cypherbench": 0,
+   "gqlbench": 0,
+   "tugraph": 0,
+   "pipecypher": 0,
+   "cypherlens": 0,
+   "cyspider": 0
+  },
+  "non_unanimous_excl_cypherlens": 5
+ },
+ "context_all_complete": {
+  "N": 154,
+  "unanimous": 135,
+  "non_unanimous": 19,
+  "non_unanimous_fraction": 0.12337662337662338,
+  "non_unanimous_wilson95": [
+   0.08042521785381349,
+   0.18466013509027893
+  ],
+  "unanimous_accept": 0,
+  "unanimous_reject": 135,
+  "accepted_by_at_least_one": 19,
+  "rejected_by_at_least_one": 154,
+  "per_scorer_accept": {
+   "cypherturn": 0,
+   "cypherbench": 5,
+   "gqlbench": 5,
+   "tugraph": 5,
+   "pipecypher": 5,
+   "cypherlens": 16,
+   "cyspider": 5
+  },
+  "per_scorer_accept_rate": {
+   "cypherturn": 0.0,
+   "cypherbench": 0.032467532467532464,
+   "gqlbench": 0.032467532467532464,
+   "tugraph": 0.032467532467532464,
+   "pipecypher": 0.032467532467532464,
+   "cypherlens": 0.1038961038961039,
+   "cyspider": 0.032467532467532464
+  },
+  "max_scorer_induced_acceptance_difference": 0.1038961038961039,
+  "max_scorer_induced_acceptance_difference_excl_cypherlens": 0.032467532467532464,
+  "majority_accept": 5,
+  "disagreements_with_majority": {
+   "cypherturn": 5,
+   "cypherbench": 0,
+   "gqlbench": 0,
+   "tugraph": 0,
+   "pipecypher": 0,
+   "cypherlens": 17,
+   "cyspider": 0
+  },
+  "sole_accept": {
+   "cypherturn": 0,
+   "cypherbench": 0,
+   "gqlbench": 0,
+   "tugraph": 0,
+   "pipecypher": 0,
+   "cypherlens": 14,
+   "cyspider": 0
+  },
+  "sole_reject": {
+   "cypherturn": 2,
+   "cypherbench": 0,
+   "gqlbench": 0,
+   "tugraph": 0,
+   "pipecypher": 0,
+   "cypherlens": 0,
+   "cyspider": 0
+  },
+  "non_unanimous_excl_cypherlens": 5
+ },
+ "informative_case_ids": [
+  "S2-phi3.5-mini-instruct|Q0637186e0c5f",
+  "S2-phi3.5-mini-instruct|Q36bc1c7b4097",
+  "S2-phi3.5-mini-instruct|Q3e5eb16e7af1",
+  "S2-phi3.5-mini-instruct|Q4c402b9b95c8",
+  "S2-phi3.5-mini-instruct|Q6480cc7ed87d",
+  "S2-phi3.5-mini-instruct|Q65eb4f30417f",
+  "S2-phi3.5-mini-instruct|Q8190b2fee338",
+  "S2-phi3.5-mini-instruct|Q91f9d2869cdf",
+  "S2-phi3.5-mini-instruct|Qa7c98aea8691",
+  "S2-phi3.5-mini-instruct|Qad94c340a40e",
+  "S2-phi3.5-mini-instruct|Qc8cc12bff4b5",
+  "S2-phi3.5-mini-instruct|Qcf3658530afa",
+  "S2-phi3.5-mini-instruct|Qe6d103245e02",
+  "S2-qwen3-4b|Q0637186e0c5f",
+  "S2-qwen3-4b|Q097085709526",
+  "S2-qwen3-4b|Q1280f84d36d3",
+  "S2-qwen3-4b|Q14d5277d76d4",
+  "S2-qwen3-4b|Q22d6e88ecff6",
+  "S2-qwen3-4b|Q36bc1c7b4097",
+  "S2-qwen3-4b|Q3d42f6150356",
+  "S2-qwen3-4b|Q3e5e7eae15ce",
+  "S2-qwen3-4b|Q3e5eb16e7af1",
+  "S2-qwen3-4b|Q4c402b9b95c8",
+  "S2-qwen3-4b|Q4cf4038c480a",
+  "S2-qwen3-4b|Q5d10c7c795ae",
+  "S2-qwen3-4b|Q686e3b522d98",
+  "S2-qwen3-4b|Q724e45601c3f",
+  "S2-qwen3-4b|Q8190b2fee338",
+  "S2-qwen3-4b|Q872e282645c1",
+  "S2-qwen3-4b|Q91f9d2869cdf",
+  "S2-qwen3-4b|Q9e19690a4be4",
+  "S2-qwen3-4b|Qa6dfed876a21",
+  "S2-qwen3-4b|Qa7c98aea8691",
+  "S2-qwen3-4b|Qb01555143da2",
+  "S2-qwen3-4b|Qbcc4b2ba12c4",
+  "S2-qwen3-4b|Qc85692456c69",
+  "S2-qwen3-4b|Qc9985776bbd8"
+ ],
+ "per_model_informative": {
+  "phi3.5-mini-instruct": {
+   "N": 13,
+   "unanimous": 10,
+   "non_unanimous": 3,
+   "non_unanimous_fraction": 0.23076923076923078,
+   "non_unanimous_wilson95": [
+    0.08179528718498566,
+    0.502563759467275
+   ],
+   "unanimous_accept": 0,
+   "unanimous_reject": 10,
+   "accepted_by_at_least_one": 3,
+   "rejected_by_at_least_one": 13,
+   "per_scorer_accept": {
+    "cypherturn": 0,
+    "cypherbench": 3,
+    "gqlbench": 3,
+    "tugraph": 3,
+    "pipecypher": 3,
+    "cypherlens": 1,
+    "cyspider": 3
+   },
+   "per_scorer_accept_rate": {
+    "cypherturn": 0.0,
+    "cypherbench": 0.23076923076923078,
+    "gqlbench": 0.23076923076923078,
+    "tugraph": 0.23076923076923078,
+    "pipecypher": 0.23076923076923078,
+    "cypherlens": 0.07692307692307693,
+    "cyspider": 0.23076923076923078
+   },
+   "max_scorer_induced_acceptance_difference": 0.23076923076923078,
+   "max_scorer_induced_acceptance_difference_excl_cypherlens": 0.23076923076923078,
+   "majority_accept": 3,
+   "disagreements_with_majority": {
+    "cypherturn": 3,
+    "cypherbench": 0,
+    "gqlbench": 0,
+    "tugraph": 0,
+    "pipecypher": 0,
+    "cypherlens": 2,
+    "cyspider": 0
+   },
+   "sole_accept": {
+    "cypherturn": 0,
+    "cypherbench": 0,
+    "gqlbench": 0,
+    "tugraph": 0,
+    "pipecypher": 0,
+    "cypherlens": 0,
+    "cyspider": 0
+   },
+   "sole_reject": {
+    "cypherturn": 1,
+    "cypherbench": 0,
+    "gqlbench": 0,
+    "tugraph": 0,
+    "pipecypher": 0,
+    "cypherlens": 0,
+    "cyspider": 0
+   },
+   "non_unanimous_excl_cypherlens": 3
+  },
+  "qwen3-4b": {
+   "N": 24,
+   "unanimous": 14,
+   "non_unanimous": 10,
+   "non_unanimous_fraction": 0.4166666666666667,
+   "non_unanimous_wilson95": [
+    0.24467602609811767,
+    0.6116533413477123
+   ],
+   "unanimous_accept": 0,
+   "unanimous_reject": 14,
+   "accepted_by_at_least_one": 10,
+   "rejected_by_at_least_one": 24,
+   "per_scorer_accept": {
+    "cypherturn": 0,
+    "cypherbench": 2,
+    "gqlbench": 2,
+    "tugraph": 2,
+    "pipecypher": 2,
+    "cypherlens": 9,
+    "cyspider": 2
+   },
+   "per_scorer_accept_rate": {
+    "cypherturn": 0.0,
+    "cypherbench": 0.08333333333333333,
+    "gqlbench": 0.08333333333333333,
+    "tugraph": 0.08333333333333333,
+    "pipecypher": 0.08333333333333333,
+    "cypherlens": 0.375,
+    "cyspider": 0.08333333333333333
+   },
+   "max_scorer_induced_acceptance_difference": 0.375,
+   "max_scorer_induced_acceptance_difference_excl_cypherlens": 0.08333333333333333,
+   "majority_accept": 2,
+   "disagreements_with_majority": {
+    "cypherturn": 2,
+    "cypherbench": 0,
+    "gqlbench": 0,
+    "tugraph": 0,
+    "pipecypher": 0,
+    "cypherlens": 9,
+    "cyspider": 0
+   },
+   "sole_accept": {
+    "cypherturn": 0,
+    "cypherbench": 0,
+    "gqlbench": 0,
+    "tugraph": 0,
+    "pipecypher": 0,
+    "cypherlens": 8,
+    "cyspider": 0
+   },
+   "sole_reject": {
+    "cypherturn": 1,
+    "cypherbench": 0,
+    "gqlbench": 0,
+    "tugraph": 0,
+    "pipecypher": 0,
+    "cypherlens": 0,
+    "cyspider": 0
+   },
+   "non_unanimous_excl_cypherlens": 2
+  }
+ },
+ "definition_sha256": "aff8d0e89b1db555c1f2d455a866beb2feb8f7991ccc7d335c458a070bd4d7a0",
+ "computed_utc": "20261030T143411Z"
+}

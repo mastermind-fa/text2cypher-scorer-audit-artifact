@@ -1,0 +1,115 @@
+{
+  "pins": {
+    "cypherturn": {
+      "url": "https://github.com/BarryQ/CypherTurn",
+      "pinned_commit": "9d9528e16c8fe2fb388b9daa4b43dcaa6f229612",
+      "license": "NO LICENSE FILE at commit (licence UNVERIFIED; GitHub API rate-limited)",
+      "local_commit": "9d9528e16c8fe2fb388b9daa4b43dcaa6f229612",
+      "origin": "https://github.com/BarryQ/CypherTurn.git",
+      "dirty": false,
+      "submodules": "",
+      "scorer_sha256": "34c619701b7c52416158734c236a246823d2c21409dd3d88ca2b8e57d4246cd3",
+      "ok": true
+    },
+    "cypherbench": {
+      "url": "https://github.com/megagonlabs/cypherbench",
+      "pinned_commit": "4cc727d29acc78f8cea7c4daa4e2705ddf293b8b",
+      "license": "Apache-2.0 (LICENSE file)",
+      "local_commit": "4cc727d29acc78f8cea7c4daa4e2705ddf293b8b",
+      "origin": "https://github.com/megagonlabs/cypherbench.git",
+      "dirty": false,
+      "submodules": "",
+      "scorer_sha256": "f4f94d8301f208414a3dadf937d065360332c34bd90545feff80239a84cd0884",
+      "ok": true
+    },
+    "gqlbench": {
+      "url": "https://github.com/qxssadf/GQLBench",
+      "pinned_commit": "fb9d5a9be3ccc73ea9fe44c67a9b180eccedfad2",
+      "license": "NO LICENSE FILE at commit (licence UNVERIFIED)",
+      "local_commit": "fb9d5a9be3ccc73ea9fe44c67a9b180eccedfad2",
+      "origin": "https://github.com/qxssadf/GQLBench.git",
+      "dirty": false,
+      "submodules": "",
+      "scorer_sha256": "39604c2786bc5e780eaa53942ce2d5184deb323390c676737879d22e686d7c16",
+      "ok": true
+    },
+    "tugraph_driver": {
+      "url": "https://github.com/TuGraph-family/text2graphquery-driver",
+      "pinned_commit": "ab296fab179e806cd3ad2e659e9f5dc61bd1af3e",
+      "license": "NO LICENSE FILE at commit (licence UNVERIFIED)",
+      "local_commit": "ab296fab179e806cd3ad2e659e9f5dc61bd1af3e",
+      "origin": "https://github.com/TuGraph-family/text2graphquery-driver.git",
+      "dirty": false,
+      "submodules": "",
+      "scorer_sha256": "e7d388caec60deff459fa887919c657270f10585a241efc9a70cd3ae6b4436c8",
+      "ok": true
+    },
+    "pipecypher": {
+      "url": "https://github.com/suraj-ranganath/PIPE-Cypher",
+      "pinned_commit": "0f127208746eb1035d95803348cc5cde36d47d7e",
+      "license": "MIT (pyproject.toml)",
+      "local_commit": "0f127208746eb1035d95803348cc5cde36d47d7e",
+      "origin": "https://github.com/suraj-ranganath/PIPE-Cypher.git",
+      "dirty": false,
+      "submodules": "",
+      "scorer_sha256": "eac67bc8f5afa03abcd43bed71cb20a17f90f51771b61f50f83ab7d3bfddd7ec",
+      "ok": true
+    },
+    "neo4jlabs_text2cypher": {
+      "url": "https://github.com/neo4j-labs/text2cypher",
+      "pinned_commit": "a8ed4d9480bcd4aa1b1a0b2e57aadd996afeaca2",
+      "license": "CC0-1.0 (LICENSE file)",
+      "local_commit": "a8ed4d9480bcd4aa1b1a0b2e57aadd996afeaca2",
+      "origin": "https://github.com/neo4j-labs/text2cypher.git",
+      "dirty": false,
+      "submodules": "",
+      "scorer_sha256": "d11a6f8a962046380fb58d26653ddfc42b132894d1d32e65084ace30b79595cc",
+      "ok": true
+    },
+    "cypherlens": {
+      "url": "https://github.com/YasmeanMohammadi/cypherLenz",
+      "pinned_commit": "ce6481941e78d12fcec974babf453891487ef17a",
+      "license": "NO LICENSE FILE at commit (licence UNVERIFIED)",
+      "local_commit": "ce6481941e78d12fcec974babf453891487ef17a",
+      "origin": "https://github.com/YasmeanMohammadi/cypherLenz.git",
+      "dirty": false,
+      "submodules": "",
+      "scorer_sha256": "37906769e4df15b6182feaf1cf6bcf68fb75702fbcb517b3415acdafa3c13e19",
+      "ok": true
+    },
+    "cyspider": {
+      "url": "https://github.com/22842219/SemanticParser4Graph",
+      "pinned_commit": "6cd5eff4aa37b40a2557d312f70ec0d576d8a6b1",
+      "license": "Apache-2.0 (semantic_parser/LICENSE)",
+      "local_commit": "6cd5eff4aa37b40a2557d312f70ec0d576d8a6b1",
+      "origin": "https://github.com/22842219/SemanticParser4Graph.git",
+      "dirty": false,
+      "submodules": "",
+      "scorer_sha256": "4fcbc5a1db21ac399739e3c05ee1979f38180e7e790b6021f59689628b01688d",
+      "ok": true
+    }
+  },
+  "summary": {
+    "gate": "PASS",
+    "runnable_primary": 7,
+    "threshold": 4,
+    "classes": {
+      "cypherturn": "RUNNABLE_WITH_THIN_ADAPTER",
+      "cypherbench": "RUNNABLE_WITH_THIN_ADAPTER",
+      "gqlbench": "RUNNABLE_WITH_THIN_ADAPTER",
+      "tugraph": "RUNNABLE_WITH_THIN_ADAPTER",
+      "pipecypher": "RUNNABLE_UNCHANGED",
+      "cypherlens": "RUNNABLE_WITH_THIN_ADAPTER",
+      "cyspider": "RUNNABLE_WITH_THIN_ADAPTER",
+      "neo4jlabs": "RUNNABLE_WITH_THIN_ADAPTER",
+      "pc_v1_1": "RUNNABLE_UNCHANGED"
+    }
+  },
+  "s1_used": false,
+  "s2_used": false,
+  "s3_used": false,
+  "smoke_fixture_sha256": "9c4e5f5cbf1f1c5d2193e71bb59cc5a4d3784e63c03342936523359316800cfd",
+  "expected_sha256": "5c051c95b144c9a6ee34f3846ce719f7a1a3051667d2f4d165ce6ad80cc84a42",
+  "s1_cases_sha256_untouched": "80d0fd3fa181470fb5d59c0fbeea9cf748e1cd2bcc3ade61e4387118a17d5b47",
+  "created_utc": "20261029T181645Z"
+}

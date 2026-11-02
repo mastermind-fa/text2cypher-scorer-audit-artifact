@@ -1,0 +1,262 @@
+{
+  "fixture_id": "audit-smoke-v1",
+  "purpose": "INFRASTRUCTURE ONLY: verifies scorer invocation, adapters and determinism. Not S1, not used in any MAIN_AUDIT statistic. Domain (cities/countries) and values are disjoint from S1 (products/vendors).",
+  "cases": [
+    {
+      "case_id": "SMOKE-01",
+      "label": "exact equality",
+      "reference": {
+        "query": "MATCH (c:City) RETURN c.name AS city, c.population AS pop",
+        "columns": [
+          "city",
+          "pop"
+        ],
+        "rows": [
+          [
+            "Oslo",
+            709000
+          ],
+          [
+            "Lima",
+            10092000
+          ]
+        ]
+      },
+      "prediction": {
+        "query": "MATCH (x:City) RETURN x.name AS city, x.population AS pop",
+        "columns": [
+          "city",
+          "pop"
+        ],
+        "rows": [
+          [
+            "Oslo",
+            709000
+          ],
+          [
+            "Lima",
+            10092000
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "SMOKE-02",
+      "label": "one changed cell",
+      "reference": {
+        "query": "MATCH (c:City) RETURN c.name AS city, c.population AS pop",
+        "columns": [
+          "city",
+          "pop"
+        ],
+        "rows": [
+          [
+            "Oslo",
+            709000
+          ],
+          [
+            "Lima",
+            10092000
+          ]
+        ]
+      },
+      "prediction": {
+        "query": "MATCH (x:City) RETURN x.name AS city, x.population AS pop",
+        "columns": [
+          "city",
+          "pop"
+        ],
+        "rows": [
+          [
+            "Oslo",
+            709001
+          ],
+          [
+            "Lima",
+            10092000
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "SMOKE-03",
+      "label": "same rows, different order (no ORDER BY)",
+      "reference": {
+        "query": "MATCH (c:City) RETURN c.name AS city, c.population AS pop",
+        "columns": [
+          "city",
+          "pop"
+        ],
+        "rows": [
+          [
+            "Oslo",
+            709000
+          ],
+          [
+            "Lima",
+            10092000
+          ]
+        ]
+      },
+      "prediction": {
+        "query": "MATCH (x:City) RETURN x.name AS city, x.population AS pop",
+        "columns": [
+          "city",
+          "pop"
+        ],
+        "rows": [
+          [
+            "Lima",
+            10092000
+          ],
+          [
+            "Oslo",
+            709000
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "SMOKE-04",
+      "label": "same values, different column name",
+      "reference": {
+        "query": "MATCH (c:City) RETURN c.name AS city, c.population AS pop",
+        "columns": [
+          "city",
+          "pop"
+        ],
+        "rows": [
+          [
+            "Oslo",
+            709000
+          ],
+          [
+            "Lima",
+            10092000
+          ]
+        ]
+      },
+      "prediction": {
+        "query": "MATCH (x:City) RETURN x.name AS town, x.population AS pop",
+        "columns": [
+          "town",
+          "pop"
+        ],
+        "rows": [
+          [
+            "Oslo",
+            709000
+          ],
+          [
+            "Lima",
+            10092000
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "SMOKE-05",
+      "label": "duplicate-row difference",
+      "reference": {
+        "query": "MATCH (c:City) RETURN c.name AS city, c.population AS pop",
+        "columns": [
+          "city",
+          "pop"
+        ],
+        "rows": [
+          [
+            "Oslo",
+            709000
+          ],
+          [
+            "Lima",
+            10092000
+          ]
+        ]
+      },
+      "prediction": {
+        "query": "MATCH (x:City) RETURN x.name AS city, x.population AS pop",
+        "columns": [
+          "city",
+          "pop"
+        ],
+        "rows": [
+          [
+            "Oslo",
+            709000
+          ],
+          [
+            "Lima",
+            10092000
+          ],
+          [
+            "Oslo",
+            709000
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "SMOKE-06",
+      "label": "four columns permuted (exercises >3-column permutation search; determinism probe)",
+      "reference": {
+        "query": "MATCH (c:City)-[:IN]->(k:Country) RETURN c.name AS city, c.population AS pop, k.name AS country, c.area AS area",
+        "columns": [
+          "city",
+          "pop",
+          "country",
+          "area"
+        ],
+        "rows": [
+          [
+            "Oslo",
+            709000,
+            "Norway",
+            454
+          ],
+          [
+            "Lima",
+            10092000,
+            "Peru",
+            2672
+          ],
+          [
+            "Bergen",
+            291000,
+            "Norway",
+            465
+          ]
+        ]
+      },
+      "prediction": {
+        "query": "MATCH (x:City)-[:IN]->(k:Country) RETURN x.area AS area, k.name AS country, x.name AS city, x.population AS pop",
+        "columns": [
+          "area",
+          "country",
+          "city",
+          "pop"
+        ],
+        "rows": [
+          [
+            454,
+            "Norway",
+            "Oslo",
+            709000
+          ],
+          [
+            2672,
+            "Peru",
+            "Lima",
+            10092000
+          ],
+          [
+            465,
+            "Norway",
+            "Bergen",
+            291000
+          ]
+        ]
+      }
+    }
+  ]
+}

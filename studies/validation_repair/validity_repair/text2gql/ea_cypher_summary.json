@@ -1,0 +1,691 @@
+{
+ "evaluator": "contrib/standalone_text2graph_scripts/reference/ea_cypher.py@ab296fab ExecutionEvaluator.compare_results",
+ "blob_sha256": "f88f10991941002a9a2fd9f3b8bdb49a2751705331fe717ee9fe5f5e9d59ced8",
+ "function_source_sha256": "992ad2dd782588758f41309377c35709eed3088f18cabebb4c12562729e76af5",
+ "sets": {
+  "s1_original": {
+   "n": 121,
+   "disagreements": 18,
+   "by_class": {
+    "D01_identical": {
+     "n": 6,
+     "ea_accept": 6,
+     "metrics_accept": 6,
+     "disagree": 0
+    },
+    "D02_alias_renamed": {
+     "n": 6,
+     "ea_accept": 6,
+     "metrics_accept": 6,
+     "disagree": 0
+    },
+    "D03_unaliased_expression_keys": {
+     "n": 6,
+     "ea_accept": 6,
+     "metrics_accept": 6,
+     "disagree": 0
+    },
+    "D04_column_order": {
+     "n": 6,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D05_row_order_unordered": {
+     "n": 5,
+     "ea_accept": 5,
+     "metrics_accept": 5,
+     "disagree": 0
+    },
+    "D06_order_required_violated": {
+     "n": 4,
+     "ea_accept": 4,
+     "metrics_accept": 3,
+     "disagree": 1
+    },
+    "D07_order_not_required": {
+     "n": 4,
+     "ea_accept": 4,
+     "metrics_accept": 0,
+     "disagree": 4
+    },
+    "D08_order_both_same": {
+     "n": 2,
+     "ea_accept": 2,
+     "metrics_accept": 2,
+     "disagree": 0
+    },
+    "D09_duplicate_extra_in_pred": {
+     "n": 4,
+     "ea_accept": 4,
+     "metrics_accept": 0,
+     "disagree": 4
+    },
+    "D09_duplicate_multiplicity_differs": {
+     "n": 1,
+     "ea_accept": 1,
+     "metrics_accept": 0,
+     "disagree": 1
+    },
+    "D09_duplicate_removed_in_pred": {
+     "n": 2,
+     "ea_accept": 2,
+     "metrics_accept": 0,
+     "disagree": 2
+    },
+    "D10_extra_row": {
+     "n": 5,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D11_missing_row": {
+     "n": 5,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D12_int_vs_float": {
+     "n": 4,
+     "ea_accept": 4,
+     "metrics_accept": 4,
+     "disagree": 0
+    },
+    "D13_float_difference_material": {
+     "n": 3,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D13_float_tolerance_tiny": {
+     "n": 4,
+     "ea_accept": 4,
+     "metrics_accept": 4,
+     "disagree": 0
+    },
+    "D14_number_vs_string": {
+     "n": 4,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D15_null_vs_empty_string": {
+     "n": 2,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D15_null_vs_string_none": {
+     "n": 1,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D15_null_vs_zero": {
+     "n": 1,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D16_null_row_permutation": {
+     "n": 2,
+     "ea_accept": 2,
+     "metrics_accept": 2,
+     "disagree": 0
+    },
+    "D17_both_empty": {
+     "n": 2,
+     "ea_accept": 2,
+     "metrics_accept": 2,
+     "disagree": 0
+    },
+    "D17_gold_empty_pred_nonempty": {
+     "n": 2,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D17_gold_nonempty_pred_empty": {
+     "n": 2,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D18_zero_aggregate": {
+     "n": 4,
+     "ea_accept": 2,
+     "metrics_accept": 2,
+     "disagree": 0
+    },
+    "D19_all_null": {
+     "n": 4,
+     "ea_accept": 3,
+     "metrics_accept": 2,
+     "disagree": 1
+    },
+    "D20_string_case": {
+     "n": 2,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D20_string_whitespace": {
+     "n": 2,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D21_list_different": {
+     "n": 2,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D21_list_identical": {
+     "n": 2,
+     "ea_accept": 2,
+     "metrics_accept": 2,
+     "disagree": 0
+    },
+    "D21_list_order": {
+     "n": 3,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D22_map_different": {
+     "n": 1,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 1
+    },
+    "D22_map_identical": {
+     "n": 1,
+     "ea_accept": 1,
+     "metrics_accept": 1,
+     "disagree": 0
+    },
+    "D22_map_key_order": {
+     "n": 1,
+     "ea_accept": 1,
+     "metrics_accept": 1,
+     "disagree": 0
+    },
+    "D22_map_vs_scalar": {
+     "n": 1,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 1
+    },
+    "D23_topk_tie": {
+     "n": 3,
+     "ea_accept": 2,
+     "metrics_accept": 1,
+     "disagree": 1
+    },
+    "D24_extra_column": {
+     "n": 2,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D24_missing_column": {
+     "n": 1,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D25_row_affiliation": {
+     "n": 2,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D25_same_valueset_per_row": {
+     "n": 1,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 1
+    },
+    "D26_bool_vs_int": {
+     "n": 2,
+     "ea_accept": 2,
+     "metrics_accept": 2,
+     "disagree": 0
+    },
+    "D27_date_string": {
+     "n": 2,
+     "ea_accept": 1,
+     "metrics_accept": 1,
+     "disagree": 1
+    },
+    "D28_wide_permuted": {
+     "n": 2,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    }
+   }
+  },
+  "s1_corrected": {
+   "n": 121,
+   "disagreements": 14,
+   "by_class": {
+    "D01_identical": {
+     "n": 6,
+     "ea_accept": 6,
+     "metrics_accept": 6,
+     "disagree": 0
+    },
+    "D02_alias_renamed": {
+     "n": 6,
+     "ea_accept": 6,
+     "metrics_accept": 6,
+     "disagree": 0
+    },
+    "D03_unaliased_expression_keys": {
+     "n": 6,
+     "ea_accept": 6,
+     "metrics_accept": 6,
+     "disagree": 0
+    },
+    "D04_column_order": {
+     "n": 6,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D05_row_order_unordered": {
+     "n": 5,
+     "ea_accept": 5,
+     "metrics_accept": 5,
+     "disagree": 0
+    },
+    "D06_order_required_violated": {
+     "n": 4,
+     "ea_accept": 4,
+     "metrics_accept": 3,
+     "disagree": 1
+    },
+    "D07_order_not_required": {
+     "n": 4,
+     "ea_accept": 4,
+     "metrics_accept": 0,
+     "disagree": 4
+    },
+    "D08_order_both_same": {
+     "n": 2,
+     "ea_accept": 2,
+     "metrics_accept": 2,
+     "disagree": 0
+    },
+    "D09_duplicate_extra_in_pred": {
+     "n": 4,
+     "ea_accept": 4,
+     "metrics_accept": 0,
+     "disagree": 4
+    },
+    "D09_duplicate_multiplicity_differs": {
+     "n": 1,
+     "ea_accept": 1,
+     "metrics_accept": 0,
+     "disagree": 1
+    },
+    "D09_duplicate_removed_in_pred": {
+     "n": 2,
+     "ea_accept": 2,
+     "metrics_accept": 0,
+     "disagree": 2
+    },
+    "D10_extra_row": {
+     "n": 5,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D11_missing_row": {
+     "n": 5,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D12_int_vs_float": {
+     "n": 4,
+     "ea_accept": 4,
+     "metrics_accept": 4,
+     "disagree": 0
+    },
+    "D13_float_difference_material": {
+     "n": 3,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D13_float_tolerance_tiny": {
+     "n": 4,
+     "ea_accept": 4,
+     "metrics_accept": 4,
+     "disagree": 0
+    },
+    "D14_number_vs_string": {
+     "n": 4,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D15_null_vs_empty_string": {
+     "n": 2,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D15_null_vs_string_none": {
+     "n": 1,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D15_null_vs_zero": {
+     "n": 1,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D16_null_row_permutation": {
+     "n": 2,
+     "ea_accept": 2,
+     "metrics_accept": 2,
+     "disagree": 0
+    },
+    "D17_both_empty": {
+     "n": 2,
+     "ea_accept": 2,
+     "metrics_accept": 2,
+     "disagree": 0
+    },
+    "D17_gold_empty_pred_nonempty": {
+     "n": 2,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D17_gold_nonempty_pred_empty": {
+     "n": 2,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D18_zero_aggregate": {
+     "n": 4,
+     "ea_accept": 2,
+     "metrics_accept": 2,
+     "disagree": 0
+    },
+    "D19_all_null": {
+     "n": 4,
+     "ea_accept": 3,
+     "metrics_accept": 2,
+     "disagree": 1
+    },
+    "D20_string_case": {
+     "n": 2,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D20_string_whitespace": {
+     "n": 2,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D21_list_different": {
+     "n": 2,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D21_list_identical": {
+     "n": 2,
+     "ea_accept": 2,
+     "metrics_accept": 2,
+     "disagree": 0
+    },
+    "D21_list_order": {
+     "n": 3,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D22_map_different": {
+     "n": 1,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D22_map_identical": {
+     "n": 1,
+     "ea_accept": 1,
+     "metrics_accept": 1,
+     "disagree": 0
+    },
+    "D22_map_key_order": {
+     "n": 1,
+     "ea_accept": 1,
+     "metrics_accept": 1,
+     "disagree": 0
+    },
+    "D22_map_vs_scalar": {
+     "n": 1,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D23_topk_tie": {
+     "n": 3,
+     "ea_accept": 2,
+     "metrics_accept": 1,
+     "disagree": 1
+    },
+    "D24_extra_column": {
+     "n": 2,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D24_missing_column": {
+     "n": 1,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D25_row_affiliation": {
+     "n": 2,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D25_same_valueset_per_row": {
+     "n": 1,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "D26_bool_vs_int": {
+     "n": 2,
+     "ea_accept": 2,
+     "metrics_accept": 2,
+     "disagree": 0
+    },
+    "D27_date_string": {
+     "n": 2,
+     "ea_accept": 1,
+     "metrics_accept": 1,
+     "disagree": 0
+    },
+    "D28_wide_permuted": {
+     "n": 2,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    }
+   }
+  },
+  "s18": {
+   "n": 60,
+   "disagreements": 0,
+   "by_class": {
+    "T1_alias_rename": {
+     "n": 15,
+     "ea_accept": 15,
+     "metrics_accept": 15,
+     "disagree": 0
+    },
+    "T2_drop_alias": {
+     "n": 15,
+     "ea_accept": 15,
+     "metrics_accept": 15,
+     "disagree": 0
+    },
+    "T4_add_distinct": {
+     "n": 15,
+     "ea_accept": 15,
+     "metrics_accept": 15,
+     "disagree": 0
+    },
+    "T5_numeric_literal": {
+     "n": 15,
+     "ea_accept": 15,
+     "metrics_accept": 15,
+     "disagree": 0
+    }
+   }
+  },
+  "s20": {
+   "n": 62,
+   "disagreements": 22,
+   "by_class": {
+    "D1_numeric_type": {
+     "n": 15,
+     "ea_accept": 15,
+     "metrics_accept": 15,
+     "disagree": 0
+    },
+    "D2_float_tolerance": {
+     "n": 10,
+     "ea_accept": 10,
+     "metrics_accept": 10,
+     "disagree": 0
+    },
+    "D3_row_order": {
+     "n": 15,
+     "ea_accept": 15,
+     "metrics_accept": 0,
+     "disagree": 15
+    },
+    "D4_duplicates": {
+     "n": 7,
+     "ea_accept": 7,
+     "metrics_accept": 0,
+     "disagree": 7
+    },
+    "D5_null_controlled": {
+     "n": 10,
+     "ea_accept": 10,
+     "metrics_accept": 10,
+     "disagree": 0
+    },
+    "D6_column_name_control": {
+     "n": 5,
+     "ea_accept": 5,
+     "metrics_accept": 5,
+     "disagree": 0
+    }
+   }
+  },
+  "s23": {
+   "n": 77,
+   "disagreements": 20,
+   "by_class": {
+    "C0_column_name_control": {
+     "n": 5,
+     "ea_accept": 5,
+     "metrics_accept": 5,
+     "disagree": 0
+    },
+    "R1_numeric_type": {
+     "n": 10,
+     "ea_accept": 10,
+     "metrics_accept": 10,
+     "disagree": 0
+    },
+    "R2_float_tolerance": {
+     "n": 10,
+     "ea_accept": 10,
+     "metrics_accept": 10,
+     "disagree": 0
+    },
+    "R3_row_order": {
+     "n": 10,
+     "ea_accept": 10,
+     "metrics_accept": 0,
+     "disagree": 10
+    },
+    "R4_duplicates": {
+     "n": 10,
+     "ea_accept": 10,
+     "metrics_accept": 0,
+     "disagree": 10
+    },
+    "R5_column_order": {
+     "n": 10,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "R6_reference_order": {
+     "n": 10,
+     "ea_accept": 10,
+     "metrics_accept": 10,
+     "disagree": 0
+    },
+    "R7_list_order": {
+     "n": 10,
+     "ea_accept": 0,
+     "metrics_accept": 0,
+     "disagree": 0
+    },
+    "R8_null_natural": {
+     "n": 2,
+     "ea_accept": 2,
+     "metrics_accept": 2,
+     "disagree": 0
+    }
+   }
+  },
+  "s2": {
+   "n": 158,
+   "disagreements": 0,
+   "by_class": {
+    "-": {
+     "n": 158,
+     "ea_accept": 5,
+     "metrics_accept": 5,
+     "disagree": 0
+    }
+   }
+  },
+  "s3": {
+   "n": 563,
+   "disagreements": 14,
+   "by_class": {
+    "-": {
+     "n": 563,
+     "ea_accept": 556,
+     "metrics_accept": 542,
+     "disagree": 14
+    }
+   }
+  }
+ }
+}

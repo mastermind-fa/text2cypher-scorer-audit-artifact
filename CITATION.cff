@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the paper and this artifact."
+title: "What Counts as Correct? A Cross-Implementation Audit of Execution Accuracy in Text-to-Cypher — artifact"
+version: "1.0.0-rc.1"
+date-released: "2026-11-02"
+authors:
+  - name: "AUTHOR-NAME-TODO"
+repository-code: "https://github.com/mastermind-fa/text2cypher-scorer-audit-artifact"
+# license: added when the authors approve it (recommended: MIT)
+# doi: added only after an archive DOI exists
+preferred-citation:
+  type: conference-paper
+  title: "What Counts as Correct? A Cross-Implementation Audit of Execution Accuracy in Text-to-Cypher"
+  authors:
+    - name: "AUTHOR-NAME-TODO"
+  collection-title: "IEEE International Conference on Data Engineering (ICDE 2027), under review"
+  year: 2027

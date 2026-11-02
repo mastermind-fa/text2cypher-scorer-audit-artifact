@@ -1,0 +1,12 @@
+{
+ "s3_pairs_meeting_criterion": "11/21",
+ "s3_pairs_meeting_without_cypherlens": "5/15",
+ "s3_six_scorer_non_unanimous": "41/563",
+ "s2_informative_non_unanimous": "13/37",
+ "s18_cases": 60,
+ "s20_cases": 62,
+ "s23_cases": 77,
+ "s23_multi_column": 62,
+ "s23_study_decision": "A_STRONG_CROSS_BENCHMARK_REPLICATION",
+ "source": "frozen statistics files; see quick_check.py"
+}

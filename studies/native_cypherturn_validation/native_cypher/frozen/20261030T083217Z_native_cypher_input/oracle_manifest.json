@@ -1,0 +1,85 @@
+{
+  "oracle_version": "s18-oracle-v1",
+  "quota_per_family": 15,
+  "max_rows": 5000,
+  "admitted_per_family": {
+    "T1_alias_rename": 15,
+    "T2_drop_alias": 15,
+    "T4_add_distinct": 15,
+    "T5_numeric_literal": 15
+  },
+  "rejected_reasons": {
+    "empty reference result (vacuous)": 2,
+    "RESERVE_NOT_ADMITTED (quota met)": 98
+  },
+  "T3_column_reorder": "NOT FEASIBLE: no CypherTurn gold query returns more than one column",
+  "neo4j_server": "Neo4j/5.15.0",
+  "neo4j_python_driver": "5.26.0",
+  "graph_fingerprints": {
+    "ancient_empire": {
+      "nodes": 440,
+      "relationships": 572,
+      "sha256": "e61111a784fa6e71555af0d80c7f5fd24ebaa13f2643e104f859a59edaab1ed6",
+      "data_cypher_sha256": "f3f221a3c9ff37bac3fb1af623f3c54de011749073b2d4ec0c1b97dbe7e67b26",
+      "statements": 41,
+      "failed_statements": 0,
+      "loader": "CypherTurn scripts/import_graphs.py semantics"
+    },
+    "arcane_archive": {
+      "nodes": 420,
+      "relationships": 897,
+      "sha256": "af839621ac586c724931d7211917aea2a082a595bd73149d0b6b360aa46f437e",
+      "data_cypher_sha256": "37754f44389a3e97118e17268c65090a347ddf14bcfae452f1bb7d9233b02271",
+      "statements": 1367,
+      "failed_statements": 0,
+      "loader": "CypherTurn scripts/import_graphs.py semantics"
+    },
+    "celestial_court": {
+      "nodes": 451,
+      "relationships": 770,
+      "sha256": "a290b399fa3b0fd50b17d72c02fc4289b3cd9bffab2e429e2c5101cc654d87a7",
+      "data_cypher_sha256": "ec683bc735f6c9b46461a79b8f0995bc6048a14c3bfedcef66e53d8327d11785",
+      "statements": 1221,
+      "failed_statements": 0,
+      "loader": "CypherTurn scripts/import_graphs.py semantics"
+    },
+    "magic_academy": {
+      "nodes": 378,
+      "relationships": 813,
+      "sha256": "2cfaed7f32faa0006f9d34e119b1f9b6b545ca572a05cb10de331dcfebaf7772",
+      "data_cypher_sha256": "d21786e477ab6d96663324c2e20084e4434dd8a6960c62ef35be3c310cbf431f",
+      "statements": 1,
+      "failed_statements": 0,
+      "loader": "CypherTurn scripts/import_graphs.py semantics"
+    },
+    "merchant_harbor": {
+      "nodes": 490,
+      "relationships": 1059,
+      "sha256": "fd34299bd2da619fa07e704e6b325ddd7c9a1ebf80329a3dda0543a36820f794",
+      "data_cypher_sha256": "5f2b368e6a18b3e573383c82bceb776f0a06a47023061af85bf889402a1855c6",
+      "statements": 1549,
+      "failed_statements": 0,
+      "loader": "CypherTurn scripts/import_graphs.py semantics"
+    },
+    "ocean_kingdom": {
+      "nodes": 369,
+      "relationships": 483,
+      "sha256": "c9c04ad61c77c03bd6ad07ab766ede67139f65a66a7dfda7430f01259290dc0b",
+      "data_cypher_sha256": "913966263b02299b016f16e48390a8500d57c86a7188a027e684e5016a9eb674",
+      "statements": 52,
+      "failed_statements": 0,
+      "loader": "CypherTurn scripts/import_graphs.py semantics"
+    },
+    "stellar_colony": {
+      "nodes": 430,
+      "relationships": 607,
+      "sha256": "6e0961246a2194e7ceacb53f91ee407ac7c3ae729e078ebf78b71beb55fe6a55",
+      "data_cypher_sha256": "9470f65c50300523cfee854e5368e13d70669bb907b3c6814dbe3043259e62a7",
+      "statements": 36,
+      "failed_statements": 0,
+      "loader": "CypherTurn scripts/import_graphs.py semantics"
+    }
+  },
+  "frozen_utc": "20261030T083217Z",
+  "status": "FROZEN BEFORE ANY SCORER RUN"
+}

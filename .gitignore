@@ -1,0 +1,5 @@
+external/*
+!external/EXTERNAL_PINS.json
+__pycache__/
+*.pyc
+.venv/

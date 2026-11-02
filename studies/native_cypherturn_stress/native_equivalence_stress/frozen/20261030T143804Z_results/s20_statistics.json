@@ -1,0 +1,3516 @@
+{
+ "by_class": {
+  "D1_numeric_type": {
+   "per_scorer": {
+    "cypherturn": {
+     "n": 15,
+     "accepted": 0,
+     "rejected": 15,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    "cypherbench": {
+     "n": 15,
+     "accepted": 15,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "gqlbench": {
+     "n": 15,
+     "accepted": 15,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "tugraph": {
+     "n": 15,
+     "accepted": 15,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "pipecypher": {
+     "n": 15,
+     "accepted": 0,
+     "rejected": 15,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    "cypherlens": {
+     "n": 15,
+     "accepted": 0,
+     "rejected": 15,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    "cyspider": {
+     "n": 15,
+     "accepted": 15,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "neo4jlabs": {
+     "n": 15,
+     "accepted": 15,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "pc_v1_1": {
+     "n": 15,
+     "accepted": 15,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    }
+   },
+   "per_family": {
+    "D1_numeric_type": {
+     "cypherturn": {
+      "n": 15,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       2.7755575615628914e-17,
+       0.2038833010358485
+      ]
+     },
+     "cypherbench": {
+      "n": 15,
+      "accepted": 15,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7961166989641515,
+       1.0
+      ]
+     },
+     "gqlbench": {
+      "n": 15,
+      "accepted": 15,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7961166989641515,
+       1.0
+      ]
+     },
+     "tugraph": {
+      "n": 15,
+      "accepted": 15,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7961166989641515,
+       1.0
+      ]
+     },
+     "pipecypher": {
+      "n": 15,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       2.7755575615628914e-17,
+       0.2038833010358485
+      ]
+     },
+     "cypherlens": {
+      "n": 15,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       2.7755575615628914e-17,
+       0.2038833010358485
+      ]
+     },
+     "cyspider": {
+      "n": 15,
+      "accepted": 15,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7961166989641515,
+       1.0
+      ]
+     },
+     "neo4jlabs": {
+      "n": 15,
+      "accepted": 15,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7961166989641515,
+       1.0
+      ]
+     },
+     "pc_v1_1": {
+      "n": 15,
+      "accepted": 15,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7961166989641515,
+       1.0
+      ]
+     }
+    }
+   },
+   "pairwise": [
+    {
+     "a": "cypherturn",
+     "b": "cypherbench",
+     "n": 15,
+     "disagreements": 15,
+     "rate": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "gqlbench",
+     "n": 15,
+     "disagreements": 15,
+     "rate": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "tugraph",
+     "n": 15,
+     "disagreements": 15,
+     "rate": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "pipecypher",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "cypherlens",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "cyspider",
+     "n": 15,
+     "disagreements": 15,
+     "rate": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "gqlbench",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "tugraph",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "pipecypher",
+     "n": 15,
+     "disagreements": 15,
+     "rate": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "cypherlens",
+     "n": 15,
+     "disagreements": 15,
+     "rate": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "cyspider",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "tugraph",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "pipecypher",
+     "n": 15,
+     "disagreements": 15,
+     "rate": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "cypherlens",
+     "n": 15,
+     "disagreements": 15,
+     "rate": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "cyspider",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "tugraph",
+     "b": "pipecypher",
+     "n": 15,
+     "disagreements": 15,
+     "rate": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    {
+     "a": "tugraph",
+     "b": "cypherlens",
+     "n": 15,
+     "disagreements": 15,
+     "rate": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    {
+     "a": "tugraph",
+     "b": "cyspider",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "pipecypher",
+     "b": "cypherlens",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "pipecypher",
+     "b": "cyspider",
+     "n": 15,
+     "disagreements": 15,
+     "rate": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherlens",
+     "b": "cyspider",
+     "n": 15,
+     "disagreements": 15,
+     "rate": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    }
+   ],
+   "unanimity": {
+    "n_complete": 15,
+    "unanimous": 0,
+    "non_unanimous": 15,
+    "all_accept": 0
+   }
+  },
+  "D2_float_tolerance": {
+   "per_scorer": {
+    "cypherturn": {
+     "n": 10,
+     "accepted": 0,
+     "rejected": 10,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    "cypherbench": {
+     "n": 10,
+     "accepted": 0,
+     "rejected": 10,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    "gqlbench": {
+     "n": 10,
+     "accepted": 0,
+     "rejected": 10,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    "tugraph": {
+     "n": 10,
+     "accepted": 10,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    "pipecypher": {
+     "n": 10,
+     "accepted": 0,
+     "rejected": 10,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    "cypherlens": {
+     "n": 10,
+     "accepted": 10,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    "cyspider": {
+     "n": 10,
+     "accepted": 0,
+     "rejected": 10,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    "neo4jlabs": {
+     "n": 10,
+     "accepted": 0,
+     "rejected": 10,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    "pc_v1_1": {
+     "n": 10,
+     "accepted": 10,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    }
+   },
+   "per_family": {
+    "D2_float_tolerance": {
+     "cypherturn": {
+      "n": 10,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       0.0,
+       0.27753279986288903
+      ]
+     },
+     "cypherbench": {
+      "n": 10,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       0.0,
+       0.27753279986288903
+      ]
+     },
+     "gqlbench": {
+      "n": 10,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       0.0,
+       0.27753279986288903
+      ]
+     },
+     "tugraph": {
+      "n": 10,
+      "accepted": 10,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7224672001371109,
+       1.0
+      ]
+     },
+     "pipecypher": {
+      "n": 10,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       0.0,
+       0.27753279986288903
+      ]
+     },
+     "cypherlens": {
+      "n": 10,
+      "accepted": 10,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7224672001371109,
+       1.0
+      ]
+     },
+     "cyspider": {
+      "n": 10,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       0.0,
+       0.27753279986288903
+      ]
+     },
+     "neo4jlabs": {
+      "n": 10,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       0.0,
+       0.27753279986288903
+      ]
+     },
+     "pc_v1_1": {
+      "n": 10,
+      "accepted": 10,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7224672001371109,
+       1.0
+      ]
+     }
+    }
+   },
+   "pairwise": [
+    {
+     "a": "cypherturn",
+     "b": "cypherbench",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "gqlbench",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "tugraph",
+     "n": 10,
+     "disagreements": 10,
+     "rate": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "pipecypher",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "cypherlens",
+     "n": 10,
+     "disagreements": 10,
+     "rate": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "cyspider",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "gqlbench",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "tugraph",
+     "n": 10,
+     "disagreements": 10,
+     "rate": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "pipecypher",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "cypherlens",
+     "n": 10,
+     "disagreements": 10,
+     "rate": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "cyspider",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "tugraph",
+     "n": 10,
+     "disagreements": 10,
+     "rate": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "pipecypher",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "cypherlens",
+     "n": 10,
+     "disagreements": 10,
+     "rate": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "cyspider",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "tugraph",
+     "b": "pipecypher",
+     "n": 10,
+     "disagreements": 10,
+     "rate": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    {
+     "a": "tugraph",
+     "b": "cypherlens",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "tugraph",
+     "b": "cyspider",
+     "n": 10,
+     "disagreements": 10,
+     "rate": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    {
+     "a": "pipecypher",
+     "b": "cypherlens",
+     "n": 10,
+     "disagreements": 10,
+     "rate": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    {
+     "a": "pipecypher",
+     "b": "cyspider",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "cypherlens",
+     "b": "cyspider",
+     "n": 10,
+     "disagreements": 10,
+     "rate": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    }
+   ],
+   "unanimity": {
+    "n_complete": 10,
+    "unanimous": 0,
+    "non_unanimous": 10,
+    "all_accept": 0
+   }
+  },
+  "D3_row_order": {
+   "per_scorer": {
+    "cypherturn": {
+     "n": 15,
+     "accepted": 15,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "cypherbench": {
+     "n": 15,
+     "accepted": 15,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "gqlbench": {
+     "n": 15,
+     "accepted": 15,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "tugraph": {
+     "n": 15,
+     "accepted": 0,
+     "rejected": 15,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    "pipecypher": {
+     "n": 15,
+     "accepted": 15,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "cypherlens": {
+     "n": 15,
+     "accepted": 15,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "cyspider": {
+     "n": 15,
+     "accepted": 15,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "neo4jlabs": {
+     "n": 15,
+     "accepted": 0,
+     "rejected": 15,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    "pc_v1_1": {
+     "n": 15,
+     "accepted": 15,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    }
+   },
+   "per_family": {
+    "D3_row_order": {
+     "cypherturn": {
+      "n": 15,
+      "accepted": 15,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7961166989641515,
+       1.0
+      ]
+     },
+     "cypherbench": {
+      "n": 15,
+      "accepted": 15,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7961166989641515,
+       1.0
+      ]
+     },
+     "gqlbench": {
+      "n": 15,
+      "accepted": 15,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7961166989641515,
+       1.0
+      ]
+     },
+     "tugraph": {
+      "n": 15,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       2.7755575615628914e-17,
+       0.2038833010358485
+      ]
+     },
+     "pipecypher": {
+      "n": 15,
+      "accepted": 15,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7961166989641515,
+       1.0
+      ]
+     },
+     "cypherlens": {
+      "n": 15,
+      "accepted": 15,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7961166989641515,
+       1.0
+      ]
+     },
+     "cyspider": {
+      "n": 15,
+      "accepted": 15,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7961166989641515,
+       1.0
+      ]
+     },
+     "neo4jlabs": {
+      "n": 15,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       2.7755575615628914e-17,
+       0.2038833010358485
+      ]
+     },
+     "pc_v1_1": {
+      "n": 15,
+      "accepted": 15,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7961166989641515,
+       1.0
+      ]
+     }
+    }
+   },
+   "pairwise": [
+    {
+     "a": "cypherturn",
+     "b": "cypherbench",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "gqlbench",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "tugraph",
+     "n": 15,
+     "disagreements": 15,
+     "rate": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "pipecypher",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "cypherlens",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "cyspider",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "gqlbench",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "tugraph",
+     "n": 15,
+     "disagreements": 15,
+     "rate": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "pipecypher",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "cypherlens",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "cyspider",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "tugraph",
+     "n": 15,
+     "disagreements": 15,
+     "rate": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "pipecypher",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "cypherlens",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "cyspider",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "tugraph",
+     "b": "pipecypher",
+     "n": 15,
+     "disagreements": 15,
+     "rate": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    {
+     "a": "tugraph",
+     "b": "cypherlens",
+     "n": 15,
+     "disagreements": 15,
+     "rate": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    {
+     "a": "tugraph",
+     "b": "cyspider",
+     "n": 15,
+     "disagreements": 15,
+     "rate": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    {
+     "a": "pipecypher",
+     "b": "cypherlens",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "pipecypher",
+     "b": "cyspider",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    {
+     "a": "cypherlens",
+     "b": "cyspider",
+     "n": 15,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    }
+   ],
+   "unanimity": {
+    "n_complete": 15,
+    "unanimous": 0,
+    "non_unanimous": 15,
+    "all_accept": 0
+   }
+  },
+  "D4_duplicates": {
+   "per_scorer": {
+    "cypherturn": {
+     "n": 7,
+     "accepted": 0,
+     "rejected": 7,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    "cypherbench": {
+     "n": 7,
+     "accepted": 0,
+     "rejected": 7,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    "gqlbench": {
+     "n": 7,
+     "accepted": 0,
+     "rejected": 7,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    "tugraph": {
+     "n": 7,
+     "accepted": 0,
+     "rejected": 7,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    "pipecypher": {
+     "n": 7,
+     "accepted": 7,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.6456695649333127,
+      1.0
+     ]
+    },
+    "cypherlens": {
+     "n": 7,
+     "accepted": 0,
+     "rejected": 7,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    "cyspider": {
+     "n": 7,
+     "accepted": 7,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.6456695649333127,
+      1.0
+     ]
+    },
+    "neo4jlabs": {
+     "n": 7,
+     "accepted": 0,
+     "rejected": 7,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    "pc_v1_1": {
+     "n": 7,
+     "accepted": 0,
+     "rejected": 7,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    }
+   },
+   "per_family": {
+    "D4_duplicates": {
+     "cypherturn": {
+      "n": 7,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       0.0,
+       0.3543304350666873
+      ]
+     },
+     "cypherbench": {
+      "n": 7,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       0.0,
+       0.3543304350666873
+      ]
+     },
+     "gqlbench": {
+      "n": 7,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       0.0,
+       0.3543304350666873
+      ]
+     },
+     "tugraph": {
+      "n": 7,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       0.0,
+       0.3543304350666873
+      ]
+     },
+     "pipecypher": {
+      "n": 7,
+      "accepted": 7,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.6456695649333127,
+       1.0
+      ]
+     },
+     "cypherlens": {
+      "n": 7,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       0.0,
+       0.3543304350666873
+      ]
+     },
+     "cyspider": {
+      "n": 7,
+      "accepted": 7,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.6456695649333127,
+       1.0
+      ]
+     },
+     "neo4jlabs": {
+      "n": 7,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       0.0,
+       0.3543304350666873
+      ]
+     },
+     "pc_v1_1": {
+      "n": 7,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       0.0,
+       0.3543304350666873
+      ]
+     }
+    }
+   },
+   "pairwise": [
+    {
+     "a": "cypherturn",
+     "b": "cypherbench",
+     "n": 7,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "gqlbench",
+     "n": 7,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "tugraph",
+     "n": 7,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "pipecypher",
+     "n": 7,
+     "disagreements": 7,
+     "rate": 1.0,
+     "wilson95": [
+      0.6456695649333127,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "cypherlens",
+     "n": 7,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "cyspider",
+     "n": 7,
+     "disagreements": 7,
+     "rate": 1.0,
+     "wilson95": [
+      0.6456695649333127,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "gqlbench",
+     "n": 7,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "tugraph",
+     "n": 7,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "pipecypher",
+     "n": 7,
+     "disagreements": 7,
+     "rate": 1.0,
+     "wilson95": [
+      0.6456695649333127,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "cypherlens",
+     "n": 7,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "cyspider",
+     "n": 7,
+     "disagreements": 7,
+     "rate": 1.0,
+     "wilson95": [
+      0.6456695649333127,
+      1.0
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "tugraph",
+     "n": 7,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "pipecypher",
+     "n": 7,
+     "disagreements": 7,
+     "rate": 1.0,
+     "wilson95": [
+      0.6456695649333127,
+      1.0
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "cypherlens",
+     "n": 7,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "cyspider",
+     "n": 7,
+     "disagreements": 7,
+     "rate": 1.0,
+     "wilson95": [
+      0.6456695649333127,
+      1.0
+     ]
+    },
+    {
+     "a": "tugraph",
+     "b": "pipecypher",
+     "n": 7,
+     "disagreements": 7,
+     "rate": 1.0,
+     "wilson95": [
+      0.6456695649333127,
+      1.0
+     ]
+    },
+    {
+     "a": "tugraph",
+     "b": "cypherlens",
+     "n": 7,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    {
+     "a": "tugraph",
+     "b": "cyspider",
+     "n": 7,
+     "disagreements": 7,
+     "rate": 1.0,
+     "wilson95": [
+      0.6456695649333127,
+      1.0
+     ]
+    },
+    {
+     "a": "pipecypher",
+     "b": "cypherlens",
+     "n": 7,
+     "disagreements": 7,
+     "rate": 1.0,
+     "wilson95": [
+      0.6456695649333127,
+      1.0
+     ]
+    },
+    {
+     "a": "pipecypher",
+     "b": "cyspider",
+     "n": 7,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    {
+     "a": "cypherlens",
+     "b": "cyspider",
+     "n": 7,
+     "disagreements": 7,
+     "rate": 1.0,
+     "wilson95": [
+      0.6456695649333127,
+      1.0
+     ]
+    }
+   ],
+   "unanimity": {
+    "n_complete": 7,
+    "unanimous": 0,
+    "non_unanimous": 7,
+    "all_accept": 0
+   }
+  },
+  "D5_null_controlled": {
+   "per_scorer": {
+    "cypherturn": {
+     "n": 10,
+     "accepted": 10,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    "cypherbench": {
+     "n": 10,
+     "accepted": 10,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    "gqlbench": {
+     "n": 10,
+     "accepted": 9,
+     "rejected": 1,
+     "errors": 0,
+     "acceptance": 0.9,
+     "wilson95": [
+      0.5958499732047616,
+      0.982123786904927
+     ]
+    },
+    "tugraph": {
+     "n": 10,
+     "accepted": 10,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    "pipecypher": {
+     "n": 10,
+     "accepted": 10,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    "cypherlens": {
+     "n": 10,
+     "accepted": 10,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    "cyspider": {
+     "n": 10,
+     "accepted": 10,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    "neo4jlabs": {
+     "n": 10,
+     "accepted": 10,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    "pc_v1_1": {
+     "n": 10,
+     "accepted": 10,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    }
+   },
+   "per_family": {
+    "D5_null_controlled": {
+     "cypherturn": {
+      "n": 10,
+      "accepted": 10,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7224672001371109,
+       1.0
+      ]
+     },
+     "cypherbench": {
+      "n": 10,
+      "accepted": 10,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7224672001371109,
+       1.0
+      ]
+     },
+     "gqlbench": {
+      "n": 10,
+      "accepted": 9,
+      "errors": 0,
+      "acceptance": 0.9,
+      "wilson95": [
+       0.5958499732047616,
+       0.982123786904927
+      ]
+     },
+     "tugraph": {
+      "n": 10,
+      "accepted": 10,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7224672001371109,
+       1.0
+      ]
+     },
+     "pipecypher": {
+      "n": 10,
+      "accepted": 10,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7224672001371109,
+       1.0
+      ]
+     },
+     "cypherlens": {
+      "n": 10,
+      "accepted": 10,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7224672001371109,
+       1.0
+      ]
+     },
+     "cyspider": {
+      "n": 10,
+      "accepted": 10,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7224672001371109,
+       1.0
+      ]
+     },
+     "neo4jlabs": {
+      "n": 10,
+      "accepted": 10,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7224672001371109,
+       1.0
+      ]
+     },
+     "pc_v1_1": {
+      "n": 10,
+      "accepted": 10,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.7224672001371109,
+       1.0
+      ]
+     }
+    }
+   },
+   "pairwise": [
+    {
+     "a": "cypherturn",
+     "b": "cypherbench",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "gqlbench",
+     "n": 10,
+     "disagreements": 1,
+     "rate": 0.1,
+     "wilson95": [
+      0.01787621309507295,
+      0.40415002679523837
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "tugraph",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "pipecypher",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "cypherlens",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "cyspider",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "gqlbench",
+     "n": 10,
+     "disagreements": 1,
+     "rate": 0.1,
+     "wilson95": [
+      0.01787621309507295,
+      0.40415002679523837
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "tugraph",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "pipecypher",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "cypherlens",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "cyspider",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "tugraph",
+     "n": 10,
+     "disagreements": 1,
+     "rate": 0.1,
+     "wilson95": [
+      0.01787621309507295,
+      0.40415002679523837
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "pipecypher",
+     "n": 10,
+     "disagreements": 1,
+     "rate": 0.1,
+     "wilson95": [
+      0.01787621309507295,
+      0.40415002679523837
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "cypherlens",
+     "n": 10,
+     "disagreements": 1,
+     "rate": 0.1,
+     "wilson95": [
+      0.01787621309507295,
+      0.40415002679523837
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "cyspider",
+     "n": 10,
+     "disagreements": 1,
+     "rate": 0.1,
+     "wilson95": [
+      0.01787621309507295,
+      0.40415002679523837
+     ]
+    },
+    {
+     "a": "tugraph",
+     "b": "pipecypher",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "tugraph",
+     "b": "cypherlens",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "tugraph",
+     "b": "cyspider",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "pipecypher",
+     "b": "cypherlens",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "pipecypher",
+     "b": "cyspider",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    {
+     "a": "cypherlens",
+     "b": "cyspider",
+     "n": 10,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    }
+   ],
+   "unanimity": {
+    "n_complete": 10,
+    "unanimous": 9,
+    "non_unanimous": 1,
+    "all_accept": 9
+   }
+  },
+  "D6_column_name_control": {
+   "per_scorer": {
+    "cypherturn": {
+     "n": 5,
+     "accepted": 0,
+     "rejected": 5,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.43448246478317465
+     ]
+    },
+    "cypherbench": {
+     "n": 5,
+     "accepted": 5,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    "gqlbench": {
+     "n": 5,
+     "accepted": 5,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    "tugraph": {
+     "n": 5,
+     "accepted": 5,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    "pipecypher": {
+     "n": 5,
+     "accepted": 5,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    "cypherlens": {
+     "n": 5,
+     "accepted": 5,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    "cyspider": {
+     "n": 5,
+     "accepted": 5,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    "neo4jlabs": {
+     "n": 5,
+     "accepted": 5,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    "pc_v1_1": {
+     "n": 5,
+     "accepted": 5,
+     "rejected": 0,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    }
+   },
+   "per_family": {
+    "D6_column_name_control": {
+     "cypherturn": {
+      "n": 5,
+      "accepted": 0,
+      "errors": 0,
+      "acceptance": 0.0,
+      "wilson95": [
+       0.0,
+       0.43448246478317465
+      ]
+     },
+     "cypherbench": {
+      "n": 5,
+      "accepted": 5,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.5655175352168255,
+       1.0
+      ]
+     },
+     "gqlbench": {
+      "n": 5,
+      "accepted": 5,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.5655175352168255,
+       1.0
+      ]
+     },
+     "tugraph": {
+      "n": 5,
+      "accepted": 5,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.5655175352168255,
+       1.0
+      ]
+     },
+     "pipecypher": {
+      "n": 5,
+      "accepted": 5,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.5655175352168255,
+       1.0
+      ]
+     },
+     "cypherlens": {
+      "n": 5,
+      "accepted": 5,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.5655175352168255,
+       1.0
+      ]
+     },
+     "cyspider": {
+      "n": 5,
+      "accepted": 5,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.5655175352168255,
+       1.0
+      ]
+     },
+     "neo4jlabs": {
+      "n": 5,
+      "accepted": 5,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.5655175352168255,
+       1.0
+      ]
+     },
+     "pc_v1_1": {
+      "n": 5,
+      "accepted": 5,
+      "errors": 0,
+      "acceptance": 1.0,
+      "wilson95": [
+       0.5655175352168255,
+       1.0
+      ]
+     }
+    }
+   },
+   "pairwise": [
+    {
+     "a": "cypherturn",
+     "b": "cypherbench",
+     "n": 5,
+     "disagreements": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "gqlbench",
+     "n": 5,
+     "disagreements": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "tugraph",
+     "n": 5,
+     "disagreements": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "pipecypher",
+     "n": 5,
+     "disagreements": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "cypherlens",
+     "n": 5,
+     "disagreements": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherturn",
+     "b": "cyspider",
+     "n": 5,
+     "disagreements": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "gqlbench",
+     "n": 5,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.43448246478317465
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "tugraph",
+     "n": 5,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.43448246478317465
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "pipecypher",
+     "n": 5,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.43448246478317465
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "cypherlens",
+     "n": 5,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.43448246478317465
+     ]
+    },
+    {
+     "a": "cypherbench",
+     "b": "cyspider",
+     "n": 5,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.43448246478317465
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "tugraph",
+     "n": 5,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.43448246478317465
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "pipecypher",
+     "n": 5,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.43448246478317465
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "cypherlens",
+     "n": 5,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.43448246478317465
+     ]
+    },
+    {
+     "a": "gqlbench",
+     "b": "cyspider",
+     "n": 5,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.43448246478317465
+     ]
+    },
+    {
+     "a": "tugraph",
+     "b": "pipecypher",
+     "n": 5,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.43448246478317465
+     ]
+    },
+    {
+     "a": "tugraph",
+     "b": "cypherlens",
+     "n": 5,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.43448246478317465
+     ]
+    },
+    {
+     "a": "tugraph",
+     "b": "cyspider",
+     "n": 5,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.43448246478317465
+     ]
+    },
+    {
+     "a": "pipecypher",
+     "b": "cypherlens",
+     "n": 5,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.43448246478317465
+     ]
+    },
+    {
+     "a": "pipecypher",
+     "b": "cyspider",
+     "n": 5,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.43448246478317465
+     ]
+    },
+    {
+     "a": "cypherlens",
+     "b": "cyspider",
+     "n": 5,
+     "disagreements": 0,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.43448246478317465
+     ]
+    }
+   ],
+   "unanimity": {
+    "n_complete": 5,
+    "unanimous": 0,
+    "non_unanimous": 5,
+    "all_accept": 0
+   }
+  }
+ },
+ "overall_descriptive_only": {
+  "per_scorer": {
+   "cypherturn": {
+    "n": 62,
+    "accepted": 25,
+    "rejected": 37,
+    "errors": 0,
+    "acceptance": 0.4032258064516129,
+    "wilson95": [
+     0.2902486909591067,
+     0.5274953229959976
+    ]
+   },
+   "cypherbench": {
+    "n": 62,
+    "accepted": 45,
+    "rejected": 17,
+    "errors": 0,
+    "acceptance": 0.7258064516129032,
+    "wilson95": [
+     0.6040746035801103,
+     0.8211893638579795
+    ]
+   },
+   "gqlbench": {
+    "n": 62,
+    "accepted": 44,
+    "rejected": 18,
+    "errors": 0,
+    "acceptance": 0.7096774193548387,
+    "wilson95": [
+     0.587123542650136,
+     0.8077644271138047
+    ]
+   },
+   "tugraph": {
+    "n": 62,
+    "accepted": 40,
+    "rejected": 22,
+    "errors": 0,
+    "acceptance": 0.6451612903225806,
+    "wilson95": [
+     0.5208113075778424,
+     0.7525726714895009
+    ]
+   },
+   "pipecypher": {
+    "n": 62,
+    "accepted": 37,
+    "rejected": 25,
+    "errors": 0,
+    "acceptance": 0.5967741935483871,
+    "wilson95": [
+     0.47250467700400245,
+     0.7097513090408933
+    ]
+   },
+   "cypherlens": {
+    "n": 62,
+    "accepted": 40,
+    "rejected": 22,
+    "errors": 0,
+    "acceptance": 0.6451612903225806,
+    "wilson95": [
+     0.5208113075778424,
+     0.7525726714895009
+    ]
+   },
+   "cyspider": {
+    "n": 62,
+    "accepted": 52,
+    "rejected": 10,
+    "errors": 0,
+    "acceptance": 0.8387096774193549,
+    "wilson95": [
+     0.7279366398602256,
+     0.9099593112969091
+    ]
+   },
+   "neo4jlabs": {
+    "n": 62,
+    "accepted": 30,
+    "rejected": 32,
+    "errors": 0,
+    "acceptance": 0.4838709677419355,
+    "wilson95": [
+     0.3640985983824575,
+     0.6055254039433933
+    ]
+   },
+   "pc_v1_1": {
+    "n": 62,
+    "accepted": 55,
+    "rejected": 7,
+    "errors": 0,
+    "acceptance": 0.8870967741935484,
+    "wilson95": [
+     0.7848025794735822,
+     0.9442213647060003
+    ]
+   }
+  },
+  "per_family": {
+   "D1_numeric_type": {
+    "cypherturn": {
+     "n": 15,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    "cypherbench": {
+     "n": 15,
+     "accepted": 15,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "gqlbench": {
+     "n": 15,
+     "accepted": 15,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "tugraph": {
+     "n": 15,
+     "accepted": 15,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "pipecypher": {
+     "n": 15,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    "cypherlens": {
+     "n": 15,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    "cyspider": {
+     "n": 15,
+     "accepted": 15,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "neo4jlabs": {
+     "n": 15,
+     "accepted": 15,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "pc_v1_1": {
+     "n": 15,
+     "accepted": 15,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    }
+   },
+   "D2_float_tolerance": {
+    "cypherturn": {
+     "n": 10,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    "cypherbench": {
+     "n": 10,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    "gqlbench": {
+     "n": 10,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    "tugraph": {
+     "n": 10,
+     "accepted": 10,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    "pipecypher": {
+     "n": 10,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    "cypherlens": {
+     "n": 10,
+     "accepted": 10,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    "cyspider": {
+     "n": 10,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    "neo4jlabs": {
+     "n": 10,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.27753279986288903
+     ]
+    },
+    "pc_v1_1": {
+     "n": 10,
+     "accepted": 10,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    }
+   },
+   "D3_row_order": {
+    "cypherturn": {
+     "n": 15,
+     "accepted": 15,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "cypherbench": {
+     "n": 15,
+     "accepted": 15,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "gqlbench": {
+     "n": 15,
+     "accepted": 15,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "tugraph": {
+     "n": 15,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    "pipecypher": {
+     "n": 15,
+     "accepted": 15,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "cypherlens": {
+     "n": 15,
+     "accepted": 15,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "cyspider": {
+     "n": 15,
+     "accepted": 15,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    },
+    "neo4jlabs": {
+     "n": 15,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.2038833010358485
+     ]
+    },
+    "pc_v1_1": {
+     "n": 15,
+     "accepted": 15,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7961166989641515,
+      1.0
+     ]
+    }
+   },
+   "D4_duplicates": {
+    "cypherturn": {
+     "n": 7,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    "cypherbench": {
+     "n": 7,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    "gqlbench": {
+     "n": 7,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    "tugraph": {
+     "n": 7,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    "pipecypher": {
+     "n": 7,
+     "accepted": 7,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.6456695649333127,
+      1.0
+     ]
+    },
+    "cypherlens": {
+     "n": 7,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    "cyspider": {
+     "n": 7,
+     "accepted": 7,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.6456695649333127,
+      1.0
+     ]
+    },
+    "neo4jlabs": {
+     "n": 7,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    },
+    "pc_v1_1": {
+     "n": 7,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.3543304350666873
+     ]
+    }
+   },
+   "D5_null_controlled": {
+    "cypherturn": {
+     "n": 10,
+     "accepted": 10,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    "cypherbench": {
+     "n": 10,
+     "accepted": 10,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    "gqlbench": {
+     "n": 10,
+     "accepted": 9,
+     "errors": 0,
+     "acceptance": 0.9,
+     "wilson95": [
+      0.5958499732047616,
+      0.982123786904927
+     ]
+    },
+    "tugraph": {
+     "n": 10,
+     "accepted": 10,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    "pipecypher": {
+     "n": 10,
+     "accepted": 10,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    "cypherlens": {
+     "n": 10,
+     "accepted": 10,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    "cyspider": {
+     "n": 10,
+     "accepted": 10,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    "neo4jlabs": {
+     "n": 10,
+     "accepted": 10,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    },
+    "pc_v1_1": {
+     "n": 10,
+     "accepted": 10,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.7224672001371109,
+      1.0
+     ]
+    }
+   },
+   "D6_column_name_control": {
+    "cypherturn": {
+     "n": 5,
+     "accepted": 0,
+     "errors": 0,
+     "acceptance": 0.0,
+     "wilson95": [
+      0.0,
+      0.43448246478317465
+     ]
+    },
+    "cypherbench": {
+     "n": 5,
+     "accepted": 5,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    "gqlbench": {
+     "n": 5,
+     "accepted": 5,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    "tugraph": {
+     "n": 5,
+     "accepted": 5,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    "pipecypher": {
+     "n": 5,
+     "accepted": 5,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    "cypherlens": {
+     "n": 5,
+     "accepted": 5,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    "cyspider": {
+     "n": 5,
+     "accepted": 5,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    "neo4jlabs": {
+     "n": 5,
+     "accepted": 5,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    },
+    "pc_v1_1": {
+     "n": 5,
+     "accepted": 5,
+     "errors": 0,
+     "acceptance": 1.0,
+     "wilson95": [
+      0.5655175352168255,
+      1.0
+     ]
+    }
+   }
+  },
+  "pairwise": [
+   {
+    "a": "cypherturn",
+    "b": "cypherbench",
+    "n": 62,
+    "disagreements": 20,
+    "rate": 0.3225806451612903,
+    "wilson95": [
+     0.21954490651283892,
+     0.44631911907151894
+    ]
+   },
+   {
+    "a": "cypherturn",
+    "b": "gqlbench",
+    "n": 62,
+    "disagreements": 21,
+    "rate": 0.3387096774193548,
+    "wilson95": [
+     0.23341701875208903,
+     0.46282300450641806
+    ]
+   },
+   {
+    "a": "cypherturn",
+    "b": "tugraph",
+    "n": 62,
+    "disagreements": 45,
+    "rate": 0.7258064516129032,
+    "wilson95": [
+     0.6040746035801103,
+     0.8211893638579795
+    ]
+   },
+   {
+    "a": "cypherturn",
+    "b": "pipecypher",
+    "n": 62,
+    "disagreements": 12,
+    "rate": 0.1935483870967742,
+    "wilson95": [
+     0.1143380824029025,
+     0.30851796178826124
+    ]
+   },
+   {
+    "a": "cypherturn",
+    "b": "cypherlens",
+    "n": 62,
+    "disagreements": 15,
+    "rate": 0.24193548387096775,
+    "wilson95": [
+     0.15245896205333756,
+     0.3615250751602741
+    ]
+   },
+   {
+    "a": "cypherturn",
+    "b": "cyspider",
+    "n": 62,
+    "disagreements": 27,
+    "rate": 0.43548387096774194,
+    "wilson95": [
+     0.31942588902489055,
+     0.5590701202785122
+    ]
+   },
+   {
+    "a": "cypherbench",
+    "b": "gqlbench",
+    "n": 62,
+    "disagreements": 1,
+    "rate": 0.016129032258064516,
+    "wilson95": [
+     0.002852867168621827,
+     0.0858672026068999
+    ]
+   },
+   {
+    "a": "cypherbench",
+    "b": "tugraph",
+    "n": 62,
+    "disagreements": 25,
+    "rate": 0.4032258064516129,
+    "wilson95": [
+     0.2902486909591067,
+     0.5274953229959976
+    ]
+   },
+   {
+    "a": "cypherbench",
+    "b": "pipecypher",
+    "n": 62,
+    "disagreements": 22,
+    "rate": 0.3548387096774194,
+    "wilson95": [
+     0.247427328510499,
+     0.47918869242215756
+    ]
+   },
+   {
+    "a": "cypherbench",
+    "b": "cypherlens",
+    "n": 62,
+    "disagreements": 25,
+    "rate": 0.4032258064516129,
+    "wilson95": [
+     0.2902486909591067,
+     0.5274953229959976
+    ]
+   },
+   {
+    "a": "cypherbench",
+    "b": "cyspider",
+    "n": 62,
+    "disagreements": 7,
+    "rate": 0.11290322580645161,
+    "wilson95": [
+     0.05577863529399969,
+     0.21519742052641766
+    ]
+   },
+   {
+    "a": "gqlbench",
+    "b": "tugraph",
+    "n": 62,
+    "disagreements": 26,
+    "rate": 0.41935483870967744,
+    "wilson95": [
+     0.3047758590777194,
+     0.5433441525515341
+    ]
+   },
+   {
+    "a": "gqlbench",
+    "b": "pipecypher",
+    "n": 62,
+    "disagreements": 23,
+    "rate": 0.3709677419354839,
+    "wilson95": [
+     0.26157165984141106,
+     0.4954203587653947
+    ]
+   },
+   {
+    "a": "gqlbench",
+    "b": "cypherlens",
+    "n": 62,
+    "disagreements": 26,
+    "rate": 0.41935483870967744,
+    "wilson95": [
+     0.3047758590777194,
+     0.5433441525515341
+    ]
+   },
+   {
+    "a": "gqlbench",
+    "b": "cyspider",
+    "n": 62,
+    "disagreements": 8,
+    "rate": 0.12903225806451613,
+    "wilson95": [
+     0.06685878059283037,
+     0.23449327290173624
+    ]
+   },
+   {
+    "a": "tugraph",
+    "b": "pipecypher",
+    "n": 62,
+    "disagreements": 47,
+    "rate": 0.7580645161290323,
+    "wilson95": [
+     0.638474924839726,
+     0.8475410379466625
+    ]
+   },
+   {
+    "a": "tugraph",
+    "b": "cypherlens",
+    "n": 62,
+    "disagreements": 30,
+    "rate": 0.4838709677419355,
+    "wilson95": [
+     0.3640985983824575,
+     0.6055254039433933
+    ]
+   },
+   {
+    "a": "tugraph",
+    "b": "cyspider",
+    "n": 62,
+    "disagreements": 32,
+    "rate": 0.5161290322580645,
+    "wilson95": [
+     0.39447459605660684,
+     0.6359014016175425
+    ]
+   },
+   {
+    "a": "pipecypher",
+    "b": "cypherlens",
+    "n": 62,
+    "disagreements": 17,
+    "rate": 0.27419354838709675,
+    "wilson95": [
+     0.17881063614202042,
+     0.39592539641988966
+    ]
+   },
+   {
+    "a": "pipecypher",
+    "b": "cyspider",
+    "n": 62,
+    "disagreements": 15,
+    "rate": 0.24193548387096775,
+    "wilson95": [
+     0.15245896205333756,
+     0.3615250751602741
+    ]
+   },
+   {
+    "a": "cypherlens",
+    "b": "cyspider",
+    "n": 62,
+    "disagreements": 32,
+    "rate": 0.5161290322580645,
+    "wilson95": [
+     0.39447459605660684,
+     0.6359014016175425
+    ]
+   }
+  ],
+  "unanimity": {
+   "n_complete": 62,
+   "unanimous": 9,
+   "non_unanimous": 53,
+   "all_accept": 9
+  }
+ }
+}

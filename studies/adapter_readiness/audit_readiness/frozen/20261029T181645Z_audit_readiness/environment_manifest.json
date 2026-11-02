@@ -1,0 +1,18 @@
+{
+  "python": "3.12.15 (main, Sep 30 2026, 22:04:19) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "executable": "<project-root>/.venv/bin/python",
+  "platform": "macOS-15.6-arm64-arm-64bit",
+  "machine": "arm64",
+  "packages": {
+    "neo4j": "5.26.0",
+    "pandas": "2.3.3",
+    "numpy": "2.5.3",
+    "pydantic": "2.13.5",
+    "yaml": "6.0.3",
+    "tqdm": "4.70.1",
+    "requests": "2.34.2"
+  },
+  "packages_installed_this_session": [],
+  "gpu": "none used (CUDA_VISIBLE_DEVICES='')",
+  "network_at_scoring": "blocked in-process"
+}

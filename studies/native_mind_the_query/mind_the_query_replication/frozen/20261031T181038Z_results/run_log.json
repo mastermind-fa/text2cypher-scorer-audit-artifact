@@ -1,0 +1,17 @@
+{
+ "runner": "<project-root>/studies/corpus_audit/audit_analysis/code/run_experiment_v1_1.py",
+ "runner_sha256": "6ad22b285c46a16c2a0216403d3b2ebc1a9463f471278327ca626022d2bb0e74",
+ "input_hashes_sha256": "047b953e5ffb771152a9fe78b35595a0d5ec4009d2634407238d0b55d7550866",
+ "preregistration_hashes_sha256": "ad3040df5903bb12980f6ace2e11b19d7a519b38012aa70c9d66315c0e9a8c6c",
+ "runs": [
+  "{\"scorer\": \"cypherturn\", \"set\": \"s23\", \"n\": 77, \"seconds\": 0.111, \"adapter_sha256\": \"bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176\", \"runner\": \"v1.1\", \"case_timeout_s\": 120}",
+  "{\"scorer\": \"cypherbench\", \"set\": \"s23\", \"n\": 77, \"seconds\": 0.183, \"adapter_sha256\": \"bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176\", \"runner\": \"v1.1\", \"case_timeout_s\": 120}",
+  "{\"scorer\": \"gqlbench\", \"set\": \"s23\", \"n\": 77, \"seconds\": 0.235, \"adapter_sha256\": \"bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176\", \"runner\": \"v1.1\", \"case_timeout_s\": 120}",
+  "{\"scorer\": \"tugraph\", \"set\": \"s23\", \"n\": 77, \"seconds\": 0.135, \"adapter_sha256\": \"bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176\", \"runner\": \"v1.1\", \"case_timeout_s\": 120}",
+  "{\"scorer\": \"pipecypher\", \"set\": \"s23\", \"n\": 77, \"seconds\": 0.132, \"adapter_sha256\": \"bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176\", \"runner\": \"v1.1\", \"case_timeout_s\": 120}",
+  "{\"scorer\": \"cypherlens\", \"set\": \"s23\", \"n\": 77, \"seconds\": 0.151, \"adapter_sha256\": \"bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176\", \"runner\": \"v1.1\", \"case_timeout_s\": 120}",
+  "{\"scorer\": \"cyspider\", \"set\": \"s23\", \"n\": 77, \"seconds\": 0.115, \"adapter_sha256\": \"bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176\", \"runner\": \"v1.1\", \"case_timeout_s\": 120}",
+  "{\"scorer\": \"neo4jlabs\", \"set\": \"s23\", \"n\": 77, \"seconds\": 4.805, \"adapter_sha256\": \"bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176\", \"runner\": \"v1.1\", \"case_timeout_s\": 120}",
+  "{\"scorer\": \"pc_v1_1\", \"set\": \"s23\", \"n\": 77, \"seconds\": 2.338, \"adapter_sha256\": \"bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176\", \"runner\": \"v1.1\", \"case_timeout_s\": 120}"
+ ]
+}

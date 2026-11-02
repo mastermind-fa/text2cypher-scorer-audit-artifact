@@ -1,0 +1,19 @@
+{
+  "amendment": "audit-analysis-v1 / amendment 1 (infrastructure only)",
+  "created_utc": "2026-10-29T18:50:04.466624+00:00",
+  "base_freeze_sha256": "59ab6849cac0e3ae77802241f434ca02b8976eca3b6c1b11a01aa47881a1ecd0",
+  "trigger": "run_all.py v1 stalled: secondary scorer neo4j-labs df_sim_pair (O(rows^2) greedy alignment) did not finish an S3 unit within ~10 min (S3 contains a 67,131-row pair; synthetic check: 20,000 rows = 64 s). Process killed; no verdict inspected.",
+  "change": "run_experiment_v1_1.py = v1 + per-case 120 s SIGALRM timeout -> verdict ERROR:CaseTimeout (verified on synthetic 30,000-row pair). resume_run.py keeps all complete read-only v1 files (S1 x9, S3 x7 primary), discards the partial unsealed s3/neo4jlabs.jsonl, reruns neo4j-labs S3 whole set (retry rule), runs pc_v1_1 S3 and all S2 with v1.1.",
+  "unchanged": "adapters (bcc4db64...), scorer code, pairs, statistics/compute code, hypothesis, thresholds",
+  "files_sha256": {
+    "code/run_experiment_v1_1.py": "6ad22b285c46a16c2a0216403d3b2ebc1a9463f471278327ca626022d2bb0e74",
+    "code/resume_run.py": "e00603edfefbf124addceb13eb842380b435d430f3fa55d6eef16a6aea69ad52",
+    "code/run_all.py": "193dbb64bfd8bedce8865e9508eb2b822d643e7623d89f24cd6bebdb578c89bc",
+    "code/audit_analysis.py": "36871c09868d1dc0da51cc398ae1d64c70f6cca90d4c5e89eaf1c536de344f5d",
+    "code/compute_stats.py": "55e98a7f7427a5d28e2fb8cb71ead50b66e161a9818a72561d40f675f39e33f7",
+    "code/build_pairs.py": "ed99c3c0aab483f2f7c564d438028303d844b860d94c5466063541f0e8b1e92d",
+    "code/run_experiment.py": "3976193690f303ff9108752fb57293880c74eded48e4338a1df1449e8faca655",
+    "tests/test_audit_analysis.py": "fa1b3cb4fae267086bf54ba3b2c6283aba800215934461999280a43156dea2fb"
+  },
+  "freeze_sha256": "1f750e272e8da7eb2180948ca742042bd4f41d8792f350307b5108d04cd3aa55"
+}

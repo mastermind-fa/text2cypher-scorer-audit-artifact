@@ -1,0 +1,40 @@
+{
+  "candidate": "MAIN_AUDIT",
+  "primary_scorers": 7,
+  "pairwise_comparisons": 21,
+  "h_threshold": 0.02,
+  "multiplicity_method": "Bonferroni",
+  "family_alpha": 0.05,
+  "per_comparison_alpha": 0.002380952380952381,
+  "z_one_sided": 2.8227138814289363,
+  "hypothesis_name": "H1 in protocol audit-protocol-v1 (= H2 in the the main audit run brief)",
+  "h_supported": true,
+  "n_pairs_meeting_threshold": 11,
+  "max_pair_disagreement": 0.6838365896980462,
+  "max_pair_disagreement_pair": [
+    "cypherlens",
+    "cyspider"
+  ],
+  "max_pair_lower_bound": 0.6262834125215325,
+  "max_pair_lower_bound_pair": [
+    "cypherlens",
+    "cyspider"
+  ],
+  "s3_units": 563,
+  "s3_unanimous": 170,
+  "s3_units_with_disagreement": 393,
+  "s1_oracle_agreement_by_scorer": {
+    "cypherturn": 0.6226415094339622,
+    "cypherbench": 0.9056603773584906,
+    "gqlbench": 0.8867924528301887,
+    "tugraph": 0.8113207547169812,
+    "pipecypher": 0.7169811320754716,
+    "cypherlens": 0.6509433962264151,
+    "cyspider": 0.7358490566037735,
+    "neo4jlabs": 0.8867924528301887,
+    "pc_v1_1": 0.9528301886792453
+  },
+  "s1_interpretable_policy_differences": "REQUIRES_HUMAN_INTERPRETATION",
+  "meaningful_real_disagreement": "REQUIRES_HUMAN_INTERPRETATION",
+  "final_topic_decision": "REQUIRES_HUMAN_INTERPRETATION (recorded in audit_final_report.md / D-S14-01)"
+}

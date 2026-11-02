@@ -1,0 +1,7 @@
+scorer,set,n_oracle_defined,correct,oracle_agreement,n,pass,pass_rate,errors
+neo4jlabs,S1_oracle,106,94,0.8867924528301887,,,,
+neo4jlabs,S3,,,,562,528,0.9395017793594306,1
+neo4jlabs,S2,,,,158,5,0.03164556962025317,0
+pc_v1_1,S1_oracle,106,101,0.9528301886792453,,,,
+pc_v1_1,S3,,,,563,563,1.0,0
+pc_v1_1,S2,,,,158,5,0.03164556962025317,0

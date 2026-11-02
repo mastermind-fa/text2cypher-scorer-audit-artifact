@@ -1,0 +1,37 @@
+{
+  "eligible_sources": 1086,
+  "normalisation": "lower-case; non-alphanumeric runs -> single space",
+  "comparisons": {
+    "works_cycles_corpus": {
+      "question_overlap": 0,
+      "cypher_hash_overlap": 0,
+      "reference_questions": 562,
+      "reference_queries": 559
+    },
+    "project_splits_neo4j_val": {
+      "question_overlap": 0,
+      "cypher_hash_overlap": 0,
+      "reference_questions": 33073,
+      "reference_queries": 37883
+    },
+    "cypherturn": {
+      "question_overlap": 0,
+      "cypher_hash_overlap": 0,
+      "reference_questions": 5695,
+      "reference_queries": 3098
+    },
+    "native_cypherturn_validation": {
+      "question_overlap": null,
+      "cypher_hash_overlap": 0,
+      "reference_questions": 0,
+      "reference_queries": 120
+    },
+    "native_cypherturn_stress": {
+      "question_overlap": null,
+      "cypher_hash_overlap": 0,
+      "reference_questions": 0,
+      "reference_queries": 122
+    }
+  },
+  "any_overlap": false
+}

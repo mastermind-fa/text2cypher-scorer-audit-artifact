@@ -1,0 +1,17 @@
+{
+  "source": "BarryQ/CypherTurn",
+  "commit": "9d9528e16c8fe2fb388b9daa4b43dcaa6f229612",
+  "licence_note": "README: released for research purposes; no licence file",
+  "scenario_files_sha256": {
+    "ancient_empire_sessions.json": "80c594ef3e1736229e6e4b429205f9acfc4a3614d41fd29869bdad183358f5a1",
+    "arcane_archive_sessions.json": "e73b714f3fb77055363ce86671797aa21a0ae5a828b7df85b278d57e2b0f8294",
+    "celestial_court_sessions.json": "26fc8c9846a6b1ac2ee7dd9cc93e995f3d1e8f35ef7b4567e287febaa2cced13",
+    "magic_academy_sessions.json": "b4be693ab9c0c8449c028632a3e569d897664283d06f34f111e9b0fb32e85b4d",
+    "merchant_harbor_sessions.json": "1d397310a4a3b2dae549b53f1818c280263923d66883b47bc7150a13626c5249",
+    "ocean_kingdom_sessions.json": "41c0fd6be1b89657beb98c0d1d88adcc3ae564aa0532ca800bcd3dafe8d66766",
+    "stellar_colony_sessions.json": "55288acbca1257fb2b46f12b8e9dfb60ee1b5c27ae0dd776e4c4dfb42960a0f3"
+  },
+  "candidates_file_sha256": "c5675323de8d3e498a88834f4abf2f9b753fa163ff09b3ecf1906bc9ed7375a8",
+  "rules_sha256": "d94213892bb2dacb83da8aa90b386185db1f25d9817f0d2334989672dbf90511",
+  "oracle_sha256": "a8e60c2d5b0189ae00fbdab1af0299bc279193b6f9322586890788ec511e8e6b"
+}

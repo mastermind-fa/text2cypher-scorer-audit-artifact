@@ -1,0 +1,35 @@
+{
+  "adapters_version": "audit-adapters-v1",
+  "protocol": "audit-protocol-v1 (tag audit-protocol-v1)",
+  "code_sha256": {
+    "audit_adapters.py": "bcc4db6425b11deee46762cbe62d2e2d900c15fddb8fb9962a834885d0bc3176",
+    "run_adapter.py": "bc0232464eb474b4456af0369ba3cc53340a9caa9e2513164deb91bf4320d312",
+    "audit_readiness.py": "49d1df5051286128c0b42ccb686738803f58f991c9e6b0bb41cacce1deed5598"
+  },
+  "cyspider_extracted_function_sha256": "18e8c5c54db25bd6d89e18e9b60591cb00b133b64ec589079d67deb6331fe194",
+  "neo4jlabs_cell5_sha256": "396959a340e3f553a15bb171d2ea323d3808d31d0b888d7eadefd140246bbaef",
+  "invocation": {
+    "cypherbench_gqlbench_seed": 42,
+    "repeats": 5,
+    "hashseeds": [
+      0,
+      1
+    ],
+    "network": "blocked",
+    "cuda": "hidden"
+  },
+  "primary": [
+    "cypherturn",
+    "cypherbench",
+    "gqlbench",
+    "tugraph",
+    "pipecypher",
+    "cypherlens",
+    "cyspider"
+  ],
+  "secondary": [
+    "neo4jlabs",
+    "pc_v1_1"
+  ],
+  "exclusions": []
+}

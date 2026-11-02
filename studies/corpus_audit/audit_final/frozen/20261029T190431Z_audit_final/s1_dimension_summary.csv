@@ -1,0 +1,388 @@
+dimension,scorer,kind,n,correct,incorrect,errors,verdicts
+D01_identical,cypherturn,ORACLE,6,6,0,0,1 1 1 1 1 1
+D01_identical,cypherbench,ORACLE,6,6,0,0,1 1 1 1 1 1
+D01_identical,gqlbench,ORACLE,6,6,0,0,1 1 1 1 1 1
+D01_identical,tugraph,ORACLE,6,6,0,0,1 1 1 1 1 1
+D01_identical,pipecypher,ORACLE,6,6,0,0,1 1 1 1 1 1
+D01_identical,cypherlens,ORACLE,6,6,0,0,1 1 1 1 1 1
+D01_identical,cyspider,ORACLE,6,6,0,0,1 1 1 1 1 1
+D01_identical,neo4jlabs,ORACLE,6,6,0,0,1 1 1 1 1 1
+D01_identical,pc_v1_1,ORACLE,6,6,0,0,1 1 1 1 1 1
+D02_alias_renamed,cypherturn,ORACLE,6,0,6,0,0 0 0 0 0 0
+D02_alias_renamed,cypherbench,ORACLE,6,6,0,0,1 1 1 1 1 1
+D02_alias_renamed,gqlbench,ORACLE,6,6,0,0,1 1 1 1 1 1
+D02_alias_renamed,tugraph,ORACLE,6,6,0,0,1 1 1 1 1 1
+D02_alias_renamed,pipecypher,ORACLE,6,2,4,0,1 1 0 0 0 0
+D02_alias_renamed,cypherlens,ORACLE,6,0,6,0,0 0 0 0 0 0
+D02_alias_renamed,cyspider,ORACLE,6,6,0,0,1 1 1 1 1 1
+D02_alias_renamed,neo4jlabs,ORACLE,6,6,0,0,1 1 1 1 1 1
+D02_alias_renamed,pc_v1_1,ORACLE,6,6,0,0,1 1 1 1 1 1
+D03_unaliased_expression_keys,cypherturn,ORACLE,6,0,6,0,0 0 0 0 0 0
+D03_unaliased_expression_keys,cypherbench,ORACLE,6,6,0,0,1 1 1 1 1 1
+D03_unaliased_expression_keys,gqlbench,ORACLE,6,6,0,0,1 1 1 1 1 1
+D03_unaliased_expression_keys,tugraph,ORACLE,6,6,0,0,1 1 1 1 1 1
+D03_unaliased_expression_keys,pipecypher,ORACLE,6,2,4,0,1 1 0 0 0 0
+D03_unaliased_expression_keys,cypherlens,ORACLE,6,0,6,0,0 0 0 0 0 0
+D03_unaliased_expression_keys,cyspider,ORACLE,6,6,0,0,1 1 1 1 1 1
+D03_unaliased_expression_keys,neo4jlabs,ORACLE,6,6,0,0,1 1 1 1 1 1
+D03_unaliased_expression_keys,pc_v1_1,ORACLE,6,6,0,0,1 1 1 1 1 1
+D04_column_order,cypherturn,ORACLE,6,6,0,0,1 1 1 1 1 1
+D04_column_order,cypherbench,ORACLE,6,6,0,0,1 1 1 1 1 1
+D04_column_order,gqlbench,ORACLE,6,6,0,0,1 1 1 1 1 1
+D04_column_order,tugraph,ORACLE,6,0,6,0,0 0 0 0 0 0
+D04_column_order,pipecypher,ORACLE,6,6,0,0,1 1 1 1 1 1
+D04_column_order,cypherlens,ORACLE,6,6,0,0,1 1 1 1 1 1
+D04_column_order,cyspider,ORACLE,6,0,6,0,0 0 0 0 0 0
+D04_column_order,neo4jlabs,ORACLE,6,6,0,0,1 1 1 1 1 1
+D04_column_order,pc_v1_1,ORACLE,6,6,0,0,1 1 1 1 1 1
+D05_row_order_unordered,cypherturn,ORACLE,5,5,0,0,1 1 1 1 1
+D05_row_order_unordered,cypherbench,ORACLE,5,5,0,0,1 1 1 1 1
+D05_row_order_unordered,gqlbench,ORACLE,5,5,0,0,1 1 1 1 1
+D05_row_order_unordered,tugraph,ORACLE,5,5,0,0,1 1 1 1 1
+D05_row_order_unordered,pipecypher,ORACLE,5,5,0,0,1 1 1 1 1
+D05_row_order_unordered,cypherlens,ORACLE,5,5,0,0,1 1 1 1 1
+D05_row_order_unordered,cyspider,ORACLE,5,5,0,0,1 1 1 1 1
+D05_row_order_unordered,neo4jlabs,ORACLE,5,5,0,0,1 1 1 1 1
+D05_row_order_unordered,pc_v1_1,ORACLE,5,5,0,0,1 1 1 1 1
+D06_order_required_violated,cypherturn,ORACLE,4,0,4,0,1 1 1 1
+D06_order_required_violated,cypherbench,ORACLE,4,4,0,0,0 0 0 0
+D06_order_required_violated,gqlbench,ORACLE,4,4,0,0,0 0 0 0
+D06_order_required_violated,tugraph,ORACLE,4,1,3,0,1 1 0 1
+D06_order_required_violated,pipecypher,ORACLE,4,0,4,0,1 1 1 1
+D06_order_required_violated,cypherlens,ORACLE,4,0,4,0,1 1 1 1
+D06_order_required_violated,cyspider,ORACLE,4,0,4,0,1 1 1 1
+D06_order_required_violated,neo4jlabs,ORACLE,4,4,0,0,0 0 0 0
+D06_order_required_violated,pc_v1_1,ORACLE,4,0,4,0,1 1 1 1
+D07_order_not_required,cypherturn,ORACLE,4,4,0,0,1 1 1 1
+D07_order_not_required,cypherbench,ORACLE,4,4,0,0,1 1 1 1
+D07_order_not_required,gqlbench,ORACLE,4,4,0,0,1 1 1 1
+D07_order_not_required,tugraph,ORACLE,4,0,4,0,0 0 0 0
+D07_order_not_required,pipecypher,ORACLE,4,4,0,0,1 1 1 1
+D07_order_not_required,cypherlens,ORACLE,4,2,2,0,1 0 0 1
+D07_order_not_required,cyspider,ORACLE,4,4,0,0,1 1 1 1
+D07_order_not_required,neo4jlabs,ORACLE,4,0,4,0,0 0 0 0
+D07_order_not_required,pc_v1_1,ORACLE,4,4,0,0,1 1 1 1
+D08_order_both_same,cypherturn,ORACLE,2,1,1,0,1 0
+D08_order_both_same,cypherbench,ORACLE,2,2,0,0,1 1
+D08_order_both_same,gqlbench,ORACLE,2,2,0,0,1 1
+D08_order_both_same,tugraph,ORACLE,2,2,0,0,1 1
+D08_order_both_same,pipecypher,ORACLE,2,1,1,0,1 0
+D08_order_both_same,cypherlens,ORACLE,2,2,0,0,1 1
+D08_order_both_same,cyspider,ORACLE,2,2,0,0,1 1
+D08_order_both_same,neo4jlabs,ORACLE,2,2,0,0,1 1
+D08_order_both_same,pc_v1_1,ORACLE,2,2,0,0,1 1
+D09_duplicate_extra_in_pred,cypherturn,POLICY_ONLY,4,,,0,0 0 0 0
+D09_duplicate_extra_in_pred,cypherbench,POLICY_ONLY,4,,,0,0 0 0 0
+D09_duplicate_extra_in_pred,gqlbench,POLICY_ONLY,4,,,0,0 0 0 0
+D09_duplicate_extra_in_pred,tugraph,POLICY_ONLY,4,,,0,0 0 0 0
+D09_duplicate_extra_in_pred,pipecypher,POLICY_ONLY,4,,,0,1 1 1 1
+D09_duplicate_extra_in_pred,cypherlens,POLICY_ONLY,4,,,0,0 0 0 0
+D09_duplicate_extra_in_pred,cyspider,POLICY_ONLY,4,,,0,1 1 1 1
+D09_duplicate_extra_in_pred,neo4jlabs,POLICY_ONLY,4,,,0,0 0 0 0
+D09_duplicate_extra_in_pred,pc_v1_1,POLICY_ONLY,4,,,0,0 0 0 0
+D09_duplicate_multiplicity_differs,cypherturn,POLICY_ONLY,1,,,0,0
+D09_duplicate_multiplicity_differs,cypherbench,POLICY_ONLY,1,,,0,0
+D09_duplicate_multiplicity_differs,gqlbench,POLICY_ONLY,1,,,0,0
+D09_duplicate_multiplicity_differs,tugraph,POLICY_ONLY,1,,,0,0
+D09_duplicate_multiplicity_differs,pipecypher,POLICY_ONLY,1,,,0,1
+D09_duplicate_multiplicity_differs,cypherlens,POLICY_ONLY,1,,,0,0
+D09_duplicate_multiplicity_differs,cyspider,POLICY_ONLY,1,,,0,1
+D09_duplicate_multiplicity_differs,neo4jlabs,POLICY_ONLY,1,,,0,0
+D09_duplicate_multiplicity_differs,pc_v1_1,POLICY_ONLY,1,,,0,0
+D09_duplicate_removed_in_pred,cypherturn,POLICY_ONLY,2,,,0,0 0
+D09_duplicate_removed_in_pred,cypherbench,POLICY_ONLY,2,,,0,0 0
+D09_duplicate_removed_in_pred,gqlbench,POLICY_ONLY,2,,,0,0 0
+D09_duplicate_removed_in_pred,tugraph,POLICY_ONLY,2,,,0,0 0
+D09_duplicate_removed_in_pred,pipecypher,POLICY_ONLY,2,,,0,1 1
+D09_duplicate_removed_in_pred,cypherlens,POLICY_ONLY,2,,,0,0 0
+D09_duplicate_removed_in_pred,cyspider,POLICY_ONLY,2,,,0,1 1
+D09_duplicate_removed_in_pred,neo4jlabs,POLICY_ONLY,2,,,0,0 0
+D09_duplicate_removed_in_pred,pc_v1_1,POLICY_ONLY,2,,,0,0 0
+D10_extra_row,cypherturn,ORACLE,5,5,0,0,0 0 0 0 0
+D10_extra_row,cypherbench,ORACLE,5,5,0,0,0 0 0 0 0
+D10_extra_row,gqlbench,ORACLE,5,5,0,0,0 0 0 0 0
+D10_extra_row,tugraph,ORACLE,5,5,0,0,0 0 0 0 0
+D10_extra_row,pipecypher,ORACLE,5,5,0,0,0 0 0 0 0
+D10_extra_row,cypherlens,ORACLE,5,5,0,0,0 0 0 0 0
+D10_extra_row,cyspider,ORACLE,5,5,0,0,0 0 0 0 0
+D10_extra_row,neo4jlabs,ORACLE,5,5,0,0,0 0 0 0 0
+D10_extra_row,pc_v1_1,ORACLE,5,5,0,0,0 0 0 0 0
+D11_missing_row,cypherturn,ORACLE,5,5,0,0,0 0 0 0 0
+D11_missing_row,cypherbench,ORACLE,5,5,0,0,0 0 0 0 0
+D11_missing_row,gqlbench,ORACLE,5,5,0,0,0 0 0 0 0
+D11_missing_row,tugraph,ORACLE,5,5,0,0,0 0 0 0 0
+D11_missing_row,pipecypher,ORACLE,5,5,0,0,0 0 0 0 0
+D11_missing_row,cypherlens,ORACLE,5,5,0,0,0 0 0 0 0
+D11_missing_row,cyspider,ORACLE,5,5,0,0,0 0 0 0 0
+D11_missing_row,neo4jlabs,ORACLE,5,5,0,0,0 0 0 0 0
+D11_missing_row,pc_v1_1,ORACLE,5,5,0,0,0 0 0 0 0
+D12_int_vs_float,cypherturn,ORACLE,4,0,4,0,0 0 0 0
+D12_int_vs_float,cypherbench,ORACLE,4,4,0,0,1 1 1 1
+D12_int_vs_float,gqlbench,ORACLE,4,4,0,0,1 1 1 1
+D12_int_vs_float,tugraph,ORACLE,4,4,0,0,1 1 1 1
+D12_int_vs_float,pipecypher,ORACLE,4,0,4,0,0 0 0 0
+D12_int_vs_float,cypherlens,ORACLE,4,0,4,0,0 0 0 0
+D12_int_vs_float,cyspider,ORACLE,4,4,0,0,1 1 1 1
+D12_int_vs_float,neo4jlabs,ORACLE,4,4,0,0,1 1 1 1
+D12_int_vs_float,pc_v1_1,ORACLE,4,4,0,0,1 1 1 1
+D13_float_difference_material,cypherturn,ORACLE,3,3,0,0,0 0 0
+D13_float_difference_material,cypherbench,ORACLE,3,3,0,0,0 0 0
+D13_float_difference_material,gqlbench,ORACLE,3,3,0,0,0 0 0
+D13_float_difference_material,tugraph,ORACLE,3,3,0,0,0 0 0
+D13_float_difference_material,pipecypher,ORACLE,3,3,0,0,0 0 0
+D13_float_difference_material,cypherlens,ORACLE,3,3,0,0,0 0 0
+D13_float_difference_material,cyspider,ORACLE,3,3,0,0,0 0 0
+D13_float_difference_material,neo4jlabs,ORACLE,3,3,0,0,0 0 0
+D13_float_difference_material,pc_v1_1,ORACLE,3,3,0,0,0 0 0
+D13_float_tolerance_tiny,cypherturn,ORACLE,4,0,4,0,0 0 0 0
+D13_float_tolerance_tiny,cypherbench,ORACLE,4,0,4,0,0 0 0 0
+D13_float_tolerance_tiny,gqlbench,ORACLE,4,0,4,0,0 0 0 0
+D13_float_tolerance_tiny,tugraph,ORACLE,4,4,0,0,1 1 1 1
+D13_float_tolerance_tiny,pipecypher,ORACLE,4,0,4,0,0 0 0 0
+D13_float_tolerance_tiny,cypherlens,ORACLE,4,4,0,0,1 1 1 1
+D13_float_tolerance_tiny,cyspider,ORACLE,4,0,4,0,0 0 0 0
+D13_float_tolerance_tiny,neo4jlabs,ORACLE,4,0,4,0,0 0 0 0
+D13_float_tolerance_tiny,pc_v1_1,ORACLE,4,4,0,0,1 1 1 1
+D14_number_vs_string,cypherturn,ORACLE,4,0,4,0,1 1 1 1
+D14_number_vs_string,cypherbench,ORACLE,4,4,0,0,0 0 0 0
+D14_number_vs_string,gqlbench,ORACLE,4,4,0,0,0 0 0 0
+D14_number_vs_string,tugraph,ORACLE,4,4,0,0,0 0 0 0
+D14_number_vs_string,pipecypher,ORACLE,4,0,4,0,1 1 1 1
+D14_number_vs_string,cypherlens,ORACLE,4,1,3,0,1 1 0 1
+D14_number_vs_string,cyspider,ORACLE,4,4,0,0,0 0 0 0
+D14_number_vs_string,neo4jlabs,ORACLE,4,4,0,0,0 0 0 0
+D14_number_vs_string,pc_v1_1,ORACLE,4,4,0,0,0 0 0 0
+D15_null_vs_empty_string,cypherturn,ORACLE,2,2,0,0,0 0
+D15_null_vs_empty_string,cypherbench,ORACLE,2,2,0,0,0 0
+D15_null_vs_empty_string,gqlbench,ORACLE,2,2,0,0,0 0
+D15_null_vs_empty_string,tugraph,ORACLE,2,2,0,0,0 0
+D15_null_vs_empty_string,pipecypher,ORACLE,2,2,0,0,0 0
+D15_null_vs_empty_string,cypherlens,ORACLE,2,0,2,0,1 1
+D15_null_vs_empty_string,cyspider,ORACLE,2,2,0,0,0 0
+D15_null_vs_empty_string,neo4jlabs,ORACLE,2,2,0,0,0 0
+D15_null_vs_empty_string,pc_v1_1,ORACLE,2,2,0,0,0 0
+D15_null_vs_string_none,cypherturn,ORACLE,1,0,1,0,1
+D15_null_vs_string_none,cypherbench,ORACLE,1,1,0,0,0
+D15_null_vs_string_none,gqlbench,ORACLE,1,1,0,0,0
+D15_null_vs_string_none,tugraph,ORACLE,1,1,0,0,0
+D15_null_vs_string_none,pipecypher,ORACLE,1,0,1,0,1
+D15_null_vs_string_none,cypherlens,ORACLE,1,1,0,0,0
+D15_null_vs_string_none,cyspider,ORACLE,1,1,0,0,0
+D15_null_vs_string_none,neo4jlabs,ORACLE,1,1,0,0,0
+D15_null_vs_string_none,pc_v1_1,ORACLE,1,1,0,0,0
+D15_null_vs_zero,cypherturn,ORACLE,1,1,0,0,0
+D15_null_vs_zero,cypherbench,ORACLE,1,1,0,0,0
+D15_null_vs_zero,gqlbench,ORACLE,1,1,0,0,0
+D15_null_vs_zero,tugraph,ORACLE,1,1,0,0,0
+D15_null_vs_zero,pipecypher,ORACLE,1,1,0,0,0
+D15_null_vs_zero,cypherlens,ORACLE,1,1,0,0,0
+D15_null_vs_zero,cyspider,ORACLE,1,1,0,0,0
+D15_null_vs_zero,neo4jlabs,ORACLE,1,1,0,0,0
+D15_null_vs_zero,pc_v1_1,ORACLE,1,1,0,0,0
+D16_null_row_permutation,cypherturn,ORACLE,2,2,0,0,1 1
+D16_null_row_permutation,cypherbench,ORACLE,2,2,0,0,1 1
+D16_null_row_permutation,gqlbench,ORACLE,2,0,2,0,0 0
+D16_null_row_permutation,tugraph,ORACLE,2,2,0,0,1 1
+D16_null_row_permutation,pipecypher,ORACLE,2,2,0,0,1 1
+D16_null_row_permutation,cypherlens,ORACLE,2,2,0,0,1 1
+D16_null_row_permutation,cyspider,ORACLE,2,2,0,0,1 1
+D16_null_row_permutation,neo4jlabs,ORACLE,2,2,0,0,1 1
+D16_null_row_permutation,pc_v1_1,ORACLE,2,2,0,0,1 1
+D17_both_empty,cypherturn,ORACLE,2,2,0,0,1 1
+D17_both_empty,cypherbench,ORACLE,2,2,0,0,1 1
+D17_both_empty,gqlbench,ORACLE,2,2,0,0,1 1
+D17_both_empty,tugraph,ORACLE,2,2,0,0,1 1
+D17_both_empty,pipecypher,ORACLE,2,2,0,0,1 1
+D17_both_empty,cypherlens,ORACLE,2,2,0,0,1 1
+D17_both_empty,cyspider,ORACLE,2,2,0,0,1 1
+D17_both_empty,neo4jlabs,ORACLE,2,2,0,0,1 1
+D17_both_empty,pc_v1_1,ORACLE,2,2,0,0,1 1
+D17_gold_empty_pred_nonempty,cypherturn,ORACLE,2,2,0,0,0 0
+D17_gold_empty_pred_nonempty,cypherbench,ORACLE,2,2,0,0,0 0
+D17_gold_empty_pred_nonempty,gqlbench,ORACLE,2,2,0,0,0 0
+D17_gold_empty_pred_nonempty,tugraph,ORACLE,2,2,0,0,0 0
+D17_gold_empty_pred_nonempty,pipecypher,ORACLE,2,2,0,0,0 0
+D17_gold_empty_pred_nonempty,cypherlens,ORACLE,2,2,0,0,0 0
+D17_gold_empty_pred_nonempty,cyspider,ORACLE,2,2,0,0,0 0
+D17_gold_empty_pred_nonempty,neo4jlabs,ORACLE,2,2,0,0,0 0
+D17_gold_empty_pred_nonempty,pc_v1_1,ORACLE,2,2,0,0,0 0
+D17_gold_nonempty_pred_empty,cypherturn,ORACLE,2,2,0,0,0 0
+D17_gold_nonempty_pred_empty,cypherbench,ORACLE,2,2,0,0,0 0
+D17_gold_nonempty_pred_empty,gqlbench,ORACLE,2,2,0,0,0 0
+D17_gold_nonempty_pred_empty,tugraph,ORACLE,2,2,0,0,0 0
+D17_gold_nonempty_pred_empty,pipecypher,ORACLE,2,2,0,0,0 0
+D17_gold_nonempty_pred_empty,cypherlens,ORACLE,2,2,0,0,0 0
+D17_gold_nonempty_pred_empty,cyspider,ORACLE,2,2,0,0,0 0
+D17_gold_nonempty_pred_empty,neo4jlabs,ORACLE,2,2,0,0,0 0
+D17_gold_nonempty_pred_empty,pc_v1_1,ORACLE,2,2,0,0,0 0
+D18_zero_aggregate,cypherturn,ORACLE,4,2,2,0,0 0 0 0
+D18_zero_aggregate,cypherbench,ORACLE,4,4,0,0,1 1 0 0
+D18_zero_aggregate,gqlbench,ORACLE,4,4,0,0,1 1 0 0
+D18_zero_aggregate,tugraph,ORACLE,4,4,0,0,1 1 0 0
+D18_zero_aggregate,pipecypher,ORACLE,4,3,1,0,1 0 0 0
+D18_zero_aggregate,cypherlens,ORACLE,4,2,2,0,0 1 0 1
+D18_zero_aggregate,cyspider,ORACLE,4,4,0,0,1 1 0 0
+D18_zero_aggregate,neo4jlabs,ORACLE,4,4,0,0,1 1 0 0
+D18_zero_aggregate,pc_v1_1,ORACLE,4,4,0,0,1 1 0 0
+D19_all_null,cypherturn,ORACLE,4,3,1,0,0 1 0 0
+D19_all_null,cypherbench,ORACLE,4,4,0,0,1 1 0 0
+D19_all_null,gqlbench,ORACLE,4,4,0,0,1 1 0 0
+D19_all_null,tugraph,ORACLE,4,4,0,0,1 1 0 0
+D19_all_null,pipecypher,ORACLE,4,3,1,0,1 1 0 1
+D19_all_null,cypherlens,ORACLE,4,4,0,0,1 1 0 0
+D19_all_null,cyspider,ORACLE,4,3,1,0,1 1 0 1
+D19_all_null,neo4jlabs,ORACLE,4,4,0,0,1 1 0 0
+D19_all_null,pc_v1_1,ORACLE,4,4,0,0,1 1 0 0
+D20_string_case,cypherturn,ORACLE,2,2,0,0,0 0
+D20_string_case,cypherbench,ORACLE,2,2,0,0,0 0
+D20_string_case,gqlbench,ORACLE,2,2,0,0,0 0
+D20_string_case,tugraph,ORACLE,2,2,0,0,0 0
+D20_string_case,pipecypher,ORACLE,2,2,0,0,0 0
+D20_string_case,cypherlens,ORACLE,2,2,0,0,0 0
+D20_string_case,cyspider,ORACLE,2,2,0,0,0 0
+D20_string_case,neo4jlabs,ORACLE,2,2,0,0,0 0
+D20_string_case,pc_v1_1,ORACLE,2,2,0,0,0 0
+D20_string_whitespace,cypherturn,ORACLE,2,2,0,0,0 0
+D20_string_whitespace,cypherbench,ORACLE,2,2,0,0,0 0
+D20_string_whitespace,gqlbench,ORACLE,2,2,0,0,0 0
+D20_string_whitespace,tugraph,ORACLE,2,2,0,0,0 0
+D20_string_whitespace,pipecypher,ORACLE,2,2,0,0,0 0
+D20_string_whitespace,cypherlens,ORACLE,2,2,0,0,0 0
+D20_string_whitespace,cyspider,ORACLE,2,2,0,0,0 0
+D20_string_whitespace,neo4jlabs,ORACLE,2,2,0,0,0 0
+D20_string_whitespace,pc_v1_1,ORACLE,2,2,0,0,0 0
+D21_list_different,cypherturn,ORACLE,2,2,0,0,0 0
+D21_list_different,cypherbench,ORACLE,2,2,0,0,0 0
+D21_list_different,gqlbench,ORACLE,2,2,0,0,0 0
+D21_list_different,tugraph,ORACLE,2,2,0,0,0 0
+D21_list_different,pipecypher,ORACLE,2,2,0,0,0 0
+D21_list_different,cypherlens,ORACLE,2,2,0,0,0 0
+D21_list_different,cyspider,ORACLE,2,0,2,2,ERROR ERROR
+D21_list_different,neo4jlabs,ORACLE,2,2,0,0,0 0
+D21_list_different,pc_v1_1,ORACLE,2,2,0,0,0 0
+D21_list_identical,cypherturn,ORACLE,2,1,1,0,1 0
+D21_list_identical,cypherbench,ORACLE,2,2,0,0,1 1
+D21_list_identical,gqlbench,ORACLE,2,2,0,0,1 1
+D21_list_identical,tugraph,ORACLE,2,2,0,0,1 1
+D21_list_identical,pipecypher,ORACLE,2,1,1,0,1 0
+D21_list_identical,cypherlens,ORACLE,2,1,1,0,1 0
+D21_list_identical,cyspider,ORACLE,2,0,2,2,ERROR ERROR
+D21_list_identical,neo4jlabs,ORACLE,2,2,0,0,1 1
+D21_list_identical,pc_v1_1,ORACLE,2,2,0,0,1 1
+D21_list_order,cypherturn,POLICY_ONLY,3,,,0,0 0 0
+D21_list_order,cypherbench,POLICY_ONLY,3,,,0,1 1 1
+D21_list_order,gqlbench,POLICY_ONLY,3,,,0,0 0 0
+D21_list_order,tugraph,POLICY_ONLY,3,,,0,0 0 0
+D21_list_order,pipecypher,POLICY_ONLY,3,,,0,0 0 0
+D21_list_order,cypherlens,POLICY_ONLY,3,,,0,0 0 0
+D21_list_order,cyspider,POLICY_ONLY,3,,,3,ERROR ERROR ERROR
+D21_list_order,neo4jlabs,POLICY_ONLY,3,,,0,0 0 0
+D21_list_order,pc_v1_1,POLICY_ONLY,3,,,0,0 0 0
+D22_map_different,cypherturn,ORACLE,1,0,1,1,ERROR
+D22_map_different,cypherbench,ORACLE,1,0,1,1,ERROR
+D22_map_different,gqlbench,ORACLE,1,0,1,1,ERROR
+D22_map_different,tugraph,ORACLE,1,0,1,1,ERROR
+D22_map_different,pipecypher,ORACLE,1,1,0,0,0
+D22_map_different,cypherlens,ORACLE,1,1,0,0,0
+D22_map_different,cyspider,ORACLE,1,0,1,1,ERROR
+D22_map_different,neo4jlabs,ORACLE,1,1,0,0,0
+D22_map_different,pc_v1_1,ORACLE,1,1,0,0,0
+D22_map_identical,cypherturn,ORACLE,1,1,0,0,1
+D22_map_identical,cypherbench,ORACLE,1,1,0,0,1
+D22_map_identical,gqlbench,ORACLE,1,1,0,0,1
+D22_map_identical,tugraph,ORACLE,1,1,0,0,1
+D22_map_identical,pipecypher,ORACLE,1,1,0,0,1
+D22_map_identical,cypherlens,ORACLE,1,1,0,0,1
+D22_map_identical,cyspider,ORACLE,1,0,1,1,ERROR
+D22_map_identical,neo4jlabs,ORACLE,1,1,0,0,1
+D22_map_identical,pc_v1_1,ORACLE,1,1,0,0,1
+D22_map_key_order,cypherturn,ORACLE,1,1,0,0,1
+D22_map_key_order,cypherbench,ORACLE,1,1,0,0,1
+D22_map_key_order,gqlbench,ORACLE,1,1,0,0,1
+D22_map_key_order,tugraph,ORACLE,1,1,0,0,1
+D22_map_key_order,pipecypher,ORACLE,1,0,1,0,0
+D22_map_key_order,cypherlens,ORACLE,1,0,1,0,0
+D22_map_key_order,cyspider,ORACLE,1,0,1,1,ERROR
+D22_map_key_order,neo4jlabs,ORACLE,1,0,1,0,0
+D22_map_key_order,pc_v1_1,ORACLE,1,1,0,0,1
+D22_map_vs_scalar,cypherturn,ORACLE,1,0,1,1,ERROR
+D22_map_vs_scalar,cypherbench,ORACLE,1,0,1,1,ERROR
+D22_map_vs_scalar,gqlbench,ORACLE,1,0,1,1,ERROR
+D22_map_vs_scalar,tugraph,ORACLE,1,0,1,1,ERROR
+D22_map_vs_scalar,pipecypher,ORACLE,1,1,0,0,0
+D22_map_vs_scalar,cypherlens,ORACLE,1,1,0,0,0
+D22_map_vs_scalar,cyspider,ORACLE,1,0,1,1,ERROR
+D22_map_vs_scalar,neo4jlabs,ORACLE,1,1,0,0,0
+D22_map_vs_scalar,pc_v1_1,ORACLE,1,1,0,0,0
+D23_topk_tie,cypherturn,POLICY_ONLY,3,,,0,0 1 1
+D23_topk_tie,cypherbench,POLICY_ONLY,3,,,0,0 0 0
+D23_topk_tie,gqlbench,POLICY_ONLY,3,,,0,0 0 0
+D23_topk_tie,tugraph,POLICY_ONLY,3,,,0,0 0 1
+D23_topk_tie,pipecypher,POLICY_ONLY,3,,,0,0 1 1
+D23_topk_tie,cypherlens,POLICY_ONLY,3,,,0,0 1 1
+D23_topk_tie,cyspider,POLICY_ONLY,3,,,0,0 1 1
+D23_topk_tie,neo4jlabs,POLICY_ONLY,3,,,0,0 0 0
+D23_topk_tie,pc_v1_1,POLICY_ONLY,3,,,0,0 1 1
+D24_extra_column,cypherturn,POLICY_ONLY,2,,,0,0 0
+D24_extra_column,cypherbench,POLICY_ONLY,2,,,0,0 0
+D24_extra_column,gqlbench,POLICY_ONLY,2,,,0,0 0
+D24_extra_column,tugraph,POLICY_ONLY,2,,,0,0 0
+D24_extra_column,pipecypher,POLICY_ONLY,2,,,0,0 0
+D24_extra_column,cypherlens,POLICY_ONLY,2,,,0,1 1
+D24_extra_column,cyspider,POLICY_ONLY,2,,,0,0 0
+D24_extra_column,neo4jlabs,POLICY_ONLY,2,,,0,0 0
+D24_extra_column,pc_v1_1,POLICY_ONLY,2,,,0,0 0
+D24_missing_column,cypherturn,ORACLE,1,1,0,0,0
+D24_missing_column,cypherbench,ORACLE,1,1,0,0,0
+D24_missing_column,gqlbench,ORACLE,1,1,0,0,0
+D24_missing_column,tugraph,ORACLE,1,1,0,0,0
+D24_missing_column,pipecypher,ORACLE,1,1,0,0,0
+D24_missing_column,cypherlens,ORACLE,1,1,0,0,0
+D24_missing_column,cyspider,ORACLE,1,1,0,0,0
+D24_missing_column,neo4jlabs,ORACLE,1,1,0,0,0
+D24_missing_column,pc_v1_1,ORACLE,1,1,0,0,0
+D25_row_affiliation,cypherturn,ORACLE,2,2,0,0,0 0
+D25_row_affiliation,cypherbench,ORACLE,2,2,0,0,0 0
+D25_row_affiliation,gqlbench,ORACLE,2,2,0,0,0 0
+D25_row_affiliation,tugraph,ORACLE,2,2,0,0,0 0
+D25_row_affiliation,pipecypher,ORACLE,2,2,0,0,0 0
+D25_row_affiliation,cypherlens,ORACLE,2,0,2,0,1 1
+D25_row_affiliation,cyspider,ORACLE,2,2,0,0,0 0
+D25_row_affiliation,neo4jlabs,ORACLE,2,2,0,0,0 0
+D25_row_affiliation,pc_v1_1,ORACLE,2,2,0,0,0 0
+D25_same_valueset_per_row,cypherturn,ORACLE,1,0,1,1,ERROR
+D25_same_valueset_per_row,cypherbench,ORACLE,1,0,1,1,ERROR
+D25_same_valueset_per_row,gqlbench,ORACLE,1,0,1,1,ERROR
+D25_same_valueset_per_row,tugraph,ORACLE,1,0,1,1,ERROR
+D25_same_valueset_per_row,pipecypher,ORACLE,1,1,0,0,0
+D25_same_valueset_per_row,cypherlens,ORACLE,1,0,1,0,1
+D25_same_valueset_per_row,cyspider,ORACLE,1,0,1,1,ERROR
+D25_same_valueset_per_row,neo4jlabs,ORACLE,1,0,1,0,1
+D25_same_valueset_per_row,pc_v1_1,ORACLE,1,0,1,0,1
+D26_bool_vs_int,cypherturn,ORACLE,2,0,2,0,1 1
+D26_bool_vs_int,cypherbench,ORACLE,2,0,2,0,1 1
+D26_bool_vs_int,gqlbench,ORACLE,2,0,2,0,1 1
+D26_bool_vs_int,tugraph,ORACLE,2,0,2,0,1 1
+D26_bool_vs_int,pipecypher,ORACLE,2,2,0,0,0 0
+D26_bool_vs_int,cypherlens,ORACLE,2,0,2,0,1 1
+D26_bool_vs_int,cyspider,ORACLE,2,0,2,0,1 1
+D26_bool_vs_int,neo4jlabs,ORACLE,2,0,2,0,1 1
+D26_bool_vs_int,pc_v1_1,ORACLE,2,2,0,0,0 0
+D27_date_string,cypherturn,ORACLE,2,1,1,1,1 ERROR
+D27_date_string,cypherbench,ORACLE,2,1,1,1,1 ERROR
+D27_date_string,gqlbench,ORACLE,2,1,1,1,1 ERROR
+D27_date_string,tugraph,ORACLE,2,1,1,1,1 ERROR
+D27_date_string,pipecypher,ORACLE,2,2,0,0,1 0
+D27_date_string,cypherlens,ORACLE,2,1,1,0,1 1
+D27_date_string,cyspider,ORACLE,2,1,1,1,1 ERROR
+D27_date_string,neo4jlabs,ORACLE,2,2,0,0,1 0
+D27_date_string,pc_v1_1,ORACLE,2,2,0,0,1 0
+D28_wide_permuted,cypherturn,ORACLE,2,2,0,0,1 0
+D28_wide_permuted,cypherbench,ORACLE,2,2,0,0,1 0
+D28_wide_permuted,gqlbench,ORACLE,2,2,0,0,1 0
+D28_wide_permuted,tugraph,ORACLE,2,1,1,0,0 0
+D28_wide_permuted,pipecypher,ORACLE,2,2,0,0,1 0
+D28_wide_permuted,cypherlens,ORACLE,2,2,0,0,1 0
+D28_wide_permuted,cyspider,ORACLE,2,1,1,0,0 0
+D28_wide_permuted,neo4jlabs,ORACLE,2,2,0,0,1 0
+D28_wide_permuted,pc_v1_1,ORACLE,2,2,0,0,1 0

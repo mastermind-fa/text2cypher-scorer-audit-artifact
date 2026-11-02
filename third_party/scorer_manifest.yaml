@@ -1,0 +1,27 @@
+# Seven primary scorers + two secondary comparators (artifact v1). Third-party code is NEVER redistributed: fetch_scorers.sh
+# clones each repository at the pinned commit into external/<local_dir> (the path the frozen adapters import from)
+# and verifies the scorer file's SHA-256. Licence status as recorded in external/EXTERNAL_PINS.json (2026-10-29/30).
+# Adapter type for every scorer: PURE WRAPPER (representation change only; frozen audit_adapters.py, SHA-256 bcc4db64…).
+runtime: {python: "3.12.15", requirements: environment/requirements.txt, network_during_scoring: blocked, gpu: none}
+scorers:
+  - {name: cypherturn, role: primary, url: https://github.com/BarryQ/CypherTurn, commit: 9d9528e16c8fe2fb388b9daa4b43dcaa6f229612,
+     scorer_file: graph_eval_utils/metrics/execution_accuracy.py, scorer_sha256: 34c619701b7c52416158734c236a246823d2c21409dd3d88ca2b8e57d4246cd3,
+     licence: "NONE (no licence file; README: research purposes)", query_text_required: true (replay keyed by query text), patch: none}
+  - {name: cypherbench, role: primary, url: https://github.com/megagonlabs/cypherbench, commit: 4cc727d29acc78f8cea7c4daa4e2705ddf293b8b,
+     scorer_file: cypherbench/metrics/execution_accuracy.py, licence: Apache-2.0, query_text_required: true (replay; ORDER BY trigger on reference text), patch: none}
+  - {name: gqlbench, role: primary, url: https://github.com/qxssadf/GQLBench, commit: fb9d5a9be3ccc73ea9fe44c67a9b180eccedfad2,
+     scorer_file: Code/eval/execute_accuracy.py, licence: "NONE (no licence file)", query_text_required: true (replay; neo4j Result.to_df reproduced), patch: none}
+  - {name: tugraph, role: primary, local_dir: tugraph_driver, url: https://github.com/ldbc/Text2GraphQuery-Driver (formerly TuGraph-family/text2graphquery-driver),
+     commit: ab296fab179e806cd3ad2e659e9f5dc61bd1af3e, scorer_file: impl/evaluation/metrics.py, licence: "NONE (no licence file)", query_text_required: true, patch: none}
+  - {name: pipecypher, role: primary, url: https://github.com/suraj-ranganath/PIPE-Cypher, commit: 0f127208746eb1035d95803348cc5cde36d47d7e,
+     scorer_file: pipecypher/evaluation.py, licence: "MIT (declared in pyproject.toml; no LICENSE file)", query_text_required: false, patch: none}
+  - {name: cypherlens, role: primary, url: https://github.com/YasmeanMohammadi/cypherLenz, commit: ce6481941e78d12fcec974babf453891487ef17a,
+     scorer_file: services/metrics_calculator.py (+ result_comparator.py, column_similarity.py), licence: "NONE (no licence file)",
+     query_text_required: true (parses RETURN aliases), patch: none}
+  - {name: cyspider, role: primary, url: https://github.com/22842219/SemanticParser4Graph, commit: 6cd5eff4aa37b40a2557d312f70ec0d576d8a6b1,
+     scorer_file: semantic_parser/metrics/text2cypher/evaluator.py, licence: "Apache-2.0 (semantic_parser/LICENSE)",
+     query_text_required: true (replay), patch: "none (comparison function extracted verbatim at run time)"}
+  - {name: neo4jlabs, role: secondary, local_dir: neo4jlabs_text2cypher, url: https://github.com/neo4j-labs/text2cypher, commit: a8ed4d9480bcd4aa1b1a0b2e57aadd996afeaca2,
+     scorer_file: evaluations/evaluating_cypher_jaccard.ipynb, licence: CC0-1.0, query_text_required: true (order-by trigger), patch: "none (function extracted verbatim)"}
+  - {name: pc_v1_1, role: secondary, source: "project code studies/reference_comparator/code/comparator_pc_v1_1.py", licence: "project licence (OWNER DECISION REQUIRED)"}
+timeout: "120 s per case (runner v1.1); a timeout is recorded as ERROR:CaseTimeout, never retried"
