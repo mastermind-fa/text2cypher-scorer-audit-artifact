@@ -48,6 +48,40 @@ CORPUS_PAIRS_DIR=/path/to/text2cypher-corpus ./reproduce.sh --full   # also re-s
 `expected_outputs/expected_summary.json` lists the reported numbers. The quick check exits non-zero on any mismatch.
 See `REPRODUCIBILITY.md` for what each level verifies.
 
+## Paper results and where they come from
+| Paper result | Released frozen output | Checked by |
+|---|---|---|
+| Controlled suite, agreement with the declared oracle | `studies/validation_repair/validity_repair/s1_corrected/s1_corrected_results.csv` (template-text suite: `studies/controlled_suite/`) | `scripts/paper_numbers.py`, `scripts/quick_check.py` |
+| Equivalence properties and code-level mechanisms | per-case verdicts of all layers; scorer code at the pinned commits | `scripts/full_rescore.py`, `scripts/full_native.sh` |
+| Native Cypher: CypherTurn and Mind the Query | `studies/native_cypherturn_stress/…/s20_verdicts.csv`, `studies/native_mind_the_query/…/s23_verdicts.csv` | `scripts/quick_check.py`; rebuild: `scripts/full_native.sh s20 \| s23` |
+| Two Text2GQL evaluators: 542 vs 556 of 563, 14 differences | `studies/validation_repair/validity_repair/text2gql/ea_cypher_verdicts.csv` | `scripts/paper_numbers.py` |
+| Corpus: per-scorer acceptances, 5/15 in-domain and 11/21 pairs, 41/563 non-unanimous, heatmap figure | `studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv`, `s3_pairwise_disagreement.csv` (the full 21-pair table) | `scripts/quick_check.py`, `scripts/paper_numbers.py` |
+| Provenance split 20/99 vs 21/464 | `s3_results.csv` with the corpus records (https://github.com/mastermind-fa/text2cypher-corpus) | `CORPUS_DIR=<corpus> scripts/paper_numbers.py` |
+| Model outputs and model level | `…/s2_results.csv`, `studies/validation_repair/validity_repair/model_level_sensitivity/model_level_ex.csv` | `scripts/quick_check.py`, `scripts/paper_numbers.py` |
+
+## Pre-specified protocol
+The corpus-audit protocol (`k4-protocol-v1`) is in `provenance/preregistration/`, byte-for-byte as committed, with its
+commit, tag and hash identifiers and a statement of what can and cannot be verified independently.
+
+## Verifying files
+Every file's SHA-256 is in `provenance/public_file_provenance.csv`, and each study has a `hashes.sha256`.
+`./reproduce.sh --quick` checks the hashes of all released frozen files before recomputing any number.
+
+## What is project code
+Everything in this repository is project-authored (adapters, runners, analysis, reproduction scripts, documentation)
+except the licence texts. The audited scorers are fetched from their own repositories at the pinned commits below and
+run unchanged; none of their code is stored here.
+
+## Scorer notes
+- **Text2GQL:** the benchmark is Text2GraphQuery-Bench (first released as Text2GQL-Bench); its evaluators are in
+  `ldbc/Text2GraphQuery-Driver`. We audit two of them: the pipeline evaluator `impl/evaluation/metrics.py`
+  (`ExecutionAccuracy`) and the reference script `contrib/standalone_text2graph_scripts/reference/ea_cypher.py`
+  (`ExecutionEvaluator.compare_results`, called directly on frozen rows, so its `-1` return for a failing gold query
+  never occurs). The frozen validity-repair plan refers to the second file by its short name `reference/ea_cypher.py`.
+- **CySpider:** `semantic_parser/metrics/text2cypher/evaluator.py`, function `eval_exec_match`, commit `6cd5eff4`
+  (the repository's `evaluator_kaya.py` copy differs only in commented-out debug output).
+- **CypherTurn:** two empty results score 1.0. In the model outputs, no empty prediction has an empty gold result.
+
 ## Scorer versions
 | Scorer | Source | Commit | Licence |
 |---|---|---|---|

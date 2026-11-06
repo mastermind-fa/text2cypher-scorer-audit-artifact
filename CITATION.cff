@@ -4,7 +4,7 @@ title: "What Counts as Correct? A Cross-Implementation Audit of Execution Accura
 version: "1.0.0"
 date-released: "2026-11-07"
 authors:
-  - name: "AUTHOR-NAME-TODO"
+  - name: "The authors of the paper 'What Counts as Correct? A Cross-Implementation Audit of Execution Accuracy in Text-to-Cypher'"
 repository-code: "https://github.com/mastermind-fa/text2cypher-scorer-audit-artifact"
 license: Apache-2.0
 # doi: added only after an archive DOI exists
@@ -12,6 +12,6 @@ preferred-citation:
   type: conference-paper
   title: "What Counts as Correct? A Cross-Implementation Audit of Execution Accuracy in Text-to-Cypher"
   authors:
-    - name: "AUTHOR-NAME-TODO"
+    - name: "The authors of the paper 'What Counts as Correct? A Cross-Implementation Audit of Execution Accuracy in Text-to-Cypher'"
   collection-title: "IEEE International Conference on Data Engineering (ICDE 2027), under review"
   year: 2027

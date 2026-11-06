@@ -6,7 +6,7 @@ This layer was added after an adversarial review. It does **not** modify any ear
 |---|---|---|
 | `preregistration/` | Plan and input hashes, written before any the validation repair scoring | — |
 | `s1_corrected/` | **Query-consistent controlled suite** (paper-facing), its correction manifest, and verdicts of all 9 scorers. The 85 unaffected fixtures are a determinism control; they reproduce every frozen verdict. | `code/build_s1_corrected.py`, then `code/run_s1_corrected.sh` (needs fetched scorers), then `code/compare_s1.py` |
-| `text2gql/` | Lineage of the two evaluators released in the Text2GQL repository, and verdicts of the second one (`reference/ea_cypher.py`), loaded verbatim on frozen rows | `code/run_ea_cypher.py`. Needs the Text2GQL checkout at `ab296fab`. The S2/S3 parts need the corpus pairs (conditional layer). |
+| `text2gql/` | Lineage of the two audited evaluators of the Text2GQL repository (`impl/evaluation/metrics.py` and `contrib/standalone_text2graph_scripts/reference/ea_cypher.py`), and verdicts of the second one, loaded verbatim on frozen rows | `code/run_ea_cypher.py`. Needs the Text2GQL checkout at `ab296fab`. The S2/S3 parts need the corpus pairs (conditional layer). |
 | `model_level_sensitivity/` | **Post-hoc** model-level EX per scorer (2 models × 138 questions) | `code/model_level.py`. Needs the frozen S8C prediction files (conditional layer). |
 
 **Why this exists.**

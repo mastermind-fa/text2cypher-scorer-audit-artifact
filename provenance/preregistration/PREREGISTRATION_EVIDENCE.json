@@ -1,0 +1,38 @@
+{
+ "protocol_id": "k4-protocol-v1",
+ "protocol_extract": {
+  "path": "provenance/preregistration/k4-protocol-v1.md",
+  "sha256": "fc8dae6628cbeb159426d4625fc395315299e76c24039d60407b80f03c7dcd58",
+  "source_lines": [
+   138,
+   251
+  ]
+ },
+ "source_file_in_private_history": {
+  "git_blob": "43f8848ef6581e6d010d73f61e210a34d2324673",
+  "sha256": "5b120ee37f784573f28531b1cc0d6f9dcdc63b9ade6315efdad7dd1aa1c50904",
+  "note": "internal session record; only the protocol section is published"
+ },
+ "protocol_commit": {
+  "commit": "79e318aa964a300a3ca5d4c5cda12300f4f97c94",
+  "tag": "session12-k4-protocol-v1",
+  "tag_object": "c20fde514ca93ac8df06cd928b691d00610fd899",
+  "committed": "2026-10-30T00:09:21+06:00"
+ },
+ "later_commits": {
+  "readiness_run": {
+   "commit": "784a3e2baac1b3f62f53de380f36f3e1617d12b0",
+   "tag": "session13-k4-readiness-v1",
+   "committed": "2026-10-30T00:24:34+06:00"
+  },
+  "main_audit_run": {
+   "commit": "15f3b14da72b9588b5bc414963cd3084a4116bef",
+   "tag": "session14-k4-final-go-v1",
+   "committed": "2026-10-30T01:09:54+06:00",
+   "frozen_run_directory": "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final"
+  }
+ },
+ "protocol_commit_is_ancestor_of_main_audit_commit": true,
+ "s1_cases_sha256_named_in_protocol": "80d0fd3fa181470fb5d59c0fbeea9cf748e1cd2bcc3ade61e4387118a17d5b47",
+ "s1_cases_sha256_in_this_artifact": "80d0fd3fa181470fb5d59c0fbeea9cf748e1cd2bcc3ade61e4387118a17d5b47"
+}

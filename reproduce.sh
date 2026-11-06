@@ -11,9 +11,10 @@ cd "$(dirname "$0")"; PY=${PYTHON:-python3}
 pairs() { for c in "$CORPUS_PAIRS_DIR/$1" "$CORPUS_PAIRS_DIR/corpus/$1" "$CORPUS_PAIRS_DIR/model_outputs/$1"; do
   [ -f "$c" ] && { echo "$c"; return; }; done; echo "$CORPUS_PAIRS_DIR/$1"; }
 case "${1:---quick}" in
-  --quick) $PY scripts/quick_check.py ;;
+  --quick) $PY scripts/quick_check.py && $PY scripts/paper_numbers.py ;;
   --full)
     $PY scripts/quick_check.py
+    $PY scripts/paper_numbers.py
     bash third_party/fetch_scorers.sh
     bash third_party/fetch_mind_the_query.sh
     $PY scripts/full_rescore.py s1
