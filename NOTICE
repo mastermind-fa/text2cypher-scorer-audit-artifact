@@ -1,0 +1,8 @@
+What Counts as Correct? A Cross-Implementation Audit of Execution Accuracy in Text-to-Cypher: research artifact
+Copyright 2026-2027 The authors of "What Counts as Correct? A Cross-Implementation Audit of Execution Accuracy in Text-to-Cypher"
+
+This product contains project-authored code and documentation, licensed under the Apache License, Version 2.0
+(see LICENSE).
+
+It includes no third-party code, benchmark data or graph dumps. Third-party scorers and benchmarks are fetched from
+their original repositories at pinned commits and keep their own licences; see THIRD_PARTY_NOTICES.md.

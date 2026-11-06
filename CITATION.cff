@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "If you use this artifact, please cite the paper and this artifact."
 title: "What Counts as Correct? A Cross-Implementation Audit of Execution Accuracy in Text-to-Cypher — artifact"
-version: "1.0.0-rc.1"
-date-released: "2026-11-02"
+version: "1.0.0"
+date-released: "2026-11-07"
 authors:
   - name: "AUTHOR-NAME-TODO"
 repository-code: "https://github.com/mastermind-fa/text2cypher-scorer-audit-artifact"
-license: MIT
+license: Apache-2.0
 # doi: added only after an archive DOI exists
 preferred-citation:
   type: conference-paper

@@ -3,9 +3,13 @@
 #   ./reproduce.sh --quick     recompute every reported number from released frozen verdicts; no Neo4j, no downloads
 #   ./reproduce.sh --full      fetch pinned scorers + public benchmarks; re-score S1; rebuild + re-score the native-Cypher
 #                              studies with a throwaway Neo4j (Docker); S2/S3 re-scoring runs only if the corpus pairs
-#                              are present (CORPUS_PAIRS_DIR); otherwise that boundary is reported, not hidden.
+#                              are present (CORPUS_PAIRS_DIR: a folder holding the pair files, or the root of the
+#                              released dataset repository, whose corpus/ and model_outputs/ are searched); otherwise
+#                              that boundary is reported, not hidden.
 set -euo pipefail
 cd "$(dirname "$0")"; PY=${PYTHON:-python3}
+pairs() { for c in "$CORPUS_PAIRS_DIR/$1" "$CORPUS_PAIRS_DIR/corpus/$1" "$CORPUS_PAIRS_DIR/model_outputs/$1"; do
+  [ -f "$c" ] && { echo "$c"; return; }; done; echo "$CORPUS_PAIRS_DIR/$1"; }
 case "${1:---quick}" in
   --quick) $PY scripts/quick_check.py ;;
   --full)
@@ -14,8 +18,8 @@ case "${1:---quick}" in
     bash third_party/fetch_mind_the_query.sh
     $PY scripts/full_rescore.py s1
     if [ -n "${CORPUS_PAIRS_DIR:-}" ]; then
-      $PY scripts/full_rescore.py s3 "$CORPUS_PAIRS_DIR/s3_pairs.jsonl"
-      $PY scripts/full_rescore.py s2 "$CORPUS_PAIRS_DIR/s2_pairs.jsonl"
+      $PY scripts/full_rescore.py s3 "$(pairs s3_pairs.jsonl)"
+      $PY scripts/full_rescore.py s2 "$(pairs s2_pairs.jsonl)"
     else
       echo "BOUNDARY: S2/S3 re-scoring skipped (set CORPUS_PAIRS_DIR to the released corpus pairs)"
     fi

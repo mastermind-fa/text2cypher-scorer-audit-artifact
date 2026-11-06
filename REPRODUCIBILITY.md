@@ -7,8 +7,8 @@
 | R2 | `./reproduce.sh --full` with Docker | The native-Cypher cases regenerate from public benchmarks with the frozen rules, and the scorers reproduce the verdicts | GitHub access, Docker |
 
 **Boundaries, stated rather than hidden:**
-- **Corpus and model-output pairs:** re-scored only when the evaluation dataset's pairs are supplied
-  (`CORPUS_PAIRS_DIR`).
+- **Corpus and model-output pairs:** re-scored only when the dataset repository ({ctx['data_url']}) is supplied
+  (`CORPUS_PAIRS_DIR` = its root; `corpus/s3_pairs.jsonl` and `model_outputs/s2_pairs.jsonl` are found there).
 - **CypherTurn rebuilds:** match at verdict level, not byte for byte, because Neo4j load order is nondeterministic.
   Mind the Query rebuilds are byte-identical.
 - **Development tests:** some per-study tests need inputs that are not redistributed (CypherTurn-derived case files,

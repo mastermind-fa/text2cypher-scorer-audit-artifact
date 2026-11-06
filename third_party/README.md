@@ -10,7 +10,7 @@ No third-party code or benchmark data is included in this repository.
 - **`scorer_manifest.yaml`:** maps each scorer to the project adapter that runs it.
 
 Licences are as stated by each upstream repository; several upstream repositories state none, which is why nothing is
-redistributed. This repository's MIT License does not apply to any third-party code or data.
+redistributed. This repository's Apache License 2.0 does not apply to any third-party code or data.
 
 The Text2GraphQuery-Driver pin uses its original address (`TuGraph-family/text2graphquery-driver`), which GitHub
 redirects to the current canonical repository `ldbc/Text2GraphQuery-Driver`. The pinned commit is the same.

@@ -23,5 +23,5 @@ scorers:
      query_text_required: true (replay), patch: "none (comparison function extracted verbatim at run time)"}
   - {name: neo4jlabs, role: secondary, local_dir: neo4jlabs_text2cypher, url: https://github.com/neo4j-labs/text2cypher, commit: a8ed4d9480bcd4aa1b1a0b2e57aadd996afeaca2,
      scorer_file: evaluations/evaluating_cypher_jaccard.ipynb, licence: CC0-1.0, query_text_required: true (order-by trigger), patch: "none (function extracted verbatim)"}
-  - {name: pc_v1_1, role: secondary, source: "project code studies/reference_comparator/code/comparator_pc_v1_1.py", licence: "project licence (OWNER DECISION REQUIRED)"}
+  - {name: pc_v1_1, role: secondary, source: "project code studies/reference_comparator/code/comparator_pc_v1_1.py", licence: "Apache-2.0 (project code; see LICENSE)"}
 timeout: "120 s per case (runner v1.1); a timeout is recorded as ERROR:CaseTimeout, never retried"

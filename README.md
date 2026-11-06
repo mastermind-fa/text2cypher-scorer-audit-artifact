@@ -1,7 +1,7 @@
 # What Counts as Correct? A Cross-Implementation Audit of Execution Accuracy in Text-to-Cypher: research artifact
 
-**Version:** 1.0.0-rc.1 (pre-release) · **Planned repository:** `https://github.com/mastermind-fa/text2cypher-scorer-audit-artifact` (not yet published) ·
-**Licence:** MIT, for project-authored code only (see `LICENSE` and the Licence section)
+**Version:** 1.0.0 · **Repository:** https://github.com/mastermind-fa/text2cypher-scorer-audit-artifact · **Dataset:** https://github.com/mastermind-fa/text2cypher-corpus ·
+**Licence:** Apache-2.0, for project-authored code only (see `LICENSE`, `NOTICE` and the Licence section)
 
 ## Purpose
 This artifact reproduces the experimental results of the paper. The paper runs seven released Text-to-Cypher
@@ -36,7 +36,7 @@ released frozen file. Measured on an Apple M-series laptop: about one second.
 ## Full reproduction
 ```
 ./reproduce.sh --full                                   # fetch pinned scorers + Mind the Query; re-score; native rebuilds
-CORPUS_PAIRS_DIR=/path/to/pairs ./reproduce.sh --full   # also re-score the corpus and model-output pairs
+CORPUS_PAIRS_DIR=/path/to/text2cypher-corpus ./reproduce.sh --full   # also re-score the corpus and model-output pairs
 ```
 - **R1:** re-runs the pinned scorers through the frozen adapters on the controlled fixtures and compares every verdict.
 - **R2:** regenerates the native-Cypher cases with the frozen rules and oracle in a throwaway Neo4j, checks input
@@ -69,12 +69,18 @@ Third-party scorers and benchmarks are fetched from their original repositories 
 See `CITATION.cff`. The paper is under review at ICDE 2027.
 
 ## Licence
-The MIT License (`LICENSE`) covers the project-authored code and documentation in this repository only. It does not
+The Apache License 2.0 (`LICENSE`, with `NOTICE`) covers the project-authored code and documentation in this repository only. It does not
 cover:
 - third-party scorer code, which is fetched from its original repositories at pinned commits under each upstream
   repository's own terms and is never redistributed here (`third_party/`);
 - third-party benchmark data (CypherTurn, Mind the Query, BIRD), which is fetched, not included;
-- the evaluation dataset, which is released separately under its own licence.
+- the evaluation dataset, which is released separately under CC BY-SA 4.0.
+
+Third-party components and their licences are listed in `THIRD_PARTY_NOTICES.md`.
+
+Much of the project code was generated or revised with AI assistance under the authors' direction (see the paper's
+AI-assistance acknowledgment). The licence grants whatever rights the authors hold in this code; it makes no claim
+about the copyright status of individual AI-generated passages.
 
 ## Limitations
 See `KNOWN_LIMITATIONS.md`.
