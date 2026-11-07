@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-"""QUICK reproduction (artifact-quick-v1): recompute the paper's reported numbers from the released frozen verdict files and
-compare them with the released frozen statistics. No Neo4j, no scorer, no third-party download. Exit code 1 on any
-mismatch. Run from the artifact root:  python3 scripts/quick_check.py
+"""LEGACY quick check (artifact-quick-v1), kept unchanged as a record. SUPERSEDED for the paper: its S1 lines check the ORIGINAL
+controlled suite (e.g. CypherTurn 66/106), which the paper reports only as superseded; the paper-facing check is
+scripts/paper_check.py (./reproduce.sh --quick). It recomputes the frozen-run numbers listed below from the
+released frozen verdict files and compares them with the released frozen statistics. No Neo4j, no scorer, no
+third-party download. Exit code 1 on any mismatch. Run from the artifact root:  python3 scripts/quick_check.py
 Checks:
   0  every released file listed in a frozen hashes.sha256 matches its hash (withheld files are reported, not failed)
   S1 oracle agreement per scorer (106 oracle-defined fixtures) and the 9-fixture erratum list

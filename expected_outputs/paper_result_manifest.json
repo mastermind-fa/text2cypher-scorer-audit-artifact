@@ -1,0 +1,1585 @@
+{
+ "manifest": "paper_result_manifest",
+ "version": 1,
+ "scope": "every quantitative manuscript/supplement claim of the paper-facing (corrected) analysis; checked by scripts/paper_check.py",
+ "layers": {
+  "A": "frozen verdicts released in the artifact repository",
+  "B": "plus ID-level files of the dataset repository",
+  "R2": "plus native-Cypher inputs rebuilt by scripts/full_native.sh"
+ },
+ "dataset_inputs": {
+  "model_outputs/s2_not_scored_units.json": "a5baff44287c759d9d583e71c8b929e2c39c385d6203cc39afe57a686c43f39c",
+  "splits/record_splits.csv": "9a0994b9462c92e8d3797b4877977591137261997967f76c43a004bf615008c1"
+ },
+ "claims": [
+  {
+   "id": "s1.suite",
+   "layer": "A",
+   "location": "\u00a7III-B Controlled suite; Table II",
+   "claim": "121 fixtures, 57/49 labelled, 15 intent-dependent, 28 groups, 43 sub-dimensions",
+   "inputs": [
+    "studies/controlled_suite/audit/s1/s1_cases.jsonl",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s1_results.csv",
+    "studies/validation_repair/validity_repair/s1_corrected/s1_corrected_cases.jsonl",
+    "studies/validation_repair/validity_repair/s1_corrected/s1_corrected_results.csv",
+    "studies/validation_repair/validity_repair/s1_corrected/correction_manifest.csv"
+   ],
+   "expected": {
+    "dimension_groups": 28,
+    "equiv": 57,
+    "fixtures": 121,
+    "intent_dependent": 15,
+    "nonequiv": 49,
+    "same_case_ids_as_original": true,
+    "sub_dimensions": 43
+   }
+  },
+  {
+   "id": "s1c.correction",
+   "layer": "A",
+   "location": "\u00a7III-B query-consistent suite",
+   "claim": "36 corrected (32 alias, 9 identical text), 16 renamed variables, 85 unaffected controls reproduce every verdict",
+   "inputs": [
+    "studies/controlled_suite/audit/s1/s1_cases.jsonl",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s1_results.csv",
+    "studies/validation_repair/validity_repair/s1_corrected/s1_corrected_cases.jsonl",
+    "studies/validation_repair/validity_repair/s1_corrected/s1_corrected_results.csv",
+    "studies/validation_repair/validity_repair/s1_corrected/correction_manifest.csv"
+   ],
+   "expected": {
+    "alias_inconsistent": 32,
+    "control_verdict_differences": 0,
+    "corrected": 36,
+    "identical_text": 9,
+    "identical_text_fixtures": [
+     "S1-103",
+     "S1-104",
+     "S1-105",
+     "S1-106",
+     "S1-115",
+     "S1-116",
+     "S1-117",
+     "S1-118",
+     "S1-119"
+    ],
+    "raw_result_files_match_table": true,
+    "renamed_bound_variable": 16,
+    "results_or_labels_changed": 0,
+    "unaffected_control": 85
+   }
+  },
+  {
+   "id": "s1c.verdict_changes",
+   "layer": "A",
+   "location": "\u00a7III-B; \u00a7VIII Construct",
+   "claim": "23 CypherLens changes; five other scorers changed only on the nine identical-text fixtures",
+   "inputs": [
+    "studies/controlled_suite/audit/s1/s1_cases.jsonl",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s1_results.csv",
+    "studies/validation_repair/validity_repair/s1_corrected/s1_corrected_cases.jsonl",
+    "studies/validation_repair/validity_repair/s1_corrected/s1_corrected_results.csv",
+    "studies/validation_repair/validity_repair/s1_corrected/correction_manifest.csv"
+   ],
+   "expected": {
+    "cypherlens": 23,
+    "other_changes_only_on_identical_text": true,
+    "other_scorers_changed": 5
+   }
+  },
+  {
+   "id": "s1c.oracle_agreement_106",
+   "layer": "A",
+   "location": "Table V (tab:s1) columns 2-3; \u00a7IV text 71/106-99/106",
+   "claim": "corrected-suite agreement with the declared oracle",
+   "inputs": [
+    "studies/controlled_suite/audit/s1/s1_cases.jsonl",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s1_results.csv",
+    "studies/validation_repair/validity_repair/s1_corrected/s1_corrected_cases.jsonl",
+    "studies/validation_repair/validity_repair/s1_corrected/s1_corrected_results.csv",
+    "studies/validation_repair/validity_repair/s1_corrected/correction_manifest.csv"
+   ],
+   "expected": {
+    "cypherbench": 99,
+    "cypherlens": 89,
+    "cypherturn": 71,
+    "cyspider": 80,
+    "gqlbench": 97,
+    "neo4jlabs": 94,
+    "pc_v1_1": 101,
+    "pipecypher": 76,
+    "tugraph": 90
+   }
+  },
+  {
+   "id": "s1o.oracle_agreement_106_superseded",
+   "layer": "A",
+   "location": "Table V last column (superseded original suite)",
+   "claim": "original-suite agreement, reported only as superseded",
+   "inputs": [
+    "studies/controlled_suite/audit/s1/s1_cases.jsonl",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s1_results.csv",
+    "studies/validation_repair/validity_repair/s1_corrected/s1_corrected_cases.jsonl",
+    "studies/validation_repair/validity_repair/s1_corrected/s1_corrected_results.csv",
+    "studies/validation_repair/validity_repair/s1_corrected/correction_manifest.csv"
+   ],
+   "expected": {
+    "cypherbench": 96,
+    "cypherlens": 69,
+    "cypherturn": 66,
+    "cyspider": 78,
+    "gqlbench": 94,
+    "neo4jlabs": 94,
+    "pc_v1_1": 101,
+    "pipecypher": 76,
+    "tugraph": 86
+   }
+  },
+  {
+   "id": "s1c.regression_corrected_is_not_original",
+   "layer": "A",
+   "location": "Table V",
+   "claim": "regression guard: corrected values differ from superseded values for the six scorers whose verdicts changed",
+   "inputs": [
+    "studies/controlled_suite/audit/s1/s1_cases.jsonl",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s1_results.csv",
+    "studies/validation_repair/validity_repair/s1_corrected/s1_corrected_cases.jsonl",
+    "studies/validation_repair/validity_repair/s1_corrected/s1_corrected_results.csv",
+    "studies/validation_repair/validity_repair/s1_corrected/correction_manifest.csv"
+   ],
+   "expected": {
+    "cypherbench": true,
+    "cypherlens": true,
+    "cypherturn": true,
+    "cyspider": true,
+    "gqlbench": true,
+    "tugraph": true
+   }
+  },
+  {
+   "id": "s1c.supplement_SB",
+   "layer": "A",
+   "location": "Supplement S-B",
+   "claim": "per-scorer EQUIV/NONEQUIV agreement and exceptions, corrected and original",
+   "inputs": [
+    "studies/controlled_suite/audit/s1/s1_cases.jsonl",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s1_results.csv",
+    "studies/validation_repair/validity_repair/s1_corrected/s1_corrected_cases.jsonl",
+    "studies/validation_repair/validity_repair/s1_corrected/s1_corrected_results.csv",
+    "studies/validation_repair/validity_repair/s1_corrected/correction_manifest.csv"
+   ],
+   "expected": {
+    "cypherbench": {
+     "corrected": [
+      53,
+      46,
+      0
+     ],
+     "original": [
+      53,
+      43
+     ]
+    },
+    "cypherlens": {
+     "corrected": [
+      51,
+      38,
+      0
+     ],
+     "original": [
+      36,
+      33
+     ]
+    },
+    "cypherturn": {
+     "corrected": [
+      31,
+      40,
+      0
+     ],
+     "original": [
+      32,
+      34
+     ]
+    },
+    "cyspider": {
+     "corrected": [
+      42,
+      38,
+      11
+     ],
+     "original": [
+      42,
+      36
+     ]
+    },
+    "gqlbench": {
+     "corrected": [
+      51,
+      46,
+      0
+     ],
+     "original": [
+      51,
+      43
+     ]
+    },
+    "neo4jlabs": {
+     "corrected": [
+      48,
+      46,
+      0
+     ],
+     "original": [
+      48,
+      46
+     ]
+    },
+    "pc_v1_1": {
+     "corrected": [
+      57,
+      44,
+      0
+     ],
+     "original": [
+      57,
+      44
+     ]
+    },
+    "pipecypher": {
+     "corrected": [
+      37,
+      39,
+      0
+     ],
+     "original": [
+      37,
+      39
+     ]
+    },
+    "tugraph": {
+     "corrected": [
+      46,
+      44,
+      0
+     ],
+     "original": [
+      46,
+      40
+     ]
+    }
+   }
+  },
+  {
+   "id": "s1c.table1_rows",
+   "layer": "A",
+   "location": "Table I (tab:example)",
+   "claim": "seven-scorer verdict vectors of the five example fixtures",
+   "inputs": [
+    "studies/controlled_suite/audit/s1/s1_cases.jsonl",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s1_results.csv",
+    "studies/validation_repair/validity_repair/s1_corrected/s1_corrected_cases.jsonl",
+    "studies/validation_repair/validity_repair/s1_corrected/s1_corrected_results.csv",
+    "studies/validation_repair/validity_repair/s1_corrected/correction_manifest.csv"
+   ],
+   "expected": {
+    "S1-007": "0111111",
+    "S1-019": "1110110",
+    "S1-040": "0000101",
+    "S1-057": "0111001",
+    "S1-061": "0001010"
+   }
+  },
+  {
+   "id": "s1c.cypherlens_policy",
+   "layer": "A",
+   "location": "\u00a7IV Controlled policies",
+   "claim": "CypherLens accepts all 12 alias/unaliased-key and all 4 order-required fixtures; rejects int-vs-float",
+   "inputs": [
+    "studies/controlled_suite/audit/s1/s1_cases.jsonl",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s1_results.csv",
+    "studies/validation_repair/validity_repair/s1_corrected/s1_corrected_cases.jsonl",
+    "studies/validation_repair/validity_repair/s1_corrected/s1_corrected_results.csv",
+    "studies/validation_repair/validity_repair/s1_corrected/correction_manifest.csv"
+   ],
+   "expected": {
+    "alias_and_unaliased_key_accepted": true,
+    "int_float_rejected": true,
+    "order_required_accepted": true
+   }
+  },
+  {
+   "id": "s3.n",
+   "layer": "A",
+   "location": "\u00a7III-B Corpus audit; \u00a7VI",
+   "claim": "563 corpus pairs",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/audit_statistics.json",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_pairwise_disagreement.csv"
+   ],
+   "expected": 563
+  },
+  {
+   "id": "s3.pass_counts",
+   "layer": "A",
+   "location": "\u00a7VI first paragraph",
+   "claim": "per-scorer passes 529/529/524/542/536/171/542",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/audit_statistics.json",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_pairwise_disagreement.csv"
+   ],
+   "expected": {
+    "cypherbench": 529,
+    "cypherlens": 171,
+    "cypherturn": 529,
+    "cyspider": 542,
+    "gqlbench": 524,
+    "pipecypher": 536,
+    "tugraph": 542
+   }
+  },
+  {
+   "id": "s3.unanimous",
+   "layer": "A",
+   "location": "\u00a7VI first paragraph",
+   "claim": "170 unanimous (161 pass, 9 fail)",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/audit_statistics.json",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_pairwise_disagreement.csv"
+   ],
+   "expected": {
+    "all": 170,
+    "fail": 9,
+    "pass": 161
+   }
+  },
+  {
+   "id": "s3.criterion",
+   "layer": "A",
+   "location": "Abstract; \u00a7I; \u00a7VI; Table VI",
+   "claim": "pre-specified criterion: 11 of 21 pairs (6 with CypherLens, 5 without)",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/audit_statistics.json",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_pairwise_disagreement.csv"
+   ],
+   "expected": {
+    "frozen_pairwise_table_matches": true,
+    "meeting_with_cypherlens": 6,
+    "meeting_without_cypherlens": 5,
+    "pairs_meeting": 11,
+    "pairs_total": 21,
+    "threshold": 0.02,
+    "z": 2.8227138814289363
+   }
+  },
+  {
+   "id": "s3.pairwise_table_SA",
+   "layer": "A",
+   "location": "Supplement S-A",
+   "claim": "all 21 pairs: k, rate, Bonferroni one-sided lower bound, Wilson 95% CI, criterion",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/audit_statistics.json",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_pairwise_disagreement.csv"
+   ],
+   "expected": {
+    "cypherbench|cypherlens": {
+     "ci95": [
+      "0.621",
+      "0.699"
+     ],
+     "k": 372,
+     "lb": "0.603",
+     "meets": true,
+     "rate": "0.661"
+    },
+    "cypherbench|cyspider": {
+     "ci95": [
+      "0.014",
+      "0.039"
+     ],
+     "k": 13,
+     "lb": "0.011",
+     "meets": false,
+     "rate": "0.023"
+    },
+    "cypherbench|gqlbench": {
+     "ci95": [
+      "0.004",
+      "0.021"
+     ],
+     "k": 5,
+     "lb": "0.003",
+     "meets": false,
+     "rate": "0.009"
+    },
+    "cypherbench|pipecypher": {
+     "ci95": [
+      "0.016",
+      "0.043"
+     ],
+     "k": 15,
+     "lb": "0.013",
+     "meets": false,
+     "rate": "0.027"
+    },
+    "cypherbench|tugraph": {
+     "ci95": [
+      "0.016",
+      "0.043"
+     ],
+     "k": 15,
+     "lb": "0.013",
+     "meets": false,
+     "rate": "0.027"
+    },
+    "cypherlens|cyspider": {
+     "ci95": [
+      "0.644",
+      "0.721"
+     ],
+     "k": 385,
+     "lb": "0.626",
+     "meets": true,
+     "rate": "0.684"
+    },
+    "cypherturn|cypherbench": {
+     "ci95": [
+      "0.026",
+      "0.058"
+     ],
+     "k": 22,
+     "lb": "0.022",
+     "meets": true,
+     "rate": "0.039"
+    },
+    "cypherturn|cypherlens": {
+     "ci95": [
+      "0.632",
+      "0.709"
+     ],
+     "k": 378,
+     "lb": "0.613",
+     "meets": true,
+     "rate": "0.671"
+    },
+    "cypherturn|cyspider": {
+     "ci95": [
+      "0.014",
+      "0.039"
+     ],
+     "k": 13,
+     "lb": "0.011",
+     "meets": false,
+     "rate": "0.023"
+    },
+    "cypherturn|gqlbench": {
+     "ci95": [
+      "0.033",
+      "0.069"
+     ],
+     "k": 27,
+     "lb": "0.028",
+     "meets": true,
+     "rate": "0.048"
+    },
+    "cypherturn|pipecypher": {
+     "ci95": [
+      "0.006",
+      "0.025"
+     ],
+     "k": 7,
+     "lb": "0.004",
+     "meets": false,
+     "rate": "0.012"
+    },
+    "cypherturn|tugraph": {
+     "ci95": [
+      "0.042",
+      "0.081"
+     ],
+     "k": 33,
+     "lb": "0.036",
+     "meets": true,
+     "rate": "0.059"
+    },
+    "gqlbench|cypherlens": {
+     "ci95": [
+      "0.612",
+      "0.690"
+     ],
+     "k": 367,
+     "lb": "0.593",
+     "meets": true,
+     "rate": "0.652"
+    },
+    "gqlbench|cyspider": {
+     "ci95": [
+      "0.020",
+      "0.050"
+     ],
+     "k": 18,
+     "lb": "0.017",
+     "meets": false,
+     "rate": "0.032"
+    },
+    "gqlbench|pipecypher": {
+     "ci95": [
+      "0.023",
+      "0.054"
+     ],
+     "k": 20,
+     "lb": "0.019",
+     "meets": false,
+     "rate": "0.036"
+    },
+    "gqlbench|tugraph": {
+     "ci95": [
+      "0.023",
+      "0.054"
+     ],
+     "k": 20,
+     "lb": "0.019",
+     "meets": false,
+     "rate": "0.036"
+    },
+    "pipecypher|cypherlens": {
+     "ci95": [
+      "0.637",
+      "0.714"
+     ],
+     "k": 381,
+     "lb": "0.619",
+     "meets": true,
+     "rate": "0.677"
+    },
+    "pipecypher|cyspider": {
+     "ci95": [
+      "0.005",
+      "0.023"
+     ],
+     "k": 6,
+     "lb": "0.004",
+     "meets": false,
+     "rate": "0.011"
+    },
+    "tugraph|cypherlens": {
+     "ci95": [
+      "0.622",
+      "0.700"
+     ],
+     "k": 373,
+     "lb": "0.604",
+     "meets": true,
+     "rate": "0.663"
+    },
+    "tugraph|cyspider": {
+     "ci95": [
+      "0.026",
+      "0.058"
+     ],
+     "k": 22,
+     "lb": "0.022",
+     "meets": true,
+     "rate": "0.039"
+    },
+    "tugraph|pipecypher": {
+     "ci95": [
+      "0.032",
+      "0.067"
+     ],
+     "k": 26,
+     "lb": "0.027",
+     "meets": true,
+     "rate": "0.046"
+    }
+   }
+  },
+  {
+   "id": "s3.rate_ranges",
+   "layer": "A",
+   "location": "Table VI; Fig. 1 caption",
+   "claim": "rate ranges 0.652-0.684 / 0.009-0.059; in-domain max 5.9%; CypherLens 65-68%",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/audit_statistics.json",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_pairwise_disagreement.csv"
+   ],
+   "expected": {
+    "all": [
+     "0.009",
+     "0.684"
+    ],
+    "cypherlens_pct": [
+     "65",
+     "68"
+    ],
+    "max_in_domain_pct": "5.9",
+    "with_cypherlens": [
+     "0.652",
+     "0.684"
+    ],
+    "without_cypherlens": [
+     "0.009",
+     "0.059"
+    ]
+   }
+  },
+  {
+   "id": "s3.six_scorer_nonunanimous",
+   "layer": "A",
+   "location": "Abstract-adjacent; \u00a7VI; Table VI",
+   "claim": "41/563 = 7.3% non-unanimous without CypherLens (post hoc)",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/audit_statistics.json",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_pairwise_disagreement.csv"
+   ],
+   "expected": {
+    "k": 41,
+    "pct": "7.3"
+   }
+  },
+  {
+   "id": "s3.ct_vs_tg",
+   "layer": "A",
+   "location": "\u00a7VI",
+   "claim": "CypherTurn vs Text2GQL driver 33/563 = 5.86%, lower bound 3.63%",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/audit_statistics.json",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_pairwise_disagreement.csv"
+   ],
+   "expected": {
+    "k": 33,
+    "lb_pct": "3.63",
+    "pct": "5.86"
+   }
+  },
+  {
+   "id": "s3.cypherlens_only_failures",
+   "layer": "A",
+   "location": "\u00a7VI; Table IV",
+   "claim": "351 pairs rejected only by CypherLens",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/audit_statistics.json",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_pairwise_disagreement.csv"
+   ],
+   "expected": 351
+  },
+  {
+   "id": "s3.score_level_pct",
+   "layer": "A",
+   "location": "Abstract; \u00a7I; \u00a7VI score-level view",
+   "claim": "93.1-96.3% (spread 3.2 pp); CypherLens 30.4%",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/audit_statistics.json",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_pairwise_disagreement.csv"
+   ],
+   "expected": {
+    "cypherbench": "94.0",
+    "cypherlens": "30.4",
+    "cypherturn": "94.0",
+    "cyspider": "96.3",
+    "gqlbench": "93.1",
+    "pipecypher": "95.2",
+    "six_scorer_spread_pp": "3.2",
+    "tugraph": "96.3"
+   }
+  },
+  {
+   "id": "s3.mechanisms_41",
+   "layer": "A",
+   "location": "\u00a7VI Mechanisms on the corpus; Table IV corpus column",
+   "claim": "41 = 11 + 9 + 7 + 5 + 4 + 2 + 2 + 1 by result features and rejecting scorers",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/audit_statistics.json",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_pairwise_disagreement.csv"
+   ],
+   "expected": {
+    "float_tiny_tg_only": 11,
+    "int_float": 4,
+    "naming_ct_only": 7,
+    "naming_with_order_triggers": 2,
+    "numeric_null_gq_only": 5,
+    "reference_order_cb_gq_only": 2,
+    "tg_prediction_trigger_only": 1,
+    "tie_order_with_triggers": 9
+   }
+  },
+  {
+   "id": "s3.empty_side_pairs",
+   "layer": "A",
+   "location": "\u00a7III-B Corpus audit (nine pairs empty on both sides)",
+   "claim": "nine corpus pairs with an empty side",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/audit_statistics.json",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_pairwise_disagreement.csv"
+   ],
+   "expected": 9
+  },
+  {
+   "id": "t2g.corpus",
+   "layer": "A",
+   "location": "Abstract; \u00a7I; \u00a7V-D; \u00a7VI; \u00a7VII; \u00a7IX",
+   "claim": "driver 542/563 = 96.3% vs reference script 556/563 = 98.8%; all 14 differences accepted by the reference script",
+   "inputs": [
+    "studies/validation_repair/validity_repair/text2gql/ea_cypher_verdicts.csv",
+    "studies/validation_repair/validity_repair/text2gql/ea_cypher_summary.json",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv"
+   ],
+   "expected": {
+    "all_differences_reference_accepts_driver_rejects": true,
+    "differ": 14,
+    "driver_accept": 542,
+    "driver_pct": "96.3",
+    "reference_accept": 556,
+    "reference_pct": "98.8"
+   }
+  },
+  {
+   "id": "t2g.disagreements",
+   "layer": "A",
+   "location": "\u00a7V-D",
+   "claim": "reference script vs driver: 14/121 controlled, 0/60 gentle, 22/62 and 20/77 native, 0/158 model outputs, 14/563 corpus",
+   "inputs": [
+    "studies/validation_repair/validity_repair/text2gql/ea_cypher_verdicts.csv",
+    "studies/validation_repair/validity_repair/text2gql/ea_cypher_summary.json",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv"
+   ],
+   "expected": {
+    "s18": [
+     0,
+     60
+    ],
+    "s1_corrected": [
+     14,
+     121
+    ],
+    "s2": [
+     0,
+     158
+    ],
+    "s20": [
+     22,
+     62
+    ],
+    "s23": [
+     20,
+     77
+    ],
+    "s3": [
+     14,
+     563
+    ]
+   }
+  },
+  {
+   "id": "t2g.disagreement_classes",
+   "layer": "A",
+   "location": "\u00a7V-D; Table III footnote",
+   "claim": "disagreements only on order, duplicate, one all-NULL and one top-k fixture; native row-order 15/15, 10/10; duplicates 7/7, 10/10",
+   "inputs": [
+    "studies/validation_repair/validity_repair/text2gql/ea_cypher_verdicts.csv",
+    "studies/validation_repair/validity_repair/text2gql/ea_cypher_summary.json",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv"
+   ],
+   "expected": {
+    "s1_corrected": {
+     "D06_order_required_violated": 1,
+     "D07_order_not_required": 4,
+     "D09_duplicate_extra_in_pred": 4,
+     "D09_duplicate_multiplicity_differs": 1,
+     "D09_duplicate_removed_in_pred": 2,
+     "D19_all_null": 1,
+     "D23_topk_tie": 1
+    },
+    "s20": {
+     "D3_row_order": 15,
+     "D4_duplicates": 7
+    },
+    "s23": {
+     "R3_row_order": 10,
+     "R4_duplicates": 10
+    }
+   }
+  },
+  {
+   "id": "t2g.driver_column_equals_frozen_driver",
+   "layer": "A",
+   "location": "\u00a7V-D (consistency)",
+   "claim": "driver verdicts in the second-evaluator file equal the frozen driver verdicts in every set",
+   "inputs": [
+    "studies/validation_repair/validity_repair/text2gql/ea_cypher_verdicts.csv",
+    "studies/validation_repair/validity_repair/text2gql/ea_cypher_summary.json",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv"
+   ],
+   "expected": {
+    "s18": true,
+    "s1_corrected": true,
+    "s1_original": true,
+    "s2": true,
+    "s20": true,
+    "s23": true,
+    "s3": true
+   }
+  },
+  {
+   "id": "t2g.substitution",
+   "layer": "A",
+   "location": "\u00a7VI",
+   "claim": "with the reference script: 5 of 15 pairs (different set), 43/563 non-unanimous",
+   "inputs": [
+    "studies/validation_repair/validity_repair/text2gql/ea_cypher_verdicts.csv",
+    "studies/validation_repair/validity_repair/text2gql/ea_cypher_summary.json",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv"
+   ],
+   "expected": {
+    "different_set": true,
+    "nonunanimous": 43,
+    "pairs_meeting": 5
+   }
+  },
+  {
+   "id": "t2g.summary_matches_verdicts",
+   "layer": "A",
+   "location": "\u00a7V-D (consistency)",
+   "claim": "frozen summary equals per-case verdict file",
+   "inputs": [
+    "studies/validation_repair/validity_repair/text2gql/ea_cypher_verdicts.csv",
+    "studies/validation_repair/validity_repair/text2gql/ea_cypher_summary.json",
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv"
+   ],
+   "expected": true
+  },
+  {
+   "id": "s2.counts",
+   "layer": "A",
+   "location": "\u00a7III-B Model outputs; \u00a7VII",
+   "claim": "158 predictions, 117 empty, 154 complete, 4 CySpider exceptions",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s2_results.csv",
+    "studies/native_cypherturn_stress/native_equivalence_stress/frozen/20261030T143405Z_s2_sensitivity/s2_sensitivity_results.json"
+   ],
+   "expected": {
+    "complete": 154,
+    "cyspider_errors": 4,
+    "empty": 117,
+    "predictions": 158
+   }
+  },
+  {
+   "id": "s2.informative",
+   "layer": "A",
+   "location": "\u00a7VII",
+   "claim": "37 informative (24/13; 30 questions); 13 non-unanimous, 0.351, Wilson [0.218, 0.512]",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s2_results.csv",
+    "studies/native_cypherturn_stress/native_equivalence_stress/frozen/20261030T143405Z_s2_sensitivity/s2_sensitivity_results.json"
+   ],
+   "expected": {
+    "N": 37,
+    "distinct_questions": 30,
+    "fraction": "0.351",
+    "non_unanimous": 13,
+    "phi3.5-mini-instruct": 13,
+    "qwen3-4b": 24,
+    "subset_definition_matches": true,
+    "unanimous": 24,
+    "wilson95": [
+     "0.218",
+     "0.512"
+    ]
+   }
+  },
+  {
+   "id": "s2.breakdown",
+   "layer": "A",
+   "location": "\u00a7VII",
+   "claim": "8 CypherLens-only; 5 CypherTurn rejects (3 also CypherLens); 5 without CypherLens",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s2_results.csv",
+    "studies/native_cypherturn_stress/native_equivalence_stress/frozen/20261030T143405Z_s2_sensitivity/s2_sensitivity_results.json"
+   ],
+   "expected": {
+    "cypherlens_only_accept": 8,
+    "cypherturn_rejects_others_accept": 5,
+    "non_unanimous_without_cypherlens": 5,
+    "of_which_cypherlens_also_rejects": 3
+   }
+  },
+  {
+   "id": "s2.complete_nonunanimous",
+   "layer": "A",
+   "location": "\u00a7VII",
+   "claim": "19 of 154 complete non-unanimous (5 without CypherLens)",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s2_results.csv",
+    "studies/native_cypherturn_stress/native_equivalence_stress/frozen/20261030T143405Z_s2_sensitivity/s2_sensitivity_results.json"
+   ],
+   "expected": {
+    "all": 19,
+    "without_cypherlens": 5
+   }
+  },
+  {
+   "id": "s2.acceptances",
+   "layer": "A",
+   "location": "\u00a7VII",
+   "claim": "acceptances 0/37 (CypherTurn) to 10/37 (CypherLens), five for each other scorer",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s2_results.csv",
+    "studies/native_cypherturn_stress/native_equivalence_stress/frozen/20261030T143405Z_s2_sensitivity/s2_sensitivity_results.json"
+   ],
+   "expected": {
+    "cypherbench": 5,
+    "cypherlens": 10,
+    "cypherturn": 0,
+    "cyspider": 5,
+    "gqlbench": 5,
+    "pipecypher": 5,
+    "tugraph": 5
+   }
+  },
+  {
+   "id": "s2.acceptance_gap",
+   "layer": "A",
+   "location": "\u00a7VII",
+   "claim": "largest acceptance-rate gap 0.270 (0.135 without CypherLens)",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s2_results.csv",
+    "studies/native_cypherturn_stress/native_equivalence_stress/frozen/20261030T143405Z_s2_sensitivity/s2_sensitivity_results.json"
+   ],
+   "expected": {
+    "all": "0.270",
+    "without_cypherlens": "0.135"
+   }
+  },
+  {
+   "id": "ml.population",
+   "layer": "B",
+   "location": "\u00a7III-B; \u00a7VII Model level",
+   "claim": "276 units = 2 models x 138 questions (82 and 76 scored)",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s2_results.csv",
+    "studies/validation_repair/validity_repair/code/model_level.py",
+    "studies/validation_repair/validity_repair/model_level_sensitivity/model_level_ex.csv",
+    "studies/validation_repair/validity_repair/model_level_sensitivity/summary.json",
+    "dataset:model_outputs/s2_not_scored_units.json"
+   ],
+   "expected": {
+    "questions": 138,
+    "scored": {
+     "phi3.5-mini-instruct": 76,
+     "qwen3-4b": 82
+    },
+    "units": 276
+   }
+  },
+  {
+   "id": "ml.credits",
+   "layer": "B",
+   "location": "\u00a7VII Model level",
+   "claim": "CypherTurn 0/0; five scorers 2/3; CypherLens 14/2",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s2_results.csv",
+    "studies/validation_repair/validity_repair/code/model_level.py",
+    "studies/validation_repair/validity_repair/model_level_sensitivity/model_level_ex.csv",
+    "studies/validation_repair/validity_repair/model_level_sensitivity/summary.json",
+    "dataset:model_outputs/s2_not_scored_units.json"
+   ],
+   "expected": {
+    "cypherbench": [
+     2,
+     3
+    ],
+    "cypherlens": [
+     14,
+     2
+    ],
+    "cypherturn": [
+     0,
+     0
+    ],
+    "cyspider": [
+     2,
+     3
+    ],
+    "gqlbench": [
+     2,
+     3
+    ],
+    "pipecypher": [
+     2,
+     3
+    ],
+    "tugraph": [
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "ml.cypherlens_qwen",
+   "layer": "B",
+   "location": "\u00a7VII Model level",
+   "claim": "13 of 14 CypherLens Qwen3-4B credits accepted by no other primary scorer, five of them empty",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s2_results.csv",
+    "studies/validation_repair/validity_repair/code/model_level.py",
+    "studies/validation_repair/validity_repair/model_level_sensitivity/model_level_ex.csv",
+    "studies/validation_repair/validity_repair/model_level_sensitivity/summary.json",
+    "dataset:model_outputs/s2_not_scored_units.json"
+   ],
+   "expected": {
+    "accepted_by_no_other_primary": 13,
+    "credits": 14,
+    "of_which_empty_prediction": 5
+   }
+  },
+  {
+   "id": "ml.rebuilt_equals_frozen",
+   "layer": "B",
+   "location": "\u00a7VIII (model-level table re-runnable)",
+   "claim": "table rebuilt from released unit IDs is byte-identical to the frozen table",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s2_results.csv",
+    "studies/validation_repair/validity_repair/code/model_level.py",
+    "studies/validation_repair/validity_repair/model_level_sensitivity/model_level_ex.csv",
+    "studies/validation_repair/validity_repair/model_level_sensitivity/summary.json",
+    "dataset:model_outputs/s2_not_scored_units.json"
+   ],
+   "expected": {
+    "model_level_ex.csv": true,
+    "summary.json": true
+   }
+  },
+  {
+   "id": "prov.classes",
+   "layer": "B",
+   "location": "\u00a7III-B Corpus audit; Supplement S-F",
+   "claim": "383 official-exact, 81 mirror-exact, 99 project-written",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv",
+    "dataset:splits/record_splits.csv"
+   ],
+   "expected": {
+    "R-A_bird_official_exact": 383,
+    "R-B_bird_mirror_exact": 81,
+    "R-C_project_written": 99
+   }
+  },
+  {
+   "id": "prov.join_complete",
+   "layer": "B",
+   "location": "\u00a7VI provenance (consistency)",
+   "claim": "every corpus pair joins to exactly one provenance record",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv",
+    "dataset:splits/record_splits.csv"
+   ],
+   "expected": true
+  },
+  {
+   "id": "prov.nonunanimous_six",
+   "layer": "B",
+   "location": "Abstract; \u00a7I; \u00a7VI provenance",
+   "claim": "20/99 (20.2%) project-written vs 21/464 (4.5%) BIRD-derived (post hoc)",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv",
+    "dataset:splits/record_splits.csv"
+   ],
+   "expected": {
+    "bird": [
+     21,
+     464
+    ],
+    "bird_pct": "4.5",
+    "project": [
+     20,
+     99
+    ],
+    "project_pct": "20.2"
+   }
+  },
+  {
+   "id": "prov.bird_only_criterion",
+   "layer": "B",
+   "location": "\u00a7VI provenance",
+   "claim": "BIRD-only: 1 of 15 pairs meets (CypherTurn vs driver, 20/464, lower bound 2.33%)",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv",
+    "dataset:splits/record_splits.csv"
+   ],
+   "expected": {
+    "ct_tg_k": 20,
+    "ct_tg_lb_pct": "2.33",
+    "pairs": [
+     "cypherturn|tugraph"
+    ],
+    "pairs_meeting": 1
+   }
+  },
+  {
+   "id": "prov.unanimous_reject_all_project",
+   "layer": "B",
+   "location": "\u00a7VI provenance",
+   "claim": "all nine unanimously rejected pairs are project-written",
+   "inputs": [
+    "studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv",
+    "dataset:splits/record_splits.csv"
+   ],
+   "expected": [
+    9,
+    9
+   ]
+  },
+  {
+   "id": "s18.n",
+   "layer": "A",
+   "location": "\u00a7V-A; \u00a7V-D",
+   "claim": "60 gentle native rewrites",
+   "inputs": [
+    "studies/native_cypherturn_validation/native_cypher/frozen/20261030T083338Z_native_cypher_results/s18_verdicts.csv"
+   ],
+   "expected": 60
+  },
+  {
+   "id": "s20.n",
+   "layer": "A",
+   "location": "Table II; \u00a7V-A",
+   "claim": "62 CypherTurn stress cases",
+   "inputs": [
+    "studies/native_cypherturn_stress/native_equivalence_stress/frozen/20261030T143804Z_results/s20_verdicts.csv"
+   ],
+   "expected": 62
+  },
+  {
+   "id": "s20.table_SC",
+   "layer": "A",
+   "location": "Table III CypherTurn column; Supplement S-C",
+   "claim": "accepted counts per class x scorer",
+   "inputs": [
+    "studies/native_cypherturn_stress/native_equivalence_stress/frozen/20261030T143804Z_results/s20_verdicts.csv"
+   ],
+   "expected": {
+    "D1_numeric_type": {
+     "cs_errors": 0,
+     "cypherbench": 15,
+     "cypherlens": 0,
+     "cypherturn": 0,
+     "cyspider": 15,
+     "gqlbench": 15,
+     "n": 15,
+     "pipecypher": 0,
+     "tugraph": 15
+    },
+    "D2_float_tolerance": {
+     "cs_errors": 0,
+     "cypherbench": 0,
+     "cypherlens": 10,
+     "cypherturn": 0,
+     "cyspider": 0,
+     "gqlbench": 0,
+     "n": 10,
+     "pipecypher": 0,
+     "tugraph": 10
+    },
+    "D3_row_order": {
+     "cs_errors": 0,
+     "cypherbench": 15,
+     "cypherlens": 15,
+     "cypherturn": 15,
+     "cyspider": 15,
+     "gqlbench": 15,
+     "n": 15,
+     "pipecypher": 15,
+     "tugraph": 0
+    },
+    "D4_duplicates": {
+     "cs_errors": 0,
+     "cypherbench": 0,
+     "cypherlens": 0,
+     "cypherturn": 0,
+     "cyspider": 7,
+     "gqlbench": 0,
+     "n": 7,
+     "pipecypher": 7,
+     "tugraph": 0
+    },
+    "D5_null_controlled": {
+     "cs_errors": 0,
+     "cypherbench": 10,
+     "cypherlens": 10,
+     "cypherturn": 10,
+     "cyspider": 10,
+     "gqlbench": 9,
+     "n": 10,
+     "pipecypher": 10,
+     "tugraph": 10
+    },
+    "D6_column_name_control": {
+     "cs_errors": 0,
+     "cypherbench": 5,
+     "cypherlens": 5,
+     "cypherturn": 0,
+     "cyspider": 5,
+     "gqlbench": 5,
+     "n": 5,
+     "pipecypher": 5,
+     "tugraph": 5
+    }
+   }
+  },
+  {
+   "id": "s20.null_class",
+   "layer": "A",
+   "location": "\u00a7V-A",
+   "claim": "NULL class: 9 of 10 unanimous; GQLBench rejects the numeric one",
+   "inputs": [
+    "studies/native_cypherturn_stress/native_equivalence_stress/frozen/20261030T143804Z_results/s20_verdicts.csv"
+   ],
+   "expected": {
+    "gqlbench_rejects": 1,
+    "n": 10,
+    "unanimous": 9
+   }
+  },
+  {
+   "id": "s23.n",
+   "layer": "A",
+   "location": "Table II; \u00a7V-B",
+   "claim": "77 Mind the Query cases",
+   "inputs": [
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_verdicts.csv",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_statistics.json",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T175346Z_preregistration/preregistration.json",
+    "studies/native_mind_the_query/mind_the_query_replication/candidates/generation_summary.json",
+    "studies/native_mind_the_query/mind_the_query_replication/code/s23_replication.py"
+   ],
+   "expected": 77
+  },
+  {
+   "id": "s23.graphs",
+   "layer": "A",
+   "location": "\u00a7V-B",
+   "claim": "from all five graphs",
+   "inputs": [
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_verdicts.csv",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_statistics.json",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T175346Z_preregistration/preregistration.json",
+    "studies/native_mind_the_query/mind_the_query_replication/candidates/generation_summary.json",
+    "studies/native_mind_the_query/mind_the_query_replication/code/s23_replication.py"
+   ],
+   "expected": 5
+  },
+  {
+   "id": "s23.table_SC",
+   "layer": "A",
+   "location": "Table III Mind the Query column; Supplement S-C",
+   "claim": "accepted counts per class x scorer (CL 1/10, 9/10; CS 10 errors)",
+   "inputs": [
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_verdicts.csv",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_statistics.json",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T175346Z_preregistration/preregistration.json",
+    "studies/native_mind_the_query/mind_the_query_replication/candidates/generation_summary.json",
+    "studies/native_mind_the_query/mind_the_query_replication/code/s23_replication.py"
+   ],
+   "expected": {
+    "C0_column_name_control": {
+     "cs_errors": 0,
+     "cypherbench": 5,
+     "cypherlens": 5,
+     "cypherturn": 0,
+     "cyspider": 5,
+     "gqlbench": 5,
+     "n": 5,
+     "pipecypher": 0,
+     "tugraph": 5
+    },
+    "R1_numeric_type": {
+     "cs_errors": 0,
+     "cypherbench": 10,
+     "cypherlens": 1,
+     "cypherturn": 0,
+     "cyspider": 10,
+     "gqlbench": 10,
+     "n": 10,
+     "pipecypher": 0,
+     "tugraph": 10
+    },
+    "R2_float_tolerance": {
+     "cs_errors": 0,
+     "cypherbench": 0,
+     "cypherlens": 9,
+     "cypherturn": 0,
+     "cyspider": 0,
+     "gqlbench": 0,
+     "n": 10,
+     "pipecypher": 0,
+     "tugraph": 10
+    },
+    "R3_row_order": {
+     "cs_errors": 0,
+     "cypherbench": 10,
+     "cypherlens": 10,
+     "cypherturn": 10,
+     "cyspider": 10,
+     "gqlbench": 10,
+     "n": 10,
+     "pipecypher": 10,
+     "tugraph": 0
+    },
+    "R4_duplicates": {
+     "cs_errors": 0,
+     "cypherbench": 0,
+     "cypherlens": 0,
+     "cypherturn": 0,
+     "cyspider": 10,
+     "gqlbench": 0,
+     "n": 10,
+     "pipecypher": 10,
+     "tugraph": 0
+    },
+    "R5_column_order": {
+     "cs_errors": 0,
+     "cypherbench": 10,
+     "cypherlens": 10,
+     "cypherturn": 10,
+     "cyspider": 0,
+     "gqlbench": 10,
+     "n": 10,
+     "pipecypher": 10,
+     "tugraph": 0
+    },
+    "R6_reference_order": {
+     "cs_errors": 0,
+     "cypherbench": 0,
+     "cypherlens": 10,
+     "cypherturn": 10,
+     "cyspider": 10,
+     "gqlbench": 0,
+     "n": 10,
+     "pipecypher": 10,
+     "tugraph": 10
+    },
+    "R7_list_order": {
+     "cs_errors": 10,
+     "cypherbench": 10,
+     "cypherlens": 0,
+     "cypherturn": 0,
+     "cyspider": 0,
+     "gqlbench": 0,
+     "n": 10,
+     "pipecypher": 0,
+     "tugraph": 0
+    },
+    "R8_null_natural": {
+     "cs_errors": 0,
+     "cypherbench": 2,
+     "cypherlens": 2,
+     "cypherturn": 2,
+     "cyspider": 2,
+     "gqlbench": 0,
+     "n": 2,
+     "pipecypher": 2,
+     "tugraph": 2
+    }
+   }
+  },
+  {
+   "id": "s23.graph_by_class_SD",
+   "layer": "A",
+   "location": "Supplement S-D",
+   "claim": "cases per graph and class",
+   "inputs": [
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_verdicts.csv",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_statistics.json",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T175346Z_preregistration/preregistration.json",
+    "studies/native_mind_the_query/mind_the_query_replication/candidates/generation_summary.json",
+    "studies/native_mind_the_query/mind_the_query_replication/code/s23_replication.py"
+   ],
+   "expected": {
+    "C0_column_name_control": {
+     "covid": 2,
+     "er": 1,
+     "healthcare": 1,
+     "wwc": 1
+    },
+    "R1_numeric_type": {
+     "bloom": 1,
+     "er": 2,
+     "healthcare": 4,
+     "wwc": 3
+    },
+    "R2_float_tolerance": {
+     "bloom": 3,
+     "er": 2,
+     "healthcare": 4,
+     "wwc": 1
+    },
+    "R3_row_order": {
+     "bloom": 2,
+     "er": 2,
+     "healthcare": 3,
+     "wwc": 3
+    },
+    "R4_duplicates": {
+     "bloom": 3,
+     "covid": 1,
+     "er": 3,
+     "healthcare": 1,
+     "wwc": 2
+    },
+    "R5_column_order": {
+     "bloom": 2,
+     "covid": 3,
+     "er": 1,
+     "healthcare": 2,
+     "wwc": 2
+    },
+    "R6_reference_order": {
+     "bloom": 3,
+     "er": 4,
+     "healthcare": 1,
+     "wwc": 2
+    },
+    "R7_list_order": {
+     "er": 2,
+     "wwc": 8
+    },
+    "R8_null_natural": {
+     "wwc": 2
+    }
+   }
+  },
+  {
+   "id": "s23.covid_cases",
+   "layer": "A",
+   "location": "\u00a7VIII External",
+   "claim": "contact tracing 6 of 77",
+   "inputs": [
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_verdicts.csv",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_statistics.json",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T175346Z_preregistration/preregistration.json",
+    "studies/native_mind_the_query/mind_the_query_replication/candidates/generation_summary.json",
+    "studies/native_mind_the_query/mind_the_query_replication/code/s23_replication.py"
+   ],
+   "expected": 6
+  },
+  {
+   "id": "s23.list_cases_from_wwc",
+   "layer": "A",
+   "location": "\u00a7V-C; \u00a7VIII External",
+   "claim": "eight of ten list cases from one graph",
+   "inputs": [
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_verdicts.csv",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_statistics.json",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T175346Z_preregistration/preregistration.json",
+    "studies/native_mind_the_query/mind_the_query_replication/candidates/generation_summary.json",
+    "studies/native_mind_the_query/mind_the_query_replication/code/s23_replication.py"
+   ],
+   "expected": 8
+  },
+  {
+   "id": "s23.eligible_sources",
+   "layer": "A",
+   "location": "\u00a7V-B",
+   "claim": "1,086 eligible source queries",
+   "inputs": [
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_verdicts.csv",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_statistics.json",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T175346Z_preregistration/preregistration.json",
+    "studies/native_mind_the_query/mind_the_query_replication/candidates/generation_summary.json",
+    "studies/native_mind_the_query/mind_the_query_replication/code/s23_replication.py"
+   ],
+   "expected": 1086
+  },
+  {
+   "id": "s23.replication",
+   "layer": "A",
+   "location": "Table III Replication column",
+   "claim": "frozen-rubric statuses",
+   "inputs": [
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_verdicts.csv",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_statistics.json",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T175346Z_preregistration/preregistration.json",
+    "studies/native_mind_the_query/mind_the_query_replication/candidates/generation_summary.json",
+    "studies/native_mind_the_query/mind_the_query_replication/code/s23_replication.py"
+   ],
+   "expected": {
+    "C0_column_name_control": "PARTIAL_REPLICATION",
+    "R1_numeric_type": "PARTIAL_REPLICATION",
+    "R2_float_tolerance": "PARTIAL_REPLICATION",
+    "R3_row_order": "EXACT_REPLICATION",
+    "R4_duplicates": "EXACT_REPLICATION",
+    "R5_column_order": "NEW_EVIDENCE",
+    "R6_reference_order": "NEW_EVIDENCE",
+    "R7_list_order": "NEW_EVIDENCE",
+    "R8_null_natural": "NOT_TESTABLE"
+   }
+  },
+  {
+   "id": "s23.decision",
+   "layer": "A",
+   "location": "\u00a7V-C",
+   "claim": "all four testable shared classes replicate, two exactly (frozen rule decision A)",
+   "inputs": [
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_verdicts.csv",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_statistics.json",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T175346Z_preregistration/preregistration.json",
+    "studies/native_mind_the_query/mind_the_query_replication/candidates/generation_summary.json",
+    "studies/native_mind_the_query/mind_the_query_replication/code/s23_replication.py"
+   ],
+   "expected": "A_STRONG_CROSS_BENCHMARK_REPLICATION"
+  },
+  {
+   "id": "s23.shared_class_cells",
+   "layer": "A",
+   "location": "\u00a7V-C",
+   "claim": "35 scorer-class cells, 3 changed category",
+   "inputs": [
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_verdicts.csv",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_statistics.json",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T175346Z_preregistration/preregistration.json",
+    "studies/native_mind_the_query/mind_the_query_replication/candidates/generation_summary.json",
+    "studies/native_mind_the_query/mind_the_query_replication/code/s23_replication.py"
+   ],
+   "expected": {
+    "cells": 35,
+    "changed_category": 3
+   }
+  },
+  {
+   "id": "s23.statistics_match_verdicts",
+   "layer": "A",
+   "location": "Table III (consistency)",
+   "claim": "frozen statistics equal per-case verdicts",
+   "inputs": [
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_verdicts.csv",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T181038Z_results/s23_statistics.json",
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T175346Z_preregistration/preregistration.json",
+    "studies/native_mind_the_query/mind_the_query_replication/candidates/generation_summary.json",
+    "studies/native_mind_the_query/mind_the_query_replication/code/s23_replication.py"
+   ],
+   "expected": true
+  },
+  {
+   "id": "s23.multi_column_references",
+   "layer": "R2",
+   "location": "\u00a7V-B",
+   "claim": "62 of 77 with multi-column references (needs the Mind the Query cases rebuilt by full_native.sh s23)",
+   "inputs": [
+    "studies/native_mind_the_query/mind_the_query_replication/frozen/20261031T180759Z_input/hashes.sha256"
+   ],
+   "expected": 62
+  }
+ ]
+}

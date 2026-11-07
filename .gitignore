@@ -3,3 +3,4 @@ external/*
 __pycache__/
 *.pyc
 .venv/
+rebuild/

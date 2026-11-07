@@ -2,13 +2,14 @@
 
 | Level | Command | What it verifies | Needs |
 |---|---|---|---|
-| R0 | `./reproduce.sh --quick` | Every reported number is recomputed from the frozen verdicts; SHA-256 of every released frozen file | Python only |
-| R1 | `./reproduce.sh --full` | The pinned scorers, run through the frozen adapters, reproduce every frozen verdict | GitHub access |
-| R2 | `./reproduce.sh --full` with Docker | The native-Cypher cases regenerate from public benchmarks with the frozen rules, and the scorers reproduce the verdicts | GitHub access, Docker |
+| R0 | `./reproduce.sh --quick DATASET_DIR` | Every quantitative claim of the paper and supplement (`expected_outputs/paper_result_manifest.json`) is recomputed from frozen verdicts; input SHA-256 checked | Python only |
+| R1 | `./reproduce.sh --full DATASET_DIR` | The pinned scorers, run through the frozen adapters, reproduce every frozen verdict of the corrected and original controlled suites, the corpus and the model outputs; the second Text2GQL evaluator reproduces its verdicts; the model-level table is rebuilt from released IDs | GitHub access |
+| R2 | `./reproduce.sh --full DATASET_DIR` with Docker | The native-Cypher cases regenerate from public benchmarks with the frozen rules; all scorers and the second Text2GQL evaluator reproduce the verdicts; every manifest claim passes | GitHub access, Docker |
 
 **Boundaries, stated rather than hidden:**
-- **Corpus and model-output pairs:** re-scored only when the dataset repository ({ctx['data_url']}) is supplied
-  (`CORPUS_PAIRS_DIR` = its root; `corpus/s3_pairs.jsonl` and `model_outputs/s2_pairs.jsonl` are found there).
+- **Dataset repository (https://github.com/mastermind-fa/text2cypher-corpus):** needed for the corpus and model-output pairs (R1), and for the ID files
+  behind the provenance breakdown and the model-level table (R0). Without it, those claims are BOUNDARY, not PASS.
+- **One claim needs R2:** the count of multi-column Mind the Query references reads the rebuilt case file.
 - **CypherTurn rebuilds:** match at verdict level, not byte for byte, because Neo4j load order is nondeterministic.
   Mind the Query rebuilds are byte-identical.
 - **Development tests:** some per-study tests need inputs that are not redistributed (CypherTurn-derived case files,

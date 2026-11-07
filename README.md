@@ -1,6 +1,6 @@
 # What Counts as Correct? A Cross-Implementation Audit of Execution Accuracy in Text-to-Cypher: research artifact
 
-**Version:** 1.0.0 · **Repository:** https://github.com/mastermind-fa/text2cypher-scorer-audit-artifact · **Dataset:** https://github.com/mastermind-fa/text2cypher-corpus ·
+**Version:** 1.1.0 · **Repository:** https://github.com/mastermind-fa/text2cypher-scorer-audit-artifact · **Dataset:** https://github.com/mastermind-fa/text2cypher-corpus ·
 **Licence:** Apache-2.0, for project-authored code only (see `LICENSE`, `NOTICE` and the Licence section)
 
 ## Purpose
@@ -12,10 +12,10 @@ comparison rule in each scorer's code.
 | Path | What it holds |
 |---|---|
 | `reproduce.sh`, `reproduce_quick.sh` | Entry points (quick and full reproduction) |
-| `scripts/` | Reproduction scripts: quick check, full re-scoring, native-Cypher rebuild, verdict comparison |
+| `scripts/` | Reproduction scripts: paper check, full re-scoring, second Text2GQL evaluator, model-level rebuild, native-Cypher rebuild, verdict comparison |
 | `studies/` | One directory per study: code, tests, pre-specified plans and frozen results (see `EVALUATION_PROTOCOL.md`) |
 | `third_party/` | Pinned scorer sources (`scorers.lock`; machine pins in `external/EXTERNAL_PINS.json`), fetch scripts; no third-party code is included |
-| `expected_outputs/` | The numbers the quick check must reproduce |
+| `expected_outputs/` | `paper_result_manifest.json`: every quantitative claim of the paper and supplement, with its inputs' SHA-256 |
 | `environment/` | Pinned Python requirements |
 | `docs/` | The Result-Equivalence Reporting Card |
 | `provenance/` | SHA-256 of every file, with its pre-normalisation hash where identifiers were normalised |
@@ -26,27 +26,34 @@ comparison rule in each scorer's code.
   benchmark); Docker for the native-Cypher rebuilds (Neo4j 5.15.0, throwaway container).
 - CPU only; no GPU, no paid service, no API key.
 
-## Quick reproduction (no network)
+## How to regenerate every reported number
 ```
-./reproduce_quick.sh          # same as ./reproduce.sh --quick
+git clone --branch v1.1.0 https://github.com/mastermind-fa/text2cypher-scorer-audit-artifact && cd text2cypher-scorer-audit-artifact
+git clone --branch v1.0.1 https://github.com/mastermind-fa/text2cypher-corpus ../text2cypher-corpus   # dataset release (ID files, corpus pairs)
+python3 -m pip install -r environment/requirements.txt
+./reproduce.sh --quick ../text2cypher-corpus                # R0: all paper claims from frozen verdicts (no network)
+./reproduce.sh --full  ../text2cypher-corpus                # R0 + R1 + R2: re-score everything (GitHub access, Docker)
 ```
-It recomputes every number reported in the paper from the released frozen verdicts and checks the SHA-256 of every
-released frozen file. Measured on an Apple M-series laptop: about one second.
-
-## Full reproduction
-```
-./reproduce.sh --full                                   # fetch pinned scorers + Mind the Query; re-score; native rebuilds
-CORPUS_PAIRS_DIR=/path/to/text2cypher-corpus ./reproduce.sh --full   # also re-score the corpus and model-output pairs
-```
-- **R1:** re-runs the pinned scorers through the frozen adapters on the controlled fixtures and compares every verdict.
-- **R2:** regenerates the native-Cypher cases with the frozen rules and oracle in a throwaway Neo4j, checks input
-  hashes, scores once and compares verdicts.
-- **Corpus and model-output pairs:** they come from the evaluation dataset. Their re-scoring runs when the pairs are
-  supplied; otherwise the boundary is reported, not hidden.
+- **R0 (`--quick`, about one second):** recomputes every quantitative claim of the paper and supplement from the
+  released frozen verdicts and compares it with `expected_outputs/paper_result_manifest.json`: the corrected
+  (query-consistent) controlled suite, the corpus test, both Text2GQL evaluators, the model-output analyses, the
+  model-level table (rebuilt from released unit IDs and compared byte for byte), the provenance breakdown and the
+  native-Cypher suites. Without the dataset path, the claims that need its ID files are reported as BOUNDARY and the
+  run ends PARTIAL, never PASS.
+- **R1 (`--full`):** fetches the pinned scorers and re-runs them through the frozen adapters on the corrected controlled
+  suite (paper-facing; a regression guard fails if the superseded original values come back), the original suite
+  (kept as a superseded record), the corpus pairs and the model-output pairs; re-runs the second Text2GQL evaluator
+  (`reference/ea_cypher.py`) on the same pairs.
+- **R2 (`--full`, Docker):** regenerates the native-Cypher cases from CypherTurn and Mind the Query with the frozen rules
+  and oracle in a throwaway Neo4j 5.15.0, re-scores them with all scorers and with the second Text2GQL evaluator, and
+  finally requires every manifest claim to pass.
+- `./reproduce.sh --legacy-quick` runs the v1.0.0 checks (`quick_check.py`, which verifies the ORIGINAL controlled
+  suite that the paper reports only as superseded, and `paper_numbers.py`, ten headline numbers also covered by R0).
 
 ## Expected outputs
-`expected_outputs/expected_summary.json` lists the reported numbers. The quick check exits non-zero on any mismatch.
-See `REPRODUCIBILITY.md` for what each level verifies.
+`expected_outputs/paper_result_manifest.json` lists each claim with its manuscript location, layer, input files and
+their SHA-256, and the expected value. `scripts/paper_check.py` exits non-zero on any mismatch.
+`expected_outputs/expected_summary.json` belongs to the legacy quick check. See `REPRODUCIBILITY.md`.
 
 ## Paper results and where they come from
 | Paper result | Released frozen output | Checked by |
