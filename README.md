@@ -15,7 +15,8 @@ comparison rule in each scorer's code.
 | `scripts/` | Reproduction scripts: paper check, full re-scoring, second Text2GQL evaluator, model-level rebuild, native-Cypher rebuild, verdict comparison |
 | `studies/` | One directory per study: code, tests, pre-specified plans and frozen results (see `EVALUATION_PROTOCOL.md`) |
 | `third_party/` | Pinned scorer sources (`scorers.lock`; machine pins in `external/EXTERNAL_PINS.json`), fetch scripts; no third-party code is included |
-| `expected_outputs/` | `paper_result_manifest.json`: every quantitative claim of the paper and supplement, with its inputs' SHA-256 |
+| `expected_outputs/` | `paper_result_manifest.json`: the scorer-audit claims of the paper and supplement, with their inputs' SHA-256 (other results have their own scripts; see the table below) |
+| `graph_conversion/` | The script that built the Works-Cycles property graph from BIRD's SQLite database, graph checks, and a script that regenerates the stored SQL and Cypher outputs of the corpus (see `graph_conversion/README.md`) |
 | `environment/` | Pinned Python requirements |
 | `docs/` | The Result-Equivalence Reporting Card |
 | `provenance/` | SHA-256 of every file, with its pre-normalisation hash where identifiers were normalised |
@@ -76,6 +77,8 @@ their SHA-256, and the expected value. `scripts/paper_check.py` exits non-zero o
 | Figure 1 (six in-domain scorers) | `studies/exposure_and_released_path/figure1/figure1_s3_heatmap.png` | `render_figure1.py` |
 | GQLBench numeric-NULL rejection on a live server | `studies/exposure_and_released_path/gqlbench_released_path/RESULT.md`, `results_public.json` | protocol in the same folder |
 | Corpus disagreements by provenance and dimension (post hoc) | `studies/exposure_and_released_path/provenance_by_dimension/expected_output.txt` | `scripts/reproduce_exposure.sh <corpus>` |
+| Supplement S-G: post-hoc cluster-resampling sensitivity of the corpus pairwise bounds | computed from `s3_results.csv` and the corpus records | `python3 scripts/cluster_sensitivity.py <corpus>` |
+| Stored SQL and Cypher outputs of the 563 corpus records (regeneration from BIRD's database) | corpus `records_release_candidate.jsonl` | `graph_conversion/` (Docker, Neo4j 5.26.28) |
 | Model outputs and model level | `…/s2_results.csv`, `studies/validation_repair/validity_repair/model_level_sensitivity/model_level_ex.csv` | `scripts/quick_check.py`, `scripts/paper_numbers.py` |
 
 ## Pre-specified protocol

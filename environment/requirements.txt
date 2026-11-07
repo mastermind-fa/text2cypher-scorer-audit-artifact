@@ -7,3 +7,4 @@ PyYAML==6.0.3
 tqdm==4.70.1
 requests==2.34.2
 pytest==8.4.2
+matplotlib==3.11.2   # Figure 1 renderer (studies/exposure_and_released_path/figure1); added in v1.2.2

@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.2.2 — 2026-11-07
+- Adds `graph_conversion/`: the script that converted BIRD's Works-Cycles SQLite database into the Neo4j property graph
+  on which the corpus pairs were executed (written by one of the paper's authors and released under Apache-2.0 with the
+  author's authorization, as confirmed by the project owner), with an offline fingerprint check, a read-only census of a
+  loaded graph, and a script that regenerates the stored SQL and Cypher outputs of the 563 corpus records. Only the
+  converter's configuration block differs from the version used originally (no credentials in code); its mapping and
+  load logic are unchanged. Verified before release: the rebuilt graph has the same contents as the original graph
+  store, label by label and relationship kind by kind; 562 of 563 gold Cypher queries reproduce the stored rows exactly
+  and one in a different order; BIRD's official database file is byte-identical to the one used.
+- Adds `scripts/cluster_sensitivity.py`, the post-hoc cluster-resampling sensitivity reported in supplement S-G.
+- README: the claim manifest is described as covering the scorer-audit claims (other results have their own scripts).
+- `environment/requirements.txt` pins `matplotlib==3.11.2`, needed by the Figure 1 renderer (missing in v1.2.0-v1.2.1;
+  with it, `scripts/reproduce_exposure.sh` re-renders Figure 1 byte-identically).
+  No frozen verdict, study output or previously reported number changed.
+
 ## 1.2.1 — 2026-11-07
 - Fixes the Mind the Query gold-query runner (`exposure/mtq_results/execute_mtq_gold.py`): v1.2.0 passed a `neo4j.Query`
   object to `tx.run`, which fails for every query; the timeout is now set with `@neo4j.unit_of_work`. The runner script
