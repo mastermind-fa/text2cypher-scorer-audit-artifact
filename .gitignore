@@ -5,3 +5,5 @@ __pycache__/
 .venv/
 rebuild/
 scratch/
+studies/exposure_and_released_path/exposure/mtq_results/mtq_gold_results.jsonl
+*.load.log

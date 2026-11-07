@@ -1,0 +1,271 @@
+{
+ "note": "POST HOC sensitivity; primary population unchanged",
+ "denominators": {
+  "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+  "items": 1086,
+  "results_available": 1071,
+  "key_order_mismatch": 0
+ },
+ "counts": [
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "query",
+   "feature": "Q_ORDER_TRIGGER",
+   "dimension": "row order; query-text dependence",
+   "count": 74,
+   "denominator": 1086,
+   "items": 1086,
+   "pct": 6.8
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "query",
+   "feature": "Q_FINAL_ORDER_BY",
+   "dimension": "row order",
+   "count": 46,
+   "denominator": 1084,
+   "items": 1086,
+   "pct": 4.2
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "query",
+   "feature": "Q_ORDER_BY_NO_LIMIT",
+   "dimension": "row order",
+   "count": 29,
+   "denominator": 1084,
+   "items": 1086,
+   "pct": 2.7
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "query",
+   "feature": "Q_LIMIT",
+   "dimension": "row order (top-k ties)",
+   "count": 18,
+   "denominator": 1084,
+   "items": 1086,
+   "pct": 1.7
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "query",
+   "feature": "Q_RETURN_DISTINCT",
+   "dimension": "duplicates",
+   "count": 46,
+   "denominator": 1084,
+   "items": 1086,
+   "pct": 4.2
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "query",
+   "feature": "Q_AGGREGATE",
+   "dimension": "numeric type",
+   "count": 292,
+   "denominator": 1084,
+   "items": 1086,
+   "pct": 26.9
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "query",
+   "feature": "Q_FLOAT_EXPR",
+   "dimension": "numeric tolerance",
+   "count": 282,
+   "denominator": 1084,
+   "items": 1086,
+   "pct": 26.0
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "query",
+   "feature": "Q_MULTI_ITEM",
+   "dimension": "column names; column position",
+   "count": 877,
+   "denominator": 1084,
+   "items": 1086,
+   "pct": 80.9
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "query",
+   "feature": "Q_UNALIASED_ITEM",
+   "dimension": "column names",
+   "count": 552,
+   "denominator": 1084,
+   "items": 1086,
+   "pct": 50.9
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "query",
+   "feature": "Q_COLLECTION_EXPR",
+   "dimension": "collections",
+   "count": 25,
+   "denominator": 1084,
+   "items": 1086,
+   "pct": 2.3
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "query",
+   "feature": "Q_OPTIONAL_MATCH",
+   "dimension": "NULLs",
+   "count": 63,
+   "denominator": 1086,
+   "items": 1086,
+   "pct": 5.8
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "query",
+   "feature": "Q_UNION",
+   "dimension": "query-text dependence",
+   "count": 0,
+   "denominator": 1086,
+   "items": 1086,
+   "pct": 0.0
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "query",
+   "feature": "Q_GRAPH_VALUE_ITEM",
+   "dimension": "graph-valued results",
+   "count": 7,
+   "denominator": 1084,
+   "items": 1086,
+   "pct": 0.6
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "query",
+   "feature": "Q_UNPARSED",
+   "dimension": "parser coverage",
+   "count": 2,
+   "denominator": 1086,
+   "items": 1086,
+   "pct": 0.2
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "result",
+   "feature": "R_EMPTY",
+   "dimension": "empty results",
+   "count": 76,
+   "denominator": 1071,
+   "items": 1086,
+   "pct": 7.1
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "result",
+   "feature": "R_MULTI_ROW",
+   "dimension": "row order",
+   "count": 827,
+   "denominator": 1071,
+   "items": 1086,
+   "pct": 77.2
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "result",
+   "feature": "R_MULTI_COL",
+   "dimension": "column names; column position",
+   "count": 816,
+   "denominator": 1071,
+   "items": 1086,
+   "pct": 76.2
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "result",
+   "feature": "R_NULL",
+   "dimension": "NULLs",
+   "count": 17,
+   "denominator": 1071,
+   "items": 1086,
+   "pct": 1.6
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "result",
+   "feature": "R_NUMERIC_NULL_COL",
+   "dimension": "NULLs (GQLBench NaN)",
+   "count": 2,
+   "denominator": 1071,
+   "items": 1086,
+   "pct": 0.2
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "result",
+   "feature": "R_NUMERIC",
+   "dimension": "numeric type",
+   "count": 664,
+   "denominator": 1071,
+   "items": 1086,
+   "pct": 62.0
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "result",
+   "feature": "R_FLOAT",
+   "dimension": "numeric type",
+   "count": 456,
+   "denominator": 1071,
+   "items": 1086,
+   "pct": 42.6
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "result",
+   "feature": "R_NONINTEGRAL_FLOAT",
+   "dimension": "numeric tolerance",
+   "count": 378,
+   "denominator": 1071,
+   "items": 1086,
+   "pct": 35.3
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "result",
+   "feature": "R_INT_FLOAT_MIXED_COL",
+   "dimension": "numeric type",
+   "count": 1,
+   "denominator": 1071,
+   "items": 1086,
+   "pct": 0.1
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "result",
+   "feature": "R_DUPLICATE_ROWS",
+   "dimension": "duplicates",
+   "count": 144,
+   "denominator": 1071,
+   "items": 1086,
+   "pct": 13.4
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "result",
+   "feature": "R_LIST",
+   "dimension": "collections",
+   "count": 14,
+   "denominator": 1071,
+   "items": 1086,
+   "pct": 1.3
+  },
+  {
+   "population": "Mind the Query: S23-eligible distinct sources (post hoc)",
+   "level": "result",
+   "feature": "R_MAP",
+   "dimension": "collections / graph objects",
+   "count": 5,
+   "denominator": 1071,
+   "items": 1086,
+   "pct": 0.5
+  }
+ ]
+}

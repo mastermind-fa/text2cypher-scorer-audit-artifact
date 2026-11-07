@@ -1,0 +1,1602 @@
+{
+ "denominators": [
+  {
+   "population": "CypherTurn: all turns",
+   "items": 5927,
+   "results_available": 5927,
+   "key_order_mismatch": 0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "items": 5927,
+   "results_available": 5927,
+   "key_order_mismatch": 0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "items": 3187,
+   "results_available": 3187,
+   "key_order_mismatch": 0
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "items": 1829,
+   "results_available": 1689,
+   "key_order_mismatch": 0
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "items": 1316,
+   "results_available": 1299,
+   "key_order_mismatch": 0
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "items": 1293,
+   "results_available": 1276,
+   "key_order_mismatch": 0
+  }
+ ],
+ "counts": [
+  {
+   "population": "CypherTurn: all turns",
+   "level": "query",
+   "feature": "Q_ORDER_TRIGGER",
+   "dimension": "row order; query-text dependence",
+   "count": 3365,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 56.8
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "query",
+   "feature": "Q_FINAL_ORDER_BY",
+   "dimension": "row order",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "query",
+   "feature": "Q_ORDER_BY_NO_LIMIT",
+   "dimension": "row order",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "query",
+   "feature": "Q_LIMIT",
+   "dimension": "row order (top-k ties)",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "query",
+   "feature": "Q_RETURN_DISTINCT",
+   "dimension": "duplicates",
+   "count": 4264,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 71.9
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "query",
+   "feature": "Q_AGGREGATE",
+   "dimension": "numeric type",
+   "count": 1663,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 28.1
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "query",
+   "feature": "Q_FLOAT_EXPR",
+   "dimension": "numeric tolerance",
+   "count": 446,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 7.5
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "query",
+   "feature": "Q_MULTI_ITEM",
+   "dimension": "column names; column position",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "query",
+   "feature": "Q_UNALIASED_ITEM",
+   "dimension": "column names",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "query",
+   "feature": "Q_COLLECTION_EXPR",
+   "dimension": "collections",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "query",
+   "feature": "Q_OPTIONAL_MATCH",
+   "dimension": "NULLs",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "query",
+   "feature": "Q_UNION",
+   "dimension": "query-text dependence",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "query",
+   "feature": "Q_GRAPH_VALUE_ITEM",
+   "dimension": "graph-valued results",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "query",
+   "feature": "Q_UNPARSED",
+   "dimension": "parser coverage",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "result",
+   "feature": "R_EMPTY",
+   "dimension": "empty results",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "result",
+   "feature": "R_MULTI_ROW",
+   "dimension": "row order",
+   "count": 3418,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 57.7
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "result",
+   "feature": "R_MULTI_COL",
+   "dimension": "column names; column position",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "result",
+   "feature": "R_NULL",
+   "dimension": "NULLs",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "result",
+   "feature": "R_NUMERIC_NULL_COL",
+   "dimension": "NULLs (GQLBench NaN)",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "result",
+   "feature": "R_NUMERIC",
+   "dimension": "numeric type",
+   "count": 1663,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 28.1
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "result",
+   "feature": "R_FLOAT",
+   "dimension": "numeric type",
+   "count": 446,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 7.5
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "result",
+   "feature": "R_NONINTEGRAL_FLOAT",
+   "dimension": "numeric tolerance",
+   "count": 249,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 4.2
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "result",
+   "feature": "R_INT_FLOAT_MIXED_COL",
+   "dimension": "numeric type",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "result",
+   "feature": "R_DUPLICATE_ROWS",
+   "dimension": "duplicates",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "result",
+   "feature": "R_LIST",
+   "dimension": "collections",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: all turns",
+   "level": "result",
+   "feature": "R_MAP",
+   "dimension": "collections / graph objects",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "query",
+   "feature": "Q_ORDER_TRIGGER",
+   "dimension": "row order; query-text dependence",
+   "count": 3365,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 56.8
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "query",
+   "feature": "Q_FINAL_ORDER_BY",
+   "dimension": "row order",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "query",
+   "feature": "Q_ORDER_BY_NO_LIMIT",
+   "dimension": "row order",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "query",
+   "feature": "Q_LIMIT",
+   "dimension": "row order (top-k ties)",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "query",
+   "feature": "Q_RETURN_DISTINCT",
+   "dimension": "duplicates",
+   "count": 4264,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 71.9
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "query",
+   "feature": "Q_AGGREGATE",
+   "dimension": "numeric type",
+   "count": 1663,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 28.1
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "query",
+   "feature": "Q_FLOAT_EXPR",
+   "dimension": "numeric tolerance",
+   "count": 446,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 7.5
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "query",
+   "feature": "Q_MULTI_ITEM",
+   "dimension": "column names; column position",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "query",
+   "feature": "Q_UNALIASED_ITEM",
+   "dimension": "column names",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "query",
+   "feature": "Q_COLLECTION_EXPR",
+   "dimension": "collections",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "query",
+   "feature": "Q_OPTIONAL_MATCH",
+   "dimension": "NULLs",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "query",
+   "feature": "Q_UNION",
+   "dimension": "query-text dependence",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "query",
+   "feature": "Q_GRAPH_VALUE_ITEM",
+   "dimension": "graph-valued results",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "query",
+   "feature": "Q_UNPARSED",
+   "dimension": "parser coverage",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "result",
+   "feature": "R_EMPTY",
+   "dimension": "empty results",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "result",
+   "feature": "R_MULTI_ROW",
+   "dimension": "row order",
+   "count": 3418,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 57.7
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "result",
+   "feature": "R_MULTI_COL",
+   "dimension": "column names; column position",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "result",
+   "feature": "R_NULL",
+   "dimension": "NULLs",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "result",
+   "feature": "R_NUMERIC_NULL_COL",
+   "dimension": "NULLs (GQLBench NaN)",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "result",
+   "feature": "R_NUMERIC",
+   "dimension": "numeric type",
+   "count": 1663,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 28.1
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "result",
+   "feature": "R_FLOAT",
+   "dimension": "numeric type",
+   "count": 446,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 7.5
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "result",
+   "feature": "R_NONINTEGRAL_FLOAT",
+   "dimension": "numeric tolerance",
+   "count": 249,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 4.2
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "result",
+   "feature": "R_INT_FLOAT_MIXED_COL",
+   "dimension": "numeric type",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "result",
+   "feature": "R_DUPLICATE_ROWS",
+   "dimension": "duplicates",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "result",
+   "feature": "R_LIST",
+   "dimension": "collections",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: split=None",
+   "level": "result",
+   "feature": "R_MAP",
+   "dimension": "collections / graph objects",
+   "count": 0,
+   "denominator": 5927,
+   "items": 5927,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_ORDER_TRIGGER",
+   "dimension": "row order; query-text dependence",
+   "count": 2429,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 76.2
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_FINAL_ORDER_BY",
+   "dimension": "row order",
+   "count": 0,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_ORDER_BY_NO_LIMIT",
+   "dimension": "row order",
+   "count": 0,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_LIMIT",
+   "dimension": "row order (top-k ties)",
+   "count": 0,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_RETURN_DISTINCT",
+   "dimension": "duplicates",
+   "count": 1919,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 60.2
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_AGGREGATE",
+   "dimension": "numeric type",
+   "count": 1268,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 39.8
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_FLOAT_EXPR",
+   "dimension": "numeric tolerance",
+   "count": 320,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 10.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_MULTI_ITEM",
+   "dimension": "column names; column position",
+   "count": 0,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_UNALIASED_ITEM",
+   "dimension": "column names",
+   "count": 0,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_COLLECTION_EXPR",
+   "dimension": "collections",
+   "count": 0,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_OPTIONAL_MATCH",
+   "dimension": "NULLs",
+   "count": 0,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_UNION",
+   "dimension": "query-text dependence",
+   "count": 0,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_GRAPH_VALUE_ITEM",
+   "dimension": "graph-valued results",
+   "count": 0,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_UNPARSED",
+   "dimension": "parser coverage",
+   "count": 0,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "result",
+   "feature": "R_EMPTY",
+   "dimension": "empty results",
+   "count": 0,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "result",
+   "feature": "R_MULTI_ROW",
+   "dimension": "row order",
+   "count": 1394,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 43.7
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "result",
+   "feature": "R_MULTI_COL",
+   "dimension": "column names; column position",
+   "count": 0,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "result",
+   "feature": "R_NULL",
+   "dimension": "NULLs",
+   "count": 0,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "result",
+   "feature": "R_NUMERIC_NULL_COL",
+   "dimension": "NULLs (GQLBench NaN)",
+   "count": 0,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "result",
+   "feature": "R_NUMERIC",
+   "dimension": "numeric type",
+   "count": 1268,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 39.8
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "result",
+   "feature": "R_FLOAT",
+   "dimension": "numeric type",
+   "count": 320,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 10.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "result",
+   "feature": "R_NONINTEGRAL_FLOAT",
+   "dimension": "numeric tolerance",
+   "count": 159,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 5.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "result",
+   "feature": "R_INT_FLOAT_MIXED_COL",
+   "dimension": "numeric type",
+   "count": 0,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "result",
+   "feature": "R_DUPLICATE_ROWS",
+   "dimension": "duplicates",
+   "count": 0,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "result",
+   "feature": "R_LIST",
+   "dimension": "collections",
+   "count": 0,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 0.0
+  },
+  {
+   "population": "CypherTurn: distinct (graph, query)",
+   "level": "result",
+   "feature": "R_MAP",
+   "dimension": "collections / graph objects",
+   "count": 0,
+   "denominator": 3187,
+   "items": 3187,
+   "pct": 0.0
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "query",
+   "feature": "Q_ORDER_TRIGGER",
+   "dimension": "row order; query-text dependence",
+   "count": 115,
+   "denominator": 1829,
+   "items": 1829,
+   "pct": 6.3
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "query",
+   "feature": "Q_FINAL_ORDER_BY",
+   "dimension": "row order",
+   "count": 75,
+   "denominator": 1823,
+   "items": 1829,
+   "pct": 4.1
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "query",
+   "feature": "Q_ORDER_BY_NO_LIMIT",
+   "dimension": "row order",
+   "count": 50,
+   "denominator": 1823,
+   "items": 1829,
+   "pct": 2.7
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "query",
+   "feature": "Q_LIMIT",
+   "dimension": "row order (top-k ties)",
+   "count": 26,
+   "denominator": 1823,
+   "items": 1829,
+   "pct": 1.4
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "query",
+   "feature": "Q_RETURN_DISTINCT",
+   "dimension": "duplicates",
+   "count": 76,
+   "denominator": 1823,
+   "items": 1829,
+   "pct": 4.2
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "query",
+   "feature": "Q_AGGREGATE",
+   "dimension": "numeric type",
+   "count": 483,
+   "denominator": 1823,
+   "items": 1829,
+   "pct": 26.5
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "query",
+   "feature": "Q_FLOAT_EXPR",
+   "dimension": "numeric tolerance",
+   "count": 479,
+   "denominator": 1823,
+   "items": 1829,
+   "pct": 26.3
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "query",
+   "feature": "Q_MULTI_ITEM",
+   "dimension": "column names; column position",
+   "count": 1479,
+   "denominator": 1823,
+   "items": 1829,
+   "pct": 81.1
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "query",
+   "feature": "Q_UNALIASED_ITEM",
+   "dimension": "column names",
+   "count": 895,
+   "denominator": 1823,
+   "items": 1829,
+   "pct": 49.1
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "query",
+   "feature": "Q_COLLECTION_EXPR",
+   "dimension": "collections",
+   "count": 36,
+   "denominator": 1823,
+   "items": 1829,
+   "pct": 2.0
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "query",
+   "feature": "Q_OPTIONAL_MATCH",
+   "dimension": "NULLs",
+   "count": 79,
+   "denominator": 1829,
+   "items": 1829,
+   "pct": 4.3
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "query",
+   "feature": "Q_UNION",
+   "dimension": "query-text dependence",
+   "count": 0,
+   "denominator": 1829,
+   "items": 1829,
+   "pct": 0.0
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "query",
+   "feature": "Q_GRAPH_VALUE_ITEM",
+   "dimension": "graph-valued results",
+   "count": 10,
+   "denominator": 1823,
+   "items": 1829,
+   "pct": 0.5
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "query",
+   "feature": "Q_UNPARSED",
+   "dimension": "parser coverage",
+   "count": 6,
+   "denominator": 1829,
+   "items": 1829,
+   "pct": 0.3
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "result",
+   "feature": "R_EMPTY",
+   "dimension": "empty results",
+   "count": 331,
+   "denominator": 1689,
+   "items": 1829,
+   "pct": 19.6
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "result",
+   "feature": "R_MULTI_ROW",
+   "dimension": "row order",
+   "count": 1066,
+   "denominator": 1689,
+   "items": 1829,
+   "pct": 63.1
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "result",
+   "feature": "R_MULTI_COL",
+   "dimension": "column names; column position",
+   "count": 1138,
+   "denominator": 1689,
+   "items": 1829,
+   "pct": 67.4
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "result",
+   "feature": "R_NULL",
+   "dimension": "NULLs",
+   "count": 21,
+   "denominator": 1689,
+   "items": 1829,
+   "pct": 1.2
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "result",
+   "feature": "R_NUMERIC_NULL_COL",
+   "dimension": "NULLs (GQLBench NaN)",
+   "count": 3,
+   "denominator": 1689,
+   "items": 1829,
+   "pct": 0.2
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "result",
+   "feature": "R_NUMERIC",
+   "dimension": "numeric type",
+   "count": 896,
+   "denominator": 1689,
+   "items": 1829,
+   "pct": 53.0
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "result",
+   "feature": "R_FLOAT",
+   "dimension": "numeric type",
+   "count": 654,
+   "denominator": 1689,
+   "items": 1829,
+   "pct": 38.7
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "result",
+   "feature": "R_NONINTEGRAL_FLOAT",
+   "dimension": "numeric tolerance",
+   "count": 566,
+   "denominator": 1689,
+   "items": 1829,
+   "pct": 33.5
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "result",
+   "feature": "R_INT_FLOAT_MIXED_COL",
+   "dimension": "numeric type",
+   "count": 1,
+   "denominator": 1689,
+   "items": 1829,
+   "pct": 0.1
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "result",
+   "feature": "R_DUPLICATE_ROWS",
+   "dimension": "duplicates",
+   "count": 197,
+   "denominator": 1689,
+   "items": 1829,
+   "pct": 11.7
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "result",
+   "feature": "R_LIST",
+   "dimension": "collections",
+   "count": 24,
+   "denominator": 1689,
+   "items": 1829,
+   "pct": 1.4
+  },
+  {
+   "population": "Mind the Query: all test rows",
+   "level": "result",
+   "feature": "R_MAP",
+   "dimension": "collections / graph objects",
+   "count": 5,
+   "denominator": 1689,
+   "items": 1829,
+   "pct": 0.3
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "query",
+   "feature": "Q_ORDER_TRIGGER",
+   "dimension": "row order; query-text dependence",
+   "count": 82,
+   "denominator": 1316,
+   "items": 1316,
+   "pct": 6.2
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "query",
+   "feature": "Q_FINAL_ORDER_BY",
+   "dimension": "row order",
+   "count": 53,
+   "denominator": 1314,
+   "items": 1316,
+   "pct": 4.0
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "query",
+   "feature": "Q_ORDER_BY_NO_LIMIT",
+   "dimension": "row order",
+   "count": 30,
+   "denominator": 1314,
+   "items": 1316,
+   "pct": 2.3
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "query",
+   "feature": "Q_LIMIT",
+   "dimension": "row order (top-k ties)",
+   "count": 24,
+   "denominator": 1314,
+   "items": 1316,
+   "pct": 1.8
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "query",
+   "feature": "Q_RETURN_DISTINCT",
+   "dimension": "duplicates",
+   "count": 58,
+   "denominator": 1314,
+   "items": 1316,
+   "pct": 4.4
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "query",
+   "feature": "Q_AGGREGATE",
+   "dimension": "numeric type",
+   "count": 343,
+   "denominator": 1314,
+   "items": 1316,
+   "pct": 26.1
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "query",
+   "feature": "Q_FLOAT_EXPR",
+   "dimension": "numeric tolerance",
+   "count": 319,
+   "denominator": 1314,
+   "items": 1316,
+   "pct": 24.3
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "query",
+   "feature": "Q_MULTI_ITEM",
+   "dimension": "column names; column position",
+   "count": 1044,
+   "denominator": 1314,
+   "items": 1316,
+   "pct": 79.5
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "query",
+   "feature": "Q_UNALIASED_ITEM",
+   "dimension": "column names",
+   "count": 581,
+   "denominator": 1314,
+   "items": 1316,
+   "pct": 44.2
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "query",
+   "feature": "Q_COLLECTION_EXPR",
+   "dimension": "collections",
+   "count": 26,
+   "denominator": 1314,
+   "items": 1316,
+   "pct": 2.0
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "query",
+   "feature": "Q_OPTIONAL_MATCH",
+   "dimension": "NULLs",
+   "count": 65,
+   "denominator": 1316,
+   "items": 1316,
+   "pct": 4.9
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "query",
+   "feature": "Q_UNION",
+   "dimension": "query-text dependence",
+   "count": 0,
+   "denominator": 1316,
+   "items": 1316,
+   "pct": 0.0
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "query",
+   "feature": "Q_GRAPH_VALUE_ITEM",
+   "dimension": "graph-valued results",
+   "count": 8,
+   "denominator": 1314,
+   "items": 1316,
+   "pct": 0.6
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "query",
+   "feature": "Q_UNPARSED",
+   "dimension": "parser coverage",
+   "count": 2,
+   "denominator": 1316,
+   "items": 1316,
+   "pct": 0.2
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "result",
+   "feature": "R_EMPTY",
+   "dimension": "empty results",
+   "count": 280,
+   "denominator": 1299,
+   "items": 1316,
+   "pct": 21.6
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "result",
+   "feature": "R_MULTI_ROW",
+   "dimension": "row order",
+   "count": 849,
+   "denominator": 1299,
+   "items": 1316,
+   "pct": 65.4
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "result",
+   "feature": "R_MULTI_COL",
+   "dimension": "column names; column position",
+   "count": 839,
+   "denominator": 1299,
+   "items": 1316,
+   "pct": 64.6
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "result",
+   "feature": "R_NULL",
+   "dimension": "NULLs",
+   "count": 17,
+   "denominator": 1299,
+   "items": 1316,
+   "pct": 1.3
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "result",
+   "feature": "R_NUMERIC_NULL_COL",
+   "dimension": "NULLs (GQLBench NaN)",
+   "count": 2,
+   "denominator": 1299,
+   "items": 1316,
+   "pct": 0.2
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "result",
+   "feature": "R_NUMERIC",
+   "dimension": "numeric type",
+   "count": 676,
+   "denominator": 1299,
+   "items": 1316,
+   "pct": 52.0
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "result",
+   "feature": "R_FLOAT",
+   "dimension": "numeric type",
+   "count": 464,
+   "denominator": 1299,
+   "items": 1316,
+   "pct": 35.7
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "result",
+   "feature": "R_NONINTEGRAL_FLOAT",
+   "dimension": "numeric tolerance",
+   "count": 386,
+   "denominator": 1299,
+   "items": 1316,
+   "pct": 29.7
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "result",
+   "feature": "R_INT_FLOAT_MIXED_COL",
+   "dimension": "numeric type",
+   "count": 1,
+   "denominator": 1299,
+   "items": 1316,
+   "pct": 0.1
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "result",
+   "feature": "R_DUPLICATE_ROWS",
+   "dimension": "duplicates",
+   "count": 147,
+   "denominator": 1299,
+   "items": 1316,
+   "pct": 11.3
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "result",
+   "feature": "R_LIST",
+   "dimension": "collections",
+   "count": 14,
+   "denominator": 1299,
+   "items": 1316,
+   "pct": 1.1
+  },
+  {
+   "population": "Mind the Query: logical=1",
+   "level": "result",
+   "feature": "R_MAP",
+   "dimension": "collections / graph objects",
+   "count": 5,
+   "denominator": 1299,
+   "items": 1316,
+   "pct": 0.4
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_ORDER_TRIGGER",
+   "dimension": "row order; query-text dependence",
+   "count": 81,
+   "denominator": 1293,
+   "items": 1293,
+   "pct": 6.3
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_FINAL_ORDER_BY",
+   "dimension": "row order",
+   "count": 53,
+   "denominator": 1291,
+   "items": 1293,
+   "pct": 4.1
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_ORDER_BY_NO_LIMIT",
+   "dimension": "row order",
+   "count": 30,
+   "denominator": 1291,
+   "items": 1293,
+   "pct": 2.3
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_LIMIT",
+   "dimension": "row order (top-k ties)",
+   "count": 24,
+   "denominator": 1291,
+   "items": 1293,
+   "pct": 1.9
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_RETURN_DISTINCT",
+   "dimension": "duplicates",
+   "count": 58,
+   "denominator": 1291,
+   "items": 1293,
+   "pct": 4.5
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_AGGREGATE",
+   "dimension": "numeric type",
+   "count": 339,
+   "denominator": 1291,
+   "items": 1293,
+   "pct": 26.3
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_FLOAT_EXPR",
+   "dimension": "numeric tolerance",
+   "count": 316,
+   "denominator": 1291,
+   "items": 1293,
+   "pct": 24.5
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_MULTI_ITEM",
+   "dimension": "column names; column position",
+   "count": 1022,
+   "denominator": 1291,
+   "items": 1293,
+   "pct": 79.2
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_UNALIASED_ITEM",
+   "dimension": "column names",
+   "count": 573,
+   "denominator": 1291,
+   "items": 1293,
+   "pct": 44.4
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_COLLECTION_EXPR",
+   "dimension": "collections",
+   "count": 26,
+   "denominator": 1291,
+   "items": 1293,
+   "pct": 2.0
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_OPTIONAL_MATCH",
+   "dimension": "NULLs",
+   "count": 64,
+   "denominator": 1293,
+   "items": 1293,
+   "pct": 4.9
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_UNION",
+   "dimension": "query-text dependence",
+   "count": 0,
+   "denominator": 1293,
+   "items": 1293,
+   "pct": 0.0
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_GRAPH_VALUE_ITEM",
+   "dimension": "graph-valued results",
+   "count": 8,
+   "denominator": 1291,
+   "items": 1293,
+   "pct": 0.6
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "query",
+   "feature": "Q_UNPARSED",
+   "dimension": "parser coverage",
+   "count": 2,
+   "denominator": 1293,
+   "items": 1293,
+   "pct": 0.2
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "result",
+   "feature": "R_EMPTY",
+   "dimension": "empty results",
+   "count": 280,
+   "denominator": 1276,
+   "items": 1293,
+   "pct": 21.9
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "result",
+   "feature": "R_MULTI_ROW",
+   "dimension": "row order",
+   "count": 828,
+   "denominator": 1276,
+   "items": 1293,
+   "pct": 64.9
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "result",
+   "feature": "R_MULTI_COL",
+   "dimension": "column names; column position",
+   "count": 817,
+   "denominator": 1276,
+   "items": 1293,
+   "pct": 64.0
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "result",
+   "feature": "R_NULL",
+   "dimension": "NULLs",
+   "count": 17,
+   "denominator": 1276,
+   "items": 1293,
+   "pct": 1.3
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "result",
+   "feature": "R_NUMERIC_NULL_COL",
+   "dimension": "NULLs (GQLBench NaN)",
+   "count": 2,
+   "denominator": 1276,
+   "items": 1293,
+   "pct": 0.2
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "result",
+   "feature": "R_NUMERIC",
+   "dimension": "numeric type",
+   "count": 665,
+   "denominator": 1276,
+   "items": 1293,
+   "pct": 52.1
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "result",
+   "feature": "R_FLOAT",
+   "dimension": "numeric type",
+   "count": 457,
+   "denominator": 1276,
+   "items": 1293,
+   "pct": 35.8
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "result",
+   "feature": "R_NONINTEGRAL_FLOAT",
+   "dimension": "numeric tolerance",
+   "count": 379,
+   "denominator": 1276,
+   "items": 1293,
+   "pct": 29.7
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "result",
+   "feature": "R_INT_FLOAT_MIXED_COL",
+   "dimension": "numeric type",
+   "count": 1,
+   "denominator": 1276,
+   "items": 1293,
+   "pct": 0.1
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "result",
+   "feature": "R_DUPLICATE_ROWS",
+   "dimension": "duplicates",
+   "count": 144,
+   "denominator": 1276,
+   "items": 1293,
+   "pct": 11.3
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "result",
+   "feature": "R_LIST",
+   "dimension": "collections",
+   "count": 14,
+   "denominator": 1276,
+   "items": 1293,
+   "pct": 1.1
+  },
+  {
+   "population": "Mind the Query: logical=1, distinct (graph, query)",
+   "level": "result",
+   "feature": "R_MAP",
+   "dimension": "collections / graph objects",
+   "count": 5,
+   "denominator": 1276,
+   "items": 1293,
+   "pct": 0.4
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "graph": "ancient_empire",
+ "session_id": "f1e1e06b-3fe0-4b9f-97d8-f25fbda674e5",
+ "turn_id": 1,
+ "reference_query_sha256": "cd62e284c4b94db46e35196106001f1179a4e3e643cd3b1c37ab3340f8bbd586",
+ "rows": 5,
+ "verdicts": {
+  "reversed": {
+   "cypherturn": 1,
+   "cypherbench": 0,
+   "gqlbench": 0,
+   "tugraph": 0,
+   "pipecypher": 1,
+   "cyspider": 1
+  },
+  "same_order": {
+   "cypherturn": 1,
+   "cypherbench": 1,
+   "gqlbench": 1,
+   "tugraph": 1,
+   "pipecypher": 1,
+   "cyspider": 1
+  }
+ }
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""S49 (APPROVAL-BOUND, prepared only): execute every Mind the Query manual test-split gold query once, read-only, on
+"""Execute every Mind the Query manual test-split gold query once, read-only, on
 the graph already loaded in the server at URI, and store the rows for result-level exposure.
 
   execute_mtq_gold.py <graph> <uri> <user> <password> <out.jsonl>
@@ -42,8 +42,9 @@ def main(graph, uri, user, pw, out):
                 rec = {"graph": graph, "item_id": r["unique_id"], "query": q}
                 try:
                     with drv.session() as s:
+                        @neo4j.unit_of_work(timeout=60)
                         def work(tx):
-                            res = tx.run(neo4j.Query(q, timeout=60))
+                            res = tx.run(q)
                             keys = list(res.keys())
                             return keys, [{k: cell(x[k]) for k in keys} for x in res]
                         keys, rows = s.execute_read(work)

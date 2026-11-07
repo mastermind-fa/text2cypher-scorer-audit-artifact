@@ -1,0 +1,157 @@
+population,level,feature,dimension,count,denominator,items,pct
+CypherTurn: all turns,query,Q_ORDER_TRIGGER,row order; query-text dependence,3365,5927,5927,56.8
+CypherTurn: all turns,query,Q_FINAL_ORDER_BY,row order,0,5927,5927,0.0
+CypherTurn: all turns,query,Q_ORDER_BY_NO_LIMIT,row order,0,5927,5927,0.0
+CypherTurn: all turns,query,Q_LIMIT,row order (top-k ties),0,5927,5927,0.0
+CypherTurn: all turns,query,Q_RETURN_DISTINCT,duplicates,4264,5927,5927,71.9
+CypherTurn: all turns,query,Q_AGGREGATE,numeric type,1663,5927,5927,28.1
+CypherTurn: all turns,query,Q_FLOAT_EXPR,numeric tolerance,446,5927,5927,7.5
+CypherTurn: all turns,query,Q_MULTI_ITEM,column names; column position,0,5927,5927,0.0
+CypherTurn: all turns,query,Q_UNALIASED_ITEM,column names,0,5927,5927,0.0
+CypherTurn: all turns,query,Q_COLLECTION_EXPR,collections,0,5927,5927,0.0
+CypherTurn: all turns,query,Q_OPTIONAL_MATCH,NULLs,0,5927,5927,0.0
+CypherTurn: all turns,query,Q_UNION,query-text dependence,0,5927,5927,0.0
+CypherTurn: all turns,query,Q_GRAPH_VALUE_ITEM,graph-valued results,0,5927,5927,0.0
+CypherTurn: all turns,query,Q_UNPARSED,parser coverage,0,5927,5927,0.0
+CypherTurn: all turns,result,R_EMPTY,empty results,0,5927,5927,0.0
+CypherTurn: all turns,result,R_MULTI_ROW,row order,3418,5927,5927,57.7
+CypherTurn: all turns,result,R_MULTI_COL,column names; column position,0,5927,5927,0.0
+CypherTurn: all turns,result,R_NULL,NULLs,0,5927,5927,0.0
+CypherTurn: all turns,result,R_NUMERIC_NULL_COL,NULLs (GQLBench NaN),0,5927,5927,0.0
+CypherTurn: all turns,result,R_NUMERIC,numeric type,1663,5927,5927,28.1
+CypherTurn: all turns,result,R_FLOAT,numeric type,446,5927,5927,7.5
+CypherTurn: all turns,result,R_NONINTEGRAL_FLOAT,numeric tolerance,249,5927,5927,4.2
+CypherTurn: all turns,result,R_INT_FLOAT_MIXED_COL,numeric type,0,5927,5927,0.0
+CypherTurn: all turns,result,R_DUPLICATE_ROWS,duplicates,0,5927,5927,0.0
+CypherTurn: all turns,result,R_LIST,collections,0,5927,5927,0.0
+CypherTurn: all turns,result,R_MAP,collections / graph objects,0,5927,5927,0.0
+CypherTurn: split=None,query,Q_ORDER_TRIGGER,row order; query-text dependence,3365,5927,5927,56.8
+CypherTurn: split=None,query,Q_FINAL_ORDER_BY,row order,0,5927,5927,0.0
+CypherTurn: split=None,query,Q_ORDER_BY_NO_LIMIT,row order,0,5927,5927,0.0
+CypherTurn: split=None,query,Q_LIMIT,row order (top-k ties),0,5927,5927,0.0
+CypherTurn: split=None,query,Q_RETURN_DISTINCT,duplicates,4264,5927,5927,71.9
+CypherTurn: split=None,query,Q_AGGREGATE,numeric type,1663,5927,5927,28.1
+CypherTurn: split=None,query,Q_FLOAT_EXPR,numeric tolerance,446,5927,5927,7.5
+CypherTurn: split=None,query,Q_MULTI_ITEM,column names; column position,0,5927,5927,0.0
+CypherTurn: split=None,query,Q_UNALIASED_ITEM,column names,0,5927,5927,0.0
+CypherTurn: split=None,query,Q_COLLECTION_EXPR,collections,0,5927,5927,0.0
+CypherTurn: split=None,query,Q_OPTIONAL_MATCH,NULLs,0,5927,5927,0.0
+CypherTurn: split=None,query,Q_UNION,query-text dependence,0,5927,5927,0.0
+CypherTurn: split=None,query,Q_GRAPH_VALUE_ITEM,graph-valued results,0,5927,5927,0.0
+CypherTurn: split=None,query,Q_UNPARSED,parser coverage,0,5927,5927,0.0
+CypherTurn: split=None,result,R_EMPTY,empty results,0,5927,5927,0.0
+CypherTurn: split=None,result,R_MULTI_ROW,row order,3418,5927,5927,57.7
+CypherTurn: split=None,result,R_MULTI_COL,column names; column position,0,5927,5927,0.0
+CypherTurn: split=None,result,R_NULL,NULLs,0,5927,5927,0.0
+CypherTurn: split=None,result,R_NUMERIC_NULL_COL,NULLs (GQLBench NaN),0,5927,5927,0.0
+CypherTurn: split=None,result,R_NUMERIC,numeric type,1663,5927,5927,28.1
+CypherTurn: split=None,result,R_FLOAT,numeric type,446,5927,5927,7.5
+CypherTurn: split=None,result,R_NONINTEGRAL_FLOAT,numeric tolerance,249,5927,5927,4.2
+CypherTurn: split=None,result,R_INT_FLOAT_MIXED_COL,numeric type,0,5927,5927,0.0
+CypherTurn: split=None,result,R_DUPLICATE_ROWS,duplicates,0,5927,5927,0.0
+CypherTurn: split=None,result,R_LIST,collections,0,5927,5927,0.0
+CypherTurn: split=None,result,R_MAP,collections / graph objects,0,5927,5927,0.0
+"CypherTurn: distinct (graph, query)",query,Q_ORDER_TRIGGER,row order; query-text dependence,2429,3187,3187,76.2
+"CypherTurn: distinct (graph, query)",query,Q_FINAL_ORDER_BY,row order,0,3187,3187,0.0
+"CypherTurn: distinct (graph, query)",query,Q_ORDER_BY_NO_LIMIT,row order,0,3187,3187,0.0
+"CypherTurn: distinct (graph, query)",query,Q_LIMIT,row order (top-k ties),0,3187,3187,0.0
+"CypherTurn: distinct (graph, query)",query,Q_RETURN_DISTINCT,duplicates,1919,3187,3187,60.2
+"CypherTurn: distinct (graph, query)",query,Q_AGGREGATE,numeric type,1268,3187,3187,39.8
+"CypherTurn: distinct (graph, query)",query,Q_FLOAT_EXPR,numeric tolerance,320,3187,3187,10.0
+"CypherTurn: distinct (graph, query)",query,Q_MULTI_ITEM,column names; column position,0,3187,3187,0.0
+"CypherTurn: distinct (graph, query)",query,Q_UNALIASED_ITEM,column names,0,3187,3187,0.0
+"CypherTurn: distinct (graph, query)",query,Q_COLLECTION_EXPR,collections,0,3187,3187,0.0
+"CypherTurn: distinct (graph, query)",query,Q_OPTIONAL_MATCH,NULLs,0,3187,3187,0.0
+"CypherTurn: distinct (graph, query)",query,Q_UNION,query-text dependence,0,3187,3187,0.0
+"CypherTurn: distinct (graph, query)",query,Q_GRAPH_VALUE_ITEM,graph-valued results,0,3187,3187,0.0
+"CypherTurn: distinct (graph, query)",query,Q_UNPARSED,parser coverage,0,3187,3187,0.0
+"CypherTurn: distinct (graph, query)",result,R_EMPTY,empty results,0,3187,3187,0.0
+"CypherTurn: distinct (graph, query)",result,R_MULTI_ROW,row order,1394,3187,3187,43.7
+"CypherTurn: distinct (graph, query)",result,R_MULTI_COL,column names; column position,0,3187,3187,0.0
+"CypherTurn: distinct (graph, query)",result,R_NULL,NULLs,0,3187,3187,0.0
+"CypherTurn: distinct (graph, query)",result,R_NUMERIC_NULL_COL,NULLs (GQLBench NaN),0,3187,3187,0.0
+"CypherTurn: distinct (graph, query)",result,R_NUMERIC,numeric type,1268,3187,3187,39.8
+"CypherTurn: distinct (graph, query)",result,R_FLOAT,numeric type,320,3187,3187,10.0
+"CypherTurn: distinct (graph, query)",result,R_NONINTEGRAL_FLOAT,numeric tolerance,159,3187,3187,5.0
+"CypherTurn: distinct (graph, query)",result,R_INT_FLOAT_MIXED_COL,numeric type,0,3187,3187,0.0
+"CypherTurn: distinct (graph, query)",result,R_DUPLICATE_ROWS,duplicates,0,3187,3187,0.0
+"CypherTurn: distinct (graph, query)",result,R_LIST,collections,0,3187,3187,0.0
+"CypherTurn: distinct (graph, query)",result,R_MAP,collections / graph objects,0,3187,3187,0.0
+Mind the Query: all test rows,query,Q_ORDER_TRIGGER,row order; query-text dependence,115,1829,1829,6.3
+Mind the Query: all test rows,query,Q_FINAL_ORDER_BY,row order,75,1823,1829,4.1
+Mind the Query: all test rows,query,Q_ORDER_BY_NO_LIMIT,row order,50,1823,1829,2.7
+Mind the Query: all test rows,query,Q_LIMIT,row order (top-k ties),26,1823,1829,1.4
+Mind the Query: all test rows,query,Q_RETURN_DISTINCT,duplicates,76,1823,1829,4.2
+Mind the Query: all test rows,query,Q_AGGREGATE,numeric type,483,1823,1829,26.5
+Mind the Query: all test rows,query,Q_FLOAT_EXPR,numeric tolerance,479,1823,1829,26.3
+Mind the Query: all test rows,query,Q_MULTI_ITEM,column names; column position,1479,1823,1829,81.1
+Mind the Query: all test rows,query,Q_UNALIASED_ITEM,column names,895,1823,1829,49.1
+Mind the Query: all test rows,query,Q_COLLECTION_EXPR,collections,36,1823,1829,2.0
+Mind the Query: all test rows,query,Q_OPTIONAL_MATCH,NULLs,79,1829,1829,4.3
+Mind the Query: all test rows,query,Q_UNION,query-text dependence,0,1829,1829,0.0
+Mind the Query: all test rows,query,Q_GRAPH_VALUE_ITEM,graph-valued results,10,1823,1829,0.5
+Mind the Query: all test rows,query,Q_UNPARSED,parser coverage,6,1829,1829,0.3
+Mind the Query: all test rows,result,R_EMPTY,empty results,331,1689,1829,19.6
+Mind the Query: all test rows,result,R_MULTI_ROW,row order,1066,1689,1829,63.1
+Mind the Query: all test rows,result,R_MULTI_COL,column names; column position,1138,1689,1829,67.4
+Mind the Query: all test rows,result,R_NULL,NULLs,21,1689,1829,1.2
+Mind the Query: all test rows,result,R_NUMERIC_NULL_COL,NULLs (GQLBench NaN),3,1689,1829,0.2
+Mind the Query: all test rows,result,R_NUMERIC,numeric type,896,1689,1829,53.0
+Mind the Query: all test rows,result,R_FLOAT,numeric type,654,1689,1829,38.7
+Mind the Query: all test rows,result,R_NONINTEGRAL_FLOAT,numeric tolerance,566,1689,1829,33.5
+Mind the Query: all test rows,result,R_INT_FLOAT_MIXED_COL,numeric type,1,1689,1829,0.1
+Mind the Query: all test rows,result,R_DUPLICATE_ROWS,duplicates,197,1689,1829,11.7
+Mind the Query: all test rows,result,R_LIST,collections,24,1689,1829,1.4
+Mind the Query: all test rows,result,R_MAP,collections / graph objects,5,1689,1829,0.3
+Mind the Query: logical=1,query,Q_ORDER_TRIGGER,row order; query-text dependence,82,1316,1316,6.2
+Mind the Query: logical=1,query,Q_FINAL_ORDER_BY,row order,53,1314,1316,4.0
+Mind the Query: logical=1,query,Q_ORDER_BY_NO_LIMIT,row order,30,1314,1316,2.3
+Mind the Query: logical=1,query,Q_LIMIT,row order (top-k ties),24,1314,1316,1.8
+Mind the Query: logical=1,query,Q_RETURN_DISTINCT,duplicates,58,1314,1316,4.4
+Mind the Query: logical=1,query,Q_AGGREGATE,numeric type,343,1314,1316,26.1
+Mind the Query: logical=1,query,Q_FLOAT_EXPR,numeric tolerance,319,1314,1316,24.3
+Mind the Query: logical=1,query,Q_MULTI_ITEM,column names; column position,1044,1314,1316,79.5
+Mind the Query: logical=1,query,Q_UNALIASED_ITEM,column names,581,1314,1316,44.2
+Mind the Query: logical=1,query,Q_COLLECTION_EXPR,collections,26,1314,1316,2.0
+Mind the Query: logical=1,query,Q_OPTIONAL_MATCH,NULLs,65,1316,1316,4.9
+Mind the Query: logical=1,query,Q_UNION,query-text dependence,0,1316,1316,0.0
+Mind the Query: logical=1,query,Q_GRAPH_VALUE_ITEM,graph-valued results,8,1314,1316,0.6
+Mind the Query: logical=1,query,Q_UNPARSED,parser coverage,2,1316,1316,0.2
+Mind the Query: logical=1,result,R_EMPTY,empty results,280,1299,1316,21.6
+Mind the Query: logical=1,result,R_MULTI_ROW,row order,849,1299,1316,65.4
+Mind the Query: logical=1,result,R_MULTI_COL,column names; column position,839,1299,1316,64.6
+Mind the Query: logical=1,result,R_NULL,NULLs,17,1299,1316,1.3
+Mind the Query: logical=1,result,R_NUMERIC_NULL_COL,NULLs (GQLBench NaN),2,1299,1316,0.2
+Mind the Query: logical=1,result,R_NUMERIC,numeric type,676,1299,1316,52.0
+Mind the Query: logical=1,result,R_FLOAT,numeric type,464,1299,1316,35.7
+Mind the Query: logical=1,result,R_NONINTEGRAL_FLOAT,numeric tolerance,386,1299,1316,29.7
+Mind the Query: logical=1,result,R_INT_FLOAT_MIXED_COL,numeric type,1,1299,1316,0.1
+Mind the Query: logical=1,result,R_DUPLICATE_ROWS,duplicates,147,1299,1316,11.3
+Mind the Query: logical=1,result,R_LIST,collections,14,1299,1316,1.1
+Mind the Query: logical=1,result,R_MAP,collections / graph objects,5,1299,1316,0.4
+"Mind the Query: logical=1, distinct (graph, query)",query,Q_ORDER_TRIGGER,row order; query-text dependence,81,1293,1293,6.3
+"Mind the Query: logical=1, distinct (graph, query)",query,Q_FINAL_ORDER_BY,row order,53,1291,1293,4.1
+"Mind the Query: logical=1, distinct (graph, query)",query,Q_ORDER_BY_NO_LIMIT,row order,30,1291,1293,2.3
+"Mind the Query: logical=1, distinct (graph, query)",query,Q_LIMIT,row order (top-k ties),24,1291,1293,1.9
+"Mind the Query: logical=1, distinct (graph, query)",query,Q_RETURN_DISTINCT,duplicates,58,1291,1293,4.5
+"Mind the Query: logical=1, distinct (graph, query)",query,Q_AGGREGATE,numeric type,339,1291,1293,26.3
+"Mind the Query: logical=1, distinct (graph, query)",query,Q_FLOAT_EXPR,numeric tolerance,316,1291,1293,24.5
+"Mind the Query: logical=1, distinct (graph, query)",query,Q_MULTI_ITEM,column names; column position,1022,1291,1293,79.2
+"Mind the Query: logical=1, distinct (graph, query)",query,Q_UNALIASED_ITEM,column names,573,1291,1293,44.4
+"Mind the Query: logical=1, distinct (graph, query)",query,Q_COLLECTION_EXPR,collections,26,1291,1293,2.0
+"Mind the Query: logical=1, distinct (graph, query)",query,Q_OPTIONAL_MATCH,NULLs,64,1293,1293,4.9
+"Mind the Query: logical=1, distinct (graph, query)",query,Q_UNION,query-text dependence,0,1293,1293,0.0
+"Mind the Query: logical=1, distinct (graph, query)",query,Q_GRAPH_VALUE_ITEM,graph-valued results,8,1291,1293,0.6
+"Mind the Query: logical=1, distinct (graph, query)",query,Q_UNPARSED,parser coverage,2,1293,1293,0.2
+"Mind the Query: logical=1, distinct (graph, query)",result,R_EMPTY,empty results,280,1276,1293,21.9
+"Mind the Query: logical=1, distinct (graph, query)",result,R_MULTI_ROW,row order,828,1276,1293,64.9
+"Mind the Query: logical=1, distinct (graph, query)",result,R_MULTI_COL,column names; column position,817,1276,1293,64.0
+"Mind the Query: logical=1, distinct (graph, query)",result,R_NULL,NULLs,17,1276,1293,1.3
+"Mind the Query: logical=1, distinct (graph, query)",result,R_NUMERIC_NULL_COL,NULLs (GQLBench NaN),2,1276,1293,0.2
+"Mind the Query: logical=1, distinct (graph, query)",result,R_NUMERIC,numeric type,665,1276,1293,52.1
+"Mind the Query: logical=1, distinct (graph, query)",result,R_FLOAT,numeric type,457,1276,1293,35.8
+"Mind the Query: logical=1, distinct (graph, query)",result,R_NONINTEGRAL_FLOAT,numeric tolerance,379,1276,1293,29.7
+"Mind the Query: logical=1, distinct (graph, query)",result,R_INT_FLOAT_MIXED_COL,numeric type,1,1276,1293,0.1
+"Mind the Query: logical=1, distinct (graph, query)",result,R_DUPLICATE_ROWS,duplicates,144,1276,1293,11.3
+"Mind the Query: logical=1, distinct (graph, query)",result,R_LIST,collections,14,1276,1293,1.1
+"Mind the Query: logical=1, distinct (graph, query)",result,R_MAP,collections / graph objects,5,1276,1293,0.4
