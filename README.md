@@ -1,6 +1,6 @@
 # What Counts as Correct? A Cross-Implementation Audit of Execution Accuracy in Text-to-Cypher: research artifact
 
-**Version:** 1.1.0 · **Repository:** https://github.com/mastermind-fa/text2cypher-scorer-audit-artifact · **Dataset:** https://github.com/mastermind-fa/text2cypher-corpus ·
+**Version:** 1.2.0 · **Repository:** https://github.com/mastermind-fa/text2cypher-scorer-audit-artifact · **Dataset:** https://github.com/mastermind-fa/text2cypher-corpus ·
 **Licence:** Apache-2.0, for project-authored code only (see `LICENSE`, `NOTICE` and the Licence section)
 
 ## Purpose
@@ -28,7 +28,7 @@ comparison rule in each scorer's code.
 
 ## How to regenerate every reported number
 ```
-git clone --branch v1.1.0 https://github.com/mastermind-fa/text2cypher-scorer-audit-artifact && cd text2cypher-scorer-audit-artifact
+git clone --branch v1.2.0 https://github.com/mastermind-fa/text2cypher-scorer-audit-artifact && cd text2cypher-scorer-audit-artifact
 git clone --branch v1.0.1 https://github.com/mastermind-fa/text2cypher-corpus ../text2cypher-corpus   # dataset release (ID files, corpus pairs)
 python3 -m pip install -r environment/requirements.txt
 ./reproduce.sh --quick ../text2cypher-corpus                # R0: all paper claims from frozen verdicts (no network)
@@ -47,6 +47,10 @@ python3 -m pip install -r environment/requirements.txt
 - **R2 (`--full`, Docker):** regenerates the native-Cypher cases from CypherTurn and Mind the Query with the frozen rules
   and oracle in a throwaway Neo4j 5.15.0, re-scores them with all scorers and with the second Text2GQL evaluator, and
   finally requires every manifest claim to pass.
+- `scripts/reproduce_exposure.sh ../text2cypher-corpus` (v1.2.0, after the two fetch scripts in `third_party/`):
+  recounts the 26 pre-specified policy-sensitive features in CypherTurn and Mind the Query gold data and rebuilds the
+  post-hoc provenance-by-dimension table, comparing both with the released outputs. The GQLBench live-server check is
+  described in `studies/exposure_and_released_path/gqlbench_released_path/PROTOCOL.md` (Docker; read-only queries).
 - `./reproduce.sh --legacy-quick` runs the v1.0.0 checks (`quick_check.py`, which verifies the ORIGINAL controlled
   suite that the paper reports only as superseded, and `paper_numbers.py`, ten headline numbers also covered by R0).
 
@@ -64,6 +68,9 @@ their SHA-256, and the expected value. `scripts/paper_check.py` exits non-zero o
 | Two Text2GQL evaluators: 542 vs 556 of 563, 14 differences | `studies/validation_repair/validity_repair/text2gql/ea_cypher_verdicts.csv` | `scripts/paper_numbers.py` |
 | Corpus: per-scorer acceptances, 5/15 in-domain and 11/21 pairs, 41/563 non-unanimous, heatmap figure | `studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv`, `s3_pairwise_disagreement.csv` (the full 21-pair table) | `scripts/quick_check.py`, `scripts/paper_numbers.py` |
 | Provenance split 20/99 vs 21/464 | `s3_results.csv` with the corpus records (https://github.com/mastermind-fa/text2cypher-corpus) | `CORPUS_DIR=<corpus> scripts/paper_numbers.py` |
+| Policy-sensitive feature exposure (Table VIII) | `studies/exposure_and_released_path/exposure/outputs/exposure_counts.csv` | `scripts/reproduce_exposure.sh` |
+| GQLBench numeric-NULL rejection on a live server | `studies/exposure_and_released_path/gqlbench_released_path/RESULT.md`, `results_public.json` | protocol in the same folder |
+| Corpus disagreements by provenance and dimension (post hoc) | `studies/exposure_and_released_path/provenance_by_dimension/expected_output.txt` | `scripts/reproduce_exposure.sh <corpus>` |
 | Model outputs and model level | `…/s2_results.csv`, `studies/validation_repair/validity_repair/model_level_sensitivity/model_level_ex.csv` | `scripts/quick_check.py`, `scripts/paper_numbers.py` |
 
 ## Pre-specified protocol

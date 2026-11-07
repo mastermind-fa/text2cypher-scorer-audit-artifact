@@ -1,0 +1,215 @@
+{
+ "note": "POST HOC, descriptive; 41 six-scorer non-unanimous pairs of 563",
+ "denominators": {
+  "R-A": 383,
+  "R-B": 81,
+  "R-C": 99
+ },
+ "table": {
+  "float drift": {
+   "R-A": 4,
+   "R-B": 2,
+   "R-C": 5
+  },
+  "integer vs float": {
+   "R-A": 1,
+   "R-B": 0,
+   "R-C": 3
+  },
+  "numeric NULL": {
+   "R-A": 0,
+   "R-B": 0,
+   "R-C": 5
+  },
+  "column naming": {
+   "R-A": 5,
+   "R-B": 2,
+   "R-C": 0
+  },
+  "engine tie order": {
+   "R-A": 2,
+   "R-B": 2,
+   "R-C": 5
+  },
+  "other": {
+   "R-A": 0,
+   "R-B": 3,
+   "R-C": 2
+  }
+ },
+ "pairs": {
+  "S3-015": [
+   "float drift",
+   "R-A"
+  ],
+  "S3-033": [
+   "engine tie order",
+   "R-B"
+  ],
+  "S3-055": [
+   "column naming",
+   "R-A"
+  ],
+  "S3-057": [
+   "engine tie order",
+   "R-A"
+  ],
+  "S3-059": [
+   "other",
+   "R-B"
+  ],
+  "S3-083": [
+   "float drift",
+   "R-A"
+  ],
+  "S3-132": [
+   "column naming",
+   "R-A"
+  ],
+  "S3-162": [
+   "float drift",
+   "R-A"
+  ],
+  "S3-163": [
+   "other",
+   "R-B"
+  ],
+  "S3-165": [
+   "engine tie order",
+   "R-A"
+  ],
+  "S3-173": [
+   "float drift",
+   "R-B"
+  ],
+  "S3-175": [
+   "column naming",
+   "R-A"
+  ],
+  "S3-187": [
+   "column naming",
+   "R-B"
+  ],
+  "S3-208": [
+   "column naming",
+   "R-A"
+  ],
+  "S3-214": [
+   "column naming",
+   "R-B"
+  ],
+  "S3-272": [
+   "other",
+   "R-B"
+  ],
+  "S3-291": [
+   "column naming",
+   "R-A"
+  ],
+  "S3-310": [
+   "engine tie order",
+   "R-B"
+  ],
+  "S3-354": [
+   "float drift",
+   "R-A"
+  ],
+  "S3-448": [
+   "float drift",
+   "R-B"
+  ],
+  "S3-458": [
+   "integer vs float",
+   "R-A"
+  ],
+  "S3-473": [
+   "integer vs float",
+   "R-C"
+  ],
+  "S3-474": [
+   "engine tie order",
+   "R-C"
+  ],
+  "S3-475": [
+   "numeric NULL",
+   "R-C"
+  ],
+  "S3-479": [
+   "integer vs float",
+   "R-C"
+  ],
+  "S3-483": [
+   "integer vs float",
+   "R-C"
+  ],
+  "S3-490": [
+   "numeric NULL",
+   "R-C"
+  ],
+  "S3-509": [
+   "numeric NULL",
+   "R-C"
+  ],
+  "S3-512": [
+   "engine tie order",
+   "R-C"
+  ],
+  "S3-519": [
+   "float drift",
+   "R-C"
+  ],
+  "S3-527": [
+   "float drift",
+   "R-C"
+  ],
+  "S3-530": [
+   "engine tie order",
+   "R-C"
+  ],
+  "S3-531": [
+   "float drift",
+   "R-C"
+  ],
+  "S3-532": [
+   "engine tie order",
+   "R-C"
+  ],
+  "S3-534": [
+   "other",
+   "R-C"
+  ],
+  "S3-535": [
+   "other",
+   "R-C"
+  ],
+  "S3-539": [
+   "float drift",
+   "R-C"
+  ],
+  "S3-542": [
+   "float drift",
+   "R-C"
+  ],
+  "S3-558": [
+   "numeric NULL",
+   "R-C"
+  ],
+  "S3-560": [
+   "engine tie order",
+   "R-C"
+  ],
+  "S3-561": [
+   "numeric NULL",
+   "R-C"
+  ]
+ }
+}
+| Dimension | BIRD official exact (383) | BIRD full-file exact (81) | project-written (99) | total |
+|---|---|---|---|---|
+| float drift | 4 | 2 | 5 | 11 |
+| integer vs float | 1 | 0 | 3 | 4 |
+| numeric NULL | 0 | 0 | 5 | 5 |
+| column naming | 5 | 2 | 0 | 7 |
+| engine tie order | 2 | 2 | 5 | 9 |
+| other | 0 | 3 | 2 | 5 |
+| non-unanimous / pairs | 12/383 | 9/81 | 20/99 | 41/563 |

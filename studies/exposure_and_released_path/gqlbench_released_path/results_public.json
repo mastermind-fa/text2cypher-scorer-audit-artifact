@@ -1,0 +1,85 @@
+{
+ "case_id": "S20-69098610ca",
+ "protocol": "PROTOCOL.md",
+ "environment": {
+  "python": "3.12.15",
+  "neo4j_driver": "5.26.0",
+  "pandas": "2.3.3",
+  "numpy": "2.5.3",
+  "neo4j_server": "5.26.28"
+ },
+ "gqlbench_commit": "fb9d5a9be3ccc73ea9fe44c67a9b180eccedfad2",
+ "probe": {
+  "dtypes": {
+   "name": "object",
+   "p_opt": "float64"
+  },
+  "null_cell_python_types": [
+   "float"
+  ],
+  "null_cells": 12,
+  "distinct_null_objects_one_side": 12,
+  "cross_side_first_null": {
+   "a_is_b": false,
+   "a_eq_b": false,
+   "tuple_eq": false,
+   "hash_a": 279887353,
+   "hash_b": 279887477
+  }
+ },
+ "runs": {
+  "R1_flagship_ordered": {
+   "verdict": "0",
+   "message": "last res_eq",
+   "accepted": false,
+   "order_matters": true
+  },
+  "R2_flagship_unordered": {
+   "verdict": "0",
+   "message": "last res_eq",
+   "accepted": false,
+   "order_matters": false
+  },
+  "R3_control_no_null": {
+   "verdict": "True",
+   "message": "last res_eq",
+   "accepted": true,
+   "order_matters": true
+  },
+  "R4_control_string_null": {
+   "verdict": "True",
+   "message": "last res_eq",
+   "accepted": true,
+   "order_matters": true
+  },
+  "R5_identical_text": {
+   "verdict": "1",
+   "message": "No Error",
+   "accepted": true,
+   "order_matters": true
+  }
+ },
+ "queries_sha256": {
+  "R1_flagship_ordered": {
+   "reference": "468f90241df8cc66f1224eb026fbd63a7e57225452df38b77ce575f06a335cbb",
+   "prediction": "5ea44485f82077073d7dc4bd4bb5847564ab35a7c46620d7a929640b0ee40a9b"
+  },
+  "R2_flagship_unordered": {
+   "reference": "4e045972b5abd9844aa1d543b65ed13df32d4fd1582f628d85cecbdf5832e4a9",
+   "prediction": "9bdb7c896d2f5af7df2c27dfeb5b6130cfdf589eb4b4e9da34b41595aa675bec"
+  },
+  "R3_control_no_null": {
+   "reference": "b35d5ccc4804491d7c297d9a629ad8cf580988d190f104be6133dc20d335a54b",
+   "prediction": "3322d4dc9786f2ea4c133267985f0fd8ecc523c8e2e1178164b52caa06e54e29"
+  },
+  "R4_control_string_null": {
+   "reference": "3d497f844ade77a621748b4106ee3ecab642d357441068bfc62c92b738efb634",
+   "prediction": "988a3e8844ecd01915c14fe1f7159062bdef499092d762026767d43c574f8d2b"
+  },
+  "R5_identical_text": {
+   "reference": "468f90241df8cc66f1224eb026fbd63a7e57225452df38b77ce575f06a335cbb",
+   "prediction": "468f90241df8cc66f1224eb026fbd63a7e57225452df38b77ce575f06a335cbb"
+  }
+ },
+ "note": "Query texts (which embed CypherTurn result rows) are replaced by SHA-256; CypherTurn content is not redistributed."
+}

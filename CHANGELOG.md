@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.2.0 — 2026-11-07
+- Adds `studies/exposure_and_released_path/`: (1) policy-sensitive feature exposure in CypherTurn and Mind the Query
+  gold data (protocol frozen before counting, detector tests, counts, input manifest); (2) a re-run of the GQLBench
+  numeric-NULL case through GQLBench's unmodified `cypher_execute` with the real Neo4j driver and `Result.to_df`
+  against a live server (protocol, result, query hashes; CypherTurn content is not redistributed); (3) a post-hoc table
+  of the 41 six-scorer corpus disagreements by provenance and dimension; (4) a prepared, not executed, script that would
+  execute Mind the Query gold queries for result-level exposure.
+- Adds `scripts/reproduce_exposure.sh`. No frozen verdict, existing study or reported v1.1.0 number changed.
+
 ## 1.1.0 — 2026-11-07
 - First public release. Licensed under the Apache License 2.0 (`LICENSE`, `NOTICE`); third-party notices added.
 - Includes the controlled fixtures (original and query-consistent corrected versions), frozen scorer verdicts for all

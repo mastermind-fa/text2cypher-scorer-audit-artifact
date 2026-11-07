@@ -1,0 +1,28 @@
+{
+ "code": {
+  "studies/exposure_and_released_path/exposure/exposure.py": "40dbd143e3fd5f0cdf2b582cda3c5afd35b6bd1889accf43f86f8fe515b209fd",
+  "studies/native_mind_the_query/mind_the_query_replication/code/s23_parse.py": "b1126397bdd465a19dd6642c21e4862bfb55476eac76cb3cb7ef4cee5147c427"
+ },
+ "inputs": {
+  "external/cypherturn/data/scenarios/ancient_empire_sessions.json": "80c594ef3e1736229e6e4b429205f9acfc4a3614d41fd29869bdad183358f5a1",
+  "external/cypherturn/data/scenarios/arcane_archive_sessions.json": "e73b714f3fb77055363ce86671797aa21a0ae5a828b7df85b278d57e2b0f8294",
+  "external/cypherturn/data/scenarios/celestial_court_sessions.json": "26fc8c9846a6b1ac2ee7dd9cc93e995f3d1e8f35ef7b4567e287febaa2cced13",
+  "external/cypherturn/data/scenarios/magic_academy_sessions.json": "b4be693ab9c0c8449c028632a3e569d897664283d06f34f111e9b0fb32e85b4d",
+  "external/cypherturn/data/scenarios/merchant_harbor_sessions.json": "1d397310a4a3b2dae549b53f1818c280263923d66883b47bc7150a13626c5249",
+  "external/cypherturn/data/scenarios/ocean_kingdom_sessions.json": "41c0fd6be1b89657beb98c0d1d88adcc3ae564aa0532ca800bcd3dafe8d66766",
+  "external/cypherturn/data/scenarios/stellar_colony_sessions.json": "55288acbca1257fb2b46f12b8e9dfb60ee1b5c27ae0dd776e4c4dfb42960a0f3",
+  "external/mind_the_query/Train_Test_Splits/Manual/bloom/test/Complex_Aggregation_test.json": "4fb153b05774499c0aad61dcc18bed4a4d916395ad5c496f59c6e00ef5ea0526",
+  "external/mind_the_query/Train_Test_Splits/Manual/bloom/test/Complex_Retrieval_test.json": "00f46d0a258faa2a4252d75de2bb3cd7defd82c7db91480189140ba8962b7bbd",
+  "external/mind_the_query/Train_Test_Splits/Manual/covid/test/Complex_Aggregation_test.json": "06568c249a2dcb08701740b1946ffa304bc15124cfd5d977f5c57992e7a04229",
+  "external/mind_the_query/Train_Test_Splits/Manual/covid/test/Complex_Retrieval_test.json": "ba94097694e3e37d23396bee83870db4117771e992dd7916c9ff1771d8182833",
+  "external/mind_the_query/Train_Test_Splits/Manual/er/test/Complex_Aggregation_test.json": "68f4d5fa24f5e03d7df6ad7482fb4b462206d403d3e922ddc2a3e44bbfc94d0e",
+  "external/mind_the_query/Train_Test_Splits/Manual/er/test/Complex_Retrieval_test.json": "8d34173899c2f5c0ad892fd9aea67ab2ce810b4f264cf90510558715831d1024",
+  "external/mind_the_query/Train_Test_Splits/Manual/healthcare/test/Complex_Aggregation_test.json": "9c1231e298c6e3c79e349d4a098232c2964060baf52b26d91983dfc9b7483af3",
+  "external/mind_the_query/Train_Test_Splits/Manual/healthcare/test/Complex_Retrieval_test.json": "84c095b1ffefe52161b951d8703c11bd1f1568fbe99f353ea4718cc7f727cf7a",
+  "external/mind_the_query/Train_Test_Splits/Manual/wwc/test/Complex_Aggregation_test.json": "280854f68117feb06e70131423c0a028f238cc42f85a0a0bb10e3d460dcaa8aa",
+  "external/mind_the_query/Train_Test_Splits/Manual/wwc/test/Complex_Retrieval_test.json": "1b690b967d07321402416c59fe66b196e61bb5ee92ea7e028cd7cf94f5f390db"
+ },
+ "protocol": {
+  "studies/exposure_and_released_path/exposure/PROTOCOL.md": "a18c94faec60540efd92727d0a6b6da91c34253f7d84e5e195772b867171a76a"
+ }
+}
