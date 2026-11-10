@@ -1,0 +1,155 @@
+{
+  "version": "s55d-graph-map-v1",
+  "packet_sha256": "836c3ba458c07dc32cad8dba3b19f9cfd3370713a0d0eea5807c71b8d867d219",
+  "source_manifest_sha256": "99141436e384e03fb8ff543d4bcdff10bd8263a7ad4e514dd410191c2a8a6ac4",
+  "native_graph_manifest_sha256": "b995bad9d37d8c382395085b0f1e3bd85cabc71cdb4b65ae37bb7bc07f40344a",
+  "source_commit": "ec4054a1b7df7e6310efa95c56bb6e7cebc4d161",
+  "graphs": {
+    "er": {
+      "database": "s55er",
+      "dump_file": "entity-resolution-50.dump",
+      "observed_dump_path": "/private/tmp/session55-native-r2.Iy7Kt0/artifact/external/mind_the_query/Datasets/entity-resolution-50.dump",
+      "dump_sha256": "d9e8d19cb4bb44126c9fce25f6e4ccc4d93fb8d91effbdd56a0c8b52c72d669e",
+      "dump_bytes": 101525,
+      "neo4j_server": "Neo4j/5.15.0",
+      "source_commit": "ec4054a1b7df7e6310efa95c56bb6e7cebc4d161",
+      "question_count": 30,
+      "question_ids": [
+        "er_data_3_2_2_6_Complex_Retrieval_246",
+        "er_data_3_2_2_6_Complex_Retrieval_213",
+        "er_data_3_2_2_6_Complex_Retrieval_435",
+        "er_data_3_2_2_6_Complex_Retrieval_339",
+        "er_data_3_2_2_6_Complex_Retrieval_499",
+        "er_data_3_2_2_6_Complex_Retrieval_387",
+        "er_data_3_2_2_6_Complex_Aggregation_386",
+        "er_data_3_2_2_6_Complex_Retrieval_533",
+        "er_data_3_2_2_6_Complex_Aggregation_424",
+        "er_data_3_2_2_6_Complex_Retrieval_422",
+        "er_data_3_2_2_6_Complex_Aggregation_506",
+        "er_data_3_2_2_6_Complex_Aggregation_525",
+        "er_data_3_2_2_6_Complex_Retrieval_375",
+        "er_data_3_2_2_6_Complex_Retrieval_219",
+        "er_data_3_2_2_6_Complex_Aggregation_297",
+        "er_data_3_2_2_6_Complex_Retrieval_323",
+        "er_data_3_2_2_6_Complex_Retrieval_347",
+        "er_data_3_2_2_6_Complex_Retrieval_408",
+        "er_data_3_2_2_6_Complex_Retrieval_303",
+        "er_data_3_2_2_6_Complex_Retrieval_458",
+        "er_data_3_2_2_6_Complex_Retrieval_547",
+        "er_data_3_2_2_6_Complex_Retrieval_276",
+        "er_data_3_2_2_6_Complex_Retrieval_332",
+        "er_data_3_2_2_6_Complex_Aggregation_290",
+        "er_data_3_2_2_6_Complex_Retrieval_312",
+        "er_data_3_2_2_6_Complex_Aggregation_343",
+        "er_data_3_2_2_6_Complex_Aggregation_508",
+        "er_data_3_2_2_6_Complex_Retrieval_382",
+        "er_data_3_2_2_6_Complex_Retrieval_549",
+        "er_data_3_2_2_6_Complex_Retrieval_478"
+      ],
+      "packet_schema_sha256": "b2a263a659545a9fadb9a9670566161e724e60d72391d9d35a389d19c7ae0202",
+      "fingerprint": {
+        "nodes": 1237,
+        "relationships": 1819,
+        "sha256": "403235cc7925c9675a92ae6627f38bdad67ca2f2fb667fcd66e11c06c176740a",
+        "label_counts": {
+          "Genre": 10,
+          "IpAddress": 407,
+          "Movie": 320,
+          "User": 500
+        },
+        "rel_type_counts": {
+          "HAS": 320,
+          "USES": 500,
+          "WATCHED": 999
+        }
+      }
+    },
+    "healthcare": {
+      "database": "s55health",
+      "dump_file": "healthcare-analytics-50.dump",
+      "observed_dump_path": "/private/tmp/session55-native-r2.Iy7Kt0/artifact/external/mind_the_query/Datasets/healthcare-analytics-50.dump",
+      "dump_sha256": "fed00ade454d16e7c360adb95f75fe104085bafaced84b6e52847db42204a57c",
+      "dump_bytes": 1604929,
+      "neo4j_server": "Neo4j/5.15.0",
+      "source_commit": "ec4054a1b7df7e6310efa95c56bb6e7cebc4d161",
+      "question_count": 1,
+      "question_ids": [
+        "healthcare_data_3_1_2_6_Complex_Aggregation_849"
+      ],
+      "packet_schema_sha256": "f45d50afeca6daf23d53ea53faf6340c0dcb2cb56c3d65a26dd560fd60d4baf8",
+      "fingerprint": {
+        "nodes": 11381,
+        "relationships": 61453,
+        "sha256": "14fb147ab65a62673f613383841e28a26575bef23945102a5c64d7bcd7a1b2ce",
+        "label_counts": {
+          "AgeGroup": 5,
+          "Case": 4307,
+          "Drug": 2500,
+          "Manufacturer": 136,
+          "Outcome": 6,
+          "Reaction": 2701,
+          "ReportSource": 5,
+          "Therapy": 1721
+        },
+        "rel_type_counts": {
+          "FALLS_UNDER": 4307,
+          "HAS_REACTION": 21069,
+          "IS_CONCOMITANT": 8393,
+          "IS_INTERACTING": 1,
+          "IS_PRIMARY_SUSPECT": 3830,
+          "IS_SECONDARY_SUSPECT": 3616,
+          "PRESCRIBED": 5441,
+          "RECEIVED": 1721,
+          "REGISTERED": 4307,
+          "REPORTED_BY": 4307,
+          "RESULTED_IN": 4461
+        }
+      }
+    },
+    "wwc": {
+      "database": "s55wwc",
+      "dump_file": "wwc2019-50.dump",
+      "observed_dump_path": "/private/tmp/session55-native-r2.Iy7Kt0/artifact/external/mind_the_query/Datasets/wwc2019-50.dump",
+      "dump_sha256": "67879a7bca5c27b786ce40a29481419f0e0522787265e24199d47d92fcec2dee",
+      "dump_bytes": 315820,
+      "neo4j_server": "Neo4j/5.15.0",
+      "source_commit": "ec4054a1b7df7e6310efa95c56bb6e7cebc4d161",
+      "question_count": 9,
+      "question_ids": [
+        "wwc_data_3_4_2_6_Complex_Aggregation_224",
+        "wwc_data_3_3_2_6_Complex_Aggregation_267",
+        "wwc_data_3_4_2_6_Complex_Retrieval_176",
+        "wwc_data_3_4_2_6_Complex_Aggregation_121",
+        "wwc_data_3_4_2_6_Complex_Aggregation_186",
+        "wwc_data_3_3_2_6_Complex_Aggregation_242",
+        "wwc_data_3_4_2_6_Complex_Retrieval_161",
+        "wwc_data_3_4_2_6_Complex_Aggregation_18",
+        "wwc_data_3_4_2_6_Complex_Aggregation_163"
+      ],
+      "packet_schema_sha256": "75bdc5050a1c15f370b8f88e85dc8a565fec9d947098eddf16b4d06305510b8a",
+      "fingerprint": {
+        "nodes": 2486,
+        "relationships": 14799,
+        "sha256": "4831afb28969028d018da56441ac8f14e8e8c472ff1b1a2dbc31dd477c52f6da",
+        "label_counts": {
+          "Match": 284,
+          "Person": 2022,
+          "Squad": 136,
+          "Team": 36,
+          "Tournament": 8
+        },
+        "rel_type_counts": {
+          "COACH_FOR": 140,
+          "FOR": 136,
+          "IN_SQUAD": 2880,
+          "IN_TOURNAMENT": 284,
+          "NAMED": 136,
+          "PARTICIPATED_IN": 136,
+          "PLAYED_IN": 8252,
+          "REPRESENTS": 1928,
+          "SCORED_GOAL": 907
+        }
+      }
+    }
+  }
+}

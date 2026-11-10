@@ -1,0 +1,14 @@
+{
+  "python": "3.13.16",
+  "torch": "2.11.0+cu130",
+  "cuda_runtime": "13.0",
+  "transformers": "5.20.2",
+  "bitsandbytes": "0.50.2",
+  "accelerate": "1.2.1",
+  "gpu_count": 2,
+  "gpu_names": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "nf4_cuda_test": "PASS"
+}

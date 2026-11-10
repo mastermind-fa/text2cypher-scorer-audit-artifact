@@ -1,0 +1,95 @@
+# Executed ext260 notebook (archive m41bt92n) vs frozen session55_ext260_frozen_v1.ipynb — S55L record
+
+## frozen code cell 0 vs executed part 0: IDENTICAL (modulo trailing whitespace)
+
+## frozen code cell 1 vs executed part 1: DIFFERS
+--- frozen code cell 1
++++ executed part 1
+@@ -8 +8,45 @@
+ print('Input verified:',INPUT['source_kind'], 'extension IDs:',len(INPUT['ext_ids']))
++
++# Operational-only dependency bootstrap, after frozen input hashes/membership pass.
++# Keep the original model runner, prompts, decoding, and output ZIP member list intact.
++# No installation or modification of torch/transformers is permitted here.
++BOOTSTRAP = {'attempted': False, 'target_versions': {
++    'bitsandbytes': VERSIONS['bitsandbytes'], 'accelerate': VERSIONS['accelerate']},
++    'versions_before': {}, 'versions_after': {}, 'pip_exit_code': None,
++    'pip_stdout_tail': '', 'pip_stderr_tail': ''}
++BOOTSTRAP_ERRORS = []
++for _pkg in BOOTSTRAP['target_versions']:
++    try:
++        BOOTSTRAP['versions_before'][_pkg] = md.version(_pkg)
++    except md.PackageNotFoundError:
++        BOOTSTRAP['versions_before'][_pkg] = None
++_need = [_pkg + '==' + _version for _pkg, _version in BOOTSTRAP['target_versions'].items()
++         if BOOTSTRAP['versions_before'][_pkg] != _version]
++BOOTSTRAP['needed'] = _need
++if _need:
++    BOOTSTRAP['attempted'] = True
++    _cmd = [sys.executable, '-m', 'pip', 'install', '--disable-pip-version-check',
++            '--no-input', '--no-deps', '--only-binary=:all:', *_need]
++    # Do not store the command's executable path with potentially sensitive environment variables.
++    BOOTSTRAP['pip_packages'] = _need
++    try:
++        _p = subprocess.run(_cmd, capture_output=True, text=True, timeout=900, check=False)
++        BOOTSTRAP['pip_exit_code'] = _p.returncode
++        BOOTSTRAP['pip_stdout_tail'] = _p.stdout[-5000:]
++        BOOTSTRAP['pip_stderr_tail'] = _p.stderr[-5000:]
++        if _p.returncode:
++            BOOTSTRAP_ERRORS.append('dependency_install_failed_exit_' + str(_p.returncode))
++    except subprocess.TimeoutExpired:
++        BOOTSTRAP_ERRORS.append('dependency_install_timeout_900s')
++    except Exception as _exc:
++        BOOTSTRAP_ERRORS.append('dependency_install_exception:' + type(_exc).__name__ + ':' + str(_exc))
++for _pkg, _version in BOOTSTRAP['target_versions'].items():
++    try:
++        BOOTSTRAP['versions_after'][_pkg] = md.version(_pkg)
++    except md.PackageNotFoundError:
++        BOOTSTRAP['versions_after'][_pkg] = None
++    if BOOTSTRAP['versions_after'][_pkg] != _version:
++        BOOTSTRAP_ERRORS.append('dependency_version_mismatch:' + _pkg + ':' +
++                                str(BOOTSTRAP['versions_after'][_pkg]) + '!=' + _version)
++print('Dependency bootstrap:', 'PASS' if not BOOTSTRAP_ERRORS else 'FAIL',
++      'installed:', _need, 'errors:', BOOTSTRAP_ERRORS)
+
+## frozen code cell 2 vs executed part 2: DIFFERS
+--- frozen code cell 2
++++ executed part 2
+@@ -1,4 +1,6 @@
+ # Fail closed on runtime drift; package evidence before the final assertion.
+-ENV={}; ERRORS=[]
++ENV={'dependency_bootstrap': BOOTSTRAP}; ERRORS=list(BOOTSTRAP_ERRORS)
+ try:
++ if ERRORS:
++  raise RuntimeError('dependency bootstrap failed; no inference allowed')
+  import torch, transformers, bitsandbytes, accelerate
+@@ -11,3 +13,3 @@
+   if ENV[k]!=v:raise RuntimeError(f'Runtime drift {k}: {ENV[k]} != {v}')
+- if not torch.cuda.is_available() or ENV['gpu_count']<1 or not all(n=='Tesla T4' for n in ENV['gpu_names']):
++ if not torch.cuda.is_available() or ENV['gpu_count']!=2 or not all(n=='Tesla T4' for n in ENV['gpu_names']):
+   raise RuntimeError('T4 CUDA GPU unavailable')
+
+## frozen code cell 3 vs executed part 3: DIFFERS
+--- frozen code cell 3
++++ executed part 3
+@@ -8,5 +8,6 @@
+   try:
+-   process=subprocess.run(command,capture_output=True,text=True,timeout=7200)
+-   (RUN/f'{key}_run.stdout.log').write_text(process.stdout)
+-   (RUN/f'{key}_run.stderr.log').write_text(process.stderr)
++   # Stream logs to project output during execution; a timed-out run keeps its logs.
++   with (RUN/f'{key}_run.stdout.log').open('w',encoding='utf-8') as _out, \
++        (RUN/f'{key}_run.stderr.log').open('w',encoding='utf-8') as _err:
++    process=subprocess.run(command,stdout=_out,stderr=_err,timeout=7200,check=False)
+    RESULTS[key]={'command':command,'exit_code':process.returncode,'output_exists':path.exists()}
+@@ -21,4 +22,5 @@
+   except subprocess.TimeoutExpired as exc:
+-   (RUN/f'{key}_run.stdout.log').write_text(str(exc.stdout or ''))
+-   (RUN/f'{key}_run.stderr.log').write_text(str(exc.stderr or ''))
++   # The live stdout/stderr logs already exist and must not be overwritten.
++   with (RUN/f'{key}_run.stderr.log').open('a',encoding='utf-8') as _err:
++    _err.write('\nPROCESS TIMEOUT after 7200 seconds; partial prediction file preserved.\n')
+    RESULTS[key]={'command':command,'exit_code':'TIMEOUT','output_exists':path.exists()}
+
+## frozen code cell 4 vs executed part 4: IDENTICAL (modulo trailing whitespace)
+

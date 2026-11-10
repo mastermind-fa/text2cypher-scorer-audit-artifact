@@ -1,5 +1,25 @@
 # Changelog
 
+## 1.3.0 — 2026-11-10 (proposed; not published until tagged)
+- Adds `studies/model_output_case_study/code/reproduce_case_study.py`, a single driver with four stages:
+  - `prepare` rebuilds the frozen question packets from a pinned Mind the Query checkout, byte-identical;
+  - `execute` runs Neo4j 5.15.0 Community, with a portable image check;
+  - `replay` re-runs the pinned comparators;
+  - `table` rebuilds the verdict table byte-for-byte and recomputes Table IX.
+- The case-study README states four reproduction levels separately (A–D) and what was tested.
+- Adds `frozen/expected_input_hashes.json` and `.gitignore` entries for runtime credentials and work outputs.
+- `THIRD_PARTY_NOTICES.md` covers the two models, Mind the Query content and the Neo4j image.
+
+## 1.3.0-rc1 — 2026-11-10 (superseded candidate)
+- Adds `studies/model_output_case_study/`: the model-output case study of paper Section VII (two pinned open models, 300 Mind the Query questions):
+  - raw predictions;
+  - per-unit statuses and verdicts of the baseline and nine comparators;
+  - frozen question IDs, graph mappings, policies and runtime files;
+  - the scoring, replay and analysis code;
+  - a network-free recomputation of Table IX (`code/recompute_case_study.py`).
+- Adds `docs/CONFORMANCE_SUITE.md`, `docs/SCORER_INVENTORY.md` and `docs/CORPUS_PROVENANCE_SUMMARY.md`.
+- No frozen verdict, study output or previously reported number of v1.2.2 changed.
+
 ## 1.2.2 — 2026-11-07
 - Adds `graph_conversion/`: the script that converted BIRD's Works-Cycles SQLite database into the Neo4j property graph
   on which the corpus pairs were executed (written by one of the paper's authors and released under Apache-2.0 with the

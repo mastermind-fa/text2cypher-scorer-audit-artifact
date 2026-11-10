@@ -7,3 +7,7 @@ rebuild/
 scratch/
 studies/exposure_and_released_path/exposure/mtq_results/mtq_gold_results.jsonl
 *.load.log
+
+# model-output case study runtime (credentials, Neo4j data, work outputs) — never commit
+studies/model_output_case_study/runtime_55j_scoring/
+work/

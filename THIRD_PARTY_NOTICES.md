@@ -27,3 +27,11 @@ fetched by the user and never redistributed.
 
 Python packages installed from `environment/` (for example pandas and the Neo4j driver) are installed by the user
 under their own licences and are not redistributed.
+
+## Model-output case study (added in 1.3.0)
+| Component | Source | Licence | Use here |
+|---|---|---|---|
+| Qwen2.5-Coder-7B-Instruct | huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct @ `c03e6d358207e414f1eca0bb1891e29f1db0e242` | Apache-2.0 (model card) | Generated the released predictions; weights not included |
+| Mistral-7B-Instruct-v0.3 | huggingface.co/mistralai/Mistral-7B-Instruct-v0.3 @ `c170c708c41dac9275d15a8fff4eca08d52bab71` | Apache-2.0 (model card) | Generated the released predictions; weights not included |
+| Mind the Query questions, schemas, gold queries, dumps | github.com/endeavorXx/Mind-the-Query (`ec4054a1b7df`) | Apache-2.0 (repository); dumps without a licence file | Referenced by `unique_id`; packets are rebuilt locally from a user-fetched checkout; no question text, gold query, dump or result row is redistributed. Model predictions may quote literals from the questions (for example the synthetic e-mail addresses of the entity-resolution example graph) |
+| Neo4j 5.15.0 Community Docker image | hub.docker.com `neo4j:5.15.0` | GPLv3 (Neo4j Community, as stated by Neo4j) | Pulled by the user for level D; not included |

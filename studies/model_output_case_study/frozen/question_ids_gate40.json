@@ -1,0 +1,162 @@
+[
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_224",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_246",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_213",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_435",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Aggregation_267",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_339",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_499",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_387",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_176",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_386",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_121",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_533",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_424",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_422",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_506",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_186",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_525",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_375",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Aggregation_242",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_219",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_297",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_323",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_161",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_347",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_408",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_303",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_458",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_18",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_547",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_276",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_332",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_163",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_849",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_290",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_312",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_343",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_508",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_382",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_549",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_478",
+"graph": "er"
+}
+]

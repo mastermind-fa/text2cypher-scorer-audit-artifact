@@ -1,0 +1,18 @@
+{
+ "packets": {
+  "packet_mtq_300.jsonl": "a620130fa568f5e6293c38d320647a7ec063fc643db54ad110b21ccb4d130596",
+  "packet_mtq_gate40.jsonl": "836c3ba458c07dc32cad8dba3b19f9cfd3370713a0d0eea5807c71b8d867d219",
+  "packet_mtq_remaining260.jsonl": "e74497253c427aecf4708ab087874b4b3e7d32eba6abac0e9ff98c99dc635664"
+ },
+ "predictions": {
+  "s55_qwen_mtq_gate40.jsonl": "374b3a0136bd0ccfc175b8d901d9a91a5172ac7c2f8afeed1b1665e1785a0008",
+  "s55_mistral_mtq_gate40.jsonl": "80feb1b0593f5930e2d1890dbbdb016e911ef71ccb5c0bf958df8e2f096229f4",
+  "s55_qwen_mtq_ext260.jsonl": "1a37159e16f9e4d2fc577ecc0f57dc2f4372a8440f1a6f30f602314a9bcee009",
+  "s55_mistral_mtq_ext260.jsonl": "89ff59b2dbb37d3f6f0f1922712c559ad627fe6f809e332193e16b5f58271649"
+ },
+ "archives": {
+  "gate40": "ae21250970efd73b1d0feaa74d119b986e576f7fe605baa6f1d8430cc51326e1",
+  "ext260": "32c4731bd0791492b69c58d878a464e48bce29df66b76304ee0ab2ed2364def7"
+ },
+ "mtq_commit": "ec4054a1b7df7e6310efa95c56bb6e7cebc4d161"
+}

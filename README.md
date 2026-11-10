@@ -8,6 +8,13 @@ This artifact reproduces the experimental results of the paper. The paper runs s
 execution-accuracy scorers, unchanged at pinned commits, on identical result pairs, and traces every disagreement to the
 comparison rule in each scorer's code.
 
+## Model-output case study (1.3.0)
+`studies/model_output_case_study/` holds the model-output case study of paper Section VII (Table IX): predictions of two
+pinned open models on 300 Mind the Query questions, per-unit verdicts of the baseline and nine comparators, policies,
+runtime files and code. `python3 studies/model_output_case_study/code/recompute_case_study.py` recomputes Table IX
+without network access. See its README for provenance stages and disclosed deviations, and `docs/` for the conformance
+suite, the scorer inventory and the corpus provenance summary.
+
 ## Contents
 | Path | What it holds |
 |---|---|

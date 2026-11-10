@@ -1,0 +1,22 @@
+{
+  "selection": "SHA256(\"S55|\" + unique_id) ascending, first 300",
+  "seed": "S55",
+  "eligible_after_exclusions": 379,
+  "selected": 300,
+  "selected_by_graph": {
+    "bloom": 2,
+    "er": 160,
+    "healthcare": 45,
+    "wwc": 93
+  },
+  "packet_sha256": "a620130fa568f5e6293c38d320647a7ec063fc643db54ad110b21ccb4d130596",
+  "fields": [
+    "question_id",
+    "benchmark",
+    "graph",
+    "question",
+    "schema"
+  ],
+  "gold_in_packet": false,
+  "source_commit": "ec4054a1b7df7e6310efa95c56bb6e7cebc4d161"
+}

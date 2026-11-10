@@ -1,0 +1,65 @@
+{
+  "lock_version": "session55-v5-core-runtime-candidate-1",
+  "status": "TECHNICAL_GO_PROSPECTIVE_AMENDMENT__OWNER_AUTHORIZATION_REQUIRED",
+  "basis": "two distinct synthetic smoke archives plus recovered unexecuted notebook source; exact executed notebook hash not attested",
+  "required_runtime": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "cuda_runtime": "13.0",
+    "transformers": "5.20.2",
+    "bitsandbytes": "0.50.2",
+    "accelerate": "1.2.1",
+    "gpu_name": "Tesla T4",
+    "min_gpu_count": 1,
+    "nf4_cuda_test": "PASS"
+  },
+  "nf4_probe_sha256": "91420078e6c413b7d36da8604b997e712cdded6a6204f5b6b51b4b4eb6e4edbd",
+  "nf4_probe_definition": "bitsandbytes.nn.Linear4bit(16,8), NF4, compress_statistics, float16; forward on cuda:0; synchronize; assert CUDA output shape (2,8)",
+  "models": {
+    "qwen": {
+      "repo": "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "revision": "c03e6d358207e414f1eca0bb1891e29f1db0e242"
+    },
+    "mistral": {
+      "repo": "mistralai/Mistral-7B-Instruct-v0.3",
+      "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71"
+    }
+  },
+  "inference": {
+    "quantization": "NF4 4-bit double-quant float16",
+    "do_sample": false,
+    "temperature": 0,
+    "max_prompt_tokens": 4096,
+    "max_new_tokens": 256,
+    "seed": 55,
+    "content_retries": 0
+  },
+  "frozen_inputs": {
+    "runner_sha256": "8dbdb19653c84246898572b3dc79f02b0a9c8a00967a466526a5be36cb781bbf",
+    "prompt_sha256": "13c431f01493eeeb52f9869257b182d0ac557c624dd5304e8fe435ba91b22f6e",
+    "gate40_packet_sha256": "836c3ba458c07dc32cad8dba3b19f9cfd3370713a0d0eea5807c71b8d867d219",
+    "all300_packet_sha256": "a620130fa568f5e6293c38d320647a7ec063fc643db54ad110b21ccb4d130596",
+    "kaggle_package_zip_sha256": "c9fdd6e29181c6e7a36de113be1c4db1e353a50f97ca1ba1a6855879109530a6"
+  },
+  "provenance": {
+    "first_archive_sha256": "512364ede1d20a103fca691a115d138437fe47bff2d602641e85c1bb1444aca4",
+    "recovery_archive_sha256": "f1b1b44367930f439596cfcef8d8721d65c8d4f5836b2b8f5bd25d2de155adad",
+    "recovered_notebook_source_sha256": "57844219fec87d6038f004538bfb9f9e87bbf49977a253c1b2fcc9047b1bec65"
+  },
+  "limitations": {
+    "kaggle_image_digest": null,
+    "full_package_snapshot": null,
+    "executed_notebook_hash": null,
+    "kaggle_side_attached_dataset_zip_sha256": null
+  },
+  "gate40_requirements": [
+    "owner explicit authorization",
+    "evaluation policy approval and adapter verification",
+    "discover unique attached dataset",
+    "verify frozen input hashes before loading models",
+    "recheck exact runtime versions and CUDA NF4 functional test",
+    "stop on drift",
+    "preserve every row and failure",
+    "stop before 260 extension"
+  ]
+}

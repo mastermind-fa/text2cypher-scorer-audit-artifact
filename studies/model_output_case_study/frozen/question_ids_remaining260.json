@@ -1,0 +1,1042 @@
+[
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_396",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_882",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_541",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_122",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_360",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_144",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_340",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_844",
+"graph": "healthcare"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_176",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_1094",
+"graph": "healthcare"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_108",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_9",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_67",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_254",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_423",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_228",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_43",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_214",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_50",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Retrieval_1066",
+"graph": "healthcare"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_1005",
+"graph": "healthcare"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_1088",
+"graph": "healthcare"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_7",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Aggregation_241",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_93",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Retrieval_837",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_522",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Retrieval_1067",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_451",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_344",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_24",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_294",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_198",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Retrieval_1033",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_346",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_417",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_270",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_38",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_339",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_66",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_487",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_304",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_457",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Retrieval_784",
+"graph": "healthcare"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Aggregation_210",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_318",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_245",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_332",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_9",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_155",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_868",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_284",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_420",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_535",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_193",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Retrieval_277",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_42",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_276",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_1073",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_344",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_445",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_79",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_296",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Aggregation_235",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_179",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_37",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_987",
+"graph": "healthcare"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_1037",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_221",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_260",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_53",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_221",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_239",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_416",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_123",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_226",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_64",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_429",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_71",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_290",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_100",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_534",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Retrieval_932",
+"graph": "healthcare"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_211",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_199",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_500",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_428",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_45",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_311",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_429",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_289",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_466",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_253",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_143",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_259",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Retrieval_259",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_420",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_536",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_277",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Aggregation_226",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_274",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Retrieval_849",
+"graph": "healthcare"
+},
+{
+"question_id": "bloom50_data_3_2_2_6_Complex_Retrieval_120",
+"graph": "bloom"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_213",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_359",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_512",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_406",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_997",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_319",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_276",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_480",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_534",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_386",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_255",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_528",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_486",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_983",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_262",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_436",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_157",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_127",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_935",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_492",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_403",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Retrieval_865",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_408",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_240",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Retrieval_260",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Aggregation_249",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_1079",
+"graph": "healthcare"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_1039",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_261",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Aggregation_270",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_242",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_504",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_288",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_949",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_295",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_325",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_413",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_414",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_974",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_368",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_60",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_228",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Retrieval_276",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_206",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_303",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_276",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_234",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_343",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Aggregation_273",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_77",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_450",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_18",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_347",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_218",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_407",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_11",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_457",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_506",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_70",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_354",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Aggregation_212",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Retrieval_991",
+"graph": "healthcare"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_191",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_421",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_444",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Retrieval_1089",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_513",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_15",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_991",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_375",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_422",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Retrieval_1029",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_302",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_233",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Retrieval_967",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_298",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Retrieval_227",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_351",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_267",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_59",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_218",
+"graph": "er"
+},
+{
+"question_id": "bloom50_data_3_2_2_6_Complex_Retrieval_128",
+"graph": "bloom"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_263",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_543",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_379",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_234",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_372",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_1102",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_431",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_486",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_284",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Retrieval_801",
+"graph": "healthcare"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_233",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_409",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_133",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_995",
+"graph": "healthcare"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_892",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_249",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Retrieval_239",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_497",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_4",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_1025",
+"graph": "healthcare"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_247",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_471",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_74",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_214",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_1010",
+"graph": "healthcare"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Aggregation_275",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_814",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_515",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_374",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Retrieval_218",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_325",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_415",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_133",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_858",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_529",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_464",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_197",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_270",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_1023",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_372",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_480",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_442",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_262",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_269",
+"graph": "wwc"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_71",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_548",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_513",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_781",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_240",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_207",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_904",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_505",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_501",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_241",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_226",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Retrieval_821",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_381",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_337",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_221",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_227",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_380",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_3_2_6_Complex_Retrieval_262",
+"graph": "wwc"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Retrieval_863",
+"graph": "healthcare"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_183",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_353",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Retrieval_261",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_340",
+"graph": "er"
+},
+{
+"question_id": "wwc_data_3_4_2_6_Complex_Aggregation_14",
+"graph": "wwc"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_259",
+"graph": "er"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Retrieval_940",
+"graph": "healthcare"
+},
+{
+"question_id": "healthcare_data_3_1_2_6_Complex_Aggregation_889",
+"graph": "healthcare"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Aggregation_541",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_498",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_337",
+"graph": "er"
+},
+{
+"question_id": "er_data_3_2_2_6_Complex_Retrieval_407",
+"graph": "er"
+}
+]

@@ -1,0 +1,6 @@
+Given the Neo4j property-graph schema and question below, write one read-only Cypher query that answers the question. Return only the query, without Markdown or explanation.
+
+Schema:
+{schema}
+
+Question: {question}
