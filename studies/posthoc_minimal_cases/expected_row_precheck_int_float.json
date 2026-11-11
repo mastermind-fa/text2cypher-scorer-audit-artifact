@@ -1,0 +1,38 @@
+[
+ {
+  "scorer": "cypherbench",
+  "case": "one_column_21_vs_21.0",
+  "verdict": 1,
+  "expected": 1
+ },
+ {
+  "scorer": "cypherbench",
+  "case": "two_columns_210_21_vs_210_21.0",
+  "verdict": 0,
+  "expected": 0
+ },
+ {
+  "scorer": "cypherbench",
+  "case": "two_columns_identical_types_control",
+  "verdict": 1,
+  "expected": 1
+ },
+ {
+  "scorer": "gqlbench",
+  "case": "one_column_21_vs_21.0",
+  "verdict": 1,
+  "expected": 1
+ },
+ {
+  "scorer": "gqlbench",
+  "case": "two_columns_210_21_vs_210_21.0",
+  "verdict": 0,
+  "expected": 0
+ },
+ {
+  "scorer": "gqlbench",
+  "case": "two_columns_identical_types_control",
+  "verdict": 1,
+  "expected": 1
+ }
+]

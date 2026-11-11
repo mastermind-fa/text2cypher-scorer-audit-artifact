@@ -1,0 +1,38 @@
+[
+ {
+  "case": "identical_list_with_null",
+  "verdict": 0,
+  "expected": 0,
+  "exception": null
+ },
+ {
+  "case": "identical_list_mixed_types",
+  "verdict": 0,
+  "expected": 0,
+  "exception": null
+ },
+ {
+  "case": "identical_list_of_maps_missing_property",
+  "verdict": 0,
+  "expected": 0,
+  "exception": null
+ },
+ {
+  "case": "identical_sortable_list_control",
+  "verdict": 1,
+  "expected": 1,
+  "exception": null
+ },
+ {
+  "case": "identical_list_with_null_same_text",
+  "verdict": 1,
+  "expected": 1,
+  "exception": null
+ },
+ {
+  "case": "unsortable_list_on_reference_side_only",
+  "verdict": "E",
+  "expected": "E",
+  "exception": "TypeError"
+ }
+]

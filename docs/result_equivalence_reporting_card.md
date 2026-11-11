@@ -43,4 +43,5 @@ and comparable.
 | Empty results | pass if both empty | pass if both empty | pass if both empty | pass if both empty | pass if both empty | pass if both empty | pass if both empty |
 | Version | BarryQ/CypherTurn @9d9528e1 | megagonlabs/cypherbench @4cc727d2 | qxssadf/GQLBench @fb9d5a9b | ldbc/Text2GraphQuery-Driver @ab296fab | suraj-ranganath/PIPE-Cypher @0f127208 | YasmeanMohammadi/cypherLenz @ce648194 | 22842219/SemanticParser4Graph @6cd5eff4 |
 
-Machine-readable form: `paper/result_equivalence_reporting_card.yaml`.
+Machine-readable form: `docs/result_equivalence_reporting_card.yaml` in the dataset release
+(https://github.com/mastermind-fa/text2cypher-corpus, tag v1.0.1).

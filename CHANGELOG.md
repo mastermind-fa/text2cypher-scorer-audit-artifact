@@ -1,6 +1,30 @@
 # Changelog
 
-## 1.3.0 — 2026-11-10 (proposed; not published until tagged)
+## 1.3.1 — 2026-11-11
+No frozen code, data, verdict, prediction or expected output of 1.3.0 changed. Additions:
+- `studies/model_output_case_study/posthoc_semicolon_sensitivity/`: the post hoc semicolon-admission sensitivity run
+  quoted in paper Section VII (per-unit verdict table, expected statistics, driver, and a network-free check of the
+  quoted numbers). Post hoc; not part of the frozen protocol.
+- `studies/posthoc_minimal_cases/`: the CypherBench unsortable-list cases of Section IV, the Neo4j trailing-semicolon
+  check of Section VII and the integer-versus-float row pre-check cases of Section VI (CypherBench, GQLBench).
+- `scripts/corpus_record_checks.py`: network-free check of the corpus record statements of Sections III-B and VI
+  against the dataset release.
+- `studies/model_output_case_study/README.md`: the Gate40 notebook deviation is listed.
+
+Documentation changes:
+- README: version 1.3.1. The quick-start cloned `v1.2.1`, which lacks the model-output study; it now clones `v1.3.1`.
+- Paper numbering updated to the submitted manuscript:
+  - the model-output study is Fig. 3 (was "Table IX");
+  - feature exposure is Table VII (was "Table VIII");
+  - the corpus heatmap is Fig. 2 (was "Figure 1").
+
+  Code docstrings and the claim manifest keep their original labels.
+- `docs/SCORER_INVENTORY.md`: title no longer says 1.3.0-rc1; "baseline for Fig. 3".
+- `docs/result_equivalence_reporting_card.md`: the machine-readable card is in the dataset release (`docs/…yaml`); the previously named `paper/…yaml` path is not part of this repository.
+- `CITATION.cff` version 1.3.1 (it said 1.2.2); `VERSION` 1.3.1.
+- `provenance/public_file_provenance.csv`: hashes of the edited files updated.
+
+## 1.3.0 — 2026-11-10 (published; tag v1.3.0)
 - Adds `studies/model_output_case_study/code/reproduce_case_study.py`, a single driver with four stages:
   - `prepare` rebuilds the frozen question packets from a pinned Mind the Query checkout, byte-identical;
   - `execute` runs Neo4j 5.15.0 Community, with a portable image check;

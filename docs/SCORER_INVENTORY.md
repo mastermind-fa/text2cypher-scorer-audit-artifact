@@ -1,4 +1,4 @@
-# Scorer inventory, eligibility and input domains (1.3.0-rc1)
+# Scorer inventory, eligibility and input domains (1.3.1)
 
 - **Search:** a targeted, **non-systematic** search of papers and repositories (28–29 Oct 2026). No reproducible search log beyond the paper's description exists.
 - **Inclusion:** released, deterministic Text-to-Cypher result comparators, runnable without paid services.
@@ -16,6 +16,6 @@
 | CySpider | third-party primary | 6cd5eff4 | Apache-2.0 (sub-directory) | positional row sets | raises on list/map values (recorded as no verdict) |
 | neo4j-labs Jaccard notebook | third-party secondary | a8ed4d94 | CC0-1.0 | per-row value sets; Jaccard = 1 accepted | context only |
 | pc-v1.1 | **project-authored** comparator | project | Apache-2.0 (this repo) | bag of rows, best bijection, numeric tolerance | context only; written by the authors of the declared oracle, so not independent |
-| Baseline of the model-output study (`s55-project-ex-v1`) | **project-authored** | `project_ex.py` 58920a41 | Apache-2.0 (this repo) | positional multiset, 1e-9 tolerance, conservative read-only admission | baseline for Table IX only; not an official Mind the Query metric |
+| Baseline of the model-output study (`s55-project-ex-v1`) | **project-authored** | `project_ex.py` 58920a41 | Apache-2.0 (this repo) | positional multiset, 1e-9 tolerance, conservative read-only admission | baseline for Fig. 3 only; not an official Mind the Query metric |
 
 Commits and scorer-file SHA-256 values are in `third_party/scorers.lock`. They were verified for this candidate on 2026-11-10: all 8 match.

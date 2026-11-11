@@ -1,8 +1,10 @@
-# Model-output case study (paper Section VII, Table IX) — release 1.3.0
+# Model-output case study (paper Section VII, Fig. 3) — release 1.3.1
+
+The paper reports this study as Fig. 3. Releases up to 1.3.0, and the code docstrings, call it "Table IX".
 
 Two pinned open models generated Cypher for 300 Mind the Query test questions. Each prediction was executed against its
 gold query on the benchmark's own graphs and scored by a project-defined baseline comparator and by the nine replayed
-comparators of the audit. Table IX reports how much each scorer shifts measured accuracy against the baseline.
+comparators of the audit. Fig. 3 reports how much each scorer shifts measured accuracy against the baseline.
 
 ## Provenance and stages
 | Stage | Questions per model | Governed by |
@@ -25,13 +27,14 @@ comparators of the audit. Table IX reports how much each scorer shifts measured 
 
    Library versions equal the lock, and all prediction-determining inputs were verified. See `runtime/EXECUTED_vs_FROZEN_EXT260_NOTEBOOK.diff`. The owner accepted this before scoring.
 2. Denominators for gold queries that do not run (22) and for one unsupported prediction are a convention adopted after scoring. All material/not-material conclusions are unchanged under the three denominator conventions in `code/audit_55m.py`.
-3. The baseline admission check rejects any query containing `;`. That removes 80 Qwen and 19 Mistral predictions before comparison. Its effect on accuracy is untested.
+3. The baseline admission check rejects any query containing `;`. That removes 80 Qwen and 19 Mistral predictions before comparison. A post hoc run that ignores one trailing `;` is in `posthoc_semicolon_sensitivity/` (release 1.3.1); the frozen analysis here is unchanged.
 4. The Neo4j image declares `/logs` as a volume, so Docker created unnamed log volumes. Logs were copied out and are not needed for reproduction.
+5. The Gate40 notebook that was executed also differs from the approved one: it adds a pinned dependency-install cell before the runtime check and returned one extra file (`dependency_bootstrap.log`), so the original archive validator stopped at its inventory check and a separately versioned validator was used. Runner, prompt, packet, model revisions and decoding settings are unchanged.
 
 ## Reproduce — four levels, stated separately
 | Level | What it reproduces | Command (from the artifact root) | Needs | Status in this release |
 |---|---|---|---|---|
-| A | Table IX, intervals, McNemar and ranking-check counts **recomputed from the released per-unit verdict table** (no execution, no scorer code) | `python3 studies/model_output_case_study/code/recompute_case_study.py` | Python 3 only | Tested in a clean copy: PASS |
+| A | Fig. 3 values, intervals, McNemar and ranking-check counts **recomputed from the released per-unit verdict table** (no execution, no scorer code) | `python3 studies/model_output_case_study/code/recompute_case_study.py` | Python 3 only | Tested in a clean copy: PASS |
 | B | The 3 frozen question packets **rebuilt** from Mind the Query at the pinned commit and the released IDs (byte-identical), plus prediction and dump hashes | `bash third_party/fetch_mind_the_query.sh` then `python3 studies/model_output_case_study/code/reproduce_case_study.py prepare` | git, network (GitHub) | `prepare` tested on a local copy of the pinned checkout: PASS. The fetch script is unchanged from v1.2.2 |
 | C | The **nine comparators re-run** at pinned commits on result pairs, then the per-unit table compared byte-for-byte with the released one | `bash third_party/fetch_scorers.sh`, then `… reproduce_case_study.py replay` and `… table` | network (GitHub), the pinned scorer environment (`environment/`) | Tested with the authors' recorded result pairs standing in for a live execution: unit table byte-identical, Table IX PASS |
 | D | **End-to-end**: execute every gold and predicted query on the benchmark graphs with the frozen baseline (four read-only Neo4j 5.15.0 Community containers), then C | `docker pull neo4j:5.15.0`, then `… reproduce_case_study.py execute` (then `replay`, `table`) | Docker, ~4 GB RAM, network | Executed once by the authors (Session 55L). The release driver's `execute` stage has **not** been run from a clean copy of this release |

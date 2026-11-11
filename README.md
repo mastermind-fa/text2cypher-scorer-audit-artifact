@@ -1,6 +1,6 @@
 # What Counts as Correct? A Cross-Implementation Audit of Execution Accuracy in Text-to-Cypher: research artifact
 
-**Version:** 1.2.1 · **Repository:** https://github.com/mastermind-fa/text2cypher-scorer-audit-artifact · **Dataset:** https://github.com/mastermind-fa/text2cypher-corpus ·
+**Version:** 1.3.1 · **Repository:** https://github.com/mastermind-fa/text2cypher-scorer-audit-artifact · **Dataset:** https://github.com/mastermind-fa/text2cypher-corpus ·
 **Licence:** Apache-2.0, for project-authored code only (see `LICENSE`, `NOTICE` and the Licence section)
 
 ## Purpose
@@ -9,11 +9,19 @@ execution-accuracy scorers, unchanged at pinned commits, on identical result pai
 comparison rule in each scorer's code.
 
 ## Model-output case study (1.3.0)
-`studies/model_output_case_study/` holds the model-output case study of paper Section VII (Table IX): predictions of two
+`studies/model_output_case_study/` holds the model-output case study of paper Section VII (Fig. 3): predictions of two
 pinned open models on 300 Mind the Query questions, per-unit verdicts of the baseline and nine comparators, policies,
-runtime files and code. `python3 studies/model_output_case_study/code/recompute_case_study.py` recomputes Table IX
-without network access. See its README for provenance stages and disclosed deviations, and `docs/` for the conformance
+runtime files and code. `python3 studies/model_output_case_study/code/recompute_case_study.py` recomputes Fig. 3 (labelled "Table IX" in the
+code and in releases up to 1.3.0) without network access. See its README for provenance stages and disclosed deviations, and `docs/` for the conformance
 suite, the scorer inventory and the corpus provenance summary.
+
+## Post hoc analyses (1.3.1)
+`studies/model_output_case_study/posthoc_semicolon_sensitivity/` holds the post hoc semicolon-admission sensitivity run of
+paper Section VII ("Limits"); `python3 studies/model_output_case_study/posthoc_semicolon_sensitivity/code/check_paper_numbers.py`
+checks the quoted numbers without network access. `studies/posthoc_minimal_cases/` holds the minimal cases behind the
+CypherBench unsortable-list observation (Section IV), the integer-versus-float row pre-check (Section VI) and the Neo4j
+trailing-semicolon check (Section VII). `python3 scripts/corpus_record_checks.py ../text2cypher-corpus` checks the corpus record
+statements of Sections III-B and VI (record counts, defective records, the pairs S3-473, S3-479 and S3-512).
 
 ## Contents
 | Path | What it holds |
@@ -36,7 +44,7 @@ suite, the scorer inventory and the corpus provenance summary.
 
 ## How to regenerate every reported number
 ```
-git clone --branch v1.2.1 https://github.com/mastermind-fa/text2cypher-scorer-audit-artifact && cd text2cypher-scorer-audit-artifact
+git clone --branch v1.3.1 https://github.com/mastermind-fa/text2cypher-scorer-audit-artifact && cd text2cypher-scorer-audit-artifact
 git clone --branch v1.0.1 https://github.com/mastermind-fa/text2cypher-corpus ../text2cypher-corpus   # dataset release (ID files, corpus pairs)
 python3 -m pip install -r environment/requirements.txt
 ./reproduce.sh --quick ../text2cypher-corpus                # R0: all paper claims from frozen verdicts (no network)
@@ -78,10 +86,10 @@ their SHA-256, and the expected value. `scripts/paper_check.py` exits non-zero o
 | Two Text2GQL evaluators: 542 vs 556 of 563, 14 differences | `studies/validation_repair/validity_repair/text2gql/ea_cypher_verdicts.csv` | `scripts/paper_numbers.py` |
 | Corpus: per-scorer acceptances, 5/15 in-domain and 11/21 pairs, 41/563 non-unanimous, heatmap figure | `studies/corpus_audit/audit_final/frozen/20261029T190431Z_audit_final/s3_results.csv`, `s3_pairwise_disagreement.csv` (the full 21-pair table) | `scripts/quick_check.py`, `scripts/paper_numbers.py` |
 | Provenance split 20/99 vs 21/464 | `s3_results.csv` with the corpus records (https://github.com/mastermind-fa/text2cypher-corpus) | `CORPUS_DIR=<corpus> scripts/paper_numbers.py` |
-| Policy-sensitive feature exposure (Table VIII) | `studies/exposure_and_released_path/exposure/outputs/exposure_counts.csv` | `scripts/reproduce_exposure.sh` |
-| Mind the Query result-level exposure (Table VIII, v1.2.1) and post-hoc 1,086-source sensitivity | `studies/exposure_and_released_path/exposure/outputs_mtq_result_level/` | `run_mtq_gold.sh`, then `scripts/reproduce_exposure.sh` |
+| Policy-sensitive feature exposure (Table VII) | `studies/exposure_and_released_path/exposure/outputs/exposure_counts.csv` | `scripts/reproduce_exposure.sh` |
+| Mind the Query result-level exposure (Table VII; added in v1.2.1) and post-hoc 1,086-source sensitivity | `studies/exposure_and_released_path/exposure/outputs_mtq_result_level/` | `run_mtq_gold.sh`, then `scripts/reproduce_exposure.sh` |
 | Intermediate `WITH … ORDER BY` trigger check (Section V-E) | `studies/exposure_and_released_path/with_orderby_check/result.json` | `check_with_orderby.py` (after `third_party/fetch_scorers.sh`) |
-| Figure 1 (six in-domain scorers) | `studies/exposure_and_released_path/figure1/figure1_s3_heatmap.png` | `render_figure1.py` |
+| Fig. 2 (six in-domain scorers; the renderer calls it Figure 1) | `studies/exposure_and_released_path/figure1/figure1_s3_heatmap.png` | `render_figure1.py` |
 | GQLBench numeric-NULL rejection on a live server | `studies/exposure_and_released_path/gqlbench_released_path/RESULT.md`, `results_public.json` | protocol in the same folder |
 | Corpus disagreements by provenance and dimension (post hoc) | `studies/exposure_and_released_path/provenance_by_dimension/expected_output.txt` | `scripts/reproduce_exposure.sh <corpus>` |
 | Supplement S-G: post-hoc cluster-resampling sensitivity of the corpus pairwise bounds | computed from `s3_results.csv` and the corpus records | `python3 scripts/cluster_sensitivity.py <corpus>` |

@@ -1,0 +1,1526 @@
+{
+ "acceptances": {
+  "combined300|mistral": {
+   "cypherbench": 30,
+   "cypherlens": 30,
+   "cypherturn": 19,
+   "cyspider": 29,
+   "gqlbench": 30,
+   "neo4jlabs": 30,
+   "pc_v1_1": 30,
+   "pipecypher": 25,
+   "s55_project_ex_official": 28,
+   "tugraph": 29
+  },
+  "combined300|qwen": {
+   "cypherbench": 71,
+   "cypherlens": 72,
+   "cypherturn": 38,
+   "cyspider": 72,
+   "gqlbench": 71,
+   "neo4jlabs": 61,
+   "pc_v1_1": 73,
+   "pipecypher": 44,
+   "s55_project_ex_official": 72,
+   "tugraph": 62
+  },
+  "ext260|mistral": {
+   "cypherbench": 22,
+   "cypherlens": 22,
+   "cypherturn": 13,
+   "cyspider": 21,
+   "gqlbench": 22,
+   "neo4jlabs": 22,
+   "pc_v1_1": 22,
+   "pipecypher": 17,
+   "s55_project_ex_official": 20,
+   "tugraph": 21
+  },
+  "ext260|qwen": {
+   "cypherbench": 58,
+   "cypherlens": 59,
+   "cypherturn": 29,
+   "cyspider": 59,
+   "gqlbench": 58,
+   "neo4jlabs": 49,
+   "pc_v1_1": 60,
+   "pipecypher": 33,
+   "s55_project_ex_official": 60,
+   "tugraph": 50
+  },
+  "gate40|mistral": {
+   "cypherbench": 8,
+   "cypherlens": 8,
+   "cypherturn": 6,
+   "cyspider": 8,
+   "gqlbench": 8,
+   "neo4jlabs": 8,
+   "pc_v1_1": 8,
+   "pipecypher": 8,
+   "s55_project_ex_official": 8,
+   "tugraph": 8
+  },
+  "gate40|qwen": {
+   "cypherbench": 13,
+   "cypherlens": 13,
+   "cypherturn": 9,
+   "cyspider": 13,
+   "gqlbench": 13,
+   "neo4jlabs": 12,
+   "pc_v1_1": 13,
+   "pipecypher": 11,
+   "s55_project_ex_official": 12,
+   "tugraph": 12
+  }
+ },
+ "ranking": {
+  "combined300|excl_empty_all_null_reference": {
+   "mcnemar_p": 0.0,
+   "n_paired": 254,
+   "paired_comparable_er": 33,
+   "paired_comparable_non_er": 36,
+   "qwen_minus_mistral": 36
+  },
+  "combined300|primary": {
+   "mcnemar_p": 0.0,
+   "n_paired": 284,
+   "paired_comparable_er": 40,
+   "paired_comparable_non_er": 36,
+   "qwen_minus_mistral": 44
+  },
+  "ext260|excl_empty_all_null_reference": {
+   "mcnemar_p": 0.0,
+   "n_paired": 220,
+   "paired_comparable_er": 26,
+   "paired_comparable_non_er": 35,
+   "qwen_minus_mistral": 35
+  },
+  "ext260|primary": {
+   "mcnemar_p": 0.0,
+   "n_paired": 244,
+   "paired_comparable_er": 32,
+   "paired_comparable_non_er": 35,
+   "qwen_minus_mistral": 40
+  },
+  "gate40|excl_empty_all_null_reference": {
+   "mcnemar_p": 1.0,
+   "n_paired": 34,
+   "paired_comparable_er": 7,
+   "paired_comparable_non_er": 1,
+   "qwen_minus_mistral": 1
+  },
+  "gate40|primary": {
+   "mcnemar_p": 0.289062,
+   "n_paired": 40,
+   "paired_comparable_er": 8,
+   "paired_comparable_non_er": 1,
+   "qwen_minus_mistral": 4
+  }
+ },
+ "shifts": {
+  "combined300|mistral|cypherbench|all": {
+   "c_ci": [
+    0.0,
+    1.79
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 284,
+   "points": 0.7,
+   "q_ci": [
+    0.0,
+    1.76
+   ]
+  },
+  "combined300|mistral|cypherbench|unflagged": {
+   "c_ci": [
+    0.0,
+    2.43
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 207,
+   "points": 0.97,
+   "q_ci": [
+    0.0,
+    2.42
+   ]
+  },
+  "combined300|mistral|cypherlens|all": {
+   "c_ci": [
+    0.0,
+    1.79
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 284,
+   "points": 0.7,
+   "q_ci": [
+    0.0,
+    1.76
+   ]
+  },
+  "combined300|mistral|cypherlens|unflagged": {
+   "c_ci": [
+    0.0,
+    2.43
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 207,
+   "points": 0.97,
+   "q_ci": [
+    0.0,
+    2.42
+   ]
+  },
+  "combined300|mistral|cypherturn|all": {
+   "c_ci": [
+    -5.56,
+    -1.05
+   ],
+   "meets_2pt_with_cis_excluding_0": true,
+   "n": 284,
+   "points": -3.17,
+   "q_ci": [
+    -5.63,
+    -1.06
+   ]
+  },
+  "combined300|mistral|cypherturn|unflagged": {
+   "c_ci": [
+    -6.31,
+    -0.49
+   ],
+   "meets_2pt_with_cis_excluding_0": true,
+   "n": 207,
+   "points": -3.38,
+   "q_ci": [
+    -6.28,
+    -0.97
+   ]
+  },
+  "combined300|mistral|cyspider|all": {
+   "c_ci": [
+    0.0,
+    1.09
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 283,
+   "points": 0.35,
+   "q_ci": [
+    0.0,
+    1.06
+   ]
+  },
+  "combined300|mistral|cyspider|unflagged": {
+   "c_ci": [
+    0.0,
+    1.46
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 206,
+   "points": 0.49,
+   "q_ci": [
+    0.0,
+    1.46
+   ]
+  },
+  "combined300|mistral|gqlbench|all": {
+   "c_ci": [
+    0.0,
+    1.79
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 284,
+   "points": 0.7,
+   "q_ci": [
+    0.0,
+    1.76
+   ]
+  },
+  "combined300|mistral|gqlbench|unflagged": {
+   "c_ci": [
+    0.0,
+    2.43
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 207,
+   "points": 0.97,
+   "q_ci": [
+    0.0,
+    2.42
+   ]
+  },
+  "combined300|mistral|neo4jlabs|all": {
+   "c_ci": [
+    0.0,
+    1.79
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 284,
+   "points": 0.7,
+   "q_ci": [
+    0.0,
+    1.76
+   ]
+  },
+  "combined300|mistral|neo4jlabs|unflagged": {
+   "c_ci": [
+    0.0,
+    2.43
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 207,
+   "points": 0.97,
+   "q_ci": [
+    0.0,
+    2.42
+   ]
+  },
+  "combined300|mistral|pc_v1_1|all": {
+   "c_ci": [
+    0.0,
+    1.79
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 284,
+   "points": 0.7,
+   "q_ci": [
+    0.0,
+    1.76
+   ]
+  },
+  "combined300|mistral|pc_v1_1|unflagged": {
+   "c_ci": [
+    0.0,
+    2.43
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 207,
+   "points": 0.97,
+   "q_ci": [
+    0.0,
+    2.42
+   ]
+  },
+  "combined300|mistral|pipecypher|all": {
+   "c_ci": [
+    -2.76,
+    0.35
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 284,
+   "points": -1.06,
+   "q_ci": [
+    -2.82,
+    0.35
+   ]
+  },
+  "combined300|mistral|pipecypher|unflagged": {
+   "c_ci": [
+    -2.4,
+    0.97
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 207,
+   "points": -0.48,
+   "q_ci": [
+    -2.42,
+    0.97
+   ]
+  },
+  "combined300|mistral|tugraph|all": {
+   "c_ci": [
+    0.0,
+    1.08
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 284,
+   "points": 0.35,
+   "q_ci": [
+    0.0,
+    1.06
+   ]
+  },
+  "combined300|mistral|tugraph|unflagged": {
+   "c_ci": [
+    0.0,
+    1.46
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 207,
+   "points": 0.48,
+   "q_ci": [
+    0.0,
+    1.45
+   ]
+  },
+  "combined300|qwen|cypherbench|all": {
+   "c_ci": [
+    -1.69,
+    0.72
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 285,
+   "points": -0.35,
+   "q_ci": [
+    -1.75,
+    0.7
+   ]
+  },
+  "combined300|qwen|cypherbench|unflagged": {
+   "c_ci": [
+    -1.44,
+    1.44
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 208,
+   "points": 0.0,
+   "q_ci": [
+    -1.44,
+    1.44
+   ]
+  },
+  "combined300|qwen|cypherlens|all": {
+   "c_ci": [
+    -1.05,
+    1.05
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 285,
+   "points": 0.0,
+   "q_ci": [
+    -1.05,
+    1.05
+   ]
+  },
+  "combined300|qwen|cypherlens|unflagged": {
+   "c_ci": [
+    -1.44,
+    1.44
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 208,
+   "points": 0.0,
+   "q_ci": [
+    -1.44,
+    1.44
+   ]
+  },
+  "combined300|qwen|cypherturn|all": {
+   "c_ci": [
+    -15.9,
+    -8.0
+   ],
+   "meets_2pt_with_cis_excluding_0": true,
+   "n": 285,
+   "points": -11.93,
+   "q_ci": [
+    -15.79,
+    -8.07
+   ]
+  },
+  "combined300|qwen|cypherturn|unflagged": {
+   "c_ci": [
+    -17.31,
+    -8.17
+   ],
+   "meets_2pt_with_cis_excluding_0": true,
+   "n": 208,
+   "points": -12.5,
+   "q_ci": [
+    -17.31,
+    -8.17
+   ]
+  },
+  "combined300|qwen|cyspider|all": {
+   "c_ci": [
+    -1.4,
+    1.41
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 285,
+   "points": 0.0,
+   "q_ci": [
+    -1.4,
+    1.4
+   ]
+  },
+  "combined300|qwen|cyspider|unflagged": {
+   "c_ci": [
+    -0.97,
+    2.4
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 208,
+   "points": 0.48,
+   "q_ci": [
+    -0.96,
+    2.4
+   ]
+  },
+  "combined300|qwen|gqlbench|all": {
+   "c_ci": [
+    -1.69,
+    0.72
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 285,
+   "points": -0.35,
+   "q_ci": [
+    -1.75,
+    0.7
+   ]
+  },
+  "combined300|qwen|gqlbench|unflagged": {
+   "c_ci": [
+    -1.44,
+    1.44
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 208,
+   "points": 0.0,
+   "q_ci": [
+    -1.44,
+    1.44
+   ]
+  },
+  "combined300|qwen|neo4jlabs|all": {
+   "c_ci": [
+    -6.85,
+    -1.08
+   ],
+   "meets_2pt_with_cis_excluding_0": true,
+   "n": 285,
+   "points": -3.86,
+   "q_ci": [
+    -6.32,
+    -1.4
+   ]
+  },
+  "combined300|qwen|neo4jlabs|unflagged": {
+   "c_ci": [
+    -5.26,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 208,
+   "points": -2.4,
+   "q_ci": [
+    -4.81,
+    0.0
+   ]
+  },
+  "combined300|qwen|pc_v1_1|all": {
+   "c_ci": [
+    0.0,
+    1.08
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 285,
+   "points": 0.35,
+   "q_ci": [
+    0.0,
+    1.05
+   ]
+  },
+  "combined300|qwen|pc_v1_1|unflagged": {
+   "c_ci": [
+    0.0,
+    1.45
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 208,
+   "points": 0.48,
+   "q_ci": [
+    0.0,
+    1.44
+   ]
+  },
+  "combined300|qwen|pipecypher|all": {
+   "c_ci": [
+    -13.68,
+    -6.05
+   ],
+   "meets_2pt_with_cis_excluding_0": true,
+   "n": 285,
+   "points": -9.82,
+   "q_ci": [
+    -13.68,
+    -6.32
+   ]
+  },
+  "combined300|qwen|pipecypher|unflagged": {
+   "c_ci": [
+    -14.01,
+    -5.31
+   ],
+   "meets_2pt_with_cis_excluding_0": true,
+   "n": 208,
+   "points": -9.62,
+   "q_ci": [
+    -13.94,
+    -5.29
+   ]
+  },
+  "combined300|qwen|tugraph|all": {
+   "c_ci": [
+    -6.46,
+    -1.05
+   ],
+   "meets_2pt_with_cis_excluding_0": true,
+   "n": 285,
+   "points": -3.51,
+   "q_ci": [
+    -5.96,
+    -1.4
+   ]
+  },
+  "combined300|qwen|tugraph|unflagged": {
+   "c_ci": [
+    -4.76,
+    0.48
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 208,
+   "points": -1.92,
+   "q_ci": [
+    -4.33,
+    0.0
+   ]
+  },
+  "ext260|mistral|cypherbench|all": {
+   "c_ci": [
+    0.0,
+    2.08
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 244,
+   "points": 0.82,
+   "q_ci": [
+    0.0,
+    2.05
+   ]
+  },
+  "ext260|mistral|cypherbench|unflagged": {
+   "c_ci": [
+    0.0,
+    2.82
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 177,
+   "points": 1.13,
+   "q_ci": [
+    0.0,
+    2.82
+   ]
+  },
+  "ext260|mistral|cypherlens|all": {
+   "c_ci": [
+    0.0,
+    2.08
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 244,
+   "points": 0.82,
+   "q_ci": [
+    0.0,
+    2.05
+   ]
+  },
+  "ext260|mistral|cypherlens|unflagged": {
+   "c_ci": [
+    0.0,
+    2.82
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 177,
+   "points": 1.13,
+   "q_ci": [
+    0.0,
+    2.82
+   ]
+  },
+  "ext260|mistral|cypherturn|all": {
+   "c_ci": [
+    -5.37,
+    -0.8
+   ],
+   "meets_2pt_with_cis_excluding_0": true,
+   "n": 244,
+   "points": -2.87,
+   "q_ci": [
+    -5.33,
+    -0.82
+   ]
+  },
+  "ext260|mistral|cypherturn|unflagged": {
+   "c_ci": [
+    -6.21,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 177,
+   "points": -2.82,
+   "q_ci": [
+    -5.65,
+    0.0
+   ]
+  },
+  "ext260|mistral|cyspider|all": {
+   "c_ci": [
+    0.0,
+    1.26
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 243,
+   "points": 0.41,
+   "q_ci": [
+    0.0,
+    1.23
+   ]
+  },
+  "ext260|mistral|cyspider|unflagged": {
+   "c_ci": [
+    0.0,
+    1.7
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 176,
+   "points": 0.57,
+   "q_ci": [
+    0.0,
+    1.7
+   ]
+  },
+  "ext260|mistral|gqlbench|all": {
+   "c_ci": [
+    0.0,
+    2.08
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 244,
+   "points": 0.82,
+   "q_ci": [
+    0.0,
+    2.05
+   ]
+  },
+  "ext260|mistral|gqlbench|unflagged": {
+   "c_ci": [
+    0.0,
+    2.82
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 177,
+   "points": 1.13,
+   "q_ci": [
+    0.0,
+    2.82
+   ]
+  },
+  "ext260|mistral|neo4jlabs|all": {
+   "c_ci": [
+    0.0,
+    2.08
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 244,
+   "points": 0.82,
+   "q_ci": [
+    0.0,
+    2.05
+   ]
+  },
+  "ext260|mistral|neo4jlabs|unflagged": {
+   "c_ci": [
+    0.0,
+    2.82
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 177,
+   "points": 1.13,
+   "q_ci": [
+    0.0,
+    2.82
+   ]
+  },
+  "ext260|mistral|pc_v1_1|all": {
+   "c_ci": [
+    0.0,
+    2.08
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 244,
+   "points": 0.82,
+   "q_ci": [
+    0.0,
+    2.05
+   ]
+  },
+  "ext260|mistral|pc_v1_1|unflagged": {
+   "c_ci": [
+    0.0,
+    2.82
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 177,
+   "points": 1.13,
+   "q_ci": [
+    0.0,
+    2.82
+   ]
+  },
+  "ext260|mistral|pipecypher|all": {
+   "c_ci": [
+    -3.12,
+    0.41
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 244,
+   "points": -1.23,
+   "q_ci": [
+    -3.28,
+    0.41
+   ]
+  },
+  "ext260|mistral|pipecypher|unflagged": {
+   "c_ci": [
+    -2.82,
+    1.13
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 177,
+   "points": -0.56,
+   "q_ci": [
+    -2.82,
+    1.13
+   ]
+  },
+  "ext260|mistral|tugraph|all": {
+   "c_ci": [
+    0.0,
+    1.26
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 244,
+   "points": 0.41,
+   "q_ci": [
+    0.0,
+    1.23
+   ]
+  },
+  "ext260|mistral|tugraph|unflagged": {
+   "c_ci": [
+    0.0,
+    1.69
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 177,
+   "points": 0.56,
+   "q_ci": [
+    0.0,
+    1.69
+   ]
+  },
+  "ext260|qwen|cypherbench|all": {
+   "c_ci": [
+    -2.07,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 245,
+   "points": -0.82,
+   "q_ci": [
+    -2.04,
+    0.0
+   ]
+  },
+  "ext260|qwen|cypherbench|unflagged": {
+   "c_ci": [
+    -1.69,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 178,
+   "points": -0.56,
+   "q_ci": [
+    -1.69,
+    0.0
+   ]
+  },
+  "ext260|qwen|cypherlens|all": {
+   "c_ci": [
+    -1.25,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 245,
+   "points": -0.41,
+   "q_ci": [
+    -1.22,
+    0.0
+   ]
+  },
+  "ext260|qwen|cypherlens|unflagged": {
+   "c_ci": [
+    -1.69,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 178,
+   "points": -0.56,
+   "q_ci": [
+    -1.69,
+    0.0
+   ]
+  },
+  "ext260|qwen|cypherturn|all": {
+   "c_ci": [
+    -17.06,
+    -8.33
+   ],
+   "meets_2pt_with_cis_excluding_0": true,
+   "n": 245,
+   "points": -12.65,
+   "q_ci": [
+    -16.73,
+    -8.57
+   ]
+  },
+  "ext260|qwen|cypherturn|unflagged": {
+   "c_ci": [
+    -17.98,
+    -8.43
+   ],
+   "meets_2pt_with_cis_excluding_0": true,
+   "n": 178,
+   "points": -12.92,
+   "q_ci": [
+    -17.98,
+    -8.43
+   ]
+  },
+  "ext260|qwen|cyspider|all": {
+   "c_ci": [
+    -1.98,
+    0.83
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 245,
+   "points": -0.41,
+   "q_ci": [
+    -2.04,
+    0.82
+   ]
+  },
+  "ext260|qwen|cyspider|unflagged": {
+   "c_ci": [
+    -1.69,
+    1.69
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 178,
+   "points": 0.0,
+   "q_ci": [
+    -1.69,
+    1.69
+   ]
+  },
+  "ext260|qwen|gqlbench|all": {
+   "c_ci": [
+    -2.07,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 245,
+   "points": -0.82,
+   "q_ci": [
+    -2.04,
+    0.0
+   ]
+  },
+  "ext260|qwen|gqlbench|unflagged": {
+   "c_ci": [
+    -1.69,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 178,
+   "points": -0.56,
+   "q_ci": [
+    -1.69,
+    0.0
+   ]
+  },
+  "ext260|qwen|neo4jlabs|all": {
+   "c_ci": [
+    -7.63,
+    -1.67
+   ],
+   "meets_2pt_with_cis_excluding_0": true,
+   "n": 245,
+   "points": -4.49,
+   "q_ci": [
+    -7.35,
+    -2.04
+   ]
+  },
+  "ext260|qwen|neo4jlabs|unflagged": {
+   "c_ci": [
+    -5.62,
+    -0.56
+   ],
+   "meets_2pt_with_cis_excluding_0": true,
+   "n": 178,
+   "points": -2.81,
+   "q_ci": [
+    -5.62,
+    -0.56
+   ]
+  },
+  "ext260|qwen|pc_v1_1|all": {
+   "c_ci": [
+    0.0,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 245,
+   "points": 0.0,
+   "q_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "ext260|qwen|pc_v1_1|unflagged": {
+   "c_ci": [
+    0.0,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 178,
+   "points": 0.0,
+   "q_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "ext260|qwen|pipecypher|all": {
+   "c_ci": [
+    -15.42,
+    -6.83
+   ],
+   "meets_2pt_with_cis_excluding_0": true,
+   "n": 245,
+   "points": -11.02,
+   "q_ci": [
+    -15.1,
+    -6.94
+   ]
+  },
+  "ext260|qwen|pipecypher|unflagged": {
+   "c_ci": [
+    -15.73,
+    -6.18
+   ],
+   "meets_2pt_with_cis_excluding_0": true,
+   "n": 178,
+   "points": -10.67,
+   "q_ci": [
+    -15.73,
+    -6.18
+   ]
+  },
+  "ext260|qwen|tugraph|all": {
+   "c_ci": [
+    -7.14,
+    -1.63
+   ],
+   "meets_2pt_with_cis_excluding_0": true,
+   "n": 245,
+   "points": -4.08,
+   "q_ci": [
+    -6.94,
+    -1.63
+   ]
+  },
+  "ext260|qwen|tugraph|unflagged": {
+   "c_ci": [
+    -4.49,
+    -0.56
+   ],
+   "meets_2pt_with_cis_excluding_0": true,
+   "n": 178,
+   "points": -2.25,
+   "q_ci": [
+    -4.49,
+    -0.56
+   ]
+  },
+  "gate40|mistral|cypherbench|all": {
+   "c_ci": [
+    0.0,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 40,
+   "points": 0.0,
+   "q_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "gate40|mistral|cypherbench|unflagged": {
+   "c_ci": [
+    0.0,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 30,
+   "points": 0.0,
+   "q_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "gate40|mistral|cypherlens|all": {
+   "c_ci": [
+    0.0,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 40,
+   "points": 0.0,
+   "q_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "gate40|mistral|cypherlens|unflagged": {
+   "c_ci": [
+    0.0,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 30,
+   "points": 0.0,
+   "q_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "gate40|mistral|cypherturn|all": {
+   "c_ci": [
+    -12.82,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 40,
+   "points": -5.0,
+   "q_ci": [
+    -12.5,
+    0.0
+   ]
+  },
+  "gate40|mistral|cypherturn|unflagged": {
+   "c_ci": [
+    -16.67,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 30,
+   "points": -6.67,
+   "q_ci": [
+    -16.67,
+    0.0
+   ]
+  },
+  "gate40|mistral|cyspider|all": {
+   "c_ci": [
+    0.0,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 40,
+   "points": 0.0,
+   "q_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "gate40|mistral|cyspider|unflagged": {
+   "c_ci": [
+    0.0,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 30,
+   "points": 0.0,
+   "q_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "gate40|mistral|gqlbench|all": {
+   "c_ci": [
+    0.0,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 40,
+   "points": 0.0,
+   "q_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "gate40|mistral|gqlbench|unflagged": {
+   "c_ci": [
+    0.0,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 30,
+   "points": 0.0,
+   "q_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "gate40|mistral|neo4jlabs|all": {
+   "c_ci": [
+    0.0,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 40,
+   "points": 0.0,
+   "q_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "gate40|mistral|neo4jlabs|unflagged": {
+   "c_ci": [
+    0.0,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 30,
+   "points": 0.0,
+   "q_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "gate40|mistral|pc_v1_1|all": {
+   "c_ci": [
+    0.0,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 40,
+   "points": 0.0,
+   "q_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "gate40|mistral|pc_v1_1|unflagged": {
+   "c_ci": [
+    0.0,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 30,
+   "points": 0.0,
+   "q_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "gate40|mistral|pipecypher|all": {
+   "c_ci": [
+    0.0,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 40,
+   "points": 0.0,
+   "q_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "gate40|mistral|pipecypher|unflagged": {
+   "c_ci": [
+    0.0,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 30,
+   "points": 0.0,
+   "q_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "gate40|mistral|tugraph|all": {
+   "c_ci": [
+    0.0,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 40,
+   "points": 0.0,
+   "q_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "gate40|mistral|tugraph|unflagged": {
+   "c_ci": [
+    0.0,
+    0.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 30,
+   "points": 0.0,
+   "q_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "gate40|qwen|cypherbench|all": {
+   "c_ci": [
+    0.0,
+    7.69
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 40,
+   "points": 2.5,
+   "q_ci": [
+    0.0,
+    7.5
+   ]
+  },
+  "gate40|qwen|cypherbench|unflagged": {
+   "c_ci": [
+    0.0,
+    10.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 30,
+   "points": 3.33,
+   "q_ci": [
+    0.0,
+    10.0
+   ]
+  },
+  "gate40|qwen|cypherlens|all": {
+   "c_ci": [
+    0.0,
+    7.69
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 40,
+   "points": 2.5,
+   "q_ci": [
+    0.0,
+    7.5
+   ]
+  },
+  "gate40|qwen|cypherlens|unflagged": {
+   "c_ci": [
+    0.0,
+    10.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 30,
+   "points": 3.33,
+   "q_ci": [
+    0.0,
+    10.0
+   ]
+  },
+  "gate40|qwen|cypherturn|all": {
+   "c_ci": [
+    -19.05,
+    2.56
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 40,
+   "points": -7.5,
+   "q_ci": [
+    -17.5,
+    2.5
+   ]
+  },
+  "gate40|qwen|cypherturn|unflagged": {
+   "c_ci": [
+    -23.33,
+    3.33
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 30,
+   "points": -10.0,
+   "q_ci": [
+    -23.33,
+    3.33
+   ]
+  },
+  "gate40|qwen|cyspider|all": {
+   "c_ci": [
+    0.0,
+    7.69
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 40,
+   "points": 2.5,
+   "q_ci": [
+    0.0,
+    7.5
+   ]
+  },
+  "gate40|qwen|cyspider|unflagged": {
+   "c_ci": [
+    0.0,
+    10.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 30,
+   "points": 3.33,
+   "q_ci": [
+    0.0,
+    10.0
+   ]
+  },
+  "gate40|qwen|gqlbench|all": {
+   "c_ci": [
+    0.0,
+    7.69
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 40,
+   "points": 2.5,
+   "q_ci": [
+    0.0,
+    7.5
+   ]
+  },
+  "gate40|qwen|gqlbench|unflagged": {
+   "c_ci": [
+    0.0,
+    10.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 30,
+   "points": 3.33,
+   "q_ci": [
+    0.0,
+    10.0
+   ]
+  },
+  "gate40|qwen|neo4jlabs|all": {
+   "c_ci": [
+    -7.5,
+    7.5
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 40,
+   "points": 0.0,
+   "q_ci": [
+    -7.5,
+    7.5
+   ]
+  },
+  "gate40|qwen|neo4jlabs|unflagged": {
+   "c_ci": [
+    -10.0,
+    10.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 30,
+   "points": 0.0,
+   "q_ci": [
+    -10.0,
+    10.0
+   ]
+  },
+  "gate40|qwen|pc_v1_1|all": {
+   "c_ci": [
+    0.0,
+    7.69
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 40,
+   "points": 2.5,
+   "q_ci": [
+    0.0,
+    7.5
+   ]
+  },
+  "gate40|qwen|pc_v1_1|unflagged": {
+   "c_ci": [
+    0.0,
+    10.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 30,
+   "points": 3.33,
+   "q_ci": [
+    0.0,
+    10.0
+   ]
+  },
+  "gate40|qwen|pipecypher|all": {
+   "c_ci": [
+    -11.9,
+    5.13
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 40,
+   "points": -2.5,
+   "q_ci": [
+    -10.0,
+    5.0
+   ]
+  },
+  "gate40|qwen|pipecypher|unflagged": {
+   "c_ci": [
+    -16.67,
+    6.67
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 30,
+   "points": -3.33,
+   "q_ci": [
+    -16.67,
+    6.67
+   ]
+  },
+  "gate40|qwen|tugraph|all": {
+   "c_ci": [
+    -7.5,
+    7.5
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 40,
+   "points": 0.0,
+   "q_ci": [
+    -7.5,
+    7.5
+   ]
+  },
+  "gate40|qwen|tugraph|unflagged": {
+   "c_ci": [
+    -10.0,
+    10.0
+   ],
+   "meets_2pt_with_cis_excluding_0": false,
+   "n": 30,
+   "points": 0.0,
+   "q_ci": [
+    -10.0,
+    10.0
+   ]
+  }
+ }
+}
